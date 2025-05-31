@@ -1,0 +1,32 @@
+[package]
+name = "mm-binds-rs"
+version = "0.0.112"
+edition = "2024"
+rust-version = "1.86"
+authors = ["Dominik Adrian Grzywak <starterx4@gmail.com>"]
+description = "Rust bindings for Metamod:Source and related libraries"
+license = "zLib/libpng"
+repository = "https://example.com/your/mm-binds-rs"
+
+[lib]
+# The library name used in `use my_lib;` statements.
+# It's common practice for this to be the snake_case version of the package name.
+name = "mm_binds_rs"
+# `lib` allows other Rust crates to use this as a dependency.
+# `cdylib` allows compiling this crate into a C-compatible dynamic library (e.g., .so, .dll),
+# which is likely what you'd need if you're building a Metamod:Source plugin in Rust.
+crate-type = ["lib", "cdylib"]
+
+[dependencies]
+# Add any Rust dependencies your wrapper code or library logic might need.
+# Since your bindgen script uses `--use-core`, direct dependencies like `libc`
+# might not be immediately necessary for the raw bindings themselves.
+# e.g., libc = "0.2"
+
+# If you decide to integrate the binding generation into the Cargo build process
+# using a `build.rs` script, you would add `bindgen` here:
+# [build-dependencies]
+# bindgen = "0.69" # Or the version you are using
+
+[build-dependencies]
+cc = { version = "1", features = ["parallel"], optional = true }

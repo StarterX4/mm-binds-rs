@@ -1,0 +1,3 @@
+[submodule "mmsource"]
+	path = mmsource
+	url = https://github.com/alliedmodders/metamod-source
