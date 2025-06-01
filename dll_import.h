@@ -14,6 +14,7 @@
 
 #ifndef _LINUX
   #define _LINUX 1
+  typedef unsigned long uintptr_t;
 #endif
 
 // Source SDK headers often check for __GNUC__ for GCC-like compilers (including Clang).

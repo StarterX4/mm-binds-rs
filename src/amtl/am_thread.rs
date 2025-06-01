@@ -209,22 +209,7 @@ pub mod root {
     pub const LINUX: u32 = 1;
     pub const _LINUX: u32 = 1;
     pub const COMPILER_GCC: u32 = 1;
-    pub const _GLIBCXX_FUNCTIONAL: u32 = 1;
-    pub const _GLIBCXX_CXX_CONFIG_H: u32 = 1;
-    pub const _GLIBCXX_RELEASE: u32 = 15;
-    pub const __GLIBCXX__: u32 = 20250425;
-    pub const _GLIBCXX_HAVE_ATTRIBUTE_VISIBILITY: u32 = 1;
-    pub const _GLIBCXX_USE_DEPRECATED: u32 = 1;
-    pub const _GLIBCXX_EXTERN_TEMPLATE: u32 = 1;
-    pub const _GLIBCXX_USE_DUAL_ABI: u32 = 1;
-    pub const _GLIBCXX_USE_CXX11_ABI: u32 = 1;
-    pub const _GLIBCXX_INLINE_VERSION: u32 = 0;
-    pub const _GLIBCXX_HAVE_IS_CONSTANT_EVALUATED: u32 = 1;
-    pub const _GLIBCXX_ASSERTIONS: u32 = 1;
-    pub const _GLIBCXX_VERBOSE_ASSERT: u32 = 1;
-    pub const _GLIBCXX_USE_ALLOCATOR_NEW: u32 = 1;
-    pub const _GLIBCXX_OS_DEFINES: u32 = 1;
-    pub const __NO_CTYPE: u32 = 1;
+    pub const _DLFCN_H: u32 = 1;
     pub const _FEATURES_H: u32 = 1;
     pub const _ISOC95_SOURCE: u32 = 1;
     pub const _ISOC99_SOURCE: u32 = 1;
@@ -285,11 +270,271 @@ pub mod root {
     pub const __glibc_c99_flexarr_available: u32 = 1;
     pub const __LDOUBLE_REDIRECTS_TO_FLOAT128_ABI: u32 = 0;
     pub const __HAVE_GENERIC_SELECTION: u32 = 0;
+    pub const RTLD_LAZY: u32 = 1;
+    pub const RTLD_NOW: u32 = 2;
+    pub const RTLD_BINDING_MASK: u32 = 3;
+    pub const RTLD_NOLOAD: u32 = 4;
+    pub const RTLD_DEEPBIND: u32 = 8;
+    pub const RTLD_GLOBAL: u32 = 256;
+    pub const RTLD_LOCAL: u32 = 0;
+    pub const RTLD_NODELETE: u32 = 4096;
+    pub const DLFO_STRUCT_HAS_EH_DBASE: u32 = 0;
+    pub const DLFO_STRUCT_HAS_EH_COUNT: u32 = 0;
+    pub const LM_ID_BASE: u32 = 0;
+    pub const LM_ID_NEWLM: i32 = -1;
+    pub const _UNISTD_H: u32 = 1;
+    pub const _POSIX_VERSION: u32 = 200809;
+    pub const __POSIX2_THIS_VERSION: u32 = 200809;
+    pub const _POSIX2_VERSION: u32 = 200809;
+    pub const _POSIX2_C_VERSION: u32 = 200809;
+    pub const _POSIX2_C_BIND: u32 = 200809;
+    pub const _POSIX2_C_DEV: u32 = 200809;
+    pub const _POSIX2_SW_DEV: u32 = 200809;
+    pub const _POSIX2_LOCALEDEF: u32 = 200809;
+    pub const _XOPEN_VERSION: u32 = 700;
+    pub const _XOPEN_XCU_VERSION: u32 = 4;
+    pub const _XOPEN_XPG2: u32 = 1;
+    pub const _XOPEN_XPG3: u32 = 1;
+    pub const _XOPEN_XPG4: u32 = 1;
+    pub const _XOPEN_UNIX: u32 = 1;
+    pub const _XOPEN_ENH_I18N: u32 = 1;
+    pub const _XOPEN_LEGACY: u32 = 1;
+    pub const _BITS_POSIX_OPT_H: u32 = 1;
+    pub const _POSIX_JOB_CONTROL: u32 = 1;
+    pub const _POSIX_SAVED_IDS: u32 = 1;
+    pub const _POSIX_PRIORITY_SCHEDULING: u32 = 200809;
+    pub const _POSIX_SYNCHRONIZED_IO: u32 = 200809;
+    pub const _POSIX_FSYNC: u32 = 200809;
+    pub const _POSIX_MAPPED_FILES: u32 = 200809;
+    pub const _POSIX_MEMLOCK: u32 = 200809;
+    pub const _POSIX_MEMLOCK_RANGE: u32 = 200809;
+    pub const _POSIX_MEMORY_PROTECTION: u32 = 200809;
+    pub const _POSIX_CHOWN_RESTRICTED: u32 = 0;
+    pub const _POSIX_VDISABLE: u8 = 0u8;
+    pub const _POSIX_NO_TRUNC: u32 = 1;
+    pub const _XOPEN_REALTIME: u32 = 1;
+    pub const _XOPEN_REALTIME_THREADS: u32 = 1;
+    pub const _XOPEN_SHM: u32 = 1;
+    pub const _POSIX_THREADS: u32 = 200809;
+    pub const _POSIX_REENTRANT_FUNCTIONS: u32 = 1;
+    pub const _POSIX_THREAD_SAFE_FUNCTIONS: u32 = 200809;
+    pub const _POSIX_THREAD_PRIORITY_SCHEDULING: u32 = 200809;
+    pub const _POSIX_THREAD_ATTR_STACKSIZE: u32 = 200809;
+    pub const _POSIX_THREAD_ATTR_STACKADDR: u32 = 200809;
+    pub const _POSIX_THREAD_PRIO_INHERIT: u32 = 200809;
+    pub const _POSIX_THREAD_PRIO_PROTECT: u32 = 200809;
+    pub const _POSIX_THREAD_ROBUST_PRIO_INHERIT: u32 = 200809;
+    pub const _POSIX_THREAD_ROBUST_PRIO_PROTECT: i32 = -1;
+    pub const _POSIX_SEMAPHORES: u32 = 200809;
+    pub const _POSIX_REALTIME_SIGNALS: u32 = 200809;
+    pub const _POSIX_ASYNCHRONOUS_IO: u32 = 200809;
+    pub const _POSIX_ASYNC_IO: u32 = 1;
+    pub const _LFS_ASYNCHRONOUS_IO: u32 = 1;
+    pub const _POSIX_PRIORITIZED_IO: u32 = 200809;
+    pub const _LFS64_ASYNCHRONOUS_IO: u32 = 1;
+    pub const _LFS_LARGEFILE: u32 = 1;
+    pub const _LFS64_LARGEFILE: u32 = 1;
+    pub const _LFS64_STDIO: u32 = 1;
+    pub const _POSIX_SHARED_MEMORY_OBJECTS: u32 = 200809;
+    pub const _POSIX_CPUTIME: u32 = 0;
+    pub const _POSIX_THREAD_CPUTIME: u32 = 0;
+    pub const _POSIX_REGEXP: u32 = 1;
+    pub const _POSIX_READER_WRITER_LOCKS: u32 = 200809;
+    pub const _POSIX_SHELL: u32 = 1;
+    pub const _POSIX_TIMEOUTS: u32 = 200809;
+    pub const _POSIX_SPIN_LOCKS: u32 = 200809;
+    pub const _POSIX_SPAWN: u32 = 200809;
+    pub const _POSIX_TIMERS: u32 = 200809;
+    pub const _POSIX_BARRIERS: u32 = 200809;
+    pub const _POSIX_MESSAGE_PASSING: u32 = 200809;
+    pub const _POSIX_THREAD_PROCESS_SHARED: u32 = 200809;
+    pub const _POSIX_MONOTONIC_CLOCK: u32 = 0;
+    pub const _POSIX_CLOCK_SELECTION: u32 = 200809;
+    pub const _POSIX_ADVISORY_INFO: u32 = 200809;
+    pub const _POSIX_IPV6: u32 = 200809;
+    pub const _POSIX_RAW_SOCKETS: u32 = 200809;
+    pub const _POSIX2_CHAR_TERM: u32 = 200809;
+    pub const _POSIX_SPORADIC_SERVER: i32 = -1;
+    pub const _POSIX_THREAD_SPORADIC_SERVER: i32 = -1;
+    pub const _POSIX_TRACE: i32 = -1;
+    pub const _POSIX_TRACE_EVENT_FILTER: i32 = -1;
+    pub const _POSIX_TRACE_INHERIT: i32 = -1;
+    pub const _POSIX_TRACE_LOG: i32 = -1;
+    pub const _POSIX_TYPED_MEMORY_OBJECTS: i32 = -1;
+    pub const _POSIX_V7_LPBIG_OFFBIG: i32 = -1;
+    pub const _POSIX_V6_LPBIG_OFFBIG: i32 = -1;
+    pub const _XBS5_LPBIG_OFFBIG: i32 = -1;
+    pub const _POSIX_V7_LP64_OFF64: u32 = 1;
+    pub const _POSIX_V6_LP64_OFF64: u32 = 1;
+    pub const _XBS5_LP64_OFF64: u32 = 1;
+    pub const __ILP32_OFF32_CFLAGS: &[u8; 5] = b"-m32\0";
+    pub const __ILP32_OFF32_LDFLAGS: &[u8; 5] = b"-m32\0";
+    pub const __ILP32_OFFBIG_CFLAGS: &[u8; 48] =
+        b"-m32 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64\0";
+    pub const __ILP32_OFFBIG_LDFLAGS: &[u8; 5] = b"-m32\0";
+    pub const __LP64_OFF64_CFLAGS: &[u8; 5] = b"-m64\0";
+    pub const __LP64_OFF64_LDFLAGS: &[u8; 5] = b"-m64\0";
+    pub const STDIN_FILENO: u32 = 0;
+    pub const STDOUT_FILENO: u32 = 1;
+    pub const STDERR_FILENO: u32 = 2;
+    pub const _BITS_TYPES_H: u32 = 1;
+    pub const _BITS_TYPESIZES_H: u32 = 1;
+    pub const __OFF_T_MATCHES_OFF64_T: u32 = 1;
+    pub const __INO_T_MATCHES_INO64_T: u32 = 1;
+    pub const __RLIM_T_MATCHES_RLIM64_T: u32 = 1;
+    pub const __STATFS_MATCHES_STATFS64: u32 = 1;
+    pub const __KERNEL_OLD_TIMEVAL_MATCHES_TIMEVAL64: u32 = 1;
+    pub const __FD_SETSIZE: u32 = 1024;
+    pub const _BITS_TIME64_H: u32 = 1;
+    pub const R_OK: u32 = 4;
+    pub const W_OK: u32 = 2;
+    pub const X_OK: u32 = 1;
+    pub const F_OK: u32 = 0;
+    pub const SEEK_SET: u32 = 0;
+    pub const SEEK_CUR: u32 = 1;
+    pub const SEEK_END: u32 = 2;
+    pub const SEEK_DATA: u32 = 3;
+    pub const SEEK_HOLE: u32 = 4;
+    pub const L_SET: u32 = 0;
+    pub const L_INCR: u32 = 1;
+    pub const L_XTND: u32 = 2;
+    pub const _GETOPT_POSIX_H: u32 = 1;
+    pub const _GETOPT_CORE_H: u32 = 1;
+    pub const F_ULOCK: u32 = 0;
+    pub const F_LOCK: u32 = 1;
+    pub const F_TLOCK: u32 = 2;
+    pub const F_TEST: u32 = 3;
+    pub const CLOSE_RANGE_UNSHARE: u32 = 2;
+    pub const CLOSE_RANGE_CLOEXEC: u32 = 4;
+    pub const _SYS_TYPES_H: u32 = 1;
+    pub const __clock_t_defined: u32 = 1;
+    pub const __clockid_t_defined: u32 = 1;
+    pub const __time_t_defined: u32 = 1;
+    pub const __timer_t_defined: u32 = 1;
+    pub const _BITS_STDINT_INTN_H: u32 = 1;
+    pub const __BIT_TYPES_DEFINED__: u32 = 1;
+    pub const _ENDIAN_H: u32 = 1;
+    pub const _BITS_ENDIAN_H: u32 = 1;
+    pub const __LITTLE_ENDIAN: u32 = 1234;
+    pub const __BIG_ENDIAN: u32 = 4321;
+    pub const __PDP_ENDIAN: u32 = 3412;
+    pub const _BITS_ENDIANNESS_H: u32 = 1;
+    pub const __BYTE_ORDER: u32 = 1234;
+    pub const __FLOAT_WORD_ORDER: u32 = 1234;
+    pub const LITTLE_ENDIAN: u32 = 1234;
+    pub const BIG_ENDIAN: u32 = 4321;
+    pub const PDP_ENDIAN: u32 = 3412;
+    pub const BYTE_ORDER: u32 = 1234;
+    pub const _BITS_BYTESWAP_H: u32 = 1;
+    pub const _BITS_UINTN_IDENTITY_H: u32 = 1;
+    pub const _SYS_SELECT_H: u32 = 1;
+    pub const __sigset_t_defined: u32 = 1;
+    pub const __timeval_defined: u32 = 1;
+    pub const _STRUCT_TIMESPEC: u32 = 1;
+    pub const FD_SETSIZE: u32 = 1024;
+    pub const _BITS_PTHREADTYPES_COMMON_H: u32 = 1;
+    pub const _THREAD_SHARED_TYPES_H: u32 = 1;
+    pub const _BITS_PTHREADTYPES_ARCH_H: u32 = 1;
+    pub const __SIZEOF_PTHREAD_MUTEX_T: u32 = 40;
+    pub const __SIZEOF_PTHREAD_ATTR_T: u32 = 56;
+    pub const __SIZEOF_PTHREAD_RWLOCK_T: u32 = 56;
+    pub const __SIZEOF_PTHREAD_BARRIER_T: u32 = 32;
+    pub const __SIZEOF_PTHREAD_MUTEXATTR_T: u32 = 4;
+    pub const __SIZEOF_PTHREAD_COND_T: u32 = 48;
+    pub const __SIZEOF_PTHREAD_CONDATTR_T: u32 = 4;
+    pub const __SIZEOF_PTHREAD_RWLOCKATTR_T: u32 = 8;
+    pub const __SIZEOF_PTHREAD_BARRIERATTR_T: u32 = 4;
+    pub const _THREAD_MUTEX_INTERNAL_H: u32 = 1;
+    pub const __PTHREAD_MUTEX_HAVE_PREV: u32 = 1;
+    pub const __have_pthread_attr_t: u32 = 1;
+    pub const _DIRENT_H: u32 = 1;
+    pub const _DIRENT_MATCHES_DIRENT64: u32 = 1;
+    pub const _BITS_POSIX1_LIM_H: u32 = 1;
+    pub const _POSIX_AIO_LISTIO_MAX: u32 = 2;
+    pub const _POSIX_AIO_MAX: u32 = 1;
+    pub const _POSIX_ARG_MAX: u32 = 4096;
+    pub const _POSIX_CHILD_MAX: u32 = 25;
+    pub const _POSIX_DELAYTIMER_MAX: u32 = 32;
+    pub const _POSIX_HOST_NAME_MAX: u32 = 255;
+    pub const _POSIX_LINK_MAX: u32 = 8;
+    pub const _POSIX_LOGIN_NAME_MAX: u32 = 9;
+    pub const _POSIX_MAX_CANON: u32 = 255;
+    pub const _POSIX_MAX_INPUT: u32 = 255;
+    pub const _POSIX_MQ_OPEN_MAX: u32 = 8;
+    pub const _POSIX_MQ_PRIO_MAX: u32 = 32;
+    pub const _POSIX_NAME_MAX: u32 = 14;
+    pub const _POSIX_NGROUPS_MAX: u32 = 8;
+    pub const _POSIX_OPEN_MAX: u32 = 20;
+    pub const _POSIX_FD_SETSIZE: u32 = 20;
+    pub const _POSIX_PATH_MAX: u32 = 256;
+    pub const _POSIX_PIPE_BUF: u32 = 512;
+    pub const _POSIX_RE_DUP_MAX: u32 = 255;
+    pub const _POSIX_RTSIG_MAX: u32 = 8;
+    pub const _POSIX_SEM_NSEMS_MAX: u32 = 256;
+    pub const _POSIX_SEM_VALUE_MAX: u32 = 32767;
+    pub const _POSIX_SIGQUEUE_MAX: u32 = 32;
+    pub const _POSIX_SSIZE_MAX: u32 = 32767;
+    pub const _POSIX_STREAM_MAX: u32 = 8;
+    pub const _POSIX_SYMLINK_MAX: u32 = 255;
+    pub const _POSIX_SYMLOOP_MAX: u32 = 8;
+    pub const _POSIX_TIMER_MAX: u32 = 32;
+    pub const _POSIX_TTY_NAME_MAX: u32 = 9;
+    pub const _POSIX_TZNAME_MAX: u32 = 6;
+    pub const _POSIX_QLIMIT: u32 = 1;
+    pub const _POSIX_HIWAT: u32 = 512;
+    pub const _POSIX_UIO_MAXIOV: u32 = 16;
+    pub const _POSIX_CLOCKRES_MIN: u32 = 20000000;
+    pub const NR_OPEN: u32 = 1024;
+    pub const NGROUPS_MAX: u32 = 65536;
+    pub const ARG_MAX: u32 = 131072;
+    pub const LINK_MAX: u32 = 127;
+    pub const MAX_CANON: u32 = 255;
+    pub const MAX_INPUT: u32 = 255;
+    pub const NAME_MAX: u32 = 255;
+    pub const PATH_MAX: u32 = 4096;
+    pub const PIPE_BUF: u32 = 4096;
+    pub const XATTR_NAME_MAX: u32 = 255;
+    pub const XATTR_SIZE_MAX: u32 = 65536;
+    pub const XATTR_LIST_MAX: u32 = 65536;
+    pub const RTSIG_MAX: u32 = 32;
+    pub const _POSIX_THREAD_KEYS_MAX: u32 = 128;
+    pub const PTHREAD_KEYS_MAX: u32 = 1024;
+    pub const _POSIX_THREAD_DESTRUCTOR_ITERATIONS: u32 = 4;
+    pub const PTHREAD_DESTRUCTOR_ITERATIONS: u32 = 4;
+    pub const _POSIX_THREAD_THREADS_MAX: u32 = 64;
+    pub const AIO_PRIO_DELTA_MAX: u32 = 20;
+    pub const __SC_THREAD_STACK_MIN_VALUE: u32 = 75;
+    pub const DELAYTIMER_MAX: u32 = 2147483647;
+    pub const TTY_NAME_MAX: u32 = 32;
+    pub const LOGIN_NAME_MAX: u32 = 256;
+    pub const HOST_NAME_MAX: u32 = 64;
+    pub const MQ_PRIO_MAX: u32 = 32768;
+    pub const SEM_VALUE_MAX: u32 = 2147483647;
+    pub const MAXNAMLEN: u32 = 255;
+    pub const PATH_SEP_STR: &[u8; 2] = b"/\0";
+    pub const PATH_SEP_CHAR: u8 = 47u8;
+    pub const ALT_SEP_CHAR: u8 = 92u8;
+    pub const PATH_SIZE: u32 = 4096;
+    pub const _GLIBCXX_CERRNO: u32 = 1;
+    pub const _GLIBCXX_CXX_CONFIG_H: u32 = 1;
+    pub const _GLIBCXX_RELEASE: u32 = 15;
+    pub const __GLIBCXX__: u32 = 20250425;
+    pub const _GLIBCXX_HAVE_ATTRIBUTE_VISIBILITY: u32 = 1;
+    pub const _GLIBCXX_USE_DEPRECATED: u32 = 1;
+    pub const _GLIBCXX_EXTERN_TEMPLATE: u32 = 1;
+    pub const _GLIBCXX_USE_DUAL_ABI: u32 = 1;
+    pub const _GLIBCXX_USE_CXX11_ABI: u32 = 1;
+    pub const _GLIBCXX_INLINE_VERSION: u32 = 0;
+    pub const _GLIBCXX_HAVE_IS_CONSTANT_EVALUATED: u32 = 1;
+    pub const _GLIBCXX_ASSERTIONS: u32 = 1;
+    pub const _GLIBCXX_VERBOSE_ASSERT: u32 = 1;
+    pub const _GLIBCXX_USE_ALLOCATOR_NEW: u32 = 1;
+    pub const _GLIBCXX_OS_DEFINES: u32 = 1;
+    pub const __NO_CTYPE: u32 = 1;
     pub const _GLIBCXX_HAVE_FLOAT128_MATH: u32 = 1;
     pub const _GLIBCXX_MAY_HAVE___CXA_THREAD_ATEXIT_IMPL: u32 = 1;
     pub const _GLIBCXX_GTHREAD_USE_WEAK: u32 = 0;
     pub const _GLIBCXX_CPU_DEFINES: u32 = 1;
-    pub const _GLIBCXX_USE_STD_SPEC_FUNCS: u32 = 1;
     pub const _GLIBCXX_FAST_MATH: u32 = 0;
     pub const _GLIBCXX_USE_FLOAT128: u32 = 1;
     pub const _GLIBCXX_FLOAT_IS_IEEE_BINARY32: u32 = 1;
@@ -297,12 +542,6 @@ pub mod root {
     pub const _GLIBCXX_HAVE_BUILTIN_HAS_UNIQ_OBJ_REP: u32 = 1;
     pub const _GLIBCXX_HAVE_BUILTIN_IS_AGGREGATE: u32 = 1;
     pub const _GLIBCXX_HAVE_BUILTIN_LAUNDER: u32 = 1;
-    pub const _PSTL_VERSION: u32 = 17000;
-    pub const _PSTL_VERSION_MAJOR: u32 = 17;
-    pub const _PSTL_VERSION_MINOR: u32 = 0;
-    pub const _PSTL_VERSION_PATCH: u32 = 0;
-    pub const _PSTL_USAGE_WARNINGS: u32 = 0;
-    pub const _PSTL_PRAGMA_LOCATION: &[u8; 26] = b" [Parallel STL message]: \0";
     pub const _GLIBCXX_HAVE_ACOSF: u32 = 1;
     pub const _GLIBCXX_HAVE_ACOSL: u32 = 1;
     pub const _GLIBCXX_HAVE_ALIGNED_ALLOC: u32 = 1;
@@ -551,513 +790,6 @@ pub mod root {
     pub const _GLIBCXX_X86_RDSEED: u32 = 1;
     pub const _GLIBCXX_ZONEINFO_DIR: &[u8; 20] = b"/usr/share/zoneinfo\0";
     pub const _GTHREAD_USE_MUTEX_TIMEDLOCK: u32 = 1;
-    pub const _STL_FUNCTION_H: u32 = 1;
-    pub const _MOVE_H: u32 = 1;
-    pub const _GLIBCXX_TYPE_TRAITS: u32 = 1;
-    pub const __glibcxx_incomplete_container_elements: u32 = 201505;
-    pub const __glibcxx_uncaught_exceptions: u32 = 201411;
-    pub const __glibcxx_allocator_traits_is_always_equal: u32 = 201411;
-    pub const __glibcxx_is_null_pointer: u32 = 201309;
-    pub const __cpp_lib_is_null_pointer: u32 = 201309;
-    pub const __glibcxx_result_of_sfinae: u32 = 201210;
-    pub const __cpp_lib_result_of_sfinae: u32 = 201210;
-    pub const __glibcxx_shared_ptr_arrays: u32 = 201611;
-    pub const __glibcxx_is_swappable: u32 = 201603;
-    pub const __cpp_lib_is_swappable: u32 = 201603;
-    pub const __glibcxx_void_t: u32 = 201411;
-    pub const __cpp_lib_void_t: u32 = 201411;
-    pub const __glibcxx_enable_shared_from_this: u32 = 201603;
-    pub const __glibcxx_math_spec_funcs: u32 = 201003;
-    pub const __glibcxx_exchange_function: u32 = 201304;
-    pub const __glibcxx_integer_sequence: u32 = 201304;
-    pub const __glibcxx_integral_constant_callable: u32 = 201304;
-    pub const __cpp_lib_integral_constant_callable: u32 = 201304;
-    pub const __glibcxx_is_final: u32 = 201402;
-    pub const __cpp_lib_is_final: u32 = 201402;
-    pub const __glibcxx_make_reverse_iterator: u32 = 201402;
-    pub const __glibcxx_null_iterators: u32 = 201304;
-    pub const __glibcxx_transformation_trait_aliases: u32 = 201304;
-    pub const __cpp_lib_transformation_trait_aliases: u32 = 201304;
-    pub const __glibcxx_transparent_operators: u32 = 201510;
-    pub const __glibcxx_tuple_element_t: u32 = 201402;
-    pub const __glibcxx_tuples_by_type: u32 = 201304;
-    pub const __glibcxx_robust_nonmodifying_seq_ops: u32 = 201304;
-    pub const __glibcxx_to_chars: u32 = 201611;
-    pub const __glibcxx_chrono_udls: u32 = 201304;
-    pub const __glibcxx_complex_udls: u32 = 201309;
-    pub const __glibcxx_generic_associative_lookup: u32 = 201304;
-    pub const __glibcxx_make_unique: u32 = 201304;
-    pub const __glibcxx_quoted_string_io: u32 = 201304;
-    pub const __glibcxx_shared_timed_mutex: u32 = 201402;
-    pub const __glibcxx_string_udls: u32 = 201304;
-    pub const __glibcxx_addressof_constexpr: u32 = 201603;
-    pub const __glibcxx_any: u32 = 201606;
-    pub const __glibcxx_apply: u32 = 201603;
-    pub const __glibcxx_as_const: u32 = 201510;
-    pub const __glibcxx_atomic_is_always_lock_free: u32 = 201603;
-    pub const __glibcxx_bool_constant: u32 = 201505;
-    pub const __cpp_lib_bool_constant: u32 = 201505;
-    pub const __glibcxx_byte: u32 = 201603;
-    pub const __glibcxx_has_unique_object_representations: u32 = 201606;
-    pub const __cpp_lib_has_unique_object_representations: u32 = 201606;
-    pub const __glibcxx_hardware_interference_size: u32 = 201703;
-    pub const __glibcxx_invoke: u32 = 201411;
-    pub const __glibcxx_is_aggregate: u32 = 201703;
-    pub const __cpp_lib_is_aggregate: u32 = 201703;
-    pub const __glibcxx_is_invocable: u32 = 201703;
-    pub const __cpp_lib_is_invocable: u32 = 201703;
-    pub const __glibcxx_launder: u32 = 201606;
-    pub const __glibcxx_logical_traits: u32 = 201510;
-    pub const __cpp_lib_logical_traits: u32 = 201510;
-    pub const __glibcxx_make_from_tuple: u32 = 201606;
-    pub const __glibcxx_not_fn: u32 = 201603;
-    pub const __glibcxx_type_trait_variable_templates: u32 = 201510;
-    pub const __cpp_lib_type_trait_variable_templates: u32 = 201510;
-    pub const __glibcxx_variant: u32 = 202102;
-    pub const __glibcxx_lcm: u32 = 201606;
-    pub const __glibcxx_gcd: u32 = 201606;
-    pub const __glibcxx_gcd_lcm: u32 = 201606;
-    pub const __glibcxx_raw_memory_algorithms: u32 = 201606;
-    pub const __glibcxx_array_constexpr: u32 = 201803;
-    pub const __glibcxx_nonmember_container_access: u32 = 201411;
-    pub const __glibcxx_clamp: u32 = 201603;
-    pub const __glibcxx_sample: u32 = 201603;
-    pub const __glibcxx_boyer_moore_searcher: u32 = 201603;
-    pub const __glibcxx_chrono: u32 = 201611;
-    pub const __glibcxx_execution: u32 = 201902;
-    pub const __glibcxx_filesystem: u32 = 201703;
-    pub const __glibcxx_hypot: u32 = 201603;
-    pub const __glibcxx_map_try_emplace: u32 = 201411;
-    pub const __glibcxx_math_special_functions: u32 = 201603;
-    pub const __glibcxx_memory_resource: u32 = 201603;
-    pub const __glibcxx_node_extract: u32 = 201606;
-    pub const __glibcxx_parallel_algorithm: u32 = 201603;
-    pub const __glibcxx_scoped_lock: u32 = 201703;
-    pub const __glibcxx_shared_mutex: u32 = 201505;
-    pub const __glibcxx_shared_ptr_weak_type: u32 = 201606;
-    pub const __glibcxx_string_view: u32 = 201803;
-    pub const __glibcxx_unordered_map_try_emplace: u32 = 201411;
-    pub const __glibcxx_optional: u32 = 201606;
-    pub const __glibcxx_constexpr_char_traits: u32 = 201611;
-    pub const __glibcxx_constexpr_string: u32 = 201611;
-    pub const _BACKWARD_BINDERS_H: u32 = 1;
-    pub const _GLIBCXX_TUPLE: u32 = 1;
-    pub const _STL_PAIR_H: u32 = 1;
-    pub const _GLIBCXX_UTILITY_H: u32 = 1;
-    pub const _USES_ALLOCATOR_H: u32 = 1;
-    pub const _GLIBCXX_INVOKE_H: u32 = 1;
-    pub const __cpp_lib_tuple_element_t: u32 = 201402;
-    pub const __cpp_lib_tuples_by_type: u32 = 201304;
-    pub const __cpp_lib_apply: u32 = 201603;
-    pub const __cpp_lib_make_from_tuple: u32 = 201606;
-    pub const _FUNCTIONAL_HASH_H: u32 = 1;
-    pub const _HASH_BYTES_H: u32 = 1;
-    pub const _GLIBCXX_REFWRAP_H: u32 = 1;
-    pub const _GLIBCXX_STD_FUNCTION_H: u32 = 1;
-    pub const __EXCEPTION_H: u32 = 1;
-    pub const __cpp_lib_hardware_interference_size: u32 = 201703;
-    pub const __cpp_lib_launder: u32 = 201606;
-    pub const __GXX_MERGED_TYPEINFO_NAMES: u32 = 0;
-    pub const __GXX_TYPEINFO_EQUALITY_INLINE: u32 = 1;
-    pub const _FUNCTEXCEPT_H: u32 = 1;
-    pub const _EXCEPTION_DEFINES_H: u32 = 1;
-    pub const _GLIBCXX_UNORDERED_MAP: u32 = 1;
-    pub const _REQUIRES_FREESTANDING_H: u32 = 1;
-    pub const _HASHTABLE_H: u32 = 1;
-    pub const _HASHTABLE_POLICY_H: u32 = 1;
-    pub const _STL_ALGOBASE_H: u32 = 1;
-    pub const _CPP_TYPE_TRAITS_H: u32 = 1;
-    pub const _EXT_TYPE_TRAITS: u32 = 1;
-    pub const _EXT_NUMERIC_TRAITS: u32 = 1;
-    pub const _STL_ITERATOR_BASE_TYPES_H: u32 = 1;
-    pub const _STL_ITERATOR_BASE_FUNCS_H: u32 = 1;
-    pub const _CONCEPT_CHECK_H: u32 = 1;
-    pub const _GLIBCXX_DEBUG_ASSERTIONS_H: u32 = 1;
-    pub const _STL_ITERATOR_H: u32 = 1;
-    pub const _PTR_TRAITS_H: u32 = 1;
-    pub const _GLIBCXX_DEBUG_MACRO_SWITCH_H: u32 = 1;
-    pub const _GLIBCXX_PREDEFINED_OPS_H: u32 = 1;
-    pub const _GLIBCXX_BIT: u32 = 1;
-    pub const _GLIBCXX_CONCEPTS: u32 = 1;
-    pub const _ALIGNED_BUFFER_H: u32 = 1;
-    pub const _EXT_ALLOC_TRAITS_H: u32 = 1;
-    pub const _ALLOC_TRAITS_H: u32 = 1;
-    pub const _STL_CONSTRUCT_H: u32 = 1;
-    pub const _MEMORYFWD_H: u32 = 1;
-    pub const _ALLOCATOR_H: u32 = 1;
-    pub const _GLIBCXX_CXX_ALLOCATOR_H: u32 = 1;
-    pub const _STD_NEW_ALLOCATOR_H: u32 = 1;
-    pub const _ENABLE_SPECIAL_MEMBERS_H: u32 = 1;
-    pub const _NODE_HANDLE: u32 = 1;
-    pub const _GLIBCXX_RANGE_ACCESS_H: u32 = 1;
-    pub const _GLIBCXX_ERASE_IF_H: u32 = 1;
-    pub const __cpp_lib_allocator_traits_is_always_equal: u32 = 201411;
-    pub const __cpp_lib_nonmember_container_access: u32 = 201411;
-    pub const __cpp_lib_node_extract: u32 = 201606;
-    pub const __cpp_lib_unordered_map_try_emplace: u32 = 201411;
-    pub const _GLIBCXX_MEMORY_RESOURCE_H: u32 = 1;
-    pub const _GLIBCXX_CSTDDEF: u32 = 1;
-    pub const __cpp_lib_byte: u32 = 201603;
-    pub const _USES_ALLOCATOR_ARGS: u32 = 1;
-    pub const _GLIBCXX_VECTOR: u32 = 1;
-    pub const _STL_UNINITIALIZED_H: u32 = 1;
-    pub const _STL_VECTOR_H: u32 = 1;
-    pub const _STL_BVECTOR_H: u32 = 1;
-    pub const _VECTOR_TCC: u32 = 1;
-    pub const __cpp_lib_incomplete_container_elements: u32 = 201505;
-    pub const _GLIBCXX_ARRAY: u32 = 1;
-    pub const __cpp_lib_array_constexpr: u32 = 201803;
-    pub const __cpp_lib_transparent_operators: u32 = 201510;
-    pub const __cpp_lib_invoke: u32 = 201411;
-    pub const __cpp_lib_not_fn: u32 = 201603;
-    pub const __cpp_lib_boyer_moore_searcher: u32 = 201603;
-    pub const _GLIBCXX_MEMORY: u32 = 1;
-    pub const _STL_TEMPBUF_H: u32 = 1;
-    pub const _STL_RAW_STORAGE_ITERATOR_H: u32 = 1;
-    pub const _GLIBCXX_ALIGN_H: u32 = 1;
-    pub const _UNIQUE_PTR_H: u32 = 1;
-    pub const _SHARED_PTR_H: u32 = 1;
-    pub const _GLIBCXX_IOSFWD: u32 = 1;
-    pub const _STRINGFWD_H: u32 = 1;
-    pub const _GLIBCXX_POSTYPES_H: u32 = 1;
-    pub const _GLIBCXX_CWCHAR: u32 = 1;
-    pub const _WCHAR_H: u32 = 1;
-    pub const __GLIBC_USE_LIB_EXT2: u32 = 1;
-    pub const __GLIBC_USE_IEC_60559_BFP_EXT: u32 = 1;
-    pub const __GLIBC_USE_IEC_60559_BFP_EXT_C23: u32 = 1;
-    pub const __GLIBC_USE_IEC_60559_EXT: u32 = 1;
-    pub const __GLIBC_USE_IEC_60559_FUNCS_EXT: u32 = 1;
-    pub const __GLIBC_USE_IEC_60559_FUNCS_EXT_C23: u32 = 1;
-    pub const __GLIBC_USE_IEC_60559_TYPES_EXT: u32 = 1;
-    pub const __HAVE_FLOAT128: u32 = 1;
-    pub const __HAVE_DISTINCT_FLOAT128: u32 = 1;
-    pub const __HAVE_FLOAT64X: u32 = 1;
-    pub const __HAVE_FLOAT64X_LONG_DOUBLE: u32 = 1;
-    pub const __HAVE_FLOAT16: u32 = 0;
-    pub const __HAVE_FLOAT32: u32 = 1;
-    pub const __HAVE_FLOAT64: u32 = 1;
-    pub const __HAVE_FLOAT32X: u32 = 1;
-    pub const __HAVE_FLOAT128X: u32 = 0;
-    pub const __HAVE_DISTINCT_FLOAT16: u32 = 0;
-    pub const __HAVE_DISTINCT_FLOAT32: u32 = 0;
-    pub const __HAVE_DISTINCT_FLOAT64: u32 = 0;
-    pub const __HAVE_DISTINCT_FLOAT32X: u32 = 0;
-    pub const __HAVE_DISTINCT_FLOAT64X: u32 = 0;
-    pub const __HAVE_DISTINCT_FLOAT128X: u32 = 0;
-    pub const __HAVE_FLOATN_NOT_TYPEDEF: u32 = 0;
-    pub const _BITS_WCHAR_H: u32 = 1;
-    pub const __wint_t_defined: u32 = 1;
-    pub const _WINT_T: u32 = 1;
-    pub const __mbstate_t_defined: u32 = 1;
-    pub const ____mbstate_t_defined: u32 = 1;
-    pub const ____FILE_defined: u32 = 1;
-    pub const __FILE_defined: u32 = 1;
-    pub const _BITS_TYPES_LOCALE_T_H: u32 = 1;
-    pub const _BITS_TYPES___LOCALE_T_H: u32 = 1;
-    pub const WEOF: u32 = 4294967295;
-    pub const _SHARED_PTR_BASE_H: u32 = 1;
-    pub const _ALLOCATED_PTR_H: u32 = 1;
-    pub const _GLIBCXX_ATOMICITY_H: u32 = 1;
-    pub const __GTHREADS: u32 = 1;
-    pub const __GTHREADS_CXX0X: u32 = 1;
-    pub const _PTHREAD_H: u32 = 1;
-    pub const _SCHED_H: u32 = 1;
-    pub const _BITS_TYPES_H: u32 = 1;
-    pub const _BITS_TYPESIZES_H: u32 = 1;
-    pub const __OFF_T_MATCHES_OFF64_T: u32 = 1;
-    pub const __INO_T_MATCHES_INO64_T: u32 = 1;
-    pub const __RLIM_T_MATCHES_RLIM64_T: u32 = 1;
-    pub const __STATFS_MATCHES_STATFS64: u32 = 1;
-    pub const __KERNEL_OLD_TIMEVAL_MATCHES_TIMEVAL64: u32 = 1;
-    pub const __FD_SETSIZE: u32 = 1024;
-    pub const _BITS_TIME64_H: u32 = 1;
-    pub const __time_t_defined: u32 = 1;
-    pub const _STRUCT_TIMESPEC: u32 = 1;
-    pub const _BITS_ENDIAN_H: u32 = 1;
-    pub const __LITTLE_ENDIAN: u32 = 1234;
-    pub const __BIG_ENDIAN: u32 = 4321;
-    pub const __PDP_ENDIAN: u32 = 3412;
-    pub const _BITS_ENDIANNESS_H: u32 = 1;
-    pub const __BYTE_ORDER: u32 = 1234;
-    pub const __FLOAT_WORD_ORDER: u32 = 1234;
-    pub const _BITS_SCHED_H: u32 = 1;
-    pub const SCHED_OTHER: u32 = 0;
-    pub const SCHED_FIFO: u32 = 1;
-    pub const SCHED_RR: u32 = 2;
-    pub const SCHED_NORMAL: u32 = 0;
-    pub const SCHED_BATCH: u32 = 3;
-    pub const SCHED_ISO: u32 = 4;
-    pub const SCHED_IDLE: u32 = 5;
-    pub const SCHED_DEADLINE: u32 = 6;
-    pub const SCHED_EXT: u32 = 7;
-    pub const SCHED_RESET_ON_FORK: u32 = 1073741824;
-    pub const SCHED_FLAG_RESET_ON_FORK: u32 = 1;
-    pub const SCHED_FLAG_RECLAIM: u32 = 2;
-    pub const SCHED_FLAG_DL_OVERRUN: u32 = 4;
-    pub const SCHED_FLAG_KEEP_POLICY: u32 = 8;
-    pub const SCHED_FLAG_KEEP_PARAMS: u32 = 16;
-    pub const SCHED_FLAG_UTIL_CLAMP_MIN: u32 = 32;
-    pub const SCHED_FLAG_UTIL_CLAMP_MAX: u32 = 64;
-    pub const SCHED_FLAG_KEEP_ALL: u32 = 24;
-    pub const SCHED_FLAG_UTIL_CLAMP: u32 = 96;
-    pub const __BITS_PER_LONG: u32 = 64;
-    pub const __BITS_PER_LONG_LONG: u32 = 64;
-    pub const SCHED_ATTR_SIZE_VER0: u32 = 48;
-    pub const SCHED_ATTR_SIZE_VER1: u32 = 56;
-    pub const CSIGNAL: u32 = 255;
-    pub const CLONE_VM: u32 = 256;
-    pub const CLONE_FS: u32 = 512;
-    pub const CLONE_FILES: u32 = 1024;
-    pub const CLONE_SIGHAND: u32 = 2048;
-    pub const CLONE_PIDFD: u32 = 4096;
-    pub const CLONE_PTRACE: u32 = 8192;
-    pub const CLONE_VFORK: u32 = 16384;
-    pub const CLONE_PARENT: u32 = 32768;
-    pub const CLONE_THREAD: u32 = 65536;
-    pub const CLONE_NEWNS: u32 = 131072;
-    pub const CLONE_SYSVSEM: u32 = 262144;
-    pub const CLONE_SETTLS: u32 = 524288;
-    pub const CLONE_PARENT_SETTID: u32 = 1048576;
-    pub const CLONE_CHILD_CLEARTID: u32 = 2097152;
-    pub const CLONE_DETACHED: u32 = 4194304;
-    pub const CLONE_UNTRACED: u32 = 8388608;
-    pub const CLONE_CHILD_SETTID: u32 = 16777216;
-    pub const CLONE_NEWCGROUP: u32 = 33554432;
-    pub const CLONE_NEWUTS: u32 = 67108864;
-    pub const CLONE_NEWIPC: u32 = 134217728;
-    pub const CLONE_NEWUSER: u32 = 268435456;
-    pub const CLONE_NEWPID: u32 = 536870912;
-    pub const CLONE_NEWNET: u32 = 1073741824;
-    pub const CLONE_IO: u32 = 2147483648;
-    pub const CLONE_NEWTIME: u32 = 128;
-    pub const _BITS_TYPES_STRUCT_SCHED_PARAM: u32 = 1;
-    pub const _BITS_CPU_SET_H: u32 = 1;
-    pub const __CPU_SETSIZE: u32 = 1024;
-    pub const CPU_SETSIZE: u32 = 1024;
-    pub const _TIME_H: u32 = 1;
-    pub const _BITS_TIME_H: u32 = 1;
-    pub const CLOCK_REALTIME: u32 = 0;
-    pub const CLOCK_MONOTONIC: u32 = 1;
-    pub const CLOCK_PROCESS_CPUTIME_ID: u32 = 2;
-    pub const CLOCK_THREAD_CPUTIME_ID: u32 = 3;
-    pub const CLOCK_MONOTONIC_RAW: u32 = 4;
-    pub const CLOCK_REALTIME_COARSE: u32 = 5;
-    pub const CLOCK_MONOTONIC_COARSE: u32 = 6;
-    pub const CLOCK_BOOTTIME: u32 = 7;
-    pub const CLOCK_REALTIME_ALARM: u32 = 8;
-    pub const CLOCK_BOOTTIME_ALARM: u32 = 9;
-    pub const CLOCK_TAI: u32 = 11;
-    pub const TIMER_ABSTIME: u32 = 1;
-    pub const _BITS_TIMEX_H: u32 = 1;
-    pub const __timeval_defined: u32 = 1;
-    pub const ADJ_OFFSET: u32 = 1;
-    pub const ADJ_FREQUENCY: u32 = 2;
-    pub const ADJ_MAXERROR: u32 = 4;
-    pub const ADJ_ESTERROR: u32 = 8;
-    pub const ADJ_STATUS: u32 = 16;
-    pub const ADJ_TIMECONST: u32 = 32;
-    pub const ADJ_TAI: u32 = 128;
-    pub const ADJ_SETOFFSET: u32 = 256;
-    pub const ADJ_MICRO: u32 = 4096;
-    pub const ADJ_NANO: u32 = 8192;
-    pub const ADJ_TICK: u32 = 16384;
-    pub const ADJ_OFFSET_SINGLESHOT: u32 = 32769;
-    pub const ADJ_OFFSET_SS_READ: u32 = 40961;
-    pub const MOD_OFFSET: u32 = 1;
-    pub const MOD_FREQUENCY: u32 = 2;
-    pub const MOD_MAXERROR: u32 = 4;
-    pub const MOD_ESTERROR: u32 = 8;
-    pub const MOD_STATUS: u32 = 16;
-    pub const MOD_TIMECONST: u32 = 32;
-    pub const MOD_CLKB: u32 = 16384;
-    pub const MOD_CLKA: u32 = 32769;
-    pub const MOD_TAI: u32 = 128;
-    pub const MOD_MICRO: u32 = 4096;
-    pub const MOD_NANO: u32 = 8192;
-    pub const STA_PLL: u32 = 1;
-    pub const STA_PPSFREQ: u32 = 2;
-    pub const STA_PPSTIME: u32 = 4;
-    pub const STA_FLL: u32 = 8;
-    pub const STA_INS: u32 = 16;
-    pub const STA_DEL: u32 = 32;
-    pub const STA_UNSYNC: u32 = 64;
-    pub const STA_FREQHOLD: u32 = 128;
-    pub const STA_PPSSIGNAL: u32 = 256;
-    pub const STA_PPSJITTER: u32 = 512;
-    pub const STA_PPSWANDER: u32 = 1024;
-    pub const STA_PPSERROR: u32 = 2048;
-    pub const STA_CLOCKERR: u32 = 4096;
-    pub const STA_NANO: u32 = 8192;
-    pub const STA_MODE: u32 = 16384;
-    pub const STA_CLK: u32 = 32768;
-    pub const STA_RONLY: u32 = 65280;
-    pub const __clock_t_defined: u32 = 1;
-    pub const __struct_tm_defined: u32 = 1;
-    pub const __clockid_t_defined: u32 = 1;
-    pub const __timer_t_defined: u32 = 1;
-    pub const __itimerspec_defined: u32 = 1;
-    pub const TIME_UTC: u32 = 1;
-    pub const _BITS_PTHREADTYPES_COMMON_H: u32 = 1;
-    pub const _THREAD_SHARED_TYPES_H: u32 = 1;
-    pub const _BITS_PTHREADTYPES_ARCH_H: u32 = 1;
-    pub const __SIZEOF_PTHREAD_MUTEX_T: u32 = 40;
-    pub const __SIZEOF_PTHREAD_ATTR_T: u32 = 56;
-    pub const __SIZEOF_PTHREAD_RWLOCK_T: u32 = 56;
-    pub const __SIZEOF_PTHREAD_BARRIER_T: u32 = 32;
-    pub const __SIZEOF_PTHREAD_MUTEXATTR_T: u32 = 4;
-    pub const __SIZEOF_PTHREAD_COND_T: u32 = 48;
-    pub const __SIZEOF_PTHREAD_CONDATTR_T: u32 = 4;
-    pub const __SIZEOF_PTHREAD_RWLOCKATTR_T: u32 = 8;
-    pub const __SIZEOF_PTHREAD_BARRIERATTR_T: u32 = 4;
-    pub const _THREAD_MUTEX_INTERNAL_H: u32 = 1;
-    pub const __PTHREAD_MUTEX_HAVE_PREV: u32 = 1;
-    pub const __have_pthread_attr_t: u32 = 1;
-    pub const _BITS_SETJMP_H: u32 = 1;
-    pub const __jmp_buf_tag_defined: u32 = 1;
-    pub const __SC_THREAD_STACK_MIN_VALUE: u32 = 75;
-    pub const PTHREAD_ONCE_INIT: u32 = 0;
-    pub const PTHREAD_BARRIER_SERIAL_THREAD: i32 = -1;
-    pub const PTHREAD_ATTR_NO_SIGMASK_NP: i32 = -1;
-    pub const __GTHREAD_HAS_COND: u32 = 1;
-    pub const __GTHREAD_ONCE_INIT: u32 = 0;
-    pub const _GLIBCXX_ATOMIC_WORD_H: u32 = 1;
-    pub const _CONCURRENCE_H: u32 = 1;
-    pub const __cpp_lib_uncaught_exceptions: u32 = 201411;
-    pub const _CXXABI_INIT_EXCEPTION_H: u32 = 1;
-    pub const _GLIBCXX_HAVE_CDTOR_CALLABI: u32 = 0;
-    pub const _GLIBCXX_NESTED_EXCEPTION_H: u32 = 1;
-    pub const _SHARED_PTR_ATOMIC_H: u32 = 1;
-    pub const _GLIBCXX_ATOMIC_BASE_H: u32 = 1;
-    pub const _GLIBCXX_ATOMIC_LOCK_FREE_H: u32 = 1;
-    pub const _BACKWARD_AUTO_PTR_H: u32 = 1;
-    pub const __cpp_lib_shared_ptr_arrays: u32 = 201611;
-    pub const __cpp_lib_enable_shared_from_this: u32 = 201603;
-    pub const __cpp_lib_make_unique: u32 = 201304;
-    pub const __cpp_lib_raw_memory_algorithms: u32 = 201606;
-    pub const __cpp_lib_parallel_algorithm: u32 = 201603;
-    pub const __cpp_lib_shared_ptr_weak_type: u32 = 201606;
-    pub const _GLIBCXX_STRING: u32 = 1;
-    pub const _CHAR_TRAITS_H: u32 = 1;
-    pub const _LOCALE_FWD_H: u32 = 1;
-    pub const _GLIBCXX_CXX_LOCALE_H: u32 = 1;
-    pub const _GLIBCXX_CLOCALE: u32 = 1;
-    pub const _LOCALE_H: u32 = 1;
-    pub const _BITS_LOCALE_H: u32 = 1;
-    pub const __LC_CTYPE: u32 = 0;
-    pub const __LC_NUMERIC: u32 = 1;
-    pub const __LC_TIME: u32 = 2;
-    pub const __LC_COLLATE: u32 = 3;
-    pub const __LC_MONETARY: u32 = 4;
-    pub const __LC_MESSAGES: u32 = 5;
-    pub const __LC_ALL: u32 = 6;
-    pub const __LC_PAPER: u32 = 7;
-    pub const __LC_NAME: u32 = 8;
-    pub const __LC_ADDRESS: u32 = 9;
-    pub const __LC_TELEPHONE: u32 = 10;
-    pub const __LC_MEASUREMENT: u32 = 11;
-    pub const __LC_IDENTIFICATION: u32 = 12;
-    pub const LC_CTYPE: u32 = 0;
-    pub const LC_NUMERIC: u32 = 1;
-    pub const LC_TIME: u32 = 2;
-    pub const LC_COLLATE: u32 = 3;
-    pub const LC_MONETARY: u32 = 4;
-    pub const LC_MESSAGES: u32 = 5;
-    pub const LC_ALL: u32 = 6;
-    pub const LC_PAPER: u32 = 7;
-    pub const LC_NAME: u32 = 8;
-    pub const LC_ADDRESS: u32 = 9;
-    pub const LC_TELEPHONE: u32 = 10;
-    pub const LC_MEASUREMENT: u32 = 11;
-    pub const LC_IDENTIFICATION: u32 = 12;
-    pub const LC_CTYPE_MASK: u32 = 1;
-    pub const LC_NUMERIC_MASK: u32 = 2;
-    pub const LC_TIME_MASK: u32 = 4;
-    pub const LC_COLLATE_MASK: u32 = 8;
-    pub const LC_MONETARY_MASK: u32 = 16;
-    pub const LC_MESSAGES_MASK: u32 = 32;
-    pub const LC_PAPER_MASK: u32 = 128;
-    pub const LC_NAME_MASK: u32 = 256;
-    pub const LC_ADDRESS_MASK: u32 = 512;
-    pub const LC_TELEPHONE_MASK: u32 = 1024;
-    pub const LC_MEASUREMENT_MASK: u32 = 2048;
-    pub const LC_IDENTIFICATION_MASK: u32 = 4096;
-    pub const LC_ALL_MASK: u32 = 8127;
-    pub const _GLIBCXX_C_LOCALE_GNU: u32 = 1;
-    pub const _GLIBCXX_NUM_CATEGORIES: u32 = 6;
-    pub const _GLIBCXX_CCTYPE: u32 = 1;
-    pub const _CTYPE_H: u32 = 1;
-    pub const _OSTREAM_INSERT_H: u32 = 1;
-    pub const _CXXABI_FORCED_H: u32 = 1;
-    pub const _BASIC_STRING_H: u32 = 1;
-    pub const _GLIBCXX_STRING_VIEW: u32 = 1;
-    pub const __cpp_lib_string_view: u32 = 201803;
-    pub const __cpp_lib_constexpr_char_traits: u32 = 201611;
-    pub const _GLIBCXX_STRING_VIEW_TCC: u32 = 1;
-    pub const _STRING_CONVERSIONS_H: u32 = 1;
-    pub const _GLIBCXX_CSTDLIB: u32 = 1;
-    pub const _STDLIB_H: u32 = 1;
-    pub const WNOHANG: u32 = 1;
-    pub const WUNTRACED: u32 = 2;
-    pub const WSTOPPED: u32 = 2;
-    pub const WEXITED: u32 = 4;
-    pub const WCONTINUED: u32 = 8;
-    pub const WNOWAIT: u32 = 16777216;
-    pub const __WNOTHREAD: u32 = 536870912;
-    pub const __WALL: u32 = 1073741824;
-    pub const __WCLONE: u32 = 2147483648;
-    pub const __W_CONTINUED: u32 = 65535;
-    pub const __WCOREFLAG: u32 = 128;
-    pub const __ldiv_t_defined: u32 = 1;
-    pub const __lldiv_t_defined: u32 = 1;
-    pub const RAND_MAX: u32 = 2147483647;
-    pub const EXIT_FAILURE: u32 = 1;
-    pub const EXIT_SUCCESS: u32 = 0;
-    pub const _SYS_TYPES_H: u32 = 1;
-    pub const _BITS_STDINT_INTN_H: u32 = 1;
-    pub const __BIT_TYPES_DEFINED__: u32 = 1;
-    pub const _ENDIAN_H: u32 = 1;
-    pub const LITTLE_ENDIAN: u32 = 1234;
-    pub const BIG_ENDIAN: u32 = 4321;
-    pub const PDP_ENDIAN: u32 = 3412;
-    pub const BYTE_ORDER: u32 = 1234;
-    pub const _BITS_BYTESWAP_H: u32 = 1;
-    pub const _BITS_UINTN_IDENTITY_H: u32 = 1;
-    pub const _SYS_SELECT_H: u32 = 1;
-    pub const __sigset_t_defined: u32 = 1;
-    pub const FD_SETSIZE: u32 = 1024;
-    pub const _ALLOCA_H: u32 = 1;
-    pub const _GLIBCXX_CSTDIO: u32 = 1;
-    pub const _STDIO_H: u32 = 1;
-    pub const _____fpos_t_defined: u32 = 1;
-    pub const _____fpos64_t_defined: u32 = 1;
-    pub const __struct_FILE_defined: u32 = 1;
-    pub const _IO_EOF_SEEN: u32 = 16;
-    pub const _IO_ERR_SEEN: u32 = 32;
-    pub const _IO_USER_LOCK: u32 = 32768;
-    pub const __cookie_io_functions_t_defined: u32 = 1;
-    pub const _IOFBF: u32 = 0;
-    pub const _IOLBF: u32 = 1;
-    pub const _IONBF: u32 = 2;
-    pub const BUFSIZ: u32 = 8192;
-    pub const EOF: i32 = -1;
-    pub const SEEK_SET: u32 = 0;
-    pub const SEEK_CUR: u32 = 1;
-    pub const SEEK_END: u32 = 2;
-    pub const SEEK_DATA: u32 = 3;
-    pub const SEEK_HOLE: u32 = 4;
-    pub const P_tmpdir: &[u8; 5] = b"/tmp\0";
-    pub const L_tmpnam: u32 = 20;
-    pub const TMP_MAX: u32 = 238328;
-    pub const _BITS_STDIO_LIM_H: u32 = 1;
-    pub const FILENAME_MAX: u32 = 4096;
-    pub const L_ctermid: u32 = 9;
-    pub const L_cuserid: u32 = 9;
-    pub const FOPEN_MAX: u32 = 16;
-    pub const _PRINTF_NAN_LEN_MAX: u32 = 4;
-    pub const RENAME_NOREPLACE: u32 = 1;
-    pub const RENAME_EXCHANGE: u32 = 2;
-    pub const RENAME_WHITEOUT: u32 = 4;
-    pub const _GLIBCXX_CERRNO: u32 = 1;
     pub const _ERRNO_H: u32 = 1;
     pub const _BITS_ERRNO_H: u32 = 1;
     pub const EPERM: u32 = 1;
@@ -1195,17 +927,16 @@ pub mod root {
     pub const EHWPOISON: u32 = 133;
     pub const ENOTSUP: u32 = 95;
     pub const __error_t_defined: u32 = 1;
-    pub const _GLIBCXX_CHARCONV_H: u32 = 1;
-    pub const _BASIC_STRING_TCC: u32 = 1;
-    pub const __cpp_lib_string_udls: u32 = 201304;
-    pub const __cpp_lib_constexpr_string: u32 = 201611;
-    pub const _GLIBCXX_THREAD: u32 = 1;
-    pub const _GLIBCXX_THREAD_H: u32 = 1;
-    pub const _GLIBCXX_THIS_THREAD_SLEEP_H: u32 = 1;
-    pub const _GLIBCXX_CHRONO_H: u32 = 1;
-    pub const _GLIBCXX_RATIO: u32 = 1;
     pub const _GLIBCXX_CSTDINT: u32 = 1;
     pub const _STDINT_H: u32 = 1;
+    pub const __GLIBC_USE_LIB_EXT2: u32 = 1;
+    pub const __GLIBC_USE_IEC_60559_BFP_EXT: u32 = 1;
+    pub const __GLIBC_USE_IEC_60559_BFP_EXT_C23: u32 = 1;
+    pub const __GLIBC_USE_IEC_60559_EXT: u32 = 1;
+    pub const __GLIBC_USE_IEC_60559_FUNCS_EXT: u32 = 1;
+    pub const __GLIBC_USE_IEC_60559_FUNCS_EXT_C23: u32 = 1;
+    pub const __GLIBC_USE_IEC_60559_TYPES_EXT: u32 = 1;
+    pub const _BITS_WCHAR_H: u32 = 1;
     pub const _BITS_STDINT_UINTN_H: u32 = 1;
     pub const _BITS_STDINT_LEAST_H: u32 = 1;
     pub const INT8_MIN: i32 = -128;
@@ -1278,9 +1009,2229 @@ pub mod root {
     pub const SIZE_WIDTH: u32 = 64;
     pub const WCHAR_WIDTH: u32 = 32;
     pub const WINT_WIDTH: u32 = 32;
+    pub const _GLIBCXX_FUNCTIONAL: u32 = 1;
+    pub const _STL_FUNCTION_H: u32 = 1;
+    pub const _MOVE_H: u32 = 1;
+    pub const _GLIBCXX_TYPE_TRAITS: u32 = 1;
+    pub const __glibcxx_incomplete_container_elements: u32 = 201505;
+    pub const __glibcxx_allocator_traits_is_always_equal: u32 = 201411;
+    pub const __glibcxx_is_null_pointer: u32 = 201309;
+    pub const __cpp_lib_is_null_pointer: u32 = 201309;
+    pub const __glibcxx_result_of_sfinae: u32 = 201210;
+    pub const __cpp_lib_result_of_sfinae: u32 = 201210;
+    pub const __glibcxx_shared_ptr_arrays: u32 = 201611;
+    pub const __glibcxx_math_spec_funcs: u32 = 201003;
+    pub const __glibcxx_exchange_function: u32 = 201304;
+    pub const __glibcxx_integer_sequence: u32 = 201304;
+    pub const __glibcxx_integral_constant_callable: u32 = 201304;
+    pub const __cpp_lib_integral_constant_callable: u32 = 201304;
+    pub const __glibcxx_is_final: u32 = 201402;
+    pub const __cpp_lib_is_final: u32 = 201402;
+    pub const __glibcxx_make_reverse_iterator: u32 = 201402;
+    pub const __glibcxx_null_iterators: u32 = 201304;
+    pub const __glibcxx_transformation_trait_aliases: u32 = 201304;
+    pub const __cpp_lib_transformation_trait_aliases: u32 = 201304;
+    pub const __glibcxx_transparent_operators: u32 = 201510;
+    pub const __glibcxx_tuple_element_t: u32 = 201402;
+    pub const __glibcxx_tuples_by_type: u32 = 201304;
+    pub const __glibcxx_robust_nonmodifying_seq_ops: u32 = 201304;
+    pub const __glibcxx_to_chars: u32 = 201611;
+    pub const __glibcxx_chrono_udls: u32 = 201304;
+    pub const __glibcxx_complex_udls: u32 = 201309;
+    pub const __glibcxx_generic_associative_lookup: u32 = 201304;
+    pub const __glibcxx_make_unique: u32 = 201304;
+    pub const __glibcxx_quoted_string_io: u32 = 201304;
+    pub const __glibcxx_shared_timed_mutex: u32 = 201402;
+    pub const __glibcxx_string_udls: u32 = 201304;
+    pub const _BACKWARD_BINDERS_H: u32 = 1;
+    pub const _GLIBCXX_TUPLE: u32 = 1;
+    pub const _STL_PAIR_H: u32 = 1;
+    pub const _GLIBCXX_UTILITY_H: u32 = 1;
+    pub const _USES_ALLOCATOR_H: u32 = 1;
+    pub const _GLIBCXX_INVOKE_H: u32 = 1;
+    pub const __cpp_lib_tuple_element_t: u32 = 201402;
+    pub const __cpp_lib_tuples_by_type: u32 = 201304;
+    pub const _FUNCTIONAL_HASH_H: u32 = 1;
+    pub const _HASH_BYTES_H: u32 = 1;
+    pub const _GLIBCXX_REFWRAP_H: u32 = 1;
+    pub const _GLIBCXX_STD_FUNCTION_H: u32 = 1;
+    pub const __EXCEPTION_H: u32 = 1;
+    pub const __GXX_MERGED_TYPEINFO_NAMES: u32 = 0;
+    pub const __GXX_TYPEINFO_EQUALITY_INLINE: u32 = 1;
+    pub const _FUNCTEXCEPT_H: u32 = 1;
+    pub const _EXCEPTION_DEFINES_H: u32 = 1;
+    pub const __cpp_lib_transparent_operators: u32 = 201510;
+    pub const _GLIBCXX_MEMORY: u32 = 1;
+    pub const _MEMORYFWD_H: u32 = 1;
+    pub const _ALLOCATOR_H: u32 = 1;
+    pub const _GLIBCXX_CXX_ALLOCATOR_H: u32 = 1;
+    pub const _STD_NEW_ALLOCATOR_H: u32 = 1;
+    pub const _STL_TEMPBUF_H: u32 = 1;
+    pub const _STL_CONSTRUCT_H: u32 = 1;
+    pub const _STL_ITERATOR_BASE_TYPES_H: u32 = 1;
+    pub const _STL_ITERATOR_BASE_FUNCS_H: u32 = 1;
+    pub const _CONCEPT_CHECK_H: u32 = 1;
+    pub const _GLIBCXX_DEBUG_ASSERTIONS_H: u32 = 1;
+    pub const _EXT_NUMERIC_TRAITS: u32 = 1;
+    pub const _CPP_TYPE_TRAITS_H: u32 = 1;
+    pub const _EXT_TYPE_TRAITS: u32 = 1;
+    pub const _STL_UNINITIALIZED_H: u32 = 1;
+    pub const _PTR_TRAITS_H: u32 = 1;
+    pub const _STL_ALGOBASE_H: u32 = 1;
+    pub const _STL_ITERATOR_H: u32 = 1;
+    pub const _GLIBCXX_DEBUG_MACRO_SWITCH_H: u32 = 1;
+    pub const _GLIBCXX_PREDEFINED_OPS_H: u32 = 1;
+    pub const _GLIBCXX_BIT: u32 = 1;
+    pub const _GLIBCXX_CONCEPTS: u32 = 1;
+    pub const _EXT_ALLOC_TRAITS_H: u32 = 1;
+    pub const _ALLOC_TRAITS_H: u32 = 1;
+    pub const _STL_RAW_STORAGE_ITERATOR_H: u32 = 1;
+    pub const _GLIBCXX_ALIGN_H: u32 = 1;
+    pub const _UNIQUE_PTR_H: u32 = 1;
+    pub const _SHARED_PTR_H: u32 = 1;
+    pub const _GLIBCXX_IOSFWD: u32 = 1;
+    pub const _REQUIRES_FREESTANDING_H: u32 = 1;
+    pub const _STRINGFWD_H: u32 = 1;
+    pub const _GLIBCXX_POSTYPES_H: u32 = 1;
+    pub const _GLIBCXX_CWCHAR: u32 = 1;
+    pub const _WCHAR_H: u32 = 1;
+    pub const __HAVE_FLOAT128: u32 = 1;
+    pub const __HAVE_DISTINCT_FLOAT128: u32 = 1;
+    pub const __HAVE_FLOAT64X: u32 = 1;
+    pub const __HAVE_FLOAT64X_LONG_DOUBLE: u32 = 1;
+    pub const __HAVE_FLOAT16: u32 = 0;
+    pub const __HAVE_FLOAT32: u32 = 1;
+    pub const __HAVE_FLOAT64: u32 = 1;
+    pub const __HAVE_FLOAT32X: u32 = 1;
+    pub const __HAVE_FLOAT128X: u32 = 0;
+    pub const __HAVE_DISTINCT_FLOAT16: u32 = 0;
+    pub const __HAVE_DISTINCT_FLOAT32: u32 = 0;
+    pub const __HAVE_DISTINCT_FLOAT64: u32 = 0;
+    pub const __HAVE_DISTINCT_FLOAT32X: u32 = 0;
+    pub const __HAVE_DISTINCT_FLOAT64X: u32 = 0;
+    pub const __HAVE_DISTINCT_FLOAT128X: u32 = 0;
+    pub const __HAVE_FLOATN_NOT_TYPEDEF: u32 = 0;
+    pub const __wint_t_defined: u32 = 1;
+    pub const _WINT_T: u32 = 1;
+    pub const __mbstate_t_defined: u32 = 1;
+    pub const ____mbstate_t_defined: u32 = 1;
+    pub const ____FILE_defined: u32 = 1;
+    pub const __FILE_defined: u32 = 1;
+    pub const _BITS_TYPES_LOCALE_T_H: u32 = 1;
+    pub const _BITS_TYPES___LOCALE_T_H: u32 = 1;
+    pub const WEOF: u32 = 4294967295;
+    pub const _SHARED_PTR_BASE_H: u32 = 1;
+    pub const _ALLOCATED_PTR_H: u32 = 1;
+    pub const _ALIGNED_BUFFER_H: u32 = 1;
+    pub const _GLIBCXX_ATOMICITY_H: u32 = 1;
+    pub const __GTHREADS: u32 = 1;
+    pub const __GTHREADS_CXX0X: u32 = 1;
+    pub const _PTHREAD_H: u32 = 1;
+    pub const _SCHED_H: u32 = 1;
+    pub const _BITS_SCHED_H: u32 = 1;
+    pub const SCHED_OTHER: u32 = 0;
+    pub const SCHED_FIFO: u32 = 1;
+    pub const SCHED_RR: u32 = 2;
+    pub const SCHED_NORMAL: u32 = 0;
+    pub const SCHED_BATCH: u32 = 3;
+    pub const SCHED_ISO: u32 = 4;
+    pub const SCHED_IDLE: u32 = 5;
+    pub const SCHED_DEADLINE: u32 = 6;
+    pub const SCHED_EXT: u32 = 7;
+    pub const SCHED_RESET_ON_FORK: u32 = 1073741824;
+    pub const SCHED_FLAG_RESET_ON_FORK: u32 = 1;
+    pub const SCHED_FLAG_RECLAIM: u32 = 2;
+    pub const SCHED_FLAG_DL_OVERRUN: u32 = 4;
+    pub const SCHED_FLAG_KEEP_POLICY: u32 = 8;
+    pub const SCHED_FLAG_KEEP_PARAMS: u32 = 16;
+    pub const SCHED_FLAG_UTIL_CLAMP_MIN: u32 = 32;
+    pub const SCHED_FLAG_UTIL_CLAMP_MAX: u32 = 64;
+    pub const SCHED_FLAG_KEEP_ALL: u32 = 24;
+    pub const SCHED_FLAG_UTIL_CLAMP: u32 = 96;
+    pub const __BITS_PER_LONG: u32 = 64;
+    pub const __BITS_PER_LONG_LONG: u32 = 64;
+    pub const SCHED_ATTR_SIZE_VER0: u32 = 48;
+    pub const SCHED_ATTR_SIZE_VER1: u32 = 56;
+    pub const CSIGNAL: u32 = 255;
+    pub const CLONE_VM: u32 = 256;
+    pub const CLONE_FS: u32 = 512;
+    pub const CLONE_FILES: u32 = 1024;
+    pub const CLONE_SIGHAND: u32 = 2048;
+    pub const CLONE_PIDFD: u32 = 4096;
+    pub const CLONE_PTRACE: u32 = 8192;
+    pub const CLONE_VFORK: u32 = 16384;
+    pub const CLONE_PARENT: u32 = 32768;
+    pub const CLONE_THREAD: u32 = 65536;
+    pub const CLONE_NEWNS: u32 = 131072;
+    pub const CLONE_SYSVSEM: u32 = 262144;
+    pub const CLONE_SETTLS: u32 = 524288;
+    pub const CLONE_PARENT_SETTID: u32 = 1048576;
+    pub const CLONE_CHILD_CLEARTID: u32 = 2097152;
+    pub const CLONE_DETACHED: u32 = 4194304;
+    pub const CLONE_UNTRACED: u32 = 8388608;
+    pub const CLONE_CHILD_SETTID: u32 = 16777216;
+    pub const CLONE_NEWCGROUP: u32 = 33554432;
+    pub const CLONE_NEWUTS: u32 = 67108864;
+    pub const CLONE_NEWIPC: u32 = 134217728;
+    pub const CLONE_NEWUSER: u32 = 268435456;
+    pub const CLONE_NEWPID: u32 = 536870912;
+    pub const CLONE_NEWNET: u32 = 1073741824;
+    pub const CLONE_IO: u32 = 2147483648;
+    pub const CLONE_NEWTIME: u32 = 128;
+    pub const _BITS_TYPES_STRUCT_SCHED_PARAM: u32 = 1;
+    pub const _BITS_CPU_SET_H: u32 = 1;
+    pub const __CPU_SETSIZE: u32 = 1024;
+    pub const CPU_SETSIZE: u32 = 1024;
+    pub const _TIME_H: u32 = 1;
+    pub const _BITS_TIME_H: u32 = 1;
+    pub const CLOCK_REALTIME: u32 = 0;
+    pub const CLOCK_MONOTONIC: u32 = 1;
+    pub const CLOCK_PROCESS_CPUTIME_ID: u32 = 2;
+    pub const CLOCK_THREAD_CPUTIME_ID: u32 = 3;
+    pub const CLOCK_MONOTONIC_RAW: u32 = 4;
+    pub const CLOCK_REALTIME_COARSE: u32 = 5;
+    pub const CLOCK_MONOTONIC_COARSE: u32 = 6;
+    pub const CLOCK_BOOTTIME: u32 = 7;
+    pub const CLOCK_REALTIME_ALARM: u32 = 8;
+    pub const CLOCK_BOOTTIME_ALARM: u32 = 9;
+    pub const CLOCK_TAI: u32 = 11;
+    pub const TIMER_ABSTIME: u32 = 1;
+    pub const _BITS_TIMEX_H: u32 = 1;
+    pub const ADJ_OFFSET: u32 = 1;
+    pub const ADJ_FREQUENCY: u32 = 2;
+    pub const ADJ_MAXERROR: u32 = 4;
+    pub const ADJ_ESTERROR: u32 = 8;
+    pub const ADJ_STATUS: u32 = 16;
+    pub const ADJ_TIMECONST: u32 = 32;
+    pub const ADJ_TAI: u32 = 128;
+    pub const ADJ_SETOFFSET: u32 = 256;
+    pub const ADJ_MICRO: u32 = 4096;
+    pub const ADJ_NANO: u32 = 8192;
+    pub const ADJ_TICK: u32 = 16384;
+    pub const ADJ_OFFSET_SINGLESHOT: u32 = 32769;
+    pub const ADJ_OFFSET_SS_READ: u32 = 40961;
+    pub const MOD_OFFSET: u32 = 1;
+    pub const MOD_FREQUENCY: u32 = 2;
+    pub const MOD_MAXERROR: u32 = 4;
+    pub const MOD_ESTERROR: u32 = 8;
+    pub const MOD_STATUS: u32 = 16;
+    pub const MOD_TIMECONST: u32 = 32;
+    pub const MOD_CLKB: u32 = 16384;
+    pub const MOD_CLKA: u32 = 32769;
+    pub const MOD_TAI: u32 = 128;
+    pub const MOD_MICRO: u32 = 4096;
+    pub const MOD_NANO: u32 = 8192;
+    pub const STA_PLL: u32 = 1;
+    pub const STA_PPSFREQ: u32 = 2;
+    pub const STA_PPSTIME: u32 = 4;
+    pub const STA_FLL: u32 = 8;
+    pub const STA_INS: u32 = 16;
+    pub const STA_DEL: u32 = 32;
+    pub const STA_UNSYNC: u32 = 64;
+    pub const STA_FREQHOLD: u32 = 128;
+    pub const STA_PPSSIGNAL: u32 = 256;
+    pub const STA_PPSJITTER: u32 = 512;
+    pub const STA_PPSWANDER: u32 = 1024;
+    pub const STA_PPSERROR: u32 = 2048;
+    pub const STA_CLOCKERR: u32 = 4096;
+    pub const STA_NANO: u32 = 8192;
+    pub const STA_MODE: u32 = 16384;
+    pub const STA_CLK: u32 = 32768;
+    pub const STA_RONLY: u32 = 65280;
+    pub const __struct_tm_defined: u32 = 1;
+    pub const __itimerspec_defined: u32 = 1;
+    pub const TIME_UTC: u32 = 1;
+    pub const _BITS_SETJMP_H: u32 = 1;
+    pub const __jmp_buf_tag_defined: u32 = 1;
+    pub const PTHREAD_ONCE_INIT: u32 = 0;
+    pub const PTHREAD_BARRIER_SERIAL_THREAD: i32 = -1;
+    pub const PTHREAD_ATTR_NO_SIGMASK_NP: i32 = -1;
+    pub const __GTHREAD_HAS_COND: u32 = 1;
+    pub const __GTHREAD_ONCE_INIT: u32 = 0;
+    pub const _GLIBCXX_ATOMIC_WORD_H: u32 = 1;
+    pub const _CONCURRENCE_H: u32 = 1;
+    pub const _CXXABI_INIT_EXCEPTION_H: u32 = 1;
+    pub const _GLIBCXX_HAVE_CDTOR_CALLABI: u32 = 0;
+    pub const _GLIBCXX_NESTED_EXCEPTION_H: u32 = 1;
+    pub const _SHARED_PTR_ATOMIC_H: u32 = 1;
+    pub const _GLIBCXX_ATOMIC_BASE_H: u32 = 1;
+    pub const _GLIBCXX_ATOMIC_LOCK_FREE_H: u32 = 1;
+    pub const _BACKWARD_AUTO_PTR_H: u32 = 1;
+    pub const __cpp_lib_allocator_traits_is_always_equal: u32 = 201411;
+    pub const __cpp_lib_shared_ptr_arrays: u32 = 201611;
+    pub const __cpp_lib_make_unique: u32 = 201304;
+    pub const _GLIBCXX_STRING: u32 = 1;
+    pub const _CHAR_TRAITS_H: u32 = 1;
+    pub const _LOCALE_FWD_H: u32 = 1;
+    pub const _GLIBCXX_CXX_LOCALE_H: u32 = 1;
+    pub const _GLIBCXX_CLOCALE: u32 = 1;
+    pub const _LOCALE_H: u32 = 1;
+    pub const _BITS_LOCALE_H: u32 = 1;
+    pub const __LC_CTYPE: u32 = 0;
+    pub const __LC_NUMERIC: u32 = 1;
+    pub const __LC_TIME: u32 = 2;
+    pub const __LC_COLLATE: u32 = 3;
+    pub const __LC_MONETARY: u32 = 4;
+    pub const __LC_MESSAGES: u32 = 5;
+    pub const __LC_ALL: u32 = 6;
+    pub const __LC_PAPER: u32 = 7;
+    pub const __LC_NAME: u32 = 8;
+    pub const __LC_ADDRESS: u32 = 9;
+    pub const __LC_TELEPHONE: u32 = 10;
+    pub const __LC_MEASUREMENT: u32 = 11;
+    pub const __LC_IDENTIFICATION: u32 = 12;
+    pub const LC_CTYPE: u32 = 0;
+    pub const LC_NUMERIC: u32 = 1;
+    pub const LC_TIME: u32 = 2;
+    pub const LC_COLLATE: u32 = 3;
+    pub const LC_MONETARY: u32 = 4;
+    pub const LC_MESSAGES: u32 = 5;
+    pub const LC_ALL: u32 = 6;
+    pub const LC_PAPER: u32 = 7;
+    pub const LC_NAME: u32 = 8;
+    pub const LC_ADDRESS: u32 = 9;
+    pub const LC_TELEPHONE: u32 = 10;
+    pub const LC_MEASUREMENT: u32 = 11;
+    pub const LC_IDENTIFICATION: u32 = 12;
+    pub const LC_CTYPE_MASK: u32 = 1;
+    pub const LC_NUMERIC_MASK: u32 = 2;
+    pub const LC_TIME_MASK: u32 = 4;
+    pub const LC_COLLATE_MASK: u32 = 8;
+    pub const LC_MONETARY_MASK: u32 = 16;
+    pub const LC_MESSAGES_MASK: u32 = 32;
+    pub const LC_PAPER_MASK: u32 = 128;
+    pub const LC_NAME_MASK: u32 = 256;
+    pub const LC_ADDRESS_MASK: u32 = 512;
+    pub const LC_TELEPHONE_MASK: u32 = 1024;
+    pub const LC_MEASUREMENT_MASK: u32 = 2048;
+    pub const LC_IDENTIFICATION_MASK: u32 = 4096;
+    pub const LC_ALL_MASK: u32 = 8127;
+    pub const _GLIBCXX_C_LOCALE_GNU: u32 = 1;
+    pub const _GLIBCXX_NUM_CATEGORIES: u32 = 6;
+    pub const _GLIBCXX_CCTYPE: u32 = 1;
+    pub const _CTYPE_H: u32 = 1;
+    pub const _OSTREAM_INSERT_H: u32 = 1;
+    pub const _CXXABI_FORCED_H: u32 = 1;
+    pub const _GLIBCXX_RANGE_ACCESS_H: u32 = 1;
+    pub const _BASIC_STRING_H: u32 = 1;
+    pub const _STRING_CONVERSIONS_H: u32 = 1;
+    pub const _GLIBCXX_CSTDLIB: u32 = 1;
+    pub const _STDLIB_H: u32 = 1;
+    pub const WNOHANG: u32 = 1;
+    pub const WUNTRACED: u32 = 2;
+    pub const WSTOPPED: u32 = 2;
+    pub const WEXITED: u32 = 4;
+    pub const WCONTINUED: u32 = 8;
+    pub const WNOWAIT: u32 = 16777216;
+    pub const __WNOTHREAD: u32 = 536870912;
+    pub const __WALL: u32 = 1073741824;
+    pub const __WCLONE: u32 = 2147483648;
+    pub const __W_CONTINUED: u32 = 65535;
+    pub const __WCOREFLAG: u32 = 128;
+    pub const __ldiv_t_defined: u32 = 1;
+    pub const __lldiv_t_defined: u32 = 1;
+    pub const RAND_MAX: u32 = 2147483647;
+    pub const EXIT_FAILURE: u32 = 1;
+    pub const EXIT_SUCCESS: u32 = 0;
+    pub const _ALLOCA_H: u32 = 1;
+    pub const _GLIBCXX_CSTDIO: u32 = 1;
+    pub const _STDIO_H: u32 = 1;
+    pub const _____fpos_t_defined: u32 = 1;
+    pub const _____fpos64_t_defined: u32 = 1;
+    pub const __struct_FILE_defined: u32 = 1;
+    pub const _IO_EOF_SEEN: u32 = 16;
+    pub const _IO_ERR_SEEN: u32 = 32;
+    pub const _IO_USER_LOCK: u32 = 32768;
+    pub const __cookie_io_functions_t_defined: u32 = 1;
+    pub const _IOFBF: u32 = 0;
+    pub const _IOLBF: u32 = 1;
+    pub const _IONBF: u32 = 2;
+    pub const BUFSIZ: u32 = 8192;
+    pub const EOF: i32 = -1;
+    pub const P_tmpdir: &[u8; 5] = b"/tmp\0";
+    pub const L_tmpnam: u32 = 20;
+    pub const TMP_MAX: u32 = 238328;
+    pub const _BITS_STDIO_LIM_H: u32 = 1;
+    pub const FILENAME_MAX: u32 = 4096;
+    pub const L_ctermid: u32 = 9;
+    pub const L_cuserid: u32 = 9;
+    pub const FOPEN_MAX: u32 = 16;
+    pub const _PRINTF_NAN_LEN_MAX: u32 = 4;
+    pub const RENAME_NOREPLACE: u32 = 1;
+    pub const RENAME_EXCHANGE: u32 = 2;
+    pub const RENAME_WHITEOUT: u32 = 4;
+    pub const _GLIBCXX_CHARCONV_H: u32 = 1;
+    pub const _BASIC_STRING_TCC: u32 = 1;
+    pub const __cpp_lib_string_udls: u32 = 201304;
+    pub const _GLIBCXX_THREAD: u32 = 1;
+    pub const _GLIBCXX_THREAD_H: u32 = 1;
+    pub const _GLIBCXX_THIS_THREAD_SLEEP_H: u32 = 1;
+    pub const _GLIBCXX_CHRONO_H: u32 = 1;
+    pub const _GLIBCXX_RATIO: u32 = 1;
     pub const _GLIBCXX_NUMERIC_LIMITS: u32 = 1;
     pub const _GLIBCXX_CTIME: u32 = 1;
     pub const _GLIBCXX_PARSE_NUMBERS_H: u32 = 1;
+    unsafe extern "C" {
+        pub fn _dl_mcount_wrapper_check(__selfpc: *mut ::core::ffi::c_void);
+    }
+    pub type Lmid_t = ::core::ffi::c_long;
+    unsafe extern "C" {
+        pub fn dlopen(
+            __file: *const ::core::ffi::c_char,
+            __mode: ::core::ffi::c_int,
+        ) -> *mut ::core::ffi::c_void;
+    }
+    unsafe extern "C" {
+        pub fn dlclose(__handle: *mut ::core::ffi::c_void) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn dlsym(
+            __handle: *mut ::core::ffi::c_void,
+            __name: *const ::core::ffi::c_char,
+        ) -> *mut ::core::ffi::c_void;
+    }
+    unsafe extern "C" {
+        pub fn dlmopen(
+            __nsid: root::Lmid_t,
+            __file: *const ::core::ffi::c_char,
+            __mode: ::core::ffi::c_int,
+        ) -> *mut ::core::ffi::c_void;
+    }
+    unsafe extern "C" {
+        pub fn dlvsym(
+            __handle: *mut ::core::ffi::c_void,
+            __name: *const ::core::ffi::c_char,
+            __version: *const ::core::ffi::c_char,
+        ) -> *mut ::core::ffi::c_void;
+    }
+    unsafe extern "C" {
+        pub fn dlerror() -> *mut ::core::ffi::c_char;
+    }
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct Dl_info {
+        pub dli_fname: *const ::core::ffi::c_char,
+        pub dli_fbase: *mut ::core::ffi::c_void,
+        pub dli_sname: *const ::core::ffi::c_char,
+        pub dli_saddr: *mut ::core::ffi::c_void,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of Dl_info"][::core::mem::size_of::<Dl_info>() - 32usize];
+        ["Alignment of Dl_info"][::core::mem::align_of::<Dl_info>() - 8usize];
+        ["Offset of field: Dl_info::dli_fname"]
+            [::core::mem::offset_of!(Dl_info, dli_fname) - 0usize];
+        ["Offset of field: Dl_info::dli_fbase"]
+            [::core::mem::offset_of!(Dl_info, dli_fbase) - 8usize];
+        ["Offset of field: Dl_info::dli_sname"]
+            [::core::mem::offset_of!(Dl_info, dli_sname) - 16usize];
+        ["Offset of field: Dl_info::dli_saddr"]
+            [::core::mem::offset_of!(Dl_info, dli_saddr) - 24usize];
+    };
+    unsafe extern "C" {
+        pub fn dladdr(
+            __address: *const ::core::ffi::c_void,
+            __info: *mut root::Dl_info,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn dladdr1(
+            __address: *const ::core::ffi::c_void,
+            __info: *mut root::Dl_info,
+            __extra_info: *mut *mut ::core::ffi::c_void,
+            __flags: ::core::ffi::c_int,
+        ) -> ::core::ffi::c_int;
+    }
+    pub const RTLD_DL_SYMENT: root::_bindgen_ty_1 = 1;
+    pub const RTLD_DL_LINKMAP: root::_bindgen_ty_1 = 2;
+    pub type _bindgen_ty_1 = ::core::ffi::c_uint;
+    unsafe extern "C" {
+        pub fn dlinfo(
+            __handle: *mut ::core::ffi::c_void,
+            __request: ::core::ffi::c_int,
+            __arg: *mut ::core::ffi::c_void,
+        ) -> ::core::ffi::c_int;
+    }
+    pub const RTLD_DI_LMID: root::_bindgen_ty_2 = 1;
+    pub const RTLD_DI_LINKMAP: root::_bindgen_ty_2 = 2;
+    pub const RTLD_DI_CONFIGADDR: root::_bindgen_ty_2 = 3;
+    pub const RTLD_DI_SERINFO: root::_bindgen_ty_2 = 4;
+    pub const RTLD_DI_SERINFOSIZE: root::_bindgen_ty_2 = 5;
+    pub const RTLD_DI_ORIGIN: root::_bindgen_ty_2 = 6;
+    pub const RTLD_DI_PROFILENAME: root::_bindgen_ty_2 = 7;
+    pub const RTLD_DI_PROFILEOUT: root::_bindgen_ty_2 = 8;
+    pub const RTLD_DI_TLS_MODID: root::_bindgen_ty_2 = 9;
+    pub const RTLD_DI_TLS_DATA: root::_bindgen_ty_2 = 10;
+    pub const RTLD_DI_PHDR: root::_bindgen_ty_2 = 11;
+    pub const RTLD_DI_MAX: root::_bindgen_ty_2 = 11;
+    pub type _bindgen_ty_2 = ::core::ffi::c_uint;
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct Dl_serpath {
+        pub dls_name: *mut ::core::ffi::c_char,
+        pub dls_flags: ::core::ffi::c_uint,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of Dl_serpath"][::core::mem::size_of::<Dl_serpath>() - 16usize];
+        ["Alignment of Dl_serpath"][::core::mem::align_of::<Dl_serpath>() - 8usize];
+        ["Offset of field: Dl_serpath::dls_name"]
+            [::core::mem::offset_of!(Dl_serpath, dls_name) - 0usize];
+        ["Offset of field: Dl_serpath::dls_flags"]
+            [::core::mem::offset_of!(Dl_serpath, dls_flags) - 8usize];
+    };
+    #[repr(C)]
+    pub struct Dl_serinfo {
+        pub dls_size: usize,
+        pub dls_cnt: ::core::ffi::c_uint,
+        pub __bindgen_anon_1: root::Dl_serinfo__bindgen_ty_1,
+    }
+    #[repr(C)]
+    pub struct Dl_serinfo__bindgen_ty_1 {
+        pub dls_serpath: root::__BindgenUnionField<[root::Dl_serpath; 0usize]>,
+        pub __dls_serpath_pad: root::__BindgenUnionField<[root::Dl_serpath; 1usize]>,
+        pub bindgen_union_field: [u64; 2usize],
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of Dl_serinfo__bindgen_ty_1"]
+            [::core::mem::size_of::<Dl_serinfo__bindgen_ty_1>() - 16usize];
+        ["Alignment of Dl_serinfo__bindgen_ty_1"]
+            [::core::mem::align_of::<Dl_serinfo__bindgen_ty_1>() - 8usize];
+        ["Offset of field: Dl_serinfo__bindgen_ty_1::dls_serpath"]
+            [::core::mem::offset_of!(Dl_serinfo__bindgen_ty_1, dls_serpath) - 0usize];
+        ["Offset of field: Dl_serinfo__bindgen_ty_1::__dls_serpath_pad"]
+            [::core::mem::offset_of!(Dl_serinfo__bindgen_ty_1, __dls_serpath_pad) - 0usize];
+    };
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of Dl_serinfo"][::core::mem::size_of::<Dl_serinfo>() - 32usize];
+        ["Alignment of Dl_serinfo"][::core::mem::align_of::<Dl_serinfo>() - 8usize];
+        ["Offset of field: Dl_serinfo::dls_size"]
+            [::core::mem::offset_of!(Dl_serinfo, dls_size) - 0usize];
+        ["Offset of field: Dl_serinfo::dls_cnt"]
+            [::core::mem::offset_of!(Dl_serinfo, dls_cnt) - 8usize];
+    };
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct dl_find_object {
+        pub dlfo_flags: ::core::ffi::c_ulonglong,
+        pub dlfo_map_start: *mut ::core::ffi::c_void,
+        pub dlfo_map_end: *mut ::core::ffi::c_void,
+        pub dlfo_link_map: *mut root::link_map,
+        pub dlfo_eh_frame: *mut ::core::ffi::c_void,
+        pub __dflo_reserved: [::core::ffi::c_ulonglong; 7usize],
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of dl_find_object"][::core::mem::size_of::<dl_find_object>() - 96usize];
+        ["Alignment of dl_find_object"][::core::mem::align_of::<dl_find_object>() - 8usize];
+        ["Offset of field: dl_find_object::dlfo_flags"]
+            [::core::mem::offset_of!(dl_find_object, dlfo_flags) - 0usize];
+        ["Offset of field: dl_find_object::dlfo_map_start"]
+            [::core::mem::offset_of!(dl_find_object, dlfo_map_start) - 8usize];
+        ["Offset of field: dl_find_object::dlfo_map_end"]
+            [::core::mem::offset_of!(dl_find_object, dlfo_map_end) - 16usize];
+        ["Offset of field: dl_find_object::dlfo_link_map"]
+            [::core::mem::offset_of!(dl_find_object, dlfo_link_map) - 24usize];
+        ["Offset of field: dl_find_object::dlfo_eh_frame"]
+            [::core::mem::offset_of!(dl_find_object, dlfo_eh_frame) - 32usize];
+        ["Offset of field: dl_find_object::__dflo_reserved"]
+            [::core::mem::offset_of!(dl_find_object, __dflo_reserved) - 40usize];
+    };
+    unsafe extern "C" {
+        pub fn _dl_find_object(
+            __address: *mut ::core::ffi::c_void,
+            __result: *mut root::dl_find_object,
+        ) -> ::core::ffi::c_int;
+    }
+    pub type __u_char = ::core::ffi::c_uchar;
+    pub type __u_short = ::core::ffi::c_ushort;
+    pub type __u_int = ::core::ffi::c_uint;
+    pub type __u_long = ::core::ffi::c_ulong;
+    pub type __int8_t = ::core::ffi::c_schar;
+    pub type __uint8_t = ::core::ffi::c_uchar;
+    pub type __int16_t = ::core::ffi::c_short;
+    pub type __uint16_t = ::core::ffi::c_ushort;
+    pub type __int32_t = ::core::ffi::c_int;
+    pub type __uint32_t = ::core::ffi::c_uint;
+    pub type __int64_t = ::core::ffi::c_long;
+    pub type __uint64_t = ::core::ffi::c_ulong;
+    pub type __int_least8_t = root::__int8_t;
+    pub type __uint_least8_t = root::__uint8_t;
+    pub type __int_least16_t = root::__int16_t;
+    pub type __uint_least16_t = root::__uint16_t;
+    pub type __int_least32_t = root::__int32_t;
+    pub type __uint_least32_t = root::__uint32_t;
+    pub type __int_least64_t = root::__int64_t;
+    pub type __uint_least64_t = root::__uint64_t;
+    pub type __quad_t = ::core::ffi::c_long;
+    pub type __u_quad_t = ::core::ffi::c_ulong;
+    pub type __intmax_t = ::core::ffi::c_long;
+    pub type __uintmax_t = ::core::ffi::c_ulong;
+    pub type __dev_t = ::core::ffi::c_ulong;
+    pub type __uid_t = ::core::ffi::c_uint;
+    pub type __gid_t = ::core::ffi::c_uint;
+    pub type __ino_t = ::core::ffi::c_ulong;
+    pub type __ino64_t = ::core::ffi::c_ulong;
+    pub type __mode_t = ::core::ffi::c_uint;
+    pub type __nlink_t = ::core::ffi::c_ulong;
+    pub type __off_t = ::core::ffi::c_long;
+    pub type __off64_t = ::core::ffi::c_long;
+    pub type __pid_t = ::core::ffi::c_int;
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct __fsid_t {
+        pub __val: [::core::ffi::c_int; 2usize],
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of __fsid_t"][::core::mem::size_of::<__fsid_t>() - 8usize];
+        ["Alignment of __fsid_t"][::core::mem::align_of::<__fsid_t>() - 4usize];
+        ["Offset of field: __fsid_t::__val"][::core::mem::offset_of!(__fsid_t, __val) - 0usize];
+    };
+    pub type __clock_t = ::core::ffi::c_long;
+    pub type __rlim_t = ::core::ffi::c_ulong;
+    pub type __rlim64_t = ::core::ffi::c_ulong;
+    pub type __id_t = ::core::ffi::c_uint;
+    pub type __time_t = ::core::ffi::c_long;
+    pub type __useconds_t = ::core::ffi::c_uint;
+    pub type __suseconds_t = ::core::ffi::c_long;
+    pub type __suseconds64_t = ::core::ffi::c_long;
+    pub type __daddr_t = ::core::ffi::c_int;
+    pub type __key_t = ::core::ffi::c_int;
+    pub type __clockid_t = ::core::ffi::c_int;
+    pub type __timer_t = *mut ::core::ffi::c_void;
+    pub type __blksize_t = ::core::ffi::c_long;
+    pub type __blkcnt_t = ::core::ffi::c_long;
+    pub type __blkcnt64_t = ::core::ffi::c_long;
+    pub type __fsblkcnt_t = ::core::ffi::c_ulong;
+    pub type __fsblkcnt64_t = ::core::ffi::c_ulong;
+    pub type __fsfilcnt_t = ::core::ffi::c_ulong;
+    pub type __fsfilcnt64_t = ::core::ffi::c_ulong;
+    pub type __fsword_t = ::core::ffi::c_long;
+    pub type __ssize_t = ::core::ffi::c_long;
+    pub type __syscall_slong_t = ::core::ffi::c_long;
+    pub type __syscall_ulong_t = ::core::ffi::c_ulong;
+    pub type __loff_t = root::__off64_t;
+    pub type __caddr_t = *mut ::core::ffi::c_char;
+    pub type __intptr_t = ::core::ffi::c_long;
+    pub type __socklen_t = ::core::ffi::c_uint;
+    pub type __sig_atomic_t = ::core::ffi::c_int;
+    pub type gid_t = root::__gid_t;
+    pub type uid_t = root::__uid_t;
+    pub type off_t = root::__off_t;
+    pub type off64_t = root::__off64_t;
+    pub type useconds_t = root::__useconds_t;
+    pub type pid_t = root::__pid_t;
+    pub type socklen_t = root::__socklen_t;
+    unsafe extern "C" {
+        pub fn access(
+            __name: *const ::core::ffi::c_char,
+            __type: ::core::ffi::c_int,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn euidaccess(
+            __name: *const ::core::ffi::c_char,
+            __type: ::core::ffi::c_int,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn eaccess(
+            __name: *const ::core::ffi::c_char,
+            __type: ::core::ffi::c_int,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn execveat(
+            __fd: ::core::ffi::c_int,
+            __path: *const ::core::ffi::c_char,
+            __argv: *const *mut ::core::ffi::c_char,
+            __envp: *const *mut ::core::ffi::c_char,
+            __flags: ::core::ffi::c_int,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn faccessat(
+            __fd: ::core::ffi::c_int,
+            __file: *const ::core::ffi::c_char,
+            __type: ::core::ffi::c_int,
+            __flag: ::core::ffi::c_int,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn lseek(
+            __fd: ::core::ffi::c_int,
+            __offset: root::__off_t,
+            __whence: ::core::ffi::c_int,
+        ) -> root::__off_t;
+    }
+    unsafe extern "C" {
+        pub fn lseek64(
+            __fd: ::core::ffi::c_int,
+            __offset: root::__off64_t,
+            __whence: ::core::ffi::c_int,
+        ) -> root::__off64_t;
+    }
+    unsafe extern "C" {
+        pub fn close(__fd: ::core::ffi::c_int) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn closefrom(__lowfd: ::core::ffi::c_int);
+    }
+    unsafe extern "C" {
+        pub fn read(
+            __fd: ::core::ffi::c_int,
+            __buf: *mut ::core::ffi::c_void,
+            __nbytes: usize,
+        ) -> isize;
+    }
+    unsafe extern "C" {
+        pub fn write(
+            __fd: ::core::ffi::c_int,
+            __buf: *const ::core::ffi::c_void,
+            __n: usize,
+        ) -> isize;
+    }
+    unsafe extern "C" {
+        pub fn pread(
+            __fd: ::core::ffi::c_int,
+            __buf: *mut ::core::ffi::c_void,
+            __nbytes: usize,
+            __offset: root::__off_t,
+        ) -> isize;
+    }
+    unsafe extern "C" {
+        pub fn pwrite(
+            __fd: ::core::ffi::c_int,
+            __buf: *const ::core::ffi::c_void,
+            __n: usize,
+            __offset: root::__off_t,
+        ) -> isize;
+    }
+    unsafe extern "C" {
+        pub fn pread64(
+            __fd: ::core::ffi::c_int,
+            __buf: *mut ::core::ffi::c_void,
+            __nbytes: usize,
+            __offset: root::__off64_t,
+        ) -> isize;
+    }
+    unsafe extern "C" {
+        pub fn pwrite64(
+            __fd: ::core::ffi::c_int,
+            __buf: *const ::core::ffi::c_void,
+            __n: usize,
+            __offset: root::__off64_t,
+        ) -> isize;
+    }
+    unsafe extern "C" {
+        pub fn pipe(__pipedes: *mut ::core::ffi::c_int) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn pipe2(
+            __pipedes: *mut ::core::ffi::c_int,
+            __flags: ::core::ffi::c_int,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn alarm(__seconds: ::core::ffi::c_uint) -> ::core::ffi::c_uint;
+    }
+    unsafe extern "C" {
+        pub fn sleep(__seconds: ::core::ffi::c_uint) -> ::core::ffi::c_uint;
+    }
+    unsafe extern "C" {
+        pub fn ualarm(
+            __value: root::__useconds_t,
+            __interval: root::__useconds_t,
+        ) -> root::__useconds_t;
+    }
+    unsafe extern "C" {
+        pub fn usleep(__useconds: root::__useconds_t) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn pause() -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn chown(
+            __file: *const ::core::ffi::c_char,
+            __owner: root::__uid_t,
+            __group: root::__gid_t,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn fchown(
+            __fd: ::core::ffi::c_int,
+            __owner: root::__uid_t,
+            __group: root::__gid_t,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn lchown(
+            __file: *const ::core::ffi::c_char,
+            __owner: root::__uid_t,
+            __group: root::__gid_t,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn fchownat(
+            __fd: ::core::ffi::c_int,
+            __file: *const ::core::ffi::c_char,
+            __owner: root::__uid_t,
+            __group: root::__gid_t,
+            __flag: ::core::ffi::c_int,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn chdir(__path: *const ::core::ffi::c_char) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn fchdir(__fd: ::core::ffi::c_int) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn getcwd(__buf: *mut ::core::ffi::c_char, __size: usize) -> *mut ::core::ffi::c_char;
+    }
+    unsafe extern "C" {
+        pub fn get_current_dir_name() -> *mut ::core::ffi::c_char;
+    }
+    unsafe extern "C" {
+        pub fn getwd(__buf: *mut ::core::ffi::c_char) -> *mut ::core::ffi::c_char;
+    }
+    unsafe extern "C" {
+        pub fn dup(__fd: ::core::ffi::c_int) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn dup2(__fd: ::core::ffi::c_int, __fd2: ::core::ffi::c_int) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn dup3(
+            __fd: ::core::ffi::c_int,
+            __fd2: ::core::ffi::c_int,
+            __flags: ::core::ffi::c_int,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub static mut __environ: *mut *mut ::core::ffi::c_char;
+    }
+    unsafe extern "C" {
+        pub static mut environ: *mut *mut ::core::ffi::c_char;
+    }
+    unsafe extern "C" {
+        pub fn execve(
+            __path: *const ::core::ffi::c_char,
+            __argv: *const *mut ::core::ffi::c_char,
+            __envp: *const *mut ::core::ffi::c_char,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn fexecve(
+            __fd: ::core::ffi::c_int,
+            __argv: *const *mut ::core::ffi::c_char,
+            __envp: *const *mut ::core::ffi::c_char,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn execv(
+            __path: *const ::core::ffi::c_char,
+            __argv: *const *mut ::core::ffi::c_char,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn execle(
+            __path: *const ::core::ffi::c_char,
+            __arg: *const ::core::ffi::c_char,
+            ...
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn execl(
+            __path: *const ::core::ffi::c_char,
+            __arg: *const ::core::ffi::c_char,
+            ...
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn execvp(
+            __file: *const ::core::ffi::c_char,
+            __argv: *const *mut ::core::ffi::c_char,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn execlp(
+            __file: *const ::core::ffi::c_char,
+            __arg: *const ::core::ffi::c_char,
+            ...
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn execvpe(
+            __file: *const ::core::ffi::c_char,
+            __argv: *const *mut ::core::ffi::c_char,
+            __envp: *const *mut ::core::ffi::c_char,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn nice(__inc: ::core::ffi::c_int) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn _exit(__status: ::core::ffi::c_int) -> !;
+    }
+    pub const _PC_LINK_MAX: root::_bindgen_ty_3 = 0;
+    pub const _PC_MAX_CANON: root::_bindgen_ty_3 = 1;
+    pub const _PC_MAX_INPUT: root::_bindgen_ty_3 = 2;
+    pub const _PC_NAME_MAX: root::_bindgen_ty_3 = 3;
+    pub const _PC_PATH_MAX: root::_bindgen_ty_3 = 4;
+    pub const _PC_PIPE_BUF: root::_bindgen_ty_3 = 5;
+    pub const _PC_CHOWN_RESTRICTED: root::_bindgen_ty_3 = 6;
+    pub const _PC_NO_TRUNC: root::_bindgen_ty_3 = 7;
+    pub const _PC_VDISABLE: root::_bindgen_ty_3 = 8;
+    pub const _PC_SYNC_IO: root::_bindgen_ty_3 = 9;
+    pub const _PC_ASYNC_IO: root::_bindgen_ty_3 = 10;
+    pub const _PC_PRIO_IO: root::_bindgen_ty_3 = 11;
+    pub const _PC_SOCK_MAXBUF: root::_bindgen_ty_3 = 12;
+    pub const _PC_FILESIZEBITS: root::_bindgen_ty_3 = 13;
+    pub const _PC_REC_INCR_XFER_SIZE: root::_bindgen_ty_3 = 14;
+    pub const _PC_REC_MAX_XFER_SIZE: root::_bindgen_ty_3 = 15;
+    pub const _PC_REC_MIN_XFER_SIZE: root::_bindgen_ty_3 = 16;
+    pub const _PC_REC_XFER_ALIGN: root::_bindgen_ty_3 = 17;
+    pub const _PC_ALLOC_SIZE_MIN: root::_bindgen_ty_3 = 18;
+    pub const _PC_SYMLINK_MAX: root::_bindgen_ty_3 = 19;
+    pub const _PC_2_SYMLINKS: root::_bindgen_ty_3 = 20;
+    pub type _bindgen_ty_3 = ::core::ffi::c_uint;
+    pub const _SC_ARG_MAX: root::_bindgen_ty_4 = 0;
+    pub const _SC_CHILD_MAX: root::_bindgen_ty_4 = 1;
+    pub const _SC_CLK_TCK: root::_bindgen_ty_4 = 2;
+    pub const _SC_NGROUPS_MAX: root::_bindgen_ty_4 = 3;
+    pub const _SC_OPEN_MAX: root::_bindgen_ty_4 = 4;
+    pub const _SC_STREAM_MAX: root::_bindgen_ty_4 = 5;
+    pub const _SC_TZNAME_MAX: root::_bindgen_ty_4 = 6;
+    pub const _SC_JOB_CONTROL: root::_bindgen_ty_4 = 7;
+    pub const _SC_SAVED_IDS: root::_bindgen_ty_4 = 8;
+    pub const _SC_REALTIME_SIGNALS: root::_bindgen_ty_4 = 9;
+    pub const _SC_PRIORITY_SCHEDULING: root::_bindgen_ty_4 = 10;
+    pub const _SC_TIMERS: root::_bindgen_ty_4 = 11;
+    pub const _SC_ASYNCHRONOUS_IO: root::_bindgen_ty_4 = 12;
+    pub const _SC_PRIORITIZED_IO: root::_bindgen_ty_4 = 13;
+    pub const _SC_SYNCHRONIZED_IO: root::_bindgen_ty_4 = 14;
+    pub const _SC_FSYNC: root::_bindgen_ty_4 = 15;
+    pub const _SC_MAPPED_FILES: root::_bindgen_ty_4 = 16;
+    pub const _SC_MEMLOCK: root::_bindgen_ty_4 = 17;
+    pub const _SC_MEMLOCK_RANGE: root::_bindgen_ty_4 = 18;
+    pub const _SC_MEMORY_PROTECTION: root::_bindgen_ty_4 = 19;
+    pub const _SC_MESSAGE_PASSING: root::_bindgen_ty_4 = 20;
+    pub const _SC_SEMAPHORES: root::_bindgen_ty_4 = 21;
+    pub const _SC_SHARED_MEMORY_OBJECTS: root::_bindgen_ty_4 = 22;
+    pub const _SC_AIO_LISTIO_MAX: root::_bindgen_ty_4 = 23;
+    pub const _SC_AIO_MAX: root::_bindgen_ty_4 = 24;
+    pub const _SC_AIO_PRIO_DELTA_MAX: root::_bindgen_ty_4 = 25;
+    pub const _SC_DELAYTIMER_MAX: root::_bindgen_ty_4 = 26;
+    pub const _SC_MQ_OPEN_MAX: root::_bindgen_ty_4 = 27;
+    pub const _SC_MQ_PRIO_MAX: root::_bindgen_ty_4 = 28;
+    pub const _SC_VERSION: root::_bindgen_ty_4 = 29;
+    pub const _SC_PAGESIZE: root::_bindgen_ty_4 = 30;
+    pub const _SC_RTSIG_MAX: root::_bindgen_ty_4 = 31;
+    pub const _SC_SEM_NSEMS_MAX: root::_bindgen_ty_4 = 32;
+    pub const _SC_SEM_VALUE_MAX: root::_bindgen_ty_4 = 33;
+    pub const _SC_SIGQUEUE_MAX: root::_bindgen_ty_4 = 34;
+    pub const _SC_TIMER_MAX: root::_bindgen_ty_4 = 35;
+    pub const _SC_BC_BASE_MAX: root::_bindgen_ty_4 = 36;
+    pub const _SC_BC_DIM_MAX: root::_bindgen_ty_4 = 37;
+    pub const _SC_BC_SCALE_MAX: root::_bindgen_ty_4 = 38;
+    pub const _SC_BC_STRING_MAX: root::_bindgen_ty_4 = 39;
+    pub const _SC_COLL_WEIGHTS_MAX: root::_bindgen_ty_4 = 40;
+    pub const _SC_EQUIV_CLASS_MAX: root::_bindgen_ty_4 = 41;
+    pub const _SC_EXPR_NEST_MAX: root::_bindgen_ty_4 = 42;
+    pub const _SC_LINE_MAX: root::_bindgen_ty_4 = 43;
+    pub const _SC_RE_DUP_MAX: root::_bindgen_ty_4 = 44;
+    pub const _SC_CHARCLASS_NAME_MAX: root::_bindgen_ty_4 = 45;
+    pub const _SC_2_VERSION: root::_bindgen_ty_4 = 46;
+    pub const _SC_2_C_BIND: root::_bindgen_ty_4 = 47;
+    pub const _SC_2_C_DEV: root::_bindgen_ty_4 = 48;
+    pub const _SC_2_FORT_DEV: root::_bindgen_ty_4 = 49;
+    pub const _SC_2_FORT_RUN: root::_bindgen_ty_4 = 50;
+    pub const _SC_2_SW_DEV: root::_bindgen_ty_4 = 51;
+    pub const _SC_2_LOCALEDEF: root::_bindgen_ty_4 = 52;
+    pub const _SC_PII: root::_bindgen_ty_4 = 53;
+    pub const _SC_PII_XTI: root::_bindgen_ty_4 = 54;
+    pub const _SC_PII_SOCKET: root::_bindgen_ty_4 = 55;
+    pub const _SC_PII_INTERNET: root::_bindgen_ty_4 = 56;
+    pub const _SC_PII_OSI: root::_bindgen_ty_4 = 57;
+    pub const _SC_POLL: root::_bindgen_ty_4 = 58;
+    pub const _SC_SELECT: root::_bindgen_ty_4 = 59;
+    pub const _SC_UIO_MAXIOV: root::_bindgen_ty_4 = 60;
+    pub const _SC_IOV_MAX: root::_bindgen_ty_4 = 60;
+    pub const _SC_PII_INTERNET_STREAM: root::_bindgen_ty_4 = 61;
+    pub const _SC_PII_INTERNET_DGRAM: root::_bindgen_ty_4 = 62;
+    pub const _SC_PII_OSI_COTS: root::_bindgen_ty_4 = 63;
+    pub const _SC_PII_OSI_CLTS: root::_bindgen_ty_4 = 64;
+    pub const _SC_PII_OSI_M: root::_bindgen_ty_4 = 65;
+    pub const _SC_T_IOV_MAX: root::_bindgen_ty_4 = 66;
+    pub const _SC_THREADS: root::_bindgen_ty_4 = 67;
+    pub const _SC_THREAD_SAFE_FUNCTIONS: root::_bindgen_ty_4 = 68;
+    pub const _SC_GETGR_R_SIZE_MAX: root::_bindgen_ty_4 = 69;
+    pub const _SC_GETPW_R_SIZE_MAX: root::_bindgen_ty_4 = 70;
+    pub const _SC_LOGIN_NAME_MAX: root::_bindgen_ty_4 = 71;
+    pub const _SC_TTY_NAME_MAX: root::_bindgen_ty_4 = 72;
+    pub const _SC_THREAD_DESTRUCTOR_ITERATIONS: root::_bindgen_ty_4 = 73;
+    pub const _SC_THREAD_KEYS_MAX: root::_bindgen_ty_4 = 74;
+    pub const _SC_THREAD_STACK_MIN: root::_bindgen_ty_4 = 75;
+    pub const _SC_THREAD_THREADS_MAX: root::_bindgen_ty_4 = 76;
+    pub const _SC_THREAD_ATTR_STACKADDR: root::_bindgen_ty_4 = 77;
+    pub const _SC_THREAD_ATTR_STACKSIZE: root::_bindgen_ty_4 = 78;
+    pub const _SC_THREAD_PRIORITY_SCHEDULING: root::_bindgen_ty_4 = 79;
+    pub const _SC_THREAD_PRIO_INHERIT: root::_bindgen_ty_4 = 80;
+    pub const _SC_THREAD_PRIO_PROTECT: root::_bindgen_ty_4 = 81;
+    pub const _SC_THREAD_PROCESS_SHARED: root::_bindgen_ty_4 = 82;
+    pub const _SC_NPROCESSORS_CONF: root::_bindgen_ty_4 = 83;
+    pub const _SC_NPROCESSORS_ONLN: root::_bindgen_ty_4 = 84;
+    pub const _SC_PHYS_PAGES: root::_bindgen_ty_4 = 85;
+    pub const _SC_AVPHYS_PAGES: root::_bindgen_ty_4 = 86;
+    pub const _SC_ATEXIT_MAX: root::_bindgen_ty_4 = 87;
+    pub const _SC_PASS_MAX: root::_bindgen_ty_4 = 88;
+    pub const _SC_XOPEN_VERSION: root::_bindgen_ty_4 = 89;
+    pub const _SC_XOPEN_XCU_VERSION: root::_bindgen_ty_4 = 90;
+    pub const _SC_XOPEN_UNIX: root::_bindgen_ty_4 = 91;
+    pub const _SC_XOPEN_CRYPT: root::_bindgen_ty_4 = 92;
+    pub const _SC_XOPEN_ENH_I18N: root::_bindgen_ty_4 = 93;
+    pub const _SC_XOPEN_SHM: root::_bindgen_ty_4 = 94;
+    pub const _SC_2_CHAR_TERM: root::_bindgen_ty_4 = 95;
+    pub const _SC_2_C_VERSION: root::_bindgen_ty_4 = 96;
+    pub const _SC_2_UPE: root::_bindgen_ty_4 = 97;
+    pub const _SC_XOPEN_XPG2: root::_bindgen_ty_4 = 98;
+    pub const _SC_XOPEN_XPG3: root::_bindgen_ty_4 = 99;
+    pub const _SC_XOPEN_XPG4: root::_bindgen_ty_4 = 100;
+    pub const _SC_CHAR_BIT: root::_bindgen_ty_4 = 101;
+    pub const _SC_CHAR_MAX: root::_bindgen_ty_4 = 102;
+    pub const _SC_CHAR_MIN: root::_bindgen_ty_4 = 103;
+    pub const _SC_INT_MAX: root::_bindgen_ty_4 = 104;
+    pub const _SC_INT_MIN: root::_bindgen_ty_4 = 105;
+    pub const _SC_LONG_BIT: root::_bindgen_ty_4 = 106;
+    pub const _SC_WORD_BIT: root::_bindgen_ty_4 = 107;
+    pub const _SC_MB_LEN_MAX: root::_bindgen_ty_4 = 108;
+    pub const _SC_NZERO: root::_bindgen_ty_4 = 109;
+    pub const _SC_SSIZE_MAX: root::_bindgen_ty_4 = 110;
+    pub const _SC_SCHAR_MAX: root::_bindgen_ty_4 = 111;
+    pub const _SC_SCHAR_MIN: root::_bindgen_ty_4 = 112;
+    pub const _SC_SHRT_MAX: root::_bindgen_ty_4 = 113;
+    pub const _SC_SHRT_MIN: root::_bindgen_ty_4 = 114;
+    pub const _SC_UCHAR_MAX: root::_bindgen_ty_4 = 115;
+    pub const _SC_UINT_MAX: root::_bindgen_ty_4 = 116;
+    pub const _SC_ULONG_MAX: root::_bindgen_ty_4 = 117;
+    pub const _SC_USHRT_MAX: root::_bindgen_ty_4 = 118;
+    pub const _SC_NL_ARGMAX: root::_bindgen_ty_4 = 119;
+    pub const _SC_NL_LANGMAX: root::_bindgen_ty_4 = 120;
+    pub const _SC_NL_MSGMAX: root::_bindgen_ty_4 = 121;
+    pub const _SC_NL_NMAX: root::_bindgen_ty_4 = 122;
+    pub const _SC_NL_SETMAX: root::_bindgen_ty_4 = 123;
+    pub const _SC_NL_TEXTMAX: root::_bindgen_ty_4 = 124;
+    pub const _SC_XBS5_ILP32_OFF32: root::_bindgen_ty_4 = 125;
+    pub const _SC_XBS5_ILP32_OFFBIG: root::_bindgen_ty_4 = 126;
+    pub const _SC_XBS5_LP64_OFF64: root::_bindgen_ty_4 = 127;
+    pub const _SC_XBS5_LPBIG_OFFBIG: root::_bindgen_ty_4 = 128;
+    pub const _SC_XOPEN_LEGACY: root::_bindgen_ty_4 = 129;
+    pub const _SC_XOPEN_REALTIME: root::_bindgen_ty_4 = 130;
+    pub const _SC_XOPEN_REALTIME_THREADS: root::_bindgen_ty_4 = 131;
+    pub const _SC_ADVISORY_INFO: root::_bindgen_ty_4 = 132;
+    pub const _SC_BARRIERS: root::_bindgen_ty_4 = 133;
+    pub const _SC_BASE: root::_bindgen_ty_4 = 134;
+    pub const _SC_C_LANG_SUPPORT: root::_bindgen_ty_4 = 135;
+    pub const _SC_C_LANG_SUPPORT_R: root::_bindgen_ty_4 = 136;
+    pub const _SC_CLOCK_SELECTION: root::_bindgen_ty_4 = 137;
+    pub const _SC_CPUTIME: root::_bindgen_ty_4 = 138;
+    pub const _SC_THREAD_CPUTIME: root::_bindgen_ty_4 = 139;
+    pub const _SC_DEVICE_IO: root::_bindgen_ty_4 = 140;
+    pub const _SC_DEVICE_SPECIFIC: root::_bindgen_ty_4 = 141;
+    pub const _SC_DEVICE_SPECIFIC_R: root::_bindgen_ty_4 = 142;
+    pub const _SC_FD_MGMT: root::_bindgen_ty_4 = 143;
+    pub const _SC_FIFO: root::_bindgen_ty_4 = 144;
+    pub const _SC_PIPE: root::_bindgen_ty_4 = 145;
+    pub const _SC_FILE_ATTRIBUTES: root::_bindgen_ty_4 = 146;
+    pub const _SC_FILE_LOCKING: root::_bindgen_ty_4 = 147;
+    pub const _SC_FILE_SYSTEM: root::_bindgen_ty_4 = 148;
+    pub const _SC_MONOTONIC_CLOCK: root::_bindgen_ty_4 = 149;
+    pub const _SC_MULTI_PROCESS: root::_bindgen_ty_4 = 150;
+    pub const _SC_SINGLE_PROCESS: root::_bindgen_ty_4 = 151;
+    pub const _SC_NETWORKING: root::_bindgen_ty_4 = 152;
+    pub const _SC_READER_WRITER_LOCKS: root::_bindgen_ty_4 = 153;
+    pub const _SC_SPIN_LOCKS: root::_bindgen_ty_4 = 154;
+    pub const _SC_REGEXP: root::_bindgen_ty_4 = 155;
+    pub const _SC_REGEX_VERSION: root::_bindgen_ty_4 = 156;
+    pub const _SC_SHELL: root::_bindgen_ty_4 = 157;
+    pub const _SC_SIGNALS: root::_bindgen_ty_4 = 158;
+    pub const _SC_SPAWN: root::_bindgen_ty_4 = 159;
+    pub const _SC_SPORADIC_SERVER: root::_bindgen_ty_4 = 160;
+    pub const _SC_THREAD_SPORADIC_SERVER: root::_bindgen_ty_4 = 161;
+    pub const _SC_SYSTEM_DATABASE: root::_bindgen_ty_4 = 162;
+    pub const _SC_SYSTEM_DATABASE_R: root::_bindgen_ty_4 = 163;
+    pub const _SC_TIMEOUTS: root::_bindgen_ty_4 = 164;
+    pub const _SC_TYPED_MEMORY_OBJECTS: root::_bindgen_ty_4 = 165;
+    pub const _SC_USER_GROUPS: root::_bindgen_ty_4 = 166;
+    pub const _SC_USER_GROUPS_R: root::_bindgen_ty_4 = 167;
+    pub const _SC_2_PBS: root::_bindgen_ty_4 = 168;
+    pub const _SC_2_PBS_ACCOUNTING: root::_bindgen_ty_4 = 169;
+    pub const _SC_2_PBS_LOCATE: root::_bindgen_ty_4 = 170;
+    pub const _SC_2_PBS_MESSAGE: root::_bindgen_ty_4 = 171;
+    pub const _SC_2_PBS_TRACK: root::_bindgen_ty_4 = 172;
+    pub const _SC_SYMLOOP_MAX: root::_bindgen_ty_4 = 173;
+    pub const _SC_STREAMS: root::_bindgen_ty_4 = 174;
+    pub const _SC_2_PBS_CHECKPOINT: root::_bindgen_ty_4 = 175;
+    pub const _SC_V6_ILP32_OFF32: root::_bindgen_ty_4 = 176;
+    pub const _SC_V6_ILP32_OFFBIG: root::_bindgen_ty_4 = 177;
+    pub const _SC_V6_LP64_OFF64: root::_bindgen_ty_4 = 178;
+    pub const _SC_V6_LPBIG_OFFBIG: root::_bindgen_ty_4 = 179;
+    pub const _SC_HOST_NAME_MAX: root::_bindgen_ty_4 = 180;
+    pub const _SC_TRACE: root::_bindgen_ty_4 = 181;
+    pub const _SC_TRACE_EVENT_FILTER: root::_bindgen_ty_4 = 182;
+    pub const _SC_TRACE_INHERIT: root::_bindgen_ty_4 = 183;
+    pub const _SC_TRACE_LOG: root::_bindgen_ty_4 = 184;
+    pub const _SC_LEVEL1_ICACHE_SIZE: root::_bindgen_ty_4 = 185;
+    pub const _SC_LEVEL1_ICACHE_ASSOC: root::_bindgen_ty_4 = 186;
+    pub const _SC_LEVEL1_ICACHE_LINESIZE: root::_bindgen_ty_4 = 187;
+    pub const _SC_LEVEL1_DCACHE_SIZE: root::_bindgen_ty_4 = 188;
+    pub const _SC_LEVEL1_DCACHE_ASSOC: root::_bindgen_ty_4 = 189;
+    pub const _SC_LEVEL1_DCACHE_LINESIZE: root::_bindgen_ty_4 = 190;
+    pub const _SC_LEVEL2_CACHE_SIZE: root::_bindgen_ty_4 = 191;
+    pub const _SC_LEVEL2_CACHE_ASSOC: root::_bindgen_ty_4 = 192;
+    pub const _SC_LEVEL2_CACHE_LINESIZE: root::_bindgen_ty_4 = 193;
+    pub const _SC_LEVEL3_CACHE_SIZE: root::_bindgen_ty_4 = 194;
+    pub const _SC_LEVEL3_CACHE_ASSOC: root::_bindgen_ty_4 = 195;
+    pub const _SC_LEVEL3_CACHE_LINESIZE: root::_bindgen_ty_4 = 196;
+    pub const _SC_LEVEL4_CACHE_SIZE: root::_bindgen_ty_4 = 197;
+    pub const _SC_LEVEL4_CACHE_ASSOC: root::_bindgen_ty_4 = 198;
+    pub const _SC_LEVEL4_CACHE_LINESIZE: root::_bindgen_ty_4 = 199;
+    pub const _SC_IPV6: root::_bindgen_ty_4 = 235;
+    pub const _SC_RAW_SOCKETS: root::_bindgen_ty_4 = 236;
+    pub const _SC_V7_ILP32_OFF32: root::_bindgen_ty_4 = 237;
+    pub const _SC_V7_ILP32_OFFBIG: root::_bindgen_ty_4 = 238;
+    pub const _SC_V7_LP64_OFF64: root::_bindgen_ty_4 = 239;
+    pub const _SC_V7_LPBIG_OFFBIG: root::_bindgen_ty_4 = 240;
+    pub const _SC_SS_REPL_MAX: root::_bindgen_ty_4 = 241;
+    pub const _SC_TRACE_EVENT_NAME_MAX: root::_bindgen_ty_4 = 242;
+    pub const _SC_TRACE_NAME_MAX: root::_bindgen_ty_4 = 243;
+    pub const _SC_TRACE_SYS_MAX: root::_bindgen_ty_4 = 244;
+    pub const _SC_TRACE_USER_EVENT_MAX: root::_bindgen_ty_4 = 245;
+    pub const _SC_XOPEN_STREAMS: root::_bindgen_ty_4 = 246;
+    pub const _SC_THREAD_ROBUST_PRIO_INHERIT: root::_bindgen_ty_4 = 247;
+    pub const _SC_THREAD_ROBUST_PRIO_PROTECT: root::_bindgen_ty_4 = 248;
+    pub const _SC_MINSIGSTKSZ: root::_bindgen_ty_4 = 249;
+    pub const _SC_SIGSTKSZ: root::_bindgen_ty_4 = 250;
+    pub type _bindgen_ty_4 = ::core::ffi::c_uint;
+    pub const _CS_PATH: root::_bindgen_ty_5 = 0;
+    pub const _CS_V6_WIDTH_RESTRICTED_ENVS: root::_bindgen_ty_5 = 1;
+    pub const _CS_GNU_LIBC_VERSION: root::_bindgen_ty_5 = 2;
+    pub const _CS_GNU_LIBPTHREAD_VERSION: root::_bindgen_ty_5 = 3;
+    pub const _CS_V5_WIDTH_RESTRICTED_ENVS: root::_bindgen_ty_5 = 4;
+    pub const _CS_V7_WIDTH_RESTRICTED_ENVS: root::_bindgen_ty_5 = 5;
+    pub const _CS_LFS_CFLAGS: root::_bindgen_ty_5 = 1000;
+    pub const _CS_LFS_LDFLAGS: root::_bindgen_ty_5 = 1001;
+    pub const _CS_LFS_LIBS: root::_bindgen_ty_5 = 1002;
+    pub const _CS_LFS_LINTFLAGS: root::_bindgen_ty_5 = 1003;
+    pub const _CS_LFS64_CFLAGS: root::_bindgen_ty_5 = 1004;
+    pub const _CS_LFS64_LDFLAGS: root::_bindgen_ty_5 = 1005;
+    pub const _CS_LFS64_LIBS: root::_bindgen_ty_5 = 1006;
+    pub const _CS_LFS64_LINTFLAGS: root::_bindgen_ty_5 = 1007;
+    pub const _CS_XBS5_ILP32_OFF32_CFLAGS: root::_bindgen_ty_5 = 1100;
+    pub const _CS_XBS5_ILP32_OFF32_LDFLAGS: root::_bindgen_ty_5 = 1101;
+    pub const _CS_XBS5_ILP32_OFF32_LIBS: root::_bindgen_ty_5 = 1102;
+    pub const _CS_XBS5_ILP32_OFF32_LINTFLAGS: root::_bindgen_ty_5 = 1103;
+    pub const _CS_XBS5_ILP32_OFFBIG_CFLAGS: root::_bindgen_ty_5 = 1104;
+    pub const _CS_XBS5_ILP32_OFFBIG_LDFLAGS: root::_bindgen_ty_5 = 1105;
+    pub const _CS_XBS5_ILP32_OFFBIG_LIBS: root::_bindgen_ty_5 = 1106;
+    pub const _CS_XBS5_ILP32_OFFBIG_LINTFLAGS: root::_bindgen_ty_5 = 1107;
+    pub const _CS_XBS5_LP64_OFF64_CFLAGS: root::_bindgen_ty_5 = 1108;
+    pub const _CS_XBS5_LP64_OFF64_LDFLAGS: root::_bindgen_ty_5 = 1109;
+    pub const _CS_XBS5_LP64_OFF64_LIBS: root::_bindgen_ty_5 = 1110;
+    pub const _CS_XBS5_LP64_OFF64_LINTFLAGS: root::_bindgen_ty_5 = 1111;
+    pub const _CS_XBS5_LPBIG_OFFBIG_CFLAGS: root::_bindgen_ty_5 = 1112;
+    pub const _CS_XBS5_LPBIG_OFFBIG_LDFLAGS: root::_bindgen_ty_5 = 1113;
+    pub const _CS_XBS5_LPBIG_OFFBIG_LIBS: root::_bindgen_ty_5 = 1114;
+    pub const _CS_XBS5_LPBIG_OFFBIG_LINTFLAGS: root::_bindgen_ty_5 = 1115;
+    pub const _CS_POSIX_V6_ILP32_OFF32_CFLAGS: root::_bindgen_ty_5 = 1116;
+    pub const _CS_POSIX_V6_ILP32_OFF32_LDFLAGS: root::_bindgen_ty_5 = 1117;
+    pub const _CS_POSIX_V6_ILP32_OFF32_LIBS: root::_bindgen_ty_5 = 1118;
+    pub const _CS_POSIX_V6_ILP32_OFF32_LINTFLAGS: root::_bindgen_ty_5 = 1119;
+    pub const _CS_POSIX_V6_ILP32_OFFBIG_CFLAGS: root::_bindgen_ty_5 = 1120;
+    pub const _CS_POSIX_V6_ILP32_OFFBIG_LDFLAGS: root::_bindgen_ty_5 = 1121;
+    pub const _CS_POSIX_V6_ILP32_OFFBIG_LIBS: root::_bindgen_ty_5 = 1122;
+    pub const _CS_POSIX_V6_ILP32_OFFBIG_LINTFLAGS: root::_bindgen_ty_5 = 1123;
+    pub const _CS_POSIX_V6_LP64_OFF64_CFLAGS: root::_bindgen_ty_5 = 1124;
+    pub const _CS_POSIX_V6_LP64_OFF64_LDFLAGS: root::_bindgen_ty_5 = 1125;
+    pub const _CS_POSIX_V6_LP64_OFF64_LIBS: root::_bindgen_ty_5 = 1126;
+    pub const _CS_POSIX_V6_LP64_OFF64_LINTFLAGS: root::_bindgen_ty_5 = 1127;
+    pub const _CS_POSIX_V6_LPBIG_OFFBIG_CFLAGS: root::_bindgen_ty_5 = 1128;
+    pub const _CS_POSIX_V6_LPBIG_OFFBIG_LDFLAGS: root::_bindgen_ty_5 = 1129;
+    pub const _CS_POSIX_V6_LPBIG_OFFBIG_LIBS: root::_bindgen_ty_5 = 1130;
+    pub const _CS_POSIX_V6_LPBIG_OFFBIG_LINTFLAGS: root::_bindgen_ty_5 = 1131;
+    pub const _CS_POSIX_V7_ILP32_OFF32_CFLAGS: root::_bindgen_ty_5 = 1132;
+    pub const _CS_POSIX_V7_ILP32_OFF32_LDFLAGS: root::_bindgen_ty_5 = 1133;
+    pub const _CS_POSIX_V7_ILP32_OFF32_LIBS: root::_bindgen_ty_5 = 1134;
+    pub const _CS_POSIX_V7_ILP32_OFF32_LINTFLAGS: root::_bindgen_ty_5 = 1135;
+    pub const _CS_POSIX_V7_ILP32_OFFBIG_CFLAGS: root::_bindgen_ty_5 = 1136;
+    pub const _CS_POSIX_V7_ILP32_OFFBIG_LDFLAGS: root::_bindgen_ty_5 = 1137;
+    pub const _CS_POSIX_V7_ILP32_OFFBIG_LIBS: root::_bindgen_ty_5 = 1138;
+    pub const _CS_POSIX_V7_ILP32_OFFBIG_LINTFLAGS: root::_bindgen_ty_5 = 1139;
+    pub const _CS_POSIX_V7_LP64_OFF64_CFLAGS: root::_bindgen_ty_5 = 1140;
+    pub const _CS_POSIX_V7_LP64_OFF64_LDFLAGS: root::_bindgen_ty_5 = 1141;
+    pub const _CS_POSIX_V7_LP64_OFF64_LIBS: root::_bindgen_ty_5 = 1142;
+    pub const _CS_POSIX_V7_LP64_OFF64_LINTFLAGS: root::_bindgen_ty_5 = 1143;
+    pub const _CS_POSIX_V7_LPBIG_OFFBIG_CFLAGS: root::_bindgen_ty_5 = 1144;
+    pub const _CS_POSIX_V7_LPBIG_OFFBIG_LDFLAGS: root::_bindgen_ty_5 = 1145;
+    pub const _CS_POSIX_V7_LPBIG_OFFBIG_LIBS: root::_bindgen_ty_5 = 1146;
+    pub const _CS_POSIX_V7_LPBIG_OFFBIG_LINTFLAGS: root::_bindgen_ty_5 = 1147;
+    pub const _CS_V6_ENV: root::_bindgen_ty_5 = 1148;
+    pub const _CS_V7_ENV: root::_bindgen_ty_5 = 1149;
+    pub type _bindgen_ty_5 = ::core::ffi::c_uint;
+    unsafe extern "C" {
+        pub fn pathconf(
+            __path: *const ::core::ffi::c_char,
+            __name: ::core::ffi::c_int,
+        ) -> ::core::ffi::c_long;
+    }
+    unsafe extern "C" {
+        pub fn fpathconf(
+            __fd: ::core::ffi::c_int,
+            __name: ::core::ffi::c_int,
+        ) -> ::core::ffi::c_long;
+    }
+    unsafe extern "C" {
+        pub fn sysconf(__name: ::core::ffi::c_int) -> ::core::ffi::c_long;
+    }
+    unsafe extern "C" {
+        pub fn confstr(
+            __name: ::core::ffi::c_int,
+            __buf: *mut ::core::ffi::c_char,
+            __len: usize,
+        ) -> usize;
+    }
+    unsafe extern "C" {
+        pub fn getpid() -> root::__pid_t;
+    }
+    unsafe extern "C" {
+        pub fn getppid() -> root::__pid_t;
+    }
+    unsafe extern "C" {
+        pub fn getpgrp() -> root::__pid_t;
+    }
+    unsafe extern "C" {
+        pub fn __getpgid(__pid: root::__pid_t) -> root::__pid_t;
+    }
+    unsafe extern "C" {
+        pub fn getpgid(__pid: root::__pid_t) -> root::__pid_t;
+    }
+    unsafe extern "C" {
+        pub fn setpgid(__pid: root::__pid_t, __pgid: root::__pid_t) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn setpgrp() -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn setsid() -> root::__pid_t;
+    }
+    unsafe extern "C" {
+        pub fn getsid(__pid: root::__pid_t) -> root::__pid_t;
+    }
+    unsafe extern "C" {
+        pub fn getuid() -> root::__uid_t;
+    }
+    unsafe extern "C" {
+        pub fn geteuid() -> root::__uid_t;
+    }
+    unsafe extern "C" {
+        pub fn getgid() -> root::__gid_t;
+    }
+    unsafe extern "C" {
+        pub fn getegid() -> root::__gid_t;
+    }
+    unsafe extern "C" {
+        pub fn getgroups(
+            __size: ::core::ffi::c_int,
+            __list: *mut root::__gid_t,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn group_member(__gid: root::__gid_t) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn setuid(__uid: root::__uid_t) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn setreuid(__ruid: root::__uid_t, __euid: root::__uid_t) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn seteuid(__uid: root::__uid_t) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn setgid(__gid: root::__gid_t) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn setregid(__rgid: root::__gid_t, __egid: root::__gid_t) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn setegid(__gid: root::__gid_t) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn getresuid(
+            __ruid: *mut root::__uid_t,
+            __euid: *mut root::__uid_t,
+            __suid: *mut root::__uid_t,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn getresgid(
+            __rgid: *mut root::__gid_t,
+            __egid: *mut root::__gid_t,
+            __sgid: *mut root::__gid_t,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn setresuid(
+            __ruid: root::__uid_t,
+            __euid: root::__uid_t,
+            __suid: root::__uid_t,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn setresgid(
+            __rgid: root::__gid_t,
+            __egid: root::__gid_t,
+            __sgid: root::__gid_t,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn fork() -> root::__pid_t;
+    }
+    unsafe extern "C" {
+        pub fn vfork() -> root::__pid_t;
+    }
+    unsafe extern "C" {
+        pub fn _Fork() -> root::__pid_t;
+    }
+    unsafe extern "C" {
+        pub fn ttyname(__fd: ::core::ffi::c_int) -> *mut ::core::ffi::c_char;
+    }
+    unsafe extern "C" {
+        pub fn ttyname_r(
+            __fd: ::core::ffi::c_int,
+            __buf: *mut ::core::ffi::c_char,
+            __buflen: usize,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn isatty(__fd: ::core::ffi::c_int) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn ttyslot() -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn link(
+            __from: *const ::core::ffi::c_char,
+            __to: *const ::core::ffi::c_char,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn linkat(
+            __fromfd: ::core::ffi::c_int,
+            __from: *const ::core::ffi::c_char,
+            __tofd: ::core::ffi::c_int,
+            __to: *const ::core::ffi::c_char,
+            __flags: ::core::ffi::c_int,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn symlink(
+            __from: *const ::core::ffi::c_char,
+            __to: *const ::core::ffi::c_char,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn readlink(
+            __path: *const ::core::ffi::c_char,
+            __buf: *mut ::core::ffi::c_char,
+            __len: usize,
+        ) -> isize;
+    }
+    unsafe extern "C" {
+        pub fn symlinkat(
+            __from: *const ::core::ffi::c_char,
+            __tofd: ::core::ffi::c_int,
+            __to: *const ::core::ffi::c_char,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn readlinkat(
+            __fd: ::core::ffi::c_int,
+            __path: *const ::core::ffi::c_char,
+            __buf: *mut ::core::ffi::c_char,
+            __len: usize,
+        ) -> isize;
+    }
+    unsafe extern "C" {
+        pub fn unlink(__name: *const ::core::ffi::c_char) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn unlinkat(
+            __fd: ::core::ffi::c_int,
+            __name: *const ::core::ffi::c_char,
+            __flag: ::core::ffi::c_int,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn rmdir(__path: *const ::core::ffi::c_char) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn tcgetpgrp(__fd: ::core::ffi::c_int) -> root::__pid_t;
+    }
+    unsafe extern "C" {
+        pub fn tcsetpgrp(__fd: ::core::ffi::c_int, __pgrp_id: root::__pid_t) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn getlogin() -> *mut ::core::ffi::c_char;
+    }
+    unsafe extern "C" {
+        pub fn getlogin_r(
+            __name: *mut ::core::ffi::c_char,
+            __name_len: usize,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn setlogin(__name: *const ::core::ffi::c_char) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub static mut optarg: *mut ::core::ffi::c_char;
+    }
+    unsafe extern "C" {
+        pub static mut optind: ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub static mut opterr: ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub static mut optopt: ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn getopt(
+            ___argc: ::core::ffi::c_int,
+            ___argv: *const *mut ::core::ffi::c_char,
+            __shortopts: *const ::core::ffi::c_char,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn gethostname(__name: *mut ::core::ffi::c_char, __len: usize) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn sethostname(__name: *const ::core::ffi::c_char, __len: usize) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn sethostid(__id: ::core::ffi::c_long) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn getdomainname(__name: *mut ::core::ffi::c_char, __len: usize) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn setdomainname(
+            __name: *const ::core::ffi::c_char,
+            __len: usize,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn vhangup() -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn revoke(__file: *const ::core::ffi::c_char) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn profil(
+            __sample_buffer: *mut ::core::ffi::c_ushort,
+            __size: usize,
+            __offset: usize,
+            __scale: ::core::ffi::c_uint,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn acct(__name: *const ::core::ffi::c_char) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn getusershell() -> *mut ::core::ffi::c_char;
+    }
+    unsafe extern "C" {
+        pub fn endusershell();
+    }
+    unsafe extern "C" {
+        pub fn setusershell();
+    }
+    unsafe extern "C" {
+        pub fn daemon(
+            __nochdir: ::core::ffi::c_int,
+            __noclose: ::core::ffi::c_int,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn chroot(__path: *const ::core::ffi::c_char) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn getpass(__prompt: *const ::core::ffi::c_char) -> *mut ::core::ffi::c_char;
+    }
+    unsafe extern "C" {
+        pub fn fsync(__fd: ::core::ffi::c_int) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn syncfs(__fd: ::core::ffi::c_int) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn gethostid() -> ::core::ffi::c_long;
+    }
+    unsafe extern "C" {
+        pub fn sync();
+    }
+    unsafe extern "C" {
+        pub fn getpagesize() -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn getdtablesize() -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn truncate(
+            __file: *const ::core::ffi::c_char,
+            __length: root::__off_t,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn truncate64(
+            __file: *const ::core::ffi::c_char,
+            __length: root::__off64_t,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn ftruncate(__fd: ::core::ffi::c_int, __length: root::__off_t) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn ftruncate64(
+            __fd: ::core::ffi::c_int,
+            __length: root::__off64_t,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn brk(__addr: *mut ::core::ffi::c_void) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn sbrk(__delta: isize) -> *mut ::core::ffi::c_void;
+    }
+    unsafe extern "C" {
+        pub fn syscall(__sysno: ::core::ffi::c_long, ...) -> ::core::ffi::c_long;
+    }
+    unsafe extern "C" {
+        pub fn lockf(
+            __fd: ::core::ffi::c_int,
+            __cmd: ::core::ffi::c_int,
+            __len: root::__off_t,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn lockf64(
+            __fd: ::core::ffi::c_int,
+            __cmd: ::core::ffi::c_int,
+            __len: root::__off64_t,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn copy_file_range(
+            __infd: ::core::ffi::c_int,
+            __pinoff: *mut root::__off64_t,
+            __outfd: ::core::ffi::c_int,
+            __poutoff: *mut root::__off64_t,
+            __length: usize,
+            __flags: ::core::ffi::c_uint,
+        ) -> isize;
+    }
+    unsafe extern "C" {
+        pub fn fdatasync(__fildes: ::core::ffi::c_int) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn crypt(
+            __key: *const ::core::ffi::c_char,
+            __salt: *const ::core::ffi::c_char,
+        ) -> *mut ::core::ffi::c_char;
+    }
+    unsafe extern "C" {
+        pub fn swab(__from: *const ::core::ffi::c_void, __to: *mut ::core::ffi::c_void, __n: isize);
+    }
+    unsafe extern "C" {
+        pub fn getentropy(
+            __buffer: *mut ::core::ffi::c_void,
+            __length: usize,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn close_range(
+            __fd: ::core::ffi::c_uint,
+            __max_fd: ::core::ffi::c_uint,
+            __flags: ::core::ffi::c_int,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn gettid() -> root::__pid_t;
+    }
+    pub type u_char = root::__u_char;
+    pub type u_short = root::__u_short;
+    pub type u_int = root::__u_int;
+    pub type u_long = root::__u_long;
+    pub type quad_t = root::__quad_t;
+    pub type u_quad_t = root::__u_quad_t;
+    pub type fsid_t = root::__fsid_t;
+    pub type loff_t = root::__loff_t;
+    pub type ino_t = root::__ino_t;
+    pub type ino64_t = root::__ino64_t;
+    pub type dev_t = root::__dev_t;
+    pub type mode_t = root::__mode_t;
+    pub type nlink_t = root::__nlink_t;
+    pub type id_t = root::__id_t;
+    pub type daddr_t = root::__daddr_t;
+    pub type caddr_t = root::__caddr_t;
+    pub type key_t = root::__key_t;
+    pub type clock_t = root::__clock_t;
+    pub type clockid_t = root::__clockid_t;
+    pub type time_t = root::__time_t;
+    pub type timer_t = root::__timer_t;
+    pub type suseconds_t = root::__suseconds_t;
+    pub type ulong = ::core::ffi::c_ulong;
+    pub type ushort = ::core::ffi::c_ushort;
+    pub type uint = ::core::ffi::c_uint;
+    pub type u_int8_t = root::__uint8_t;
+    pub type u_int16_t = root::__uint16_t;
+    pub type u_int32_t = root::__uint32_t;
+    pub type u_int64_t = root::__uint64_t;
+    pub type register_t = ::core::ffi::c_long;
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct __sigset_t {
+        pub __val: [::core::ffi::c_ulong; 16usize],
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of __sigset_t"][::core::mem::size_of::<__sigset_t>() - 128usize];
+        ["Alignment of __sigset_t"][::core::mem::align_of::<__sigset_t>() - 8usize];
+        ["Offset of field: __sigset_t::__val"][::core::mem::offset_of!(__sigset_t, __val) - 0usize];
+    };
+    pub type sigset_t = root::__sigset_t;
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct timeval {
+        pub tv_sec: root::__time_t,
+        pub tv_usec: root::__suseconds_t,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of timeval"][::core::mem::size_of::<timeval>() - 16usize];
+        ["Alignment of timeval"][::core::mem::align_of::<timeval>() - 8usize];
+        ["Offset of field: timeval::tv_sec"][::core::mem::offset_of!(timeval, tv_sec) - 0usize];
+        ["Offset of field: timeval::tv_usec"][::core::mem::offset_of!(timeval, tv_usec) - 8usize];
+    };
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct timespec {
+        pub tv_sec: root::__time_t,
+        pub tv_nsec: root::__syscall_slong_t,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of timespec"][::core::mem::size_of::<timespec>() - 16usize];
+        ["Alignment of timespec"][::core::mem::align_of::<timespec>() - 8usize];
+        ["Offset of field: timespec::tv_sec"][::core::mem::offset_of!(timespec, tv_sec) - 0usize];
+        ["Offset of field: timespec::tv_nsec"][::core::mem::offset_of!(timespec, tv_nsec) - 8usize];
+    };
+    pub type __fd_mask = ::core::ffi::c_long;
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct fd_set {
+        pub fds_bits: [root::__fd_mask; 16usize],
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of fd_set"][::core::mem::size_of::<fd_set>() - 128usize];
+        ["Alignment of fd_set"][::core::mem::align_of::<fd_set>() - 8usize];
+        ["Offset of field: fd_set::fds_bits"][::core::mem::offset_of!(fd_set, fds_bits) - 0usize];
+    };
+    pub type fd_mask = root::__fd_mask;
+    unsafe extern "C" {
+        pub fn select(
+            __nfds: ::core::ffi::c_int,
+            __readfds: *mut root::fd_set,
+            __writefds: *mut root::fd_set,
+            __exceptfds: *mut root::fd_set,
+            __timeout: *mut root::timeval,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn pselect(
+            __nfds: ::core::ffi::c_int,
+            __readfds: *mut root::fd_set,
+            __writefds: *mut root::fd_set,
+            __exceptfds: *mut root::fd_set,
+            __timeout: *const root::timespec,
+            __sigmask: *const root::__sigset_t,
+        ) -> ::core::ffi::c_int;
+    }
+    pub type blksize_t = root::__blksize_t;
+    pub type blkcnt_t = root::__blkcnt_t;
+    pub type fsblkcnt_t = root::__fsblkcnt_t;
+    pub type fsfilcnt_t = root::__fsfilcnt_t;
+    pub type blkcnt64_t = root::__blkcnt64_t;
+    pub type fsblkcnt64_t = root::__fsblkcnt64_t;
+    pub type fsfilcnt64_t = root::__fsfilcnt64_t;
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub union __atomic_wide_counter {
+        pub __value64: ::core::ffi::c_ulonglong,
+        pub __value32: root::__atomic_wide_counter__bindgen_ty_1,
+    }
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct __atomic_wide_counter__bindgen_ty_1 {
+        pub __low: ::core::ffi::c_uint,
+        pub __high: ::core::ffi::c_uint,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of __atomic_wide_counter__bindgen_ty_1"]
+            [::core::mem::size_of::<__atomic_wide_counter__bindgen_ty_1>() - 8usize];
+        ["Alignment of __atomic_wide_counter__bindgen_ty_1"]
+            [::core::mem::align_of::<__atomic_wide_counter__bindgen_ty_1>() - 4usize];
+        ["Offset of field: __atomic_wide_counter__bindgen_ty_1::__low"]
+            [::core::mem::offset_of!(__atomic_wide_counter__bindgen_ty_1, __low) - 0usize];
+        ["Offset of field: __atomic_wide_counter__bindgen_ty_1::__high"]
+            [::core::mem::offset_of!(__atomic_wide_counter__bindgen_ty_1, __high) - 4usize];
+    };
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of __atomic_wide_counter"][::core::mem::size_of::<__atomic_wide_counter>() - 8usize];
+        ["Alignment of __atomic_wide_counter"]
+            [::core::mem::align_of::<__atomic_wide_counter>() - 8usize];
+        ["Offset of field: __atomic_wide_counter::__value64"]
+            [::core::mem::offset_of!(__atomic_wide_counter, __value64) - 0usize];
+        ["Offset of field: __atomic_wide_counter::__value32"]
+            [::core::mem::offset_of!(__atomic_wide_counter, __value32) - 0usize];
+    };
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct __pthread_internal_list {
+        pub __prev: *mut root::__pthread_internal_list,
+        pub __next: *mut root::__pthread_internal_list,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of __pthread_internal_list"]
+            [::core::mem::size_of::<__pthread_internal_list>() - 16usize];
+        ["Alignment of __pthread_internal_list"]
+            [::core::mem::align_of::<__pthread_internal_list>() - 8usize];
+        ["Offset of field: __pthread_internal_list::__prev"]
+            [::core::mem::offset_of!(__pthread_internal_list, __prev) - 0usize];
+        ["Offset of field: __pthread_internal_list::__next"]
+            [::core::mem::offset_of!(__pthread_internal_list, __next) - 8usize];
+    };
+    pub type __pthread_list_t = root::__pthread_internal_list;
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct __pthread_internal_slist {
+        pub __next: *mut root::__pthread_internal_slist,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of __pthread_internal_slist"]
+            [::core::mem::size_of::<__pthread_internal_slist>() - 8usize];
+        ["Alignment of __pthread_internal_slist"]
+            [::core::mem::align_of::<__pthread_internal_slist>() - 8usize];
+        ["Offset of field: __pthread_internal_slist::__next"]
+            [::core::mem::offset_of!(__pthread_internal_slist, __next) - 0usize];
+    };
+    pub type __pthread_slist_t = root::__pthread_internal_slist;
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct __pthread_mutex_s {
+        pub __lock: ::core::ffi::c_int,
+        pub __count: ::core::ffi::c_uint,
+        pub __owner: ::core::ffi::c_int,
+        pub __nusers: ::core::ffi::c_uint,
+        pub __kind: ::core::ffi::c_int,
+        pub __spins: ::core::ffi::c_short,
+        pub __elision: ::core::ffi::c_short,
+        pub __list: root::__pthread_list_t,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of __pthread_mutex_s"][::core::mem::size_of::<__pthread_mutex_s>() - 40usize];
+        ["Alignment of __pthread_mutex_s"][::core::mem::align_of::<__pthread_mutex_s>() - 8usize];
+        ["Offset of field: __pthread_mutex_s::__lock"]
+            [::core::mem::offset_of!(__pthread_mutex_s, __lock) - 0usize];
+        ["Offset of field: __pthread_mutex_s::__count"]
+            [::core::mem::offset_of!(__pthread_mutex_s, __count) - 4usize];
+        ["Offset of field: __pthread_mutex_s::__owner"]
+            [::core::mem::offset_of!(__pthread_mutex_s, __owner) - 8usize];
+        ["Offset of field: __pthread_mutex_s::__nusers"]
+            [::core::mem::offset_of!(__pthread_mutex_s, __nusers) - 12usize];
+        ["Offset of field: __pthread_mutex_s::__kind"]
+            [::core::mem::offset_of!(__pthread_mutex_s, __kind) - 16usize];
+        ["Offset of field: __pthread_mutex_s::__spins"]
+            [::core::mem::offset_of!(__pthread_mutex_s, __spins) - 20usize];
+        ["Offset of field: __pthread_mutex_s::__elision"]
+            [::core::mem::offset_of!(__pthread_mutex_s, __elision) - 22usize];
+        ["Offset of field: __pthread_mutex_s::__list"]
+            [::core::mem::offset_of!(__pthread_mutex_s, __list) - 24usize];
+    };
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct __pthread_rwlock_arch_t {
+        pub __readers: ::core::ffi::c_uint,
+        pub __writers: ::core::ffi::c_uint,
+        pub __wrphase_futex: ::core::ffi::c_uint,
+        pub __writers_futex: ::core::ffi::c_uint,
+        pub __pad3: ::core::ffi::c_uint,
+        pub __pad4: ::core::ffi::c_uint,
+        pub __cur_writer: ::core::ffi::c_int,
+        pub __shared: ::core::ffi::c_int,
+        pub __rwelision: ::core::ffi::c_schar,
+        pub __pad1: [::core::ffi::c_uchar; 7usize],
+        pub __pad2: ::core::ffi::c_ulong,
+        pub __flags: ::core::ffi::c_uint,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of __pthread_rwlock_arch_t"]
+            [::core::mem::size_of::<__pthread_rwlock_arch_t>() - 56usize];
+        ["Alignment of __pthread_rwlock_arch_t"]
+            [::core::mem::align_of::<__pthread_rwlock_arch_t>() - 8usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__readers"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __readers) - 0usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__writers"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __writers) - 4usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__wrphase_futex"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __wrphase_futex) - 8usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__writers_futex"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __writers_futex) - 12usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__pad3"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __pad3) - 16usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__pad4"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __pad4) - 20usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__cur_writer"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __cur_writer) - 24usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__shared"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __shared) - 28usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__rwelision"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __rwelision) - 32usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__pad1"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __pad1) - 33usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__pad2"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __pad2) - 40usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__flags"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __flags) - 48usize];
+    };
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub struct __pthread_cond_s {
+        pub __wseq: root::__atomic_wide_counter,
+        pub __g1_start: root::__atomic_wide_counter,
+        pub __g_size: [::core::ffi::c_uint; 2usize],
+        pub __g1_orig_size: ::core::ffi::c_uint,
+        pub __wrefs: ::core::ffi::c_uint,
+        pub __g_signals: [::core::ffi::c_uint; 2usize],
+        pub __unused_initialized_1: ::core::ffi::c_uint,
+        pub __unused_initialized_2: ::core::ffi::c_uint,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of __pthread_cond_s"][::core::mem::size_of::<__pthread_cond_s>() - 48usize];
+        ["Alignment of __pthread_cond_s"][::core::mem::align_of::<__pthread_cond_s>() - 8usize];
+        ["Offset of field: __pthread_cond_s::__wseq"]
+            [::core::mem::offset_of!(__pthread_cond_s, __wseq) - 0usize];
+        ["Offset of field: __pthread_cond_s::__g1_start"]
+            [::core::mem::offset_of!(__pthread_cond_s, __g1_start) - 8usize];
+        ["Offset of field: __pthread_cond_s::__g_size"]
+            [::core::mem::offset_of!(__pthread_cond_s, __g_size) - 16usize];
+        ["Offset of field: __pthread_cond_s::__g1_orig_size"]
+            [::core::mem::offset_of!(__pthread_cond_s, __g1_orig_size) - 24usize];
+        ["Offset of field: __pthread_cond_s::__wrefs"]
+            [::core::mem::offset_of!(__pthread_cond_s, __wrefs) - 28usize];
+        ["Offset of field: __pthread_cond_s::__g_signals"]
+            [::core::mem::offset_of!(__pthread_cond_s, __g_signals) - 32usize];
+        ["Offset of field: __pthread_cond_s::__unused_initialized_1"]
+            [::core::mem::offset_of!(__pthread_cond_s, __unused_initialized_1) - 40usize];
+        ["Offset of field: __pthread_cond_s::__unused_initialized_2"]
+            [::core::mem::offset_of!(__pthread_cond_s, __unused_initialized_2) - 44usize];
+    };
+    pub type __tss_t = ::core::ffi::c_uint;
+    pub type __thrd_t = ::core::ffi::c_ulong;
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct __once_flag {
+        pub __data: ::core::ffi::c_int,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of __once_flag"][::core::mem::size_of::<__once_flag>() - 4usize];
+        ["Alignment of __once_flag"][::core::mem::align_of::<__once_flag>() - 4usize];
+        ["Offset of field: __once_flag::__data"]
+            [::core::mem::offset_of!(__once_flag, __data) - 0usize];
+    };
+    pub type pthread_t = ::core::ffi::c_ulong;
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub union pthread_mutexattr_t {
+        pub __size: [::core::ffi::c_char; 4usize],
+        pub __align: ::core::ffi::c_int,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of pthread_mutexattr_t"][::core::mem::size_of::<pthread_mutexattr_t>() - 4usize];
+        ["Alignment of pthread_mutexattr_t"]
+            [::core::mem::align_of::<pthread_mutexattr_t>() - 4usize];
+        ["Offset of field: pthread_mutexattr_t::__size"]
+            [::core::mem::offset_of!(pthread_mutexattr_t, __size) - 0usize];
+        ["Offset of field: pthread_mutexattr_t::__align"]
+            [::core::mem::offset_of!(pthread_mutexattr_t, __align) - 0usize];
+    };
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub union pthread_condattr_t {
+        pub __size: [::core::ffi::c_char; 4usize],
+        pub __align: ::core::ffi::c_int,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of pthread_condattr_t"][::core::mem::size_of::<pthread_condattr_t>() - 4usize];
+        ["Alignment of pthread_condattr_t"][::core::mem::align_of::<pthread_condattr_t>() - 4usize];
+        ["Offset of field: pthread_condattr_t::__size"]
+            [::core::mem::offset_of!(pthread_condattr_t, __size) - 0usize];
+        ["Offset of field: pthread_condattr_t::__align"]
+            [::core::mem::offset_of!(pthread_condattr_t, __align) - 0usize];
+    };
+    pub type pthread_key_t = ::core::ffi::c_uint;
+    pub type pthread_once_t = ::core::ffi::c_int;
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub union pthread_attr_t {
+        pub __size: [::core::ffi::c_char; 56usize],
+        pub __align: ::core::ffi::c_long,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of pthread_attr_t"][::core::mem::size_of::<pthread_attr_t>() - 56usize];
+        ["Alignment of pthread_attr_t"][::core::mem::align_of::<pthread_attr_t>() - 8usize];
+        ["Offset of field: pthread_attr_t::__size"]
+            [::core::mem::offset_of!(pthread_attr_t, __size) - 0usize];
+        ["Offset of field: pthread_attr_t::__align"]
+            [::core::mem::offset_of!(pthread_attr_t, __align) - 0usize];
+    };
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub union pthread_mutex_t {
+        pub __data: root::__pthread_mutex_s,
+        pub __size: [::core::ffi::c_char; 40usize],
+        pub __align: ::core::ffi::c_long,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of pthread_mutex_t"][::core::mem::size_of::<pthread_mutex_t>() - 40usize];
+        ["Alignment of pthread_mutex_t"][::core::mem::align_of::<pthread_mutex_t>() - 8usize];
+        ["Offset of field: pthread_mutex_t::__data"]
+            [::core::mem::offset_of!(pthread_mutex_t, __data) - 0usize];
+        ["Offset of field: pthread_mutex_t::__size"]
+            [::core::mem::offset_of!(pthread_mutex_t, __size) - 0usize];
+        ["Offset of field: pthread_mutex_t::__align"]
+            [::core::mem::offset_of!(pthread_mutex_t, __align) - 0usize];
+    };
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub union pthread_cond_t {
+        pub __data: root::__pthread_cond_s,
+        pub __size: [::core::ffi::c_char; 48usize],
+        pub __align: ::core::ffi::c_longlong,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of pthread_cond_t"][::core::mem::size_of::<pthread_cond_t>() - 48usize];
+        ["Alignment of pthread_cond_t"][::core::mem::align_of::<pthread_cond_t>() - 8usize];
+        ["Offset of field: pthread_cond_t::__data"]
+            [::core::mem::offset_of!(pthread_cond_t, __data) - 0usize];
+        ["Offset of field: pthread_cond_t::__size"]
+            [::core::mem::offset_of!(pthread_cond_t, __size) - 0usize];
+        ["Offset of field: pthread_cond_t::__align"]
+            [::core::mem::offset_of!(pthread_cond_t, __align) - 0usize];
+    };
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub union pthread_rwlock_t {
+        pub __data: root::__pthread_rwlock_arch_t,
+        pub __size: [::core::ffi::c_char; 56usize],
+        pub __align: ::core::ffi::c_long,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of pthread_rwlock_t"][::core::mem::size_of::<pthread_rwlock_t>() - 56usize];
+        ["Alignment of pthread_rwlock_t"][::core::mem::align_of::<pthread_rwlock_t>() - 8usize];
+        ["Offset of field: pthread_rwlock_t::__data"]
+            [::core::mem::offset_of!(pthread_rwlock_t, __data) - 0usize];
+        ["Offset of field: pthread_rwlock_t::__size"]
+            [::core::mem::offset_of!(pthread_rwlock_t, __size) - 0usize];
+        ["Offset of field: pthread_rwlock_t::__align"]
+            [::core::mem::offset_of!(pthread_rwlock_t, __align) - 0usize];
+    };
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub union pthread_rwlockattr_t {
+        pub __size: [::core::ffi::c_char; 8usize],
+        pub __align: ::core::ffi::c_long,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of pthread_rwlockattr_t"][::core::mem::size_of::<pthread_rwlockattr_t>() - 8usize];
+        ["Alignment of pthread_rwlockattr_t"]
+            [::core::mem::align_of::<pthread_rwlockattr_t>() - 8usize];
+        ["Offset of field: pthread_rwlockattr_t::__size"]
+            [::core::mem::offset_of!(pthread_rwlockattr_t, __size) - 0usize];
+        ["Offset of field: pthread_rwlockattr_t::__align"]
+            [::core::mem::offset_of!(pthread_rwlockattr_t, __align) - 0usize];
+    };
+    pub type pthread_spinlock_t = ::core::ffi::c_int;
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub union pthread_barrier_t {
+        pub __size: [::core::ffi::c_char; 32usize],
+        pub __align: ::core::ffi::c_long,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of pthread_barrier_t"][::core::mem::size_of::<pthread_barrier_t>() - 32usize];
+        ["Alignment of pthread_barrier_t"][::core::mem::align_of::<pthread_barrier_t>() - 8usize];
+        ["Offset of field: pthread_barrier_t::__size"]
+            [::core::mem::offset_of!(pthread_barrier_t, __size) - 0usize];
+        ["Offset of field: pthread_barrier_t::__align"]
+            [::core::mem::offset_of!(pthread_barrier_t, __align) - 0usize];
+    };
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub union pthread_barrierattr_t {
+        pub __size: [::core::ffi::c_char; 4usize],
+        pub __align: ::core::ffi::c_int,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of pthread_barrierattr_t"][::core::mem::size_of::<pthread_barrierattr_t>() - 4usize];
+        ["Alignment of pthread_barrierattr_t"]
+            [::core::mem::align_of::<pthread_barrierattr_t>() - 4usize];
+        ["Offset of field: pthread_barrierattr_t::__size"]
+            [::core::mem::offset_of!(pthread_barrierattr_t, __size) - 0usize];
+        ["Offset of field: pthread_barrierattr_t::__align"]
+            [::core::mem::offset_of!(pthread_barrierattr_t, __align) - 0usize];
+    };
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct dirent {
+        pub d_ino: root::__ino_t,
+        pub d_off: root::__off_t,
+        pub d_reclen: ::core::ffi::c_ushort,
+        pub d_type: ::core::ffi::c_uchar,
+        pub d_name: [::core::ffi::c_char; 256usize],
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of dirent"][::core::mem::size_of::<dirent>() - 280usize];
+        ["Alignment of dirent"][::core::mem::align_of::<dirent>() - 8usize];
+        ["Offset of field: dirent::d_ino"][::core::mem::offset_of!(dirent, d_ino) - 0usize];
+        ["Offset of field: dirent::d_off"][::core::mem::offset_of!(dirent, d_off) - 8usize];
+        ["Offset of field: dirent::d_reclen"][::core::mem::offset_of!(dirent, d_reclen) - 16usize];
+        ["Offset of field: dirent::d_type"][::core::mem::offset_of!(dirent, d_type) - 18usize];
+        ["Offset of field: dirent::d_name"][::core::mem::offset_of!(dirent, d_name) - 19usize];
+    };
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct dirent64 {
+        pub d_ino: root::__ino64_t,
+        pub d_off: root::__off64_t,
+        pub d_reclen: ::core::ffi::c_ushort,
+        pub d_type: ::core::ffi::c_uchar,
+        pub d_name: [::core::ffi::c_char; 256usize],
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of dirent64"][::core::mem::size_of::<dirent64>() - 280usize];
+        ["Alignment of dirent64"][::core::mem::align_of::<dirent64>() - 8usize];
+        ["Offset of field: dirent64::d_ino"][::core::mem::offset_of!(dirent64, d_ino) - 0usize];
+        ["Offset of field: dirent64::d_off"][::core::mem::offset_of!(dirent64, d_off) - 8usize];
+        ["Offset of field: dirent64::d_reclen"]
+            [::core::mem::offset_of!(dirent64, d_reclen) - 16usize];
+        ["Offset of field: dirent64::d_type"][::core::mem::offset_of!(dirent64, d_type) - 18usize];
+        ["Offset of field: dirent64::d_name"][::core::mem::offset_of!(dirent64, d_name) - 19usize];
+    };
+    pub const DT_UNKNOWN: root::_bindgen_ty_6 = 0;
+    pub const DT_FIFO: root::_bindgen_ty_6 = 1;
+    pub const DT_CHR: root::_bindgen_ty_6 = 2;
+    pub const DT_DIR: root::_bindgen_ty_6 = 4;
+    pub const DT_BLK: root::_bindgen_ty_6 = 6;
+    pub const DT_REG: root::_bindgen_ty_6 = 8;
+    pub const DT_LNK: root::_bindgen_ty_6 = 10;
+    pub const DT_SOCK: root::_bindgen_ty_6 = 12;
+    pub const DT_WHT: root::_bindgen_ty_6 = 14;
+    pub type _bindgen_ty_6 = ::core::ffi::c_uint;
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct __dirstream {
+        _unused: [u8; 0],
+    }
+    pub type DIR = root::__dirstream;
+    unsafe extern "C" {
+        pub fn closedir(__dirp: *mut root::DIR) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn opendir(__name: *const ::core::ffi::c_char) -> *mut root::DIR;
+    }
+    unsafe extern "C" {
+        pub fn fdopendir(__fd: ::core::ffi::c_int) -> *mut root::DIR;
+    }
+    unsafe extern "C" {
+        pub fn readdir(__dirp: *mut root::DIR) -> *mut root::dirent;
+    }
+    unsafe extern "C" {
+        pub fn readdir64(__dirp: *mut root::DIR) -> *mut root::dirent64;
+    }
+    unsafe extern "C" {
+        pub fn readdir_r(
+            __dirp: *mut root::DIR,
+            __entry: *mut root::dirent,
+            __result: *mut *mut root::dirent,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn readdir64_r(
+            __dirp: *mut root::DIR,
+            __entry: *mut root::dirent64,
+            __result: *mut *mut root::dirent64,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn rewinddir(__dirp: *mut root::DIR);
+    }
+    unsafe extern "C" {
+        pub fn seekdir(__dirp: *mut root::DIR, __pos: ::core::ffi::c_long);
+    }
+    unsafe extern "C" {
+        pub fn telldir(__dirp: *mut root::DIR) -> ::core::ffi::c_long;
+    }
+    unsafe extern "C" {
+        pub fn dirfd(__dirp: *mut root::DIR) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn __sysconf(__name: ::core::ffi::c_int) -> ::core::ffi::c_long;
+    }
+    unsafe extern "C" {
+        pub fn scandir(
+            __dir: *const ::core::ffi::c_char,
+            __namelist: *mut *mut *mut root::dirent,
+            __selector: ::core::option::Option<
+                unsafe extern "C" fn(arg1: *const root::dirent) -> ::core::ffi::c_int,
+            >,
+            __cmp: ::core::option::Option<
+                unsafe extern "C" fn(
+                    arg1: *mut *const root::dirent,
+                    arg2: *mut *const root::dirent,
+                ) -> ::core::ffi::c_int,
+            >,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn scandir64(
+            __dir: *const ::core::ffi::c_char,
+            __namelist: *mut *mut *mut root::dirent64,
+            __selector: ::core::option::Option<
+                unsafe extern "C" fn(arg1: *const root::dirent64) -> ::core::ffi::c_int,
+            >,
+            __cmp: ::core::option::Option<
+                unsafe extern "C" fn(
+                    arg1: *mut *const root::dirent64,
+                    arg2: *mut *const root::dirent64,
+                ) -> ::core::ffi::c_int,
+            >,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn scandirat(
+            __dfd: ::core::ffi::c_int,
+            __dir: *const ::core::ffi::c_char,
+            __namelist: *mut *mut *mut root::dirent,
+            __selector: ::core::option::Option<
+                unsafe extern "C" fn(arg1: *const root::dirent) -> ::core::ffi::c_int,
+            >,
+            __cmp: ::core::option::Option<
+                unsafe extern "C" fn(
+                    arg1: *mut *const root::dirent,
+                    arg2: *mut *const root::dirent,
+                ) -> ::core::ffi::c_int,
+            >,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn scandirat64(
+            __dfd: ::core::ffi::c_int,
+            __dir: *const ::core::ffi::c_char,
+            __namelist: *mut *mut *mut root::dirent64,
+            __selector: ::core::option::Option<
+                unsafe extern "C" fn(arg1: *const root::dirent64) -> ::core::ffi::c_int,
+            >,
+            __cmp: ::core::option::Option<
+                unsafe extern "C" fn(
+                    arg1: *mut *const root::dirent64,
+                    arg2: *mut *const root::dirent64,
+                ) -> ::core::ffi::c_int,
+            >,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn alphasort(
+            __e1: *mut *const root::dirent,
+            __e2: *mut *const root::dirent,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn alphasort64(
+            __e1: *mut *const root::dirent64,
+            __e2: *mut *const root::dirent64,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn getdirentries(
+            __fd: ::core::ffi::c_int,
+            __buf: *mut ::core::ffi::c_char,
+            __nbytes: usize,
+            __basep: *mut root::__off_t,
+        ) -> root::__ssize_t;
+    }
+    unsafe extern "C" {
+        pub fn getdirentries64(
+            __fd: ::core::ffi::c_int,
+            __buf: *mut ::core::ffi::c_char,
+            __nbytes: usize,
+            __basep: *mut root::__off64_t,
+        ) -> root::__ssize_t;
+    }
+    unsafe extern "C" {
+        pub fn versionsort(
+            __e1: *mut *const root::dirent,
+            __e2: *mut *const root::dirent,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn versionsort64(
+            __e1: *mut *const root::dirent64,
+            __e2: *mut *const root::dirent64,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn getdents64(
+            __fd: ::core::ffi::c_int,
+            __buffer: *mut ::core::ffi::c_void,
+            __length: usize,
+        ) -> root::__ssize_t;
+    }
+    pub type HINSTANCE = *mut ::core::ffi::c_void;
     pub mod std {
         #[allow(unused_imports)]
         use self::super::super::root;
@@ -1382,14 +3333,6 @@ pub mod root {
         pub type basic_string_reverse_iterator =
             root::std::reverse_iterator<root::std::basic_string_iterator>;
         pub type basic_string___const_iterator = root::std::basic_string_const_iterator;
-        pub type basic_string___sv_type<_CharT> = root::std::basic_string_view<_CharT>;
-        pub type basic_string__If_sv = root::std::enable_if_t;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct basic_string___sv_wrapper<_CharT> {
-            pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_CharT>>,
-            pub _M_sv: root::std::basic_string___sv_type<_CharT>,
-        }
         #[repr(C)]
         pub struct basic_string__Alloc_hider {
             pub _M_p: root::std::basic_string_pointer,
@@ -1414,10 +3357,12 @@ pub mod root {
         }
         pub type integral_constant_value_type<_Tp> = _Tp;
         pub type integral_constant_type = u8;
+        unsafe extern "C" {
+            pub static value: _Tp;
+        }
         pub type __bool_constant = u8;
         pub type true_type = u8;
         pub type false_type = u8;
-        pub type bool_constant = root::std::__bool_constant;
         pub type __enable_if_t = u8;
         pub type __conditional_type<_Tp> = _Tp;
         pub type __conditional_t = u8;
@@ -1432,335 +3377,6 @@ pub mod root {
             #[allow(unused_imports)]
             use self::super::super::super::root;
             pub type __first_t<_Tp> = _Tp;
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct __disjunction_impl {
-                pub _address: u8,
-            }
-            pub type __disjunction_impl_type<_B1> = _B1;
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct __conjunction_impl {
-                pub _address: u8,
-            }
-            pub type __conjunction_impl_type<_B1> = _B1;
-            pub mod __variant {
-                #[allow(unused_imports)]
-                use self::super::super::super::super::root;
-                #[repr(C)]
-                #[derive(Debug, Copy, Clone)]
-                pub struct _Never_valueless_alt {
-                    pub _address: u8,
-                }
-            }
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct _Identity {
-                pub _address: u8,
-            }
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of _Identity"][::core::mem::size_of::<_Identity>() - 1usize];
-                ["Alignment of _Identity"][::core::mem::align_of::<_Identity>() - 1usize];
-            };
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct _Select1st {
-                pub _address: u8,
-            }
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct _Select1st___1st_type {
-                pub _address: u8,
-            }
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of _Select1st"][::core::mem::size_of::<_Select1st>() - 1usize];
-                ["Alignment of _Select1st"][::core::mem::align_of::<_Select1st>() - 1usize];
-            };
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct _NodeBuilder {
-                pub _address: u8,
-            }
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of template specialization: _NodeBuilder_open0__Select1st_close0"]
-                    [::core::mem::size_of::<root::std::__detail::_NodeBuilder>() - 1usize];
-                ["Align of template specialization: _NodeBuilder_open0__Select1st_close0"]
-                    [::core::mem::align_of::<root::std::__detail::_NodeBuilder>() - 1usize];
-            };
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of template specialization: _NodeBuilder_open0__Identity_close0"]
-                    [::core::mem::size_of::<root::std::__detail::_NodeBuilder>() - 1usize];
-                ["Align of template specialization: _NodeBuilder_open0__Identity_close0"]
-                    [::core::mem::align_of::<root::std::__detail::_NodeBuilder>() - 1usize];
-            };
-            #[repr(C)]
-            #[derive(Debug)]
-            pub struct _NodePtrGuard<_HashtableAlloc, _NodePtr> {
-                pub _phantom_0:
-                    ::core::marker::PhantomData<::core::cell::UnsafeCell<_HashtableAlloc>>,
-                pub _phantom_1: ::core::marker::PhantomData<::core::cell::UnsafeCell<_NodePtr>>,
-                pub _M_h: *mut _HashtableAlloc,
-                pub _M_ptr: _NodePtr,
-            }
-            #[repr(C)]
-            #[derive(Debug)]
-            pub struct _ReuseOrAllocNode {
-                pub _M_nodes: root::std::__detail::_ReuseOrAllocNode___node_ptr,
-                pub _M_h: *mut root::std::__detail::_ReuseOrAllocNode___hashtable_alloc,
-            }
-            pub type _ReuseOrAllocNode___node_alloc_type<_NodeAlloc> = _NodeAlloc;
-            pub type _ReuseOrAllocNode___hashtable_alloc = root::std::__detail::_Hashtable_alloc;
-            pub type _ReuseOrAllocNode___node_alloc_traits =
-                root::std::__detail::_ReuseOrAllocNode___hashtable_alloc;
-            pub type _ReuseOrAllocNode___node_ptr =
-                root::std::__detail::_ReuseOrAllocNode___hashtable_alloc;
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct _AllocNode {
-                pub _M_h: *mut root::std::__detail::_AllocNode___hashtable_alloc,
-            }
-            pub type _AllocNode___hashtable_alloc = root::std::__detail::_Hashtable_alloc;
-            pub type _AllocNode___node_ptr = root::std::__detail::_AllocNode___hashtable_alloc;
-            pub type _Hashtable_traits___hash_cached = root::std::__bool_constant;
-            pub type _Hashtable_traits___constant_iterators = root::std::__bool_constant;
-            pub type _Hashtable_traits___unique_keys = root::std::__bool_constant;
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct _Hashtable_hash_traits {
-                pub _address: u8,
-            }
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct _Hash_node_base {
-                pub _M_nxt: *mut root::std::__detail::_Hash_node_base,
-            }
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of _Hash_node_base"][::core::mem::size_of::<_Hash_node_base>() - 8usize];
-                ["Alignment of _Hash_node_base"]
-                    [::core::mem::align_of::<_Hash_node_base>() - 8usize];
-                ["Offset of field: _Hash_node_base::_M_nxt"]
-                    [::core::mem::offset_of!(_Hash_node_base, _M_nxt) - 0usize];
-            };
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct _Hash_node_value_base {
-                pub _M_storage: root::__gnu_cxx::__aligned_buffer,
-            }
-            pub type _Hash_node_value_base_value_type<_Value> = _Value;
-            pub type _Node_iterator_base___node_type = u8;
-            pub type _Node_iterator___base_type = u8;
-            pub type _Node_iterator___node_type = root::std::__detail::_Node_iterator___base_type;
-            pub type _Node_iterator_value_type<_Value> = _Value;
-            pub type _Node_iterator_difference_type = isize;
-            pub type _Node_iterator_iterator_category = root::std::forward_iterator_tag;
-            pub type _Node_iterator_pointer = root::std::__conditional_t;
-            pub type _Node_iterator_reference = root::std::__conditional_t;
-            pub type _Node_const_iterator___base_type = u8;
-            pub type _Node_const_iterator___node_type =
-                root::std::__detail::_Node_const_iterator___base_type;
-            pub type _Node_const_iterator___iterator = u8;
-            pub type _Node_const_iterator_value_type<_Value> = _Value;
-            pub type _Node_const_iterator_difference_type = isize;
-            pub type _Node_const_iterator_iterator_category = root::std::forward_iterator_tag;
-            pub type _Node_const_iterator_pointer<_Value> =
-                *const root::std::__detail::_Node_const_iterator_value_type<_Value>;
-            pub type _Node_const_iterator_reference<_Value> =
-                *const root::std::__detail::_Node_const_iterator_value_type<_Value>;
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct _Mod_range_hashing {
-                pub _address: u8,
-            }
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of _Mod_range_hashing"]
-                    [::core::mem::size_of::<_Mod_range_hashing>() - 1usize];
-                ["Alignment of _Mod_range_hashing"]
-                    [::core::mem::align_of::<_Mod_range_hashing>() - 1usize];
-            };
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct _Default_ranged_hash {
-                pub _address: u8,
-            }
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of _Default_ranged_hash"]
-                    [::core::mem::size_of::<_Default_ranged_hash>() - 1usize];
-                ["Alignment of _Default_ranged_hash"]
-                    [::core::mem::align_of::<_Default_ranged_hash>() - 1usize];
-            };
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct _Prime_rehash_policy {
-                pub _M_max_load_factor: f32,
-                pub _M_next_resize: usize,
-            }
-            pub type _Prime_rehash_policy___has_load_factor = root::std::true_type;
-            pub type _Prime_rehash_policy__State = usize;
-            pub const _Prime_rehash_policy__S_growth_factor: usize = 2;
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of _Prime_rehash_policy"]
-                    [::core::mem::size_of::<_Prime_rehash_policy>() - 16usize];
-                ["Alignment of _Prime_rehash_policy"]
-                    [::core::mem::align_of::<_Prime_rehash_policy>() - 8usize];
-                ["Offset of field: _Prime_rehash_policy::_M_max_load_factor"]
-                    [::core::mem::offset_of!(_Prime_rehash_policy, _M_max_load_factor) - 0usize];
-                ["Offset of field: _Prime_rehash_policy::_M_next_resize"]
-                    [::core::mem::offset_of!(_Prime_rehash_policy, _M_next_resize) - 8usize];
-            };
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNKSt8__detail20_Prime_rehash_policy11_M_next_bktEm"]
-                pub fn _Prime_rehash_policy__M_next_bkt(
-                    this: *const root::std::__detail::_Prime_rehash_policy,
-                    __n: usize,
-                ) -> usize;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNKSt8__detail20_Prime_rehash_policy14_M_need_rehashEmmm"]
-                pub fn _Prime_rehash_policy__M_need_rehash(
-                    this: *const root::std::__detail::_Prime_rehash_policy,
-                    __n_bkt: usize,
-                    __n_elt: usize,
-                    __n_ins: usize,
-                ) -> root::std::pair<bool, usize>;
-            }
-            impl _Prime_rehash_policy {
-                #[inline]
-                pub unsafe fn _M_next_bkt(&self, __n: usize) -> usize {
-                    _Prime_rehash_policy__M_next_bkt(self, __n)
-                }
-                #[inline]
-                pub unsafe fn _M_need_rehash(
-                    &self,
-                    __n_bkt: usize,
-                    __n_elt: usize,
-                    __n_ins: usize,
-                ) -> root::std::pair<bool, usize> {
-                    _Prime_rehash_policy__M_need_rehash(self, __n_bkt, __n_elt, __n_ins)
-                }
-            }
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct _Mask_range_hashing {
-                pub _address: u8,
-            }
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of _Mask_range_hashing"]
-                    [::core::mem::size_of::<_Mask_range_hashing>() - 1usize];
-                ["Alignment of _Mask_range_hashing"]
-                    [::core::mem::align_of::<_Mask_range_hashing>() - 1usize];
-            };
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct _Power2_rehash_policy {
-                pub _M_max_load_factor: f32,
-                pub _M_next_resize: usize,
-            }
-            pub type _Power2_rehash_policy___has_load_factor = root::std::true_type;
-            pub type _Power2_rehash_policy__State = usize;
-            pub const _Power2_rehash_policy__S_growth_factor: usize = 2;
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of _Power2_rehash_policy"]
-                    [::core::mem::size_of::<_Power2_rehash_policy>() - 16usize];
-                ["Alignment of _Power2_rehash_policy"]
-                    [::core::mem::align_of::<_Power2_rehash_policy>() - 8usize];
-                ["Offset of field: _Power2_rehash_policy::_M_max_load_factor"]
-                    [::core::mem::offset_of!(_Power2_rehash_policy, _M_max_load_factor) - 0usize];
-                ["Offset of field: _Power2_rehash_policy::_M_next_resize"]
-                    [::core::mem::offset_of!(_Power2_rehash_policy, _M_next_resize) - 8usize];
-            };
-            #[repr(C)]
-            pub struct _RehashStateGuard<_RehashPolicy> {
-                pub _phantom_0:
-                    ::core::marker::PhantomData<::core::cell::UnsafeCell<_RehashPolicy>>,
-                pub _M_guarded_obj: *mut _RehashPolicy,
-                pub _M_prev_state: root::__BindgenOpaqueArray<u8, 0usize>,
-            }
-            pub type __has_load_factor = root::__BindgenOpaqueArray<u8, 0usize>;
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct _Rehash_base {
-                pub _address: u8,
-            }
-            pub type _Hash_code_base_hasher<_Hash> = _Hash;
-            pub type _Hash_code_base___hash_code = usize;
-            #[repr(C)]
-            pub struct _Hash_obj_storage<_Hash> {
-                pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_Hash>>,
-                pub _M_u: root::std::__detail::_Hash_obj_storage__Uninit_storage<_Hash>,
-            }
-            #[repr(C)]
-            #[repr(align(1))]
-            pub struct _Hash_obj_storage__Uninit_storage<_Hash> {
-                pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_Hash>>,
-                pub _M_h: root::__BindgenUnionField<_Hash>,
-                pub bindgen_union_field: [u8; 0usize],
-            }
-            pub type _Local_iterator___base_type = u8;
-            pub type _Local_iterator___hash_code_base =
-                root::std::__detail::_Local_iterator___base_type;
-            pub type _Local_iterator_value_type<_Value> = _Value;
-            pub type _Local_iterator_pointer = root::std::__conditional_t;
-            pub type _Local_iterator_reference = root::std::__conditional_t;
-            pub type _Local_iterator_difference_type = isize;
-            pub type _Local_iterator_iterator_category = root::std::forward_iterator_tag;
-            pub type _Local_const_iterator___base_type = u8;
-            pub type _Local_const_iterator___hash_code_base =
-                root::std::__detail::_Local_const_iterator___base_type;
-            pub type _Local_const_iterator_value_type<_Value> = _Value;
-            pub type _Local_const_iterator_pointer<_Value> =
-                *const root::std::__detail::_Local_const_iterator_value_type<_Value>;
-            pub type _Local_const_iterator_reference<_Value> =
-                *const root::std::__detail::_Local_const_iterator_value_type<_Value>;
-            pub type _Local_const_iterator_difference_type = isize;
-            pub type _Local_const_iterator_iterator_category = root::std::forward_iterator_tag;
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct _Hashtable_base {
-                pub _M_equal: u8,
-            }
-            pub type _Hashtable_base_key_type<_Key> = _Key;
-            pub type _Hashtable_base_value_type<_Value> = _Value;
-            pub type _Hashtable_base_key_equal<_Equal> = _Equal;
-            pub type _Hashtable_base_size_type = usize;
-            pub type _Hashtable_base_difference_type = isize;
-            pub type _Hashtable_base___traits_type<_Traits> = _Traits;
-            pub type _Hashtable_base___hash_cached = root::__BindgenOpaqueArray<u8, 0usize>;
-            pub type _Hashtable_base___hash_code_base = u8;
-            pub type _Hashtable_base___hash_code =
-                root::std::__detail::_Hashtable_base___hash_code_base;
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct _Hashtable_alloc {
-                pub _M_alloc: u8,
-            }
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct _Hashtable_alloc___get_value_type {
-                pub _address: u8,
-            }
-            pub type _Hashtable_alloc___node_type = root::__BindgenOpaqueArray<u8, 0usize>;
-            pub type _Hashtable_alloc___node_alloc_type<_NodeAlloc> = _NodeAlloc;
-            pub type _Hashtable_alloc___node_alloc_traits = root::__gnu_cxx::__alloc_traits;
-            pub type _Hashtable_alloc___value_alloc_traits = root::__BindgenOpaqueArray<u8, 0usize>;
-            pub type _Hashtable_alloc___node_ptr =
-                *mut root::std::__detail::_Hashtable_alloc___node_type;
-            pub type _Hashtable_alloc___node_base = root::std::__detail::_Hash_node_base;
-            pub type _Hashtable_alloc___node_base_ptr =
-                *mut root::std::__detail::_Hashtable_alloc___node_base;
-            pub type _Hashtable_alloc___buckets_alloc_type = root::std::__alloc_rebind;
-            pub type _Hashtable_alloc___buckets_alloc_traits = root::std::allocator_traits;
-            pub type _Hashtable_alloc___buckets_ptr =
-                *mut root::std::__detail::_Hashtable_alloc___node_base_ptr;
             #[repr(C)]
             #[derive(Debug, Copy, Clone)]
             pub struct _MakeUniq {
@@ -1784,35 +3400,6 @@ pub mod root {
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
         pub struct __not_ {
-            pub _address: u8,
-        }
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct conjunction {
-            pub _address: u8,
-        }
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: conjunction_open0_close0"]
-                [::core::mem::size_of::<root::std::conjunction>() - 1usize];
-            ["Align of template specialization: conjunction_open0_close0"]
-                [::core::mem::align_of::<root::std::conjunction>() - 1usize];
-        };
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct disjunction {
-            pub _address: u8,
-        }
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: disjunction_open0_close0"]
-                [::core::mem::size_of::<root::std::disjunction>() - 1usize];
-            ["Align of template specialization: disjunction_open0_close0"]
-                [::core::mem::align_of::<root::std::disjunction>() - 1usize];
-        };
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct negation {
             pub _address: u8,
         }
         pub type __remove_cv_t = root::std::remove_cv;
@@ -2981,7 +4568,6 @@ pub mod root {
         pub type common_type_t = root::std::common_type;
         pub type underlying_type_t = root::std::underlying_type;
         pub type result_of_t = root::std::result_of;
-        pub type void_t = ::core::ffi::c_void;
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
         pub struct __detector {
@@ -3051,66 +4637,6 @@ pub mod root {
         pub struct __is_nothrow_swappable {
             pub _address: u8,
         }
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct is_swappable {
-            pub _address: u8,
-        }
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct is_nothrow_swappable {
-            pub _address: u8,
-        }
-        pub mod __swappable_with_details {
-            #[allow(unused_imports)]
-            use self::super::super::super::root;
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct __do_is_swappable_with_impl {
-                pub _address: u8,
-            }
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of __do_is_swappable_with_impl"]
-                    [::core::mem::size_of::<__do_is_swappable_with_impl>() - 1usize];
-                ["Alignment of __do_is_swappable_with_impl"]
-                    [::core::mem::align_of::<__do_is_swappable_with_impl>() - 1usize];
-            };
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct __do_is_nothrow_swappable_with_impl {
-                pub _address: u8,
-            }
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of __do_is_nothrow_swappable_with_impl"]
-                    [::core::mem::size_of::<__do_is_nothrow_swappable_with_impl>() - 1usize];
-                ["Alignment of __do_is_nothrow_swappable_with_impl"]
-                    [::core::mem::align_of::<__do_is_nothrow_swappable_with_impl>() - 1usize];
-            };
-        }
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct __is_swappable_with_impl {
-            pub _address: u8,
-        }
-        pub type __is_swappable_with_impl_type<_Tp> = _Tp;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct __is_nothrow_swappable_with_impl {
-            pub _address: u8,
-        }
-        pub type __is_nothrow_swappable_with_impl_type<_Tp> = _Tp;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct is_swappable_with {
-            pub _address: u8,
-        }
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct is_nothrow_swappable_with {
-            pub _address: u8,
-        }
         pub type __is_invocable_impl___nothrow_conv = root::std::false_type;
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
@@ -3148,43 +4674,6 @@ pub mod root {
             ["Size of __nonesuch"][::core::mem::size_of::<__nonesuch>() - 1usize];
             ["Alignment of __nonesuch"][::core::mem::align_of::<__nonesuch>() - 1usize];
         };
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct invoke_result {
-            pub _address: u8,
-        }
-        pub type invoke_result_t = root::std::invoke_result;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct is_invocable {
-            pub _address: u8,
-        }
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct is_invocable_r {
-            pub _address: u8,
-        }
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct is_nothrow_invocable {
-            pub _address: u8,
-        }
-        pub type __is_nt_invocable_impl = u8;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct is_nothrow_invocable_r {
-            pub _address: u8,
-        }
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct has_unique_object_representations {
-            pub _address: u8,
-        }
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct is_aggregate {
-            pub _address: u8,
-        }
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
         pub struct __move_if_noexcept_cond {
@@ -3566,25 +5055,6 @@ pub mod root {
         pub type index_sequence = u8;
         pub type make_index_sequence = root::std::make_integer_sequence;
         pub type index_sequence_for = root::std::make_index_sequence;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct in_place_t {
-            pub _address: u8,
-        }
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of in_place_t"][::core::mem::size_of::<in_place_t>() - 1usize];
-            ["Alignment of in_place_t"][::core::mem::align_of::<in_place_t>() - 1usize];
-        };
-        unsafe extern "C" {
-            #[link_name = "\u{1}_ZSt8in_place"]
-            pub static in_place: root::std::in_place_t;
-        }
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct in_place_type_t {
-            pub _address: u8,
-        }
         pub type _Nth_type_type = u8;
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
@@ -3597,7 +5067,7 @@ pub mod root {
             ["Alignment of _Swallow_assign"][::core::mem::align_of::<_Swallow_assign>() - 1usize];
         };
         unsafe extern "C" {
-            #[link_name = "\u{1}_ZSt6ignore"]
+            #[link_name = "\u{1}_ZStL6ignore"]
             pub static ignore: root::std::_Swallow_assign;
         }
         #[repr(C)]
@@ -3613,7 +5083,7 @@ pub mod root {
                 [::core::mem::align_of::<piecewise_construct_t>() - 1usize];
         };
         unsafe extern "C" {
-            #[link_name = "\u{1}_ZSt19piecewise_construct"]
+            #[link_name = "\u{1}_ZStL19piecewise_construct"]
             pub static piecewise_construct: root::std::piecewise_construct_t;
         }
         #[repr(C)]
@@ -3665,7 +5135,7 @@ pub mod root {
             ["Alignment of allocator_arg_t"][::core::mem::align_of::<allocator_arg_t>() - 1usize];
         };
         unsafe extern "C" {
-            #[link_name = "\u{1}_ZSt13allocator_arg"]
+            #[link_name = "\u{1}_ZStL13allocator_arg"]
             pub static allocator_arg: root::std::allocator_arg_t;
         }
         #[repr(C)]
@@ -4000,13 +5470,6 @@ pub mod root {
             ["Align of template specialization: hash_open0_long_double_close0"]
                 [::core::mem::align_of::<root::std::hash>() - 1usize];
         };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: hash_open0_nullptr_t_close0"]
-                [::core::mem::size_of::<root::std::hash>() - 1usize];
-            ["Align of template specialization: hash_open0_nullptr_t_close0"]
-                [::core::mem::align_of::<root::std::hash>() - 1usize];
-        };
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
         pub struct __is_fast_hash {
@@ -4135,7 +5598,6 @@ pub mod root {
                 this: *mut ::core::ffi::c_void,
             ) -> *const ::core::ffi::c_char;
         }
-        pub type align_val_t = usize;
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
         pub struct nothrow_t {
@@ -4159,8 +5621,6 @@ pub mod root {
             #[link_name = "\u{1}_ZSt15get_new_handlerv"]
             pub fn get_new_handler() -> root::std::new_handler;
         }
-        pub const hardware_destructive_interference_size: usize = 64;
-        pub const hardware_constructive_interference_size: usize = 64;
         #[repr(C)]
         pub struct type_info__bindgen_vtable(::core::ffi::c_void);
         #[repr(C)]
@@ -4444,25 +5904,342 @@ pub mod root {
             ["Align of template specialization: _Function_handler_open0_void_void_close0"]
                 [::core::mem::align_of::<root::std::_Function_handler>() - 1usize];
         };
+        pub type _Mem_fn_base__Traits = root::std::_Mem_fn_traits;
+        pub type _Mem_fn_base__Arity = root::std::_Mem_fn_base__Traits;
+        pub type _Mem_fn_base__Varargs = root::std::_Mem_fn_base__Traits;
+        pub type _Mem_fn_base_result_type = root::std::_Mem_fn_base__Traits;
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
-        pub struct __function_guide_helper {
+        pub struct _Mem_fn {
             pub _address: u8,
         }
-        pub type __function_guide_t = root::std::__function_guide_helper;
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
-        pub struct initializer_list<_E> {
-            pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_E>>,
-            pub _M_array: root::std::initializer_list_iterator<_E>,
-            pub _M_len: root::std::initializer_list_size_type,
+        pub struct is_bind_expression {
+            pub _base: root::std::false_type,
         }
-        pub type initializer_list_value_type<_E> = _E;
-        pub type initializer_list_reference<_E> = *const _E;
-        pub type initializer_list_const_reference<_E> = *const _E;
-        pub type initializer_list_size_type = usize;
-        pub type initializer_list_iterator<_E> = *const _E;
-        pub type initializer_list_const_iterator<_E> = *const _E;
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct is_placeholder {
+            pub _base: u8,
+        }
+        pub mod placeholders {
+            #[allow(unused_imports)]
+            use self::super::super::super::root;
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders2_1E"]
+                pub static _1: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders2_2E"]
+                pub static _2: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders2_3E"]
+                pub static _3: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders2_4E"]
+                pub static _4: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders2_5E"]
+                pub static _5: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders2_6E"]
+                pub static _6: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders2_7E"]
+                pub static _7: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders2_8E"]
+                pub static _8: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders2_9E"]
+                pub static _9: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders3_10E"]
+                pub static _10: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders3_11E"]
+                pub static _11: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders3_12E"]
+                pub static _12: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders3_13E"]
+                pub static _13: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders3_14E"]
+                pub static _14: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders3_15E"]
+                pub static _15: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders3_16E"]
+                pub static _16: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders3_17E"]
+                pub static _17: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders3_18E"]
+                pub static _18: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders3_19E"]
+                pub static _19: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders3_20E"]
+                pub static _20: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders3_21E"]
+                pub static _21: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders3_22E"]
+                pub static _22: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders3_23E"]
+                pub static _23: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders3_24E"]
+                pub static _24: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders3_25E"]
+                pub static _25: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders3_26E"]
+                pub static _26: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders3_27E"]
+                pub static _27: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders3_28E"]
+                pub static _28: u8;
+            }
+            unsafe extern "C" {
+                #[link_name = "\u{1}_ZNSt12placeholders3_29E"]
+                pub static _29: u8;
+            }
+        }
+        pub type _Safe_tuple_element_t = u8;
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct _Bind {
+            pub _address: u8,
+        }
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct _Bind_result {
+            pub _address: u8,
+        }
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct _Bind_check_arity {
+            pub _address: u8,
+        }
+        pub type __is_socketlike = root::std::__or_;
+        pub type _Bind_helper___func_type = root::std::decay;
+        pub type _Bind_helper_type = root::std::_Bind;
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct _Bindres_helper {
+            pub _address: u8,
+        }
+        pub type _Bindres_helper___functor_type = root::std::decay;
+        pub type _Bindres_helper_type = root::std::_Bind_result;
+        #[repr(C)]
+        #[derive(Debug)]
+        pub struct _Not_fn<_Fn> {
+            pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_Fn>>,
+            pub _M_fn: _Fn,
+        }
+        pub type _Not_fn___inv_res_t = root::std::__invoke_result;
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct __is_byte_like {
+            pub _base: root::std::false_type,
+        }
+        #[repr(C)]
+        #[derive(Debug)]
+        pub struct __new_allocator {
+            pub _address: u8,
+        }
+        pub type __new_allocator_value_type<_Tp> = _Tp;
+        pub type __new_allocator_size_type = usize;
+        pub type __new_allocator_difference_type = isize;
+        pub type __new_allocator_pointer<_Tp> = *mut _Tp;
+        pub type __new_allocator_const_pointer<_Tp> = *const _Tp;
+        pub type __new_allocator_reference<_Tp> = *mut _Tp;
+        pub type __new_allocator_const_reference<_Tp> = *const _Tp;
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct __new_allocator_rebind {
+            pub _address: u8,
+        }
+        pub type __new_allocator_propagate_on_container_move_assignment = root::std::true_type;
+        pub type __allocator_base = root::std::__new_allocator;
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: allocator_open0_void_close0"]
+                [::core::mem::size_of::<root::std::allocator>() - 1usize];
+            ["Align of template specialization: allocator_open0_void_close0"]
+                [::core::mem::align_of::<root::std::allocator>() - 1usize];
+        };
+        #[repr(C)]
+        #[derive(Debug)]
+        pub struct allocator {
+            pub _address: u8,
+        }
+        pub type allocator_value_type<_Tp> = _Tp;
+        pub type allocator_size_type = usize;
+        pub type allocator_difference_type = isize;
+        pub type allocator_pointer<_Tp> = *mut _Tp;
+        pub type allocator_const_pointer<_Tp> = *const _Tp;
+        pub type allocator_reference<_Tp> = *mut _Tp;
+        pub type allocator_const_reference<_Tp> = *const _Tp;
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct allocator_rebind {
+            pub _address: u8,
+        }
+        pub type allocator_rebind_other = root::std::allocator;
+        pub type allocator_propagate_on_container_move_assignment = root::std::true_type;
+        pub type allocator_is_always_equal = root::std::true_type;
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: allocator_open0_char_close0"]
+                [::core::mem::size_of::<root::std::allocator>() - 1usize];
+            ["Align of template specialization: allocator_open0_char_close0"]
+                [::core::mem::align_of::<root::std::allocator>() - 1usize];
+        };
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: allocator_open0_wchar_t_close0"]
+                [::core::mem::size_of::<root::std::allocator>() - 1usize];
+            ["Align of template specialization: allocator_open0_wchar_t_close0"]
+                [::core::mem::align_of::<root::std::allocator>() - 1usize];
+        };
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct input_iterator_tag {
+            pub _address: u8,
+        }
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of input_iterator_tag"][::core::mem::size_of::<input_iterator_tag>() - 1usize];
+            ["Alignment of input_iterator_tag"]
+                [::core::mem::align_of::<input_iterator_tag>() - 1usize];
+        };
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct output_iterator_tag {
+            pub _address: u8,
+        }
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of output_iterator_tag"][::core::mem::size_of::<output_iterator_tag>() - 1usize];
+            ["Alignment of output_iterator_tag"]
+                [::core::mem::align_of::<output_iterator_tag>() - 1usize];
+        };
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct forward_iterator_tag {
+            pub _address: u8,
+        }
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of forward_iterator_tag"]
+                [::core::mem::size_of::<forward_iterator_tag>() - 1usize];
+            ["Alignment of forward_iterator_tag"]
+                [::core::mem::align_of::<forward_iterator_tag>() - 1usize];
+        };
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct bidirectional_iterator_tag {
+            pub _address: u8,
+        }
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of bidirectional_iterator_tag"]
+                [::core::mem::size_of::<bidirectional_iterator_tag>() - 1usize];
+            ["Alignment of bidirectional_iterator_tag"]
+                [::core::mem::align_of::<bidirectional_iterator_tag>() - 1usize];
+        };
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct random_access_iterator_tag {
+            pub _address: u8,
+        }
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of random_access_iterator_tag"]
+                [::core::mem::size_of::<random_access_iterator_tag>() - 1usize];
+            ["Alignment of random_access_iterator_tag"]
+                [::core::mem::align_of::<random_access_iterator_tag>() - 1usize];
+        };
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct iterator {
+            pub _address: u8,
+        }
+        pub type iterator_iterator_category<_Category> = _Category;
+        pub type iterator_value_type<_Tp> = _Tp;
+        pub type iterator_difference_type<_Distance> = _Distance;
+        pub type iterator_pointer<_Pointer> = _Pointer;
+        pub type iterator_reference<_Reference> = _Reference;
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct __iterator_traits {
+            pub _address: u8,
+        }
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct iterator_traits {
+            pub _address: u8,
+        }
+        pub type __iter_category_t = root::std::iterator_traits;
+        pub type _RequireInputIter = root::std::__enable_if_t;
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct __is_random_access_iter {
+            pub _address: u8,
+        }
+        pub type __is_random_access_iter__Base = root::std::is_base_of;
+        pub const __is_random_access_iter___value:
+            root::std::__is_random_access_iter__bindgen_ty_1 = 0;
+        pub type __is_random_access_iter__bindgen_ty_1 = i32;
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct _List_iterator {
+            pub _address: u8,
+        }
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct _List_const_iterator {
+            pub _address: u8,
+        }
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
         pub struct __true_type {
@@ -4698,13 +6475,6 @@ pub mod root {
             ["Align of template specialization: __is_byte_open0_unsigned_char_close0"]
                 [::core::mem::align_of::<root::std::__is_byte>() - 1usize];
         };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __is_byte_open0_byte_close0"]
-                [::core::mem::size_of::<root::std::__is_byte>() - 1usize];
-            ["Align of template specialization: __is_byte_open0_byte_close0"]
-                [::core::mem::align_of::<root::std::__is_byte>() - 1usize];
-        };
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
         pub struct __is_nonvolatile_trivially_copyable {
@@ -4755,103 +6525,22 @@ pub mod root {
         pub type __is_move_iterator__bindgen_ty_1 = i32;
         pub type __is_move_iterator___type = root::std::__false_type;
         #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct input_iterator_tag {
-            pub _address: u8,
+        #[derive(Debug)]
+        pub struct _Temporary_buffer<_Tp> {
+            pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_Tp>>,
+            pub _M_original_len: root::std::_Temporary_buffer_size_type,
+            pub _M_impl: root::std::_Temporary_buffer__Impl<_Tp>,
         }
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of input_iterator_tag"][::core::mem::size_of::<input_iterator_tag>() - 1usize];
-            ["Alignment of input_iterator_tag"]
-                [::core::mem::align_of::<input_iterator_tag>() - 1usize];
-        };
+        pub type _Temporary_buffer_value_type<_Tp> = _Tp;
+        pub type _Temporary_buffer_pointer<_Tp> = *mut root::std::_Temporary_buffer_value_type<_Tp>;
+        pub type _Temporary_buffer_iterator<_Tp> = root::std::_Temporary_buffer_pointer<_Tp>;
+        pub type _Temporary_buffer_size_type = isize;
         #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct output_iterator_tag {
-            pub _address: u8,
-        }
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of output_iterator_tag"][::core::mem::size_of::<output_iterator_tag>() - 1usize];
-            ["Alignment of output_iterator_tag"]
-                [::core::mem::align_of::<output_iterator_tag>() - 1usize];
-        };
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct forward_iterator_tag {
-            pub _address: u8,
-        }
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of forward_iterator_tag"]
-                [::core::mem::size_of::<forward_iterator_tag>() - 1usize];
-            ["Alignment of forward_iterator_tag"]
-                [::core::mem::align_of::<forward_iterator_tag>() - 1usize];
-        };
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct bidirectional_iterator_tag {
-            pub _address: u8,
-        }
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of bidirectional_iterator_tag"]
-                [::core::mem::size_of::<bidirectional_iterator_tag>() - 1usize];
-            ["Alignment of bidirectional_iterator_tag"]
-                [::core::mem::align_of::<bidirectional_iterator_tag>() - 1usize];
-        };
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct random_access_iterator_tag {
-            pub _address: u8,
-        }
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of random_access_iterator_tag"]
-                [::core::mem::size_of::<random_access_iterator_tag>() - 1usize];
-            ["Alignment of random_access_iterator_tag"]
-                [::core::mem::align_of::<random_access_iterator_tag>() - 1usize];
-        };
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct iterator {
-            pub _address: u8,
-        }
-        pub type iterator_iterator_category<_Category> = _Category;
-        pub type iterator_value_type<_Tp> = _Tp;
-        pub type iterator_difference_type<_Distance> = _Distance;
-        pub type iterator_pointer<_Pointer> = _Pointer;
-        pub type iterator_reference<_Reference> = _Reference;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct __iterator_traits {
-            pub _address: u8,
-        }
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct iterator_traits {
-            pub _address: u8,
-        }
-        pub type __iter_category_t = root::std::iterator_traits;
-        pub type _RequireInputIter = root::std::__enable_if_t;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct __is_random_access_iter {
-            pub _address: u8,
-        }
-        pub type __is_random_access_iter__Base = root::std::is_base_of;
-        pub const __is_random_access_iter___value:
-            root::std::__is_random_access_iter__bindgen_ty_1 = 0;
-        pub type __is_random_access_iter__bindgen_ty_1 = i32;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct _List_iterator {
-            pub _address: u8,
-        }
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct _List_const_iterator {
-            pub _address: u8,
+        #[derive(Debug)]
+        pub struct _Temporary_buffer__Impl<_Tp> {
+            pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_Tp>>,
+            pub _M_len: root::std::_Temporary_buffer_size_type,
+            pub _M_buffer: root::std::_Temporary_buffer_pointer<_Tp>,
         }
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
@@ -4941,14 +6630,15 @@ pub mod root {
         pub type move_iterator_difference_type = root::std::move_iterator___traits_type;
         pub type move_iterator_pointer<_Iterator> = _Iterator;
         pub type move_iterator_reference = root::std::__conditional_t;
-        pub type __iter_key_t = root::std::remove_const_t;
-        pub type __iter_val_t = root::std::iterator_traits;
-        pub type __iter_to_alloc_t =
-            root::std::pair<root::std::__iter_key_t, root::std::__iter_val_t>;
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
         pub struct _Deque_iterator {
             pub _address: u8,
+        }
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct _Bit_iterator {
+            _unused: [u8; 0],
         }
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
@@ -4960,6 +6650,14 @@ pub mod root {
         pub struct ostreambuf_iterator {
             pub _address: u8,
         }
+        unsafe extern "C" {
+            #[link_name = "\u{1}_ZSt9__fill_a1St13_Bit_iteratorS_RKb"]
+            pub fn __fill_a1(
+                arg1: root::std::_Bit_iterator,
+                arg2: root::std::_Bit_iterator,
+                arg3: *const bool,
+            );
+        }
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
         pub struct __lc_rai {
@@ -4969,66 +6667,6 @@ pub mod root {
         const _: () = {
             ["Size of template specialization: __lc_rai_open0_random_access_iterator_tag_random_access_iterator_tag_close0"] [:: core :: mem :: size_of :: < root :: std :: __lc_rai > () - 1usize] ;
             ["Align of template specialization: __lc_rai_open0_random_access_iterator_tag_random_access_iterator_tag_close0"] [:: core :: mem :: align_of :: < root :: std :: __lc_rai > () - 1usize] ;
-        };
-        #[repr(C)]
-        #[derive(Debug)]
-        pub struct __new_allocator {
-            pub _address: u8,
-        }
-        pub type __new_allocator_value_type<_Tp> = _Tp;
-        pub type __new_allocator_size_type = usize;
-        pub type __new_allocator_difference_type = isize;
-        pub type __new_allocator_pointer<_Tp> = *mut _Tp;
-        pub type __new_allocator_const_pointer<_Tp> = *const _Tp;
-        pub type __new_allocator_reference<_Tp> = *mut _Tp;
-        pub type __new_allocator_const_reference<_Tp> = *const _Tp;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct __new_allocator_rebind {
-            pub _address: u8,
-        }
-        pub type __new_allocator_propagate_on_container_move_assignment = root::std::true_type;
-        pub type __allocator_base = root::std::__new_allocator;
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: allocator_open0_void_close0"]
-                [::core::mem::size_of::<root::std::allocator>() - 1usize];
-            ["Align of template specialization: allocator_open0_void_close0"]
-                [::core::mem::align_of::<root::std::allocator>() - 1usize];
-        };
-        #[repr(C)]
-        #[derive(Debug)]
-        pub struct allocator {
-            pub _address: u8,
-        }
-        pub type allocator_value_type<_Tp> = _Tp;
-        pub type allocator_size_type = usize;
-        pub type allocator_difference_type = isize;
-        pub type allocator_pointer<_Tp> = *mut _Tp;
-        pub type allocator_const_pointer<_Tp> = *const _Tp;
-        pub type allocator_reference<_Tp> = *mut _Tp;
-        pub type allocator_const_reference<_Tp> = *const _Tp;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct allocator_rebind {
-            pub _address: u8,
-        }
-        pub type allocator_rebind_other = root::std::allocator;
-        pub type allocator_propagate_on_container_move_assignment = root::std::true_type;
-        pub type allocator_is_always_equal = root::std::true_type;
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: allocator_open0_char_close0"]
-                [::core::mem::size_of::<root::std::allocator>() - 1usize];
-            ["Align of template specialization: allocator_open0_char_close0"]
-                [::core::mem::align_of::<root::std::allocator>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: allocator_open0_wchar_t_close0"]
-                [::core::mem::size_of::<root::std::allocator>() - 1usize];
-            ["Align of template specialization: allocator_open0_wchar_t_close0"]
-                [::core::mem::align_of::<root::std::allocator>() - 1usize];
         };
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
@@ -5126,354 +6764,6 @@ pub mod root {
         pub type _RequireAllocator = u8;
         pub type _RequireNotAllocator = u8;
         #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct _Enable_default_constructor_tag {
-            pub _address: u8,
-        }
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of _Enable_default_constructor_tag"]
-                [::core::mem::size_of::<_Enable_default_constructor_tag>() - 1usize];
-            ["Alignment of _Enable_default_constructor_tag"]
-                [::core::mem::align_of::<_Enable_default_constructor_tag>() - 1usize];
-        };
-        #[repr(C)]
-        pub struct _Node_handle_common<_NodeAlloc> {
-            pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_NodeAlloc>>,
-            pub _M_ptr: root::std::_Node_handle_common__AllocTraits,
-            pub _M_alloc: root::std::_Node_handle_common__Optional_alloc<_NodeAlloc>,
-        }
-        pub type _Node_handle_common__AllocTraits = root::std::allocator_traits;
-        pub type _Node_handle_common_allocator_type = root::std::__alloc_rebind;
-        #[repr(C)]
-        #[repr(align(1))]
-        pub struct _Node_handle_common__Optional_alloc<_NodeAlloc> {
-            pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_NodeAlloc>>,
-            pub _M_alloc: root::__BindgenUnionField<_NodeAlloc>,
-            pub bindgen_union_field: [u8; 0usize],
-        }
-        #[repr(C)]
-        pub struct _Node_handle<_NodeAlloc> {
-            pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_NodeAlloc>>,
-            pub _base: root::std::_Node_handle_common<_NodeAlloc>,
-            pub _M_pkey: root::std::_Node_handle___pointer,
-            pub _M_pmapped: root::std::_Node_handle___pointer,
-        }
-        pub type _Node_handle_key_type<_Key> = _Key;
-        pub type _Node_handle_mapped_type = root::__BindgenOpaqueArray<u8, 0usize>;
-        pub type _Node_handle__AllocTraits = root::std::allocator_traits;
-        pub type _Node_handle___pointer = root::std::__ptr_rebind;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct _Node_insert_return<_Iterator, _NodeHandle> {
-            pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_Iterator>>,
-            pub _phantom_1: ::core::marker::PhantomData<::core::cell::UnsafeCell<_NodeHandle>>,
-            pub position: _Iterator,
-            pub inserted: bool,
-            pub node: _NodeHandle,
-        }
-        pub type __cache_default = root::std::__not_;
-        pub type _Hashtable_enable_default_ctor = u8;
-        #[repr(C)]
-        #[derive(Debug)]
-        pub struct _Hashtable<_RehashPolicy> {
-            pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_RehashPolicy>>,
-            pub _base: root::std::__detail::_Hashtable_base,
-            pub _base_3: root::std::__detail::_Hashtable_alloc,
-            pub _M_buckets: root::std::_Hashtable___buckets_ptr,
-            pub _M_bucket_count: root::std::_Hashtable_size_type,
-            pub _M_before_begin: root::std::_Hashtable___node_base,
-            pub _M_element_count: root::std::_Hashtable_size_type,
-            pub _M_rehash_policy: _RehashPolicy,
-            pub _M_single_bucket: root::std::_Hashtable___node_base_ptr,
-        }
-        pub type _Hashtable___traits_type<_Traits> = _Traits;
-        pub type _Hashtable___hash_cached = root::__BindgenOpaqueArray<u8, 0usize>;
-        pub type _Hashtable___constant_iterators = root::__BindgenOpaqueArray<u8, 0usize>;
-        pub type _Hashtable___node_type = u8;
-        pub type _Hashtable___node_alloc_type = root::std::__alloc_rebind;
-        pub type _Hashtable___hashtable_alloc = root::std::__detail::_Hashtable_alloc;
-        pub type _Hashtable___node_value_type = u8;
-        pub type _Hashtable___node_ptr = root::std::_Hashtable___hashtable_alloc;
-        pub type _Hashtable___value_alloc_traits = root::std::_Hashtable___hashtable_alloc;
-        pub type _Hashtable___node_alloc_traits = root::std::_Hashtable___hashtable_alloc;
-        pub type _Hashtable___node_base = root::std::_Hashtable___hashtable_alloc;
-        pub type _Hashtable___node_base_ptr = root::std::_Hashtable___hashtable_alloc;
-        pub type _Hashtable___buckets_ptr = root::std::_Hashtable___hashtable_alloc;
-        pub type _Hashtable___enable_default_ctor = root::std::_Hashtable_enable_default_ctor;
-        pub type _Hashtable___rehash_guard_t<_RehashPolicy> =
-            root::std::__detail::_RehashStateGuard<_RehashPolicy>;
-        pub type _Hashtable_key_type<_Key> = _Key;
-        pub type _Hashtable_value_type<_Value> = _Value;
-        pub type _Hashtable_allocator_type<_Alloc> = _Alloc;
-        pub type _Hashtable_key_equal<_Equal> = _Equal;
-        pub type _Hashtable_pointer = root::std::_Hashtable___value_alloc_traits;
-        pub type _Hashtable_const_pointer = root::std::_Hashtable___value_alloc_traits;
-        pub type _Hashtable_reference<_Value> = *mut root::std::_Hashtable_value_type<_Value>;
-        pub type _Hashtable_const_reference<_Value> =
-            *const root::std::_Hashtable_value_type<_Value>;
-        pub type _Hashtable_iterator = u8;
-        pub type _Hashtable_const_iterator = u8;
-        pub type _Hashtable_local_iterator = u8;
-        pub type _Hashtable_const_local_iterator = u8;
-        pub type _Hashtable___rehash_type<_RehashPolicy> = _RehashPolicy;
-        pub type _Hashtable___unique_keys = root::__BindgenOpaqueArray<u8, 0usize>;
-        pub type _Hashtable___hashtable_base = root::std::__detail::_Hashtable_base;
-        pub type _Hashtable___hash_code_base = root::std::_Hashtable___hashtable_base;
-        pub type _Hashtable___hash_code = root::std::_Hashtable___hashtable_base;
-        pub type _Hashtable___ireturn_type = root::std::__conditional_t;
-        pub type _Hashtable___map_base = u8;
-        pub type _Hashtable___rehash_base = root::std::__detail::_Rehash_base;
-        pub type _Hashtable___node_builder_t = root::std::__detail::_NodeBuilder;
-        #[repr(C)]
-        #[derive(Debug)]
-        pub struct _Hashtable__Scoped_node {
-            pub _M_h: *mut root::std::_Hashtable___hashtable_alloc,
-            pub _M_node: root::std::_Hashtable___node_ptr,
-        }
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct _Hashtable___hash_code_base_access {
-            pub _base: root::std::_Hashtable___hash_code_base,
-        }
-        pub type _Hashtable_size_type = root::std::_Hashtable___hashtable_base;
-        pub type _Hashtable_difference_type = root::std::_Hashtable___hashtable_base;
-        pub type _Hashtable_node_type =
-            root::std::_Node_handle<root::std::_Hashtable___node_alloc_type>;
-        pub type _Hashtable_insert_return_type = root::std::_Node_insert_return<
-            root::std::_Hashtable_iterator,
-            root::std::_Hashtable_node_type,
-        >;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct _Hashtable___location_type {
-            pub _M_before: root::std::_Hashtable___node_base_ptr,
-            pub _M_hash_code: root::std::_Hashtable___hash_code,
-            pub _M_bucket_index: root::std::_Hashtable_size_type,
-        }
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct _Hash_merge_helper {
-            pub _address: u8,
-        }
-        pub type _RequireNotAllocatorOrIntegral = root::std::__enable_if_t;
-        pub type __umap_traits = u8;
-        pub type __umap_hashtable = root::std::_Hashtable<_RehashPolicy>;
-        pub type __ummap_traits = u8;
-        pub type __ummap_hashtable = root::std::_Hashtable<_RehashPolicy>;
-        #[repr(C)]
-        #[derive(Debug)]
-        pub struct unordered_map {
-            pub _M_h: root::std::unordered_map__Hashtable,
-        }
-        pub type unordered_map__Hashtable = root::std::__umap_hashtable;
-        pub type unordered_map_key_type = root::std::unordered_map__Hashtable;
-        pub type unordered_map_value_type = root::std::unordered_map__Hashtable;
-        pub type unordered_map_mapped_type = root::std::unordered_map__Hashtable;
-        pub type unordered_map_hasher = root::std::unordered_map__Hashtable;
-        pub type unordered_map_key_equal = root::std::unordered_map__Hashtable;
-        pub type unordered_map_allocator_type = root::std::unordered_map__Hashtable;
-        pub type unordered_map_pointer = root::std::unordered_map__Hashtable;
-        pub type unordered_map_const_pointer = root::std::unordered_map__Hashtable;
-        pub type unordered_map_reference = root::std::unordered_map__Hashtable;
-        pub type unordered_map_const_reference = root::std::unordered_map__Hashtable;
-        pub type unordered_map_iterator = root::std::unordered_map__Hashtable;
-        pub type unordered_map_const_iterator = root::std::unordered_map__Hashtable;
-        pub type unordered_map_local_iterator = root::std::unordered_map__Hashtable;
-        pub type unordered_map_const_local_iterator = root::std::unordered_map__Hashtable;
-        pub type unordered_map_size_type = root::std::unordered_map__Hashtable;
-        pub type unordered_map_difference_type = root::std::unordered_map__Hashtable;
-        pub type unordered_map_node_type = root::std::unordered_map__Hashtable;
-        pub type unordered_map_insert_return_type = root::std::unordered_map__Hashtable;
-        #[repr(C)]
-        #[derive(Debug)]
-        pub struct unordered_multimap {
-            pub _M_h: root::std::unordered_multimap__Hashtable,
-        }
-        pub type unordered_multimap__Hashtable = root::std::__ummap_hashtable;
-        pub type unordered_multimap_key_type = root::std::unordered_multimap__Hashtable;
-        pub type unordered_multimap_value_type = root::std::unordered_multimap__Hashtable;
-        pub type unordered_multimap_mapped_type = root::std::unordered_multimap__Hashtable;
-        pub type unordered_multimap_hasher = root::std::unordered_multimap__Hashtable;
-        pub type unordered_multimap_key_equal = root::std::unordered_multimap__Hashtable;
-        pub type unordered_multimap_allocator_type = root::std::unordered_multimap__Hashtable;
-        pub type unordered_multimap_pointer = root::std::unordered_multimap__Hashtable;
-        pub type unordered_multimap_const_pointer = root::std::unordered_multimap__Hashtable;
-        pub type unordered_multimap_reference = root::std::unordered_multimap__Hashtable;
-        pub type unordered_multimap_const_reference = root::std::unordered_multimap__Hashtable;
-        pub type unordered_multimap_iterator = root::std::unordered_multimap__Hashtable;
-        pub type unordered_multimap_const_iterator = root::std::unordered_multimap__Hashtable;
-        pub type unordered_multimap_local_iterator = root::std::unordered_multimap__Hashtable;
-        pub type unordered_multimap_const_local_iterator = root::std::unordered_multimap__Hashtable;
-        pub type unordered_multimap_size_type = root::std::unordered_multimap__Hashtable;
-        pub type unordered_multimap_difference_type = root::std::unordered_multimap__Hashtable;
-        pub type unordered_multimap_node_type = root::std::unordered_multimap__Hashtable;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct valarray {
-            pub _address: u8,
-        }
-        pub type byte = ::core::ffi::c_uchar;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct __byte_operand {
-            pub _address: u8,
-        }
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_bool__close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_bool__close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_char_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_char_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_signed_char_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_signed_char_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_unsigned_char_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_unsigned_char_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_wchar_t_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_wchar_t_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_char16_t_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_char16_t_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_char32_t_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_char32_t_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_short_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_short_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_unsigned_short_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_unsigned_short_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_int_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_int_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_unsigned_int_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_unsigned_int_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_long_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_long_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_unsigned_long_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_unsigned_long_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_long_long_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_long_long_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_unsigned_long_long_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_unsigned_long_long_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        pub type __byte_op_t = root::std::__byte_operand;
-        pub mod pmr {
-            #[allow(unused_imports)]
-            use self::super::super::super::root;
-            #[repr(C)]
-            pub struct memory_resource__bindgen_vtable(::core::ffi::c_void);
-            #[repr(C)]
-            #[derive(Debug)]
-            pub struct memory_resource {
-                pub vtable_: *const memory_resource__bindgen_vtable,
-            }
-            pub const memory_resource__S_max_align: usize = 16;
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of memory_resource"][::core::mem::size_of::<memory_resource>() - 8usize];
-                ["Alignment of memory_resource"]
-                    [::core::mem::align_of::<memory_resource>() - 8usize];
-            };
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt3pmr15memory_resourceD1Ev"]
-                pub fn memory_resource_memory_resource_destructor(
-                    this: *mut root::std::pmr::memory_resource,
-                );
-            }
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct polymorphic_allocator {
-                pub _M_resource: *mut root::std::pmr::memory_resource,
-            }
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct polymorphic_allocator___not_pair {
-                pub _address: u8,
-            }
-            pub type polymorphic_allocator___not_pair_type = ::core::ffi::c_void;
-            pub type polymorphic_allocator_value_type<_Tp> = _Tp;
-            pub type polymorphic_allocator___uses_alloc1_ =
-                root::std::__uses_alloc1<root::std::pmr::polymorphic_allocator>;
-            pub type polymorphic_allocator___uses_alloc2_ =
-                root::std::__uses_alloc2<root::std::pmr::polymorphic_allocator>;
-            pub type unordered_map = root::std::unordered_map;
-            pub type unordered_multimap = root::std::unordered_multimap;
-            pub type vector = root::std::vector;
-            pub type basic_string<_CharT> = root::std::basic_string<_CharT>;
-            pub type string = root::std::basic_string<::core::ffi::c_char>;
-            pub type u16string = root::std::basic_string<u16>;
-            pub type u32string = root::std::basic_string<u32>;
-            pub type wstring = root::std::basic_string<u32>;
-        }
-        #[repr(C)]
         #[derive(Debug)]
         pub struct _UninitDestroyGuard<_ForwardIterator, _Alloc> {
             pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_ForwardIterator>>,
@@ -5486,391 +6776,6 @@ pub mod root {
         #[derive(Debug, Copy, Clone)]
         pub struct __is_bitwise_relocatable {
             pub _address: u8,
-        }
-        #[repr(C)]
-        pub struct _Vector_base {
-            pub _M_impl: root::std::_Vector_base__Vector_impl,
-        }
-        pub type _Vector_base__Tp_alloc_type = root::__BindgenOpaqueArray<u8, 0usize>;
-        pub type _Vector_base_pointer = root::__BindgenOpaqueArray<u8, 0usize>;
-        #[repr(C)]
-        pub struct _Vector_base__Vector_impl_data {
-            pub _M_start: root::std::_Vector_base_pointer,
-            pub _M_finish: root::std::_Vector_base_pointer,
-            pub _M_end_of_storage: root::std::_Vector_base_pointer,
-        }
-        #[repr(C)]
-        pub struct _Vector_base__Vector_impl {
-            pub _base_1: root::std::_Vector_base__Vector_impl_data,
-        }
-        pub type _Vector_base_allocator_type<_Alloc> = _Alloc;
-        #[repr(C)]
-        pub struct vector {
-            pub _base: root::std::_Vector_base,
-        }
-        pub type vector__Base = root::std::_Vector_base;
-        pub type vector__Tp_alloc_type = root::std::vector__Base;
-        pub type vector__Alloc_traits = root::__gnu_cxx::__alloc_traits;
-        pub type vector_value_type<_Tp> = _Tp;
-        pub type vector_pointer = root::std::vector__Base;
-        pub type vector_const_pointer = root::std::vector__Alloc_traits;
-        pub type vector_reference = root::std::vector__Alloc_traits;
-        pub type vector_const_reference = root::std::vector__Alloc_traits;
-        pub type vector_iterator = root::__gnu_cxx::__normal_iterator<root::std::vector_pointer>;
-        pub type vector_const_iterator =
-            root::__gnu_cxx::__normal_iterator<root::std::vector_const_pointer>;
-        pub type vector_const_reverse_iterator =
-            root::std::reverse_iterator<root::std::vector_const_iterator>;
-        pub type vector_reverse_iterator = root::std::reverse_iterator<root::std::vector_iterator>;
-        pub type vector_size_type = usize;
-        pub type vector_difference_type = isize;
-        pub type vector_allocator_type<_Alloc> = _Alloc;
-        #[repr(C)]
-        pub struct vector__Guard_alloc {
-            pub _M_storage: root::std::vector_pointer,
-            pub _M_len: root::std::vector_size_type,
-            pub _M_vect: *mut root::std::vector__Base,
-        }
-        #[repr(C)]
-        pub struct vector__Temporary_value<_Tp> {
-            pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_Tp>>,
-            pub _M_this: *mut root::std::vector,
-            pub _M_storage: root::std::vector__Temporary_value__Storage<_Tp>,
-        }
-        #[repr(C)]
-        pub union vector__Temporary_value__Storage<_Tp> {
-            pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_Tp>>,
-            pub _M_byte: ::core::ffi::c_uchar,
-            pub _M_val: _Tp,
-        }
-        pub type _Bit_type = ::core::ffi::c_ulong;
-        pub const std__S_word_bit: root::std::_bindgen_ty_1 = 64;
-        pub type _bindgen_ty_1 = ::core::ffi::c_uint;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct _Bit_reference {
-            pub _M_p: *mut root::std::_Bit_type,
-            pub _M_mask: root::std::_Bit_type,
-        }
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of _Bit_reference"][::core::mem::size_of::<_Bit_reference>() - 16usize];
-            ["Alignment of _Bit_reference"][::core::mem::align_of::<_Bit_reference>() - 8usize];
-            ["Offset of field: _Bit_reference::_M_p"]
-                [::core::mem::offset_of!(_Bit_reference, _M_p) - 0usize];
-            ["Offset of field: _Bit_reference::_M_mask"]
-                [::core::mem::offset_of!(_Bit_reference, _M_mask) - 8usize];
-        };
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct _Bit_iterator_base {
-            pub _M_p: *mut root::std::_Bit_type,
-            pub _M_offset: ::core::ffi::c_uint,
-        }
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of _Bit_iterator_base"][::core::mem::size_of::<_Bit_iterator_base>() - 16usize];
-            ["Alignment of _Bit_iterator_base"]
-                [::core::mem::align_of::<_Bit_iterator_base>() - 8usize];
-            ["Offset of field: _Bit_iterator_base::_M_p"]
-                [::core::mem::offset_of!(_Bit_iterator_base, _M_p) - 0usize];
-            ["Offset of field: _Bit_iterator_base::_M_offset"]
-                [::core::mem::offset_of!(_Bit_iterator_base, _M_offset) - 8usize];
-        };
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct _Bit_iterator {
-            pub _base: root::std::_Bit_iterator_base,
-        }
-        pub type _Bit_iterator_reference = root::std::_Bit_reference;
-        pub type _Bit_iterator_pointer = *mut root::std::_Bit_reference;
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of _Bit_iterator"][::core::mem::size_of::<_Bit_iterator>() - 16usize];
-            ["Alignment of _Bit_iterator"][::core::mem::align_of::<_Bit_iterator>() - 8usize];
-        };
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct _Bit_const_iterator {
-            pub _base: root::std::_Bit_iterator_base,
-        }
-        pub type _Bit_const_iterator_reference = bool;
-        pub type _Bit_const_iterator_const_reference = bool;
-        pub type _Bit_const_iterator_pointer = *const bool;
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of _Bit_const_iterator"]
-                [::core::mem::size_of::<_Bit_const_iterator>() - 16usize];
-            ["Alignment of _Bit_const_iterator"]
-                [::core::mem::align_of::<_Bit_const_iterator>() - 8usize];
-        };
-        #[repr(C)]
-        pub struct _Bvector_base {
-            pub _M_impl: root::std::_Bvector_base__Bvector_impl,
-        }
-        pub type _Bvector_base__Bit_alloc_type = root::__BindgenOpaqueArray<u8, 0usize>;
-        pub type _Bvector_base__Bit_alloc_traits = root::__gnu_cxx::__alloc_traits;
-        pub type _Bvector_base__Bit_pointer = root::__BindgenOpaqueArray<u8, 0usize>;
-        #[repr(C)]
-        pub struct _Bvector_base__Bvector_impl_data {
-            pub _M_start: root::std::_Bit_iterator,
-            pub _M_finish: root::std::_Bit_iterator,
-            pub _M_end_of_storage: root::std::_Bvector_base__Bit_pointer,
-        }
-        #[repr(C)]
-        pub struct _Bvector_base__Bvector_impl {
-            pub _base_1: root::std::_Bvector_base__Bvector_impl_data,
-        }
-        pub type _Bvector_base_allocator_type<_Alloc> = _Alloc;
-        pub type __array_traits__Type<_Tp> = *mut _Tp;
-        pub type __array_traits__Is_swappable = root::std::__is_swappable;
-        pub type __array_traits__Is_nothrow_swappable = root::std::__is_nothrow_swappable;
-        pub type array_value_type<_Tp> = _Tp;
-        pub type array_pointer<_Tp> = *mut root::std::array_value_type<_Tp>;
-        pub type array_const_pointer<_Tp> = *const root::std::array_value_type<_Tp>;
-        pub type array_reference<_Tp> = *mut root::std::array_value_type<_Tp>;
-        pub type array_const_reference<_Tp> = *const root::std::array_value_type<_Tp>;
-        pub type array_iterator<_Tp> = *mut root::std::array_value_type<_Tp>;
-        pub type array_const_iterator<_Tp> = *const root::std::array_value_type<_Tp>;
-        pub type array_size_type = usize;
-        pub type array_difference_type = isize;
-        pub type array_reverse_iterator<_Tp> =
-            root::std::reverse_iterator<root::std::array_iterator<_Tp>>;
-        pub type array_const_reverse_iterator<_Tp> =
-            root::std::reverse_iterator<root::std::array_const_iterator<_Tp>>;
-        pub type _Mem_fn_base__Traits = root::std::_Mem_fn_traits;
-        pub type _Mem_fn_base__Arity = root::std::_Mem_fn_base__Traits;
-        pub type _Mem_fn_base__Varargs = root::std::_Mem_fn_base__Traits;
-        pub type _Mem_fn_base_result_type = root::std::_Mem_fn_base__Traits;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct _Mem_fn {
-            pub _address: u8,
-        }
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct is_bind_expression {
-            pub _base: root::std::false_type,
-        }
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct is_placeholder {
-            pub _base: u8,
-        }
-        pub mod placeholders {
-            #[allow(unused_imports)]
-            use self::super::super::super::root;
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders2_1E"]
-                pub static _1: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders2_2E"]
-                pub static _2: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders2_3E"]
-                pub static _3: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders2_4E"]
-                pub static _4: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders2_5E"]
-                pub static _5: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders2_6E"]
-                pub static _6: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders2_7E"]
-                pub static _7: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders2_8E"]
-                pub static _8: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders2_9E"]
-                pub static _9: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders3_10E"]
-                pub static _10: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders3_11E"]
-                pub static _11: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders3_12E"]
-                pub static _12: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders3_13E"]
-                pub static _13: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders3_14E"]
-                pub static _14: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders3_15E"]
-                pub static _15: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders3_16E"]
-                pub static _16: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders3_17E"]
-                pub static _17: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders3_18E"]
-                pub static _18: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders3_19E"]
-                pub static _19: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders3_20E"]
-                pub static _20: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders3_21E"]
-                pub static _21: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders3_22E"]
-                pub static _22: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders3_23E"]
-                pub static _23: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders3_24E"]
-                pub static _24: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders3_25E"]
-                pub static _25: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders3_26E"]
-                pub static _26: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders3_27E"]
-                pub static _27: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders3_28E"]
-                pub static _28: u8;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt12placeholders3_29E"]
-                pub static _29: u8;
-            }
-        }
-        pub type _Safe_tuple_element_t = u8;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct _Bind {
-            pub _address: u8,
-        }
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct _Bind_result {
-            pub _address: u8,
-        }
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct _Bind_check_arity {
-            pub _address: u8,
-        }
-        pub type __is_socketlike = root::std::__or_;
-        pub type _Bind_helper___func_type = root::std::decay;
-        pub type _Bind_helper_type = root::std::_Bind;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct _Bindres_helper {
-            pub _address: u8,
-        }
-        pub type _Bindres_helper___functor_type = root::std::decay;
-        pub type _Bindres_helper_type = root::std::_Bind_result;
-        #[repr(C)]
-        #[derive(Debug)]
-        pub struct _Not_fn<_Fn> {
-            pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_Fn>>,
-            pub _M_fn: _Fn,
-        }
-        pub type _Not_fn___inv_res_t = root::std::__invoke_result;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct __is_byte_like {
-            pub _base: root::std::false_type,
-        }
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __is_byte_like_open0_byte_equal_to_open1_byte_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: __is_byte_like > () - 1usize] ;
-            ["Align of template specialization: __is_byte_like_open0_byte_equal_to_open1_byte_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: __is_byte_like > () - 1usize] ;
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __is_byte_like_open0_byte_equal_to_open1_void_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: __is_byte_like > () - 1usize] ;
-            ["Align of template specialization: __is_byte_like_open0_byte_equal_to_open1_void_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: __is_byte_like > () - 1usize] ;
-        };
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct default_searcher {
-            pub _M_m: root::std::tuple,
-        }
-        #[repr(C)]
-        #[derive(Debug)]
-        pub struct __boyer_moore_map_base {
-            pub _M_bad_char: root::std::unordered_map,
-        }
-        pub type __boyer_moore_map_base___diff_type<_Tp> = _Tp;
-        pub type __boyer_moore_array_base___diff_type<_Tp> = _Tp;
-        pub type __boyer_moore_base_t = root::std::__conditional_t;
-        #[repr(C)]
-        pub struct boyer_moore_searcher<_RAIter> {
-            pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_RAIter>>,
-            pub _M_pat: _RAIter,
-            pub _M_pat_end: _RAIter,
-            pub _M_good_suffix: root::std::vector,
-        }
-        pub type boyer_moore_searcher__Base = root::std::__boyer_moore_base_t;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct boyer_moore_horspool_searcher<_RAIter> {
-            pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_RAIter>>,
-            pub _M_pat: _RAIter,
-            pub _M_pat_end: _RAIter,
-        }
-        pub type boyer_moore_horspool_searcher__Base = root::std::__boyer_moore_base_t;
-        #[repr(C)]
-        #[derive(Debug)]
-        pub struct _Temporary_buffer<_Tp> {
-            pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_Tp>>,
-            pub _M_original_len: root::std::_Temporary_buffer_size_type,
-            pub _M_impl: root::std::_Temporary_buffer__Impl<_Tp>,
-        }
-        pub type _Temporary_buffer_value_type<_Tp> = _Tp;
-        pub type _Temporary_buffer_pointer<_Tp> = *mut root::std::_Temporary_buffer_value_type<_Tp>;
-        pub type _Temporary_buffer_iterator<_Tp> = root::std::_Temporary_buffer_pointer<_Tp>;
-        pub type _Temporary_buffer_size_type = isize;
-        #[repr(C)]
-        #[derive(Debug)]
-        pub struct _Temporary_buffer__Impl<_Tp> {
-            pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_Tp>>,
-            pub _M_len: root::std::_Temporary_buffer_size_type,
-            pub _M_buffer: root::std::_Temporary_buffer_pointer<_Tp>,
         }
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
@@ -6074,10 +6979,6 @@ pub mod root {
             #[link_name = "\u{1}_ZSt18uncaught_exceptionv"]
             pub fn uncaught_exception() -> bool;
         }
-        unsafe extern "C" {
-            #[link_name = "\u{1}_ZSt19uncaught_exceptionsv"]
-            pub fn uncaught_exceptions() -> ::core::ffi::c_int;
-        }
         pub mod __exception_ptr {
             #[allow(unused_imports)]
             use self::super::super::super::root;
@@ -6247,7 +7148,6 @@ pub mod root {
         pub type __shared_ptr__Assignable = root::std::__shared_ptr__Compatible;
         pub type __shared_ptr__UniqCompatible = root::std::__enable_if_t;
         pub type __shared_ptr__UniqAssignable = root::std::__shared_ptr__UniqCompatible;
-        pub type __shared_ptr_weak_type = u8;
         pub type __shared_ptr___esft_base_t = u8;
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
@@ -6278,7 +7178,6 @@ pub mod root {
         pub type shared_ptr__Constructible = u8;
         pub type shared_ptr__Assignable = u8;
         pub type shared_ptr_element_type = u8;
-        pub type shared_ptr_weak_type = root::std::weak_ptr;
         #[repr(C)]
         #[derive(Debug)]
         pub struct weak_ptr {
@@ -6542,75 +7441,22 @@ pub mod root {
         }
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
-        pub struct basic_string_view<_CharT> {
-            pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_CharT>>,
-            pub _M_len: usize,
-            pub _M_str: *const _CharT,
+        pub struct initializer_list<_E> {
+            pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_E>>,
+            pub _M_array: root::std::initializer_list_iterator<_E>,
+            pub _M_len: root::std::initializer_list_size_type,
         }
-        pub type basic_string_view_traits_type<_Traits> = _Traits;
-        pub type basic_string_view_value_type<_CharT> = _CharT;
-        pub type basic_string_view_pointer<_CharT> =
-            *mut root::std::basic_string_view_value_type<_CharT>;
-        pub type basic_string_view_const_pointer<_CharT> =
-            *const root::std::basic_string_view_value_type<_CharT>;
-        pub type basic_string_view_reference<_CharT> =
-            *mut root::std::basic_string_view_value_type<_CharT>;
-        pub type basic_string_view_const_reference<_CharT> =
-            *const root::std::basic_string_view_value_type<_CharT>;
-        pub type basic_string_view_const_iterator<_CharT> =
-            *const root::std::basic_string_view_value_type<_CharT>;
-        pub type basic_string_view_iterator<_CharT> =
-            root::std::basic_string_view_const_iterator<_CharT>;
-        pub type basic_string_view_const_reverse_iterator<_CharT> =
-            root::std::reverse_iterator<root::std::basic_string_view_const_iterator<_CharT>>;
-        pub type basic_string_view_reverse_iterator<_CharT> =
-            root::std::basic_string_view_const_reverse_iterator<_CharT>;
-        pub type basic_string_view_size_type = usize;
-        pub type basic_string_view_difference_type = isize;
-        pub type string_view = root::std::basic_string_view<::core::ffi::c_char>;
-        pub type wstring_view = root::std::basic_string_view<u32>;
-        pub type u16string_view = root::std::basic_string_view<u16>;
-        pub type u32string_view = root::std::basic_string_view<u32>;
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: hash_open0_basic_string_view_open1_char_char_traits_open2_char_close2_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: hash > () - 1usize] ;
-            ["Align of template specialization: hash_open0_basic_string_view_open1_char_char_traits_open2_char_close2_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: hash > () - 1usize] ;
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __is_fast_hash_open0_hash_open1_basic_string_view_open2_char_char_traits_open3_char_close3_close2_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: __is_fast_hash > () - 1usize] ;
-            ["Align of template specialization: __is_fast_hash_open0_hash_open1_basic_string_view_open2_char_char_traits_open3_char_close3_close2_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: __is_fast_hash > () - 1usize] ;
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: hash_open0_basic_string_view_open1_wchar_t_char_traits_open2_wchar_t_close2_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: hash > () - 1usize] ;
-            ["Align of template specialization: hash_open0_basic_string_view_open1_wchar_t_char_traits_open2_wchar_t_close2_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: hash > () - 1usize] ;
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __is_fast_hash_open0_hash_open1_basic_string_view_open2_wchar_t_char_traits_open3_wchar_t_close3_close2_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: __is_fast_hash > () - 1usize] ;
-            ["Align of template specialization: __is_fast_hash_open0_hash_open1_basic_string_view_open2_wchar_t_char_traits_open3_wchar_t_close3_close2_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: __is_fast_hash > () - 1usize] ;
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: hash_open0_basic_string_view_open1_char16_t_char_traits_open2_char16_t_close2_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: hash > () - 1usize] ;
-            ["Align of template specialization: hash_open0_basic_string_view_open1_char16_t_char_traits_open2_char16_t_close2_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: hash > () - 1usize] ;
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __is_fast_hash_open0_hash_open1_basic_string_view_open2_char16_t_char_traits_open3_char16_t_close3_close2_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: __is_fast_hash > () - 1usize] ;
-            ["Align of template specialization: __is_fast_hash_open0_hash_open1_basic_string_view_open2_char16_t_char_traits_open3_char16_t_close3_close2_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: __is_fast_hash > () - 1usize] ;
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: hash_open0_basic_string_view_open1_char32_t_char_traits_open2_char32_t_close2_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: hash > () - 1usize] ;
-            ["Align of template specialization: hash_open0_basic_string_view_open1_char32_t_char_traits_open2_char32_t_close2_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: hash > () - 1usize] ;
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __is_fast_hash_open0_hash_open1_basic_string_view_open2_char32_t_char_traits_open3_char32_t_close3_close2_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: __is_fast_hash > () - 1usize] ;
-            ["Align of template specialization: __is_fast_hash_open0_hash_open1_basic_string_view_open2_char32_t_char_traits_open3_char32_t_close3_close2_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: __is_fast_hash > () - 1usize] ;
-        };
+        pub type initializer_list_value_type<_E> = _E;
+        pub type initializer_list_reference<_E> = *const _E;
+        pub type initializer_list_const_reference<_E> = *const _E;
+        pub type initializer_list_size_type = usize;
+        pub type initializer_list_iterator<_E> = *const _E;
+        pub type initializer_list_const_iterator<_E> = *const _E;
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct valarray {
+            pub _address: u8,
+        }
         unsafe extern "C" {
             #[link_name = "\u{1}_ZSt7getlineIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RNSt7__cxx1112basic_stringIS4_S5_T1_EES4_"]
             pub fn getline(
@@ -6983,6 +7829,12 @@ pub mod root {
             #[link_name = "\u{1}den"]
             pub static ratio_den: ::core::ffi::c_long;
         }
+        unsafe extern "C" {
+            pub static num: ::core::ffi::c_long;
+        }
+        unsafe extern "C" {
+            pub static den: ::core::ffi::c_long;
+        }
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
         pub struct __is_ratio {
@@ -7289,31 +8141,6 @@ pub mod root {
             use self::super::super::super::root;
             pub type _Select_int = u8;
         }
-        pub mod filesystem {
-            #[allow(unused_imports)]
-            use self::super::super::super::root;
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct __file_clock {
-                pub _address: u8,
-            }
-            pub type __file_clock_duration = root::std::chrono::nanoseconds;
-            pub type __file_clock_rep = root::rep;
-            pub type __file_clock_period = u8;
-            pub type __file_clock_time_point =
-                root::std::chrono::time_point<root::std::chrono::duration<::core::ffi::c_long>>;
-            pub type __file_clock___sys_clock = root::std::chrono::system_clock;
-            pub const __file_clock_is_steady: bool = false;
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZNSt10filesystem12__file_clock13_S_epoch_diffE"]
-                pub static __file_clock__S_epoch_diff: root::std::chrono::seconds;
-            }
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of __file_clock"][::core::mem::size_of::<__file_clock>() - 1usize];
-                ["Alignment of __file_clock"][::core::mem::align_of::<__file_clock>() - 1usize];
-            };
-        }
         pub mod chrono {
             #[allow(unused_imports)]
             use self::super::super::super::root;
@@ -7328,10 +8155,6 @@ pub mod root {
             #[derive(Debug, Copy, Clone)]
             pub struct treat_as_floating_point {
                 pub _address: u8,
-            }
-            pub mod __detail {
-                #[allow(unused_imports)]
-                use self::super::super::super::super::root;
             }
             #[repr(C)]
             #[derive(Debug, Copy, Clone)]
@@ -7567,10 +8390,24 @@ pub mod root {
             ["Align of template specialization: __remove_unsigned_open0_unsigned_long_long_close0"] [:: core :: mem :: align_of :: < root :: __gnu_cxx :: __remove_unsigned > () - 1usize] ;
         };
         pub type __promote___type = f64;
-        pub type __promoted_t = u8;
-        pub type __promote_2 = u8;
-        pub type __promote_3 = u8;
-        pub type __promote_4 = u8;
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct __promote_2 {
+            pub _address: u8,
+        }
+        pub type __promote_2___type<_Tp2> = _Tp2;
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct __promote_3 {
+            pub _address: u8,
+        }
+        pub type __promote_3___type<_Tp2> = _Tp2;
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct __promote_4 {
+            pub _address: u8,
+        }
+        pub type __promote_4___type<_Tp2> = _Tp2;
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
         pub struct __is_integer_nonstrict {
@@ -7784,16 +8621,6 @@ pub mod root {
         }
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
-        pub struct __aligned_membuf {
-            pub _M_storage: *mut ::core::ffi::c_uchar,
-        }
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct __aligned_buffer {
-            pub _M_storage: *mut ::core::ffi::c_uchar,
-        }
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
         pub struct __alloc_traits {
             pub _address: u8,
         }
@@ -7813,6 +8640,16 @@ pub mod root {
             pub _address: u8,
         }
         pub type __alloc_traits_rebind_other = root::__gnu_cxx::__alloc_traits__Base_type;
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct __aligned_membuf {
+            pub _M_storage: *mut ::core::ffi::c_uchar,
+        }
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct __aligned_buffer {
+            pub _M_storage: *mut ::core::ffi::c_uchar,
+        }
         unsafe extern "C" {
             #[link_name = "\u{1}_ZN9__gnu_cxx27__verbose_terminate_handlerEv"]
             pub fn __verbose_terminate_handler();
@@ -7822,7 +8659,7 @@ pub mod root {
         pub const _Lock_policy__S_atomic: root::__gnu_cxx::_Lock_policy = 2;
         pub type _Lock_policy = ::core::ffi::c_uint;
         unsafe extern "C" {
-            #[link_name = "\u{1}_ZN9__gnu_cxx21__default_lock_policyE"]
+            #[link_name = "\u{1}_ZN9__gnu_cxxL21__default_lock_policyE"]
             pub static __default_lock_policy: root::__gnu_cxx::_Lock_policy;
         }
         #[repr(C)]
@@ -7945,6 +8782,46 @@ pub mod root {
             pub fn __uselocale(arg1: root::locale_t) -> root::locale_t;
         }
     }
+    unsafe extern "C" {
+        pub fn __errno_location() -> *mut ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub static mut program_invocation_name: *mut ::core::ffi::c_char;
+    }
+    unsafe extern "C" {
+        pub static mut program_invocation_short_name: *mut ::core::ffi::c_char;
+    }
+    pub type error_t = ::core::ffi::c_int;
+    unsafe extern "C" {
+        #[link_name = "\u{1}_Z12GetLastErrorv"]
+        pub fn GetLastError() -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        #[link_name = "\u{1}_Z16GetFileOfAddressPvPcm"]
+        pub fn GetFileOfAddress(
+            pAddr: *mut ::core::ffi::c_void,
+            buffer: *mut ::core::ffi::c_char,
+            maxlength: usize,
+        ) -> bool;
+    }
+    pub type int_least8_t = root::__int_least8_t;
+    pub type int_least16_t = root::__int_least16_t;
+    pub type int_least32_t = root::__int_least32_t;
+    pub type int_least64_t = root::__int_least64_t;
+    pub type uint_least8_t = root::__uint_least8_t;
+    pub type uint_least16_t = root::__uint_least16_t;
+    pub type uint_least32_t = root::__uint_least32_t;
+    pub type uint_least64_t = root::__uint_least64_t;
+    pub type int_fast8_t = ::core::ffi::c_schar;
+    pub type int_fast16_t = ::core::ffi::c_long;
+    pub type int_fast32_t = ::core::ffi::c_long;
+    pub type int_fast64_t = ::core::ffi::c_long;
+    pub type uint_fast8_t = ::core::ffi::c_uchar;
+    pub type uint_fast16_t = ::core::ffi::c_ulong;
+    pub type uint_fast32_t = ::core::ffi::c_ulong;
+    pub type uint_fast64_t = ::core::ffi::c_ulong;
+    pub type intmax_t = root::__intmax_t;
+    pub type uintmax_t = root::__uintmax_t;
     pub mod __cxxabiv1 {
         #[allow(unused_imports)]
         use self::super::super::root;
@@ -7995,23 +8872,6 @@ pub mod root {
             pub _address: u8,
         }
     }
-    #[repr(C)]
-    #[repr(align(16))]
-    #[derive(Debug, Copy, Clone)]
-    pub struct max_align_t {
-        pub __clang_max_align_nonce1: ::core::ffi::c_longlong,
-        pub __bindgen_padding_0: u64,
-        pub __clang_max_align_nonce2: u128,
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of max_align_t"][::core::mem::size_of::<max_align_t>() - 32usize];
-        ["Alignment of max_align_t"][::core::mem::align_of::<max_align_t>() - 16usize];
-        ["Offset of field: max_align_t::__clang_max_align_nonce1"]
-            [::core::mem::offset_of!(max_align_t, __clang_max_align_nonce1) - 0usize];
-        ["Offset of field: max_align_t::__clang_max_align_nonce2"]
-            [::core::mem::offset_of!(max_align_t, __clang_max_align_nonce2) - 16usize];
-    };
     pub type __cfloat128 = root::__BindgenComplex<u128>;
     pub type _Float128 = u128;
     pub type _Float32 = f32;
@@ -8689,94 +9549,6 @@ pub mod root {
             __loc: root::locale_t,
         ) -> usize;
     }
-    pub type __u_char = ::core::ffi::c_uchar;
-    pub type __u_short = ::core::ffi::c_ushort;
-    pub type __u_int = ::core::ffi::c_uint;
-    pub type __u_long = ::core::ffi::c_ulong;
-    pub type __int8_t = ::core::ffi::c_schar;
-    pub type __uint8_t = ::core::ffi::c_uchar;
-    pub type __int16_t = ::core::ffi::c_short;
-    pub type __uint16_t = ::core::ffi::c_ushort;
-    pub type __int32_t = ::core::ffi::c_int;
-    pub type __uint32_t = ::core::ffi::c_uint;
-    pub type __int64_t = ::core::ffi::c_long;
-    pub type __uint64_t = ::core::ffi::c_ulong;
-    pub type __int_least8_t = root::__int8_t;
-    pub type __uint_least8_t = root::__uint8_t;
-    pub type __int_least16_t = root::__int16_t;
-    pub type __uint_least16_t = root::__uint16_t;
-    pub type __int_least32_t = root::__int32_t;
-    pub type __uint_least32_t = root::__uint32_t;
-    pub type __int_least64_t = root::__int64_t;
-    pub type __uint_least64_t = root::__uint64_t;
-    pub type __quad_t = ::core::ffi::c_long;
-    pub type __u_quad_t = ::core::ffi::c_ulong;
-    pub type __intmax_t = ::core::ffi::c_long;
-    pub type __uintmax_t = ::core::ffi::c_ulong;
-    pub type __dev_t = ::core::ffi::c_ulong;
-    pub type __uid_t = ::core::ffi::c_uint;
-    pub type __gid_t = ::core::ffi::c_uint;
-    pub type __ino_t = ::core::ffi::c_ulong;
-    pub type __ino64_t = ::core::ffi::c_ulong;
-    pub type __mode_t = ::core::ffi::c_uint;
-    pub type __nlink_t = ::core::ffi::c_ulong;
-    pub type __off_t = ::core::ffi::c_long;
-    pub type __off64_t = ::core::ffi::c_long;
-    pub type __pid_t = ::core::ffi::c_int;
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct __fsid_t {
-        pub __val: [::core::ffi::c_int; 2usize],
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of __fsid_t"][::core::mem::size_of::<__fsid_t>() - 8usize];
-        ["Alignment of __fsid_t"][::core::mem::align_of::<__fsid_t>() - 4usize];
-        ["Offset of field: __fsid_t::__val"][::core::mem::offset_of!(__fsid_t, __val) - 0usize];
-    };
-    pub type __clock_t = ::core::ffi::c_long;
-    pub type __rlim_t = ::core::ffi::c_ulong;
-    pub type __rlim64_t = ::core::ffi::c_ulong;
-    pub type __id_t = ::core::ffi::c_uint;
-    pub type __time_t = ::core::ffi::c_long;
-    pub type __useconds_t = ::core::ffi::c_uint;
-    pub type __suseconds_t = ::core::ffi::c_long;
-    pub type __suseconds64_t = ::core::ffi::c_long;
-    pub type __daddr_t = ::core::ffi::c_int;
-    pub type __key_t = ::core::ffi::c_int;
-    pub type __clockid_t = ::core::ffi::c_int;
-    pub type __timer_t = *mut ::core::ffi::c_void;
-    pub type __blksize_t = ::core::ffi::c_long;
-    pub type __blkcnt_t = ::core::ffi::c_long;
-    pub type __blkcnt64_t = ::core::ffi::c_long;
-    pub type __fsblkcnt_t = ::core::ffi::c_ulong;
-    pub type __fsblkcnt64_t = ::core::ffi::c_ulong;
-    pub type __fsfilcnt_t = ::core::ffi::c_ulong;
-    pub type __fsfilcnt64_t = ::core::ffi::c_ulong;
-    pub type __fsword_t = ::core::ffi::c_long;
-    pub type __ssize_t = ::core::ffi::c_long;
-    pub type __syscall_slong_t = ::core::ffi::c_long;
-    pub type __syscall_ulong_t = ::core::ffi::c_ulong;
-    pub type __loff_t = root::__off64_t;
-    pub type __caddr_t = *mut ::core::ffi::c_char;
-    pub type __intptr_t = ::core::ffi::c_long;
-    pub type __socklen_t = ::core::ffi::c_uint;
-    pub type __sig_atomic_t = ::core::ffi::c_int;
-    pub type time_t = root::__time_t;
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct timespec {
-        pub tv_sec: root::__time_t,
-        pub tv_nsec: root::__syscall_slong_t,
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of timespec"][::core::mem::size_of::<timespec>() - 16usize];
-        ["Alignment of timespec"][::core::mem::align_of::<timespec>() - 8usize];
-        ["Offset of field: timespec::tv_sec"][::core::mem::offset_of!(timespec, tv_sec) - 0usize];
-        ["Offset of field: timespec::tv_nsec"][::core::mem::offset_of!(timespec, tv_nsec) - 8usize];
-    };
-    pub type pid_t = root::__pid_t;
     pub type __s8 = ::core::ffi::c_schar;
     pub type __u8 = ::core::ffi::c_uchar;
     pub type __s16 = ::core::ffi::c_short;
@@ -9021,19 +9793,6 @@ pub mod root {
     }
     #[repr(C)]
     #[derive(Debug, Copy, Clone)]
-    pub struct timeval {
-        pub tv_sec: root::__time_t,
-        pub tv_usec: root::__suseconds_t,
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of timeval"][::core::mem::size_of::<timeval>() - 16usize];
-        ["Alignment of timeval"][::core::mem::align_of::<timeval>() - 8usize];
-        ["Offset of field: timeval::tv_sec"][::core::mem::offset_of!(timeval, tv_sec) - 0usize];
-        ["Offset of field: timeval::tv_usec"][::core::mem::offset_of!(timeval, tv_usec) - 8usize];
-    };
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
     pub struct timex {
         pub modes: ::core::ffi::c_uint,
         pub offset: root::__syscall_slong_t,
@@ -9089,7 +9848,6 @@ pub mod root {
             __utx: *mut root::timex,
         ) -> ::core::ffi::c_int;
     }
-    pub type clock_t = root::__clock_t;
     #[repr(C)]
     #[derive(Debug, Copy, Clone)]
     pub struct tm {
@@ -9121,8 +9879,6 @@ pub mod root {
         ["Offset of field: tm::tm_gmtoff"][::core::mem::offset_of!(tm, tm_gmtoff) - 40usize];
         ["Offset of field: tm::tm_zone"][::core::mem::offset_of!(tm, tm_zone) - 48usize];
     };
-    pub type clockid_t = root::__clockid_t;
-    pub type timer_t = root::__timer_t;
     #[repr(C)]
     #[derive(Debug, Copy, Clone)]
     pub struct itimerspec {
@@ -9336,362 +10092,7 @@ pub mod root {
             __resbufp: *mut root::tm,
         ) -> ::core::ffi::c_int;
     }
-    #[repr(C)]
-    #[derive(Copy, Clone)]
-    pub union __atomic_wide_counter {
-        pub __value64: ::core::ffi::c_ulonglong,
-        pub __value32: root::__atomic_wide_counter__bindgen_ty_1,
-    }
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct __atomic_wide_counter__bindgen_ty_1 {
-        pub __low: ::core::ffi::c_uint,
-        pub __high: ::core::ffi::c_uint,
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of __atomic_wide_counter__bindgen_ty_1"]
-            [::core::mem::size_of::<__atomic_wide_counter__bindgen_ty_1>() - 8usize];
-        ["Alignment of __atomic_wide_counter__bindgen_ty_1"]
-            [::core::mem::align_of::<__atomic_wide_counter__bindgen_ty_1>() - 4usize];
-        ["Offset of field: __atomic_wide_counter__bindgen_ty_1::__low"]
-            [::core::mem::offset_of!(__atomic_wide_counter__bindgen_ty_1, __low) - 0usize];
-        ["Offset of field: __atomic_wide_counter__bindgen_ty_1::__high"]
-            [::core::mem::offset_of!(__atomic_wide_counter__bindgen_ty_1, __high) - 4usize];
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of __atomic_wide_counter"][::core::mem::size_of::<__atomic_wide_counter>() - 8usize];
-        ["Alignment of __atomic_wide_counter"]
-            [::core::mem::align_of::<__atomic_wide_counter>() - 8usize];
-        ["Offset of field: __atomic_wide_counter::__value64"]
-            [::core::mem::offset_of!(__atomic_wide_counter, __value64) - 0usize];
-        ["Offset of field: __atomic_wide_counter::__value32"]
-            [::core::mem::offset_of!(__atomic_wide_counter, __value32) - 0usize];
-    };
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct __pthread_internal_list {
-        pub __prev: *mut root::__pthread_internal_list,
-        pub __next: *mut root::__pthread_internal_list,
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of __pthread_internal_list"]
-            [::core::mem::size_of::<__pthread_internal_list>() - 16usize];
-        ["Alignment of __pthread_internal_list"]
-            [::core::mem::align_of::<__pthread_internal_list>() - 8usize];
-        ["Offset of field: __pthread_internal_list::__prev"]
-            [::core::mem::offset_of!(__pthread_internal_list, __prev) - 0usize];
-        ["Offset of field: __pthread_internal_list::__next"]
-            [::core::mem::offset_of!(__pthread_internal_list, __next) - 8usize];
-    };
-    pub type __pthread_list_t = root::__pthread_internal_list;
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct __pthread_internal_slist {
-        pub __next: *mut root::__pthread_internal_slist,
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of __pthread_internal_slist"]
-            [::core::mem::size_of::<__pthread_internal_slist>() - 8usize];
-        ["Alignment of __pthread_internal_slist"]
-            [::core::mem::align_of::<__pthread_internal_slist>() - 8usize];
-        ["Offset of field: __pthread_internal_slist::__next"]
-            [::core::mem::offset_of!(__pthread_internal_slist, __next) - 0usize];
-    };
-    pub type __pthread_slist_t = root::__pthread_internal_slist;
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct __pthread_mutex_s {
-        pub __lock: ::core::ffi::c_int,
-        pub __count: ::core::ffi::c_uint,
-        pub __owner: ::core::ffi::c_int,
-        pub __nusers: ::core::ffi::c_uint,
-        pub __kind: ::core::ffi::c_int,
-        pub __spins: ::core::ffi::c_short,
-        pub __elision: ::core::ffi::c_short,
-        pub __list: root::__pthread_list_t,
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of __pthread_mutex_s"][::core::mem::size_of::<__pthread_mutex_s>() - 40usize];
-        ["Alignment of __pthread_mutex_s"][::core::mem::align_of::<__pthread_mutex_s>() - 8usize];
-        ["Offset of field: __pthread_mutex_s::__lock"]
-            [::core::mem::offset_of!(__pthread_mutex_s, __lock) - 0usize];
-        ["Offset of field: __pthread_mutex_s::__count"]
-            [::core::mem::offset_of!(__pthread_mutex_s, __count) - 4usize];
-        ["Offset of field: __pthread_mutex_s::__owner"]
-            [::core::mem::offset_of!(__pthread_mutex_s, __owner) - 8usize];
-        ["Offset of field: __pthread_mutex_s::__nusers"]
-            [::core::mem::offset_of!(__pthread_mutex_s, __nusers) - 12usize];
-        ["Offset of field: __pthread_mutex_s::__kind"]
-            [::core::mem::offset_of!(__pthread_mutex_s, __kind) - 16usize];
-        ["Offset of field: __pthread_mutex_s::__spins"]
-            [::core::mem::offset_of!(__pthread_mutex_s, __spins) - 20usize];
-        ["Offset of field: __pthread_mutex_s::__elision"]
-            [::core::mem::offset_of!(__pthread_mutex_s, __elision) - 22usize];
-        ["Offset of field: __pthread_mutex_s::__list"]
-            [::core::mem::offset_of!(__pthread_mutex_s, __list) - 24usize];
-    };
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct __pthread_rwlock_arch_t {
-        pub __readers: ::core::ffi::c_uint,
-        pub __writers: ::core::ffi::c_uint,
-        pub __wrphase_futex: ::core::ffi::c_uint,
-        pub __writers_futex: ::core::ffi::c_uint,
-        pub __pad3: ::core::ffi::c_uint,
-        pub __pad4: ::core::ffi::c_uint,
-        pub __cur_writer: ::core::ffi::c_int,
-        pub __shared: ::core::ffi::c_int,
-        pub __rwelision: ::core::ffi::c_schar,
-        pub __pad1: [::core::ffi::c_uchar; 7usize],
-        pub __pad2: ::core::ffi::c_ulong,
-        pub __flags: ::core::ffi::c_uint,
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of __pthread_rwlock_arch_t"]
-            [::core::mem::size_of::<__pthread_rwlock_arch_t>() - 56usize];
-        ["Alignment of __pthread_rwlock_arch_t"]
-            [::core::mem::align_of::<__pthread_rwlock_arch_t>() - 8usize];
-        ["Offset of field: __pthread_rwlock_arch_t::__readers"]
-            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __readers) - 0usize];
-        ["Offset of field: __pthread_rwlock_arch_t::__writers"]
-            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __writers) - 4usize];
-        ["Offset of field: __pthread_rwlock_arch_t::__wrphase_futex"]
-            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __wrphase_futex) - 8usize];
-        ["Offset of field: __pthread_rwlock_arch_t::__writers_futex"]
-            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __writers_futex) - 12usize];
-        ["Offset of field: __pthread_rwlock_arch_t::__pad3"]
-            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __pad3) - 16usize];
-        ["Offset of field: __pthread_rwlock_arch_t::__pad4"]
-            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __pad4) - 20usize];
-        ["Offset of field: __pthread_rwlock_arch_t::__cur_writer"]
-            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __cur_writer) - 24usize];
-        ["Offset of field: __pthread_rwlock_arch_t::__shared"]
-            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __shared) - 28usize];
-        ["Offset of field: __pthread_rwlock_arch_t::__rwelision"]
-            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __rwelision) - 32usize];
-        ["Offset of field: __pthread_rwlock_arch_t::__pad1"]
-            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __pad1) - 33usize];
-        ["Offset of field: __pthread_rwlock_arch_t::__pad2"]
-            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __pad2) - 40usize];
-        ["Offset of field: __pthread_rwlock_arch_t::__flags"]
-            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __flags) - 48usize];
-    };
-    #[repr(C)]
-    #[derive(Copy, Clone)]
-    pub struct __pthread_cond_s {
-        pub __wseq: root::__atomic_wide_counter,
-        pub __g1_start: root::__atomic_wide_counter,
-        pub __g_size: [::core::ffi::c_uint; 2usize],
-        pub __g1_orig_size: ::core::ffi::c_uint,
-        pub __wrefs: ::core::ffi::c_uint,
-        pub __g_signals: [::core::ffi::c_uint; 2usize],
-        pub __unused_initialized_1: ::core::ffi::c_uint,
-        pub __unused_initialized_2: ::core::ffi::c_uint,
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of __pthread_cond_s"][::core::mem::size_of::<__pthread_cond_s>() - 48usize];
-        ["Alignment of __pthread_cond_s"][::core::mem::align_of::<__pthread_cond_s>() - 8usize];
-        ["Offset of field: __pthread_cond_s::__wseq"]
-            [::core::mem::offset_of!(__pthread_cond_s, __wseq) - 0usize];
-        ["Offset of field: __pthread_cond_s::__g1_start"]
-            [::core::mem::offset_of!(__pthread_cond_s, __g1_start) - 8usize];
-        ["Offset of field: __pthread_cond_s::__g_size"]
-            [::core::mem::offset_of!(__pthread_cond_s, __g_size) - 16usize];
-        ["Offset of field: __pthread_cond_s::__g1_orig_size"]
-            [::core::mem::offset_of!(__pthread_cond_s, __g1_orig_size) - 24usize];
-        ["Offset of field: __pthread_cond_s::__wrefs"]
-            [::core::mem::offset_of!(__pthread_cond_s, __wrefs) - 28usize];
-        ["Offset of field: __pthread_cond_s::__g_signals"]
-            [::core::mem::offset_of!(__pthread_cond_s, __g_signals) - 32usize];
-        ["Offset of field: __pthread_cond_s::__unused_initialized_1"]
-            [::core::mem::offset_of!(__pthread_cond_s, __unused_initialized_1) - 40usize];
-        ["Offset of field: __pthread_cond_s::__unused_initialized_2"]
-            [::core::mem::offset_of!(__pthread_cond_s, __unused_initialized_2) - 44usize];
-    };
-    pub type __tss_t = ::core::ffi::c_uint;
-    pub type __thrd_t = ::core::ffi::c_ulong;
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct __once_flag {
-        pub __data: ::core::ffi::c_int,
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of __once_flag"][::core::mem::size_of::<__once_flag>() - 4usize];
-        ["Alignment of __once_flag"][::core::mem::align_of::<__once_flag>() - 4usize];
-        ["Offset of field: __once_flag::__data"]
-            [::core::mem::offset_of!(__once_flag, __data) - 0usize];
-    };
-    pub type pthread_t = ::core::ffi::c_ulong;
-    #[repr(C)]
-    #[derive(Copy, Clone)]
-    pub union pthread_mutexattr_t {
-        pub __size: [::core::ffi::c_char; 4usize],
-        pub __align: ::core::ffi::c_int,
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of pthread_mutexattr_t"][::core::mem::size_of::<pthread_mutexattr_t>() - 4usize];
-        ["Alignment of pthread_mutexattr_t"]
-            [::core::mem::align_of::<pthread_mutexattr_t>() - 4usize];
-        ["Offset of field: pthread_mutexattr_t::__size"]
-            [::core::mem::offset_of!(pthread_mutexattr_t, __size) - 0usize];
-        ["Offset of field: pthread_mutexattr_t::__align"]
-            [::core::mem::offset_of!(pthread_mutexattr_t, __align) - 0usize];
-    };
-    #[repr(C)]
-    #[derive(Copy, Clone)]
-    pub union pthread_condattr_t {
-        pub __size: [::core::ffi::c_char; 4usize],
-        pub __align: ::core::ffi::c_int,
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of pthread_condattr_t"][::core::mem::size_of::<pthread_condattr_t>() - 4usize];
-        ["Alignment of pthread_condattr_t"][::core::mem::align_of::<pthread_condattr_t>() - 4usize];
-        ["Offset of field: pthread_condattr_t::__size"]
-            [::core::mem::offset_of!(pthread_condattr_t, __size) - 0usize];
-        ["Offset of field: pthread_condattr_t::__align"]
-            [::core::mem::offset_of!(pthread_condattr_t, __align) - 0usize];
-    };
-    pub type pthread_key_t = ::core::ffi::c_uint;
-    pub type pthread_once_t = ::core::ffi::c_int;
-    #[repr(C)]
-    #[derive(Copy, Clone)]
-    pub union pthread_attr_t {
-        pub __size: [::core::ffi::c_char; 56usize],
-        pub __align: ::core::ffi::c_long,
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of pthread_attr_t"][::core::mem::size_of::<pthread_attr_t>() - 56usize];
-        ["Alignment of pthread_attr_t"][::core::mem::align_of::<pthread_attr_t>() - 8usize];
-        ["Offset of field: pthread_attr_t::__size"]
-            [::core::mem::offset_of!(pthread_attr_t, __size) - 0usize];
-        ["Offset of field: pthread_attr_t::__align"]
-            [::core::mem::offset_of!(pthread_attr_t, __align) - 0usize];
-    };
-    #[repr(C)]
-    #[derive(Copy, Clone)]
-    pub union pthread_mutex_t {
-        pub __data: root::__pthread_mutex_s,
-        pub __size: [::core::ffi::c_char; 40usize],
-        pub __align: ::core::ffi::c_long,
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of pthread_mutex_t"][::core::mem::size_of::<pthread_mutex_t>() - 40usize];
-        ["Alignment of pthread_mutex_t"][::core::mem::align_of::<pthread_mutex_t>() - 8usize];
-        ["Offset of field: pthread_mutex_t::__data"]
-            [::core::mem::offset_of!(pthread_mutex_t, __data) - 0usize];
-        ["Offset of field: pthread_mutex_t::__size"]
-            [::core::mem::offset_of!(pthread_mutex_t, __size) - 0usize];
-        ["Offset of field: pthread_mutex_t::__align"]
-            [::core::mem::offset_of!(pthread_mutex_t, __align) - 0usize];
-    };
-    #[repr(C)]
-    #[derive(Copy, Clone)]
-    pub union pthread_cond_t {
-        pub __data: root::__pthread_cond_s,
-        pub __size: [::core::ffi::c_char; 48usize],
-        pub __align: ::core::ffi::c_longlong,
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of pthread_cond_t"][::core::mem::size_of::<pthread_cond_t>() - 48usize];
-        ["Alignment of pthread_cond_t"][::core::mem::align_of::<pthread_cond_t>() - 8usize];
-        ["Offset of field: pthread_cond_t::__data"]
-            [::core::mem::offset_of!(pthread_cond_t, __data) - 0usize];
-        ["Offset of field: pthread_cond_t::__size"]
-            [::core::mem::offset_of!(pthread_cond_t, __size) - 0usize];
-        ["Offset of field: pthread_cond_t::__align"]
-            [::core::mem::offset_of!(pthread_cond_t, __align) - 0usize];
-    };
-    #[repr(C)]
-    #[derive(Copy, Clone)]
-    pub union pthread_rwlock_t {
-        pub __data: root::__pthread_rwlock_arch_t,
-        pub __size: [::core::ffi::c_char; 56usize],
-        pub __align: ::core::ffi::c_long,
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of pthread_rwlock_t"][::core::mem::size_of::<pthread_rwlock_t>() - 56usize];
-        ["Alignment of pthread_rwlock_t"][::core::mem::align_of::<pthread_rwlock_t>() - 8usize];
-        ["Offset of field: pthread_rwlock_t::__data"]
-            [::core::mem::offset_of!(pthread_rwlock_t, __data) - 0usize];
-        ["Offset of field: pthread_rwlock_t::__size"]
-            [::core::mem::offset_of!(pthread_rwlock_t, __size) - 0usize];
-        ["Offset of field: pthread_rwlock_t::__align"]
-            [::core::mem::offset_of!(pthread_rwlock_t, __align) - 0usize];
-    };
-    #[repr(C)]
-    #[derive(Copy, Clone)]
-    pub union pthread_rwlockattr_t {
-        pub __size: [::core::ffi::c_char; 8usize],
-        pub __align: ::core::ffi::c_long,
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of pthread_rwlockattr_t"][::core::mem::size_of::<pthread_rwlockattr_t>() - 8usize];
-        ["Alignment of pthread_rwlockattr_t"]
-            [::core::mem::align_of::<pthread_rwlockattr_t>() - 8usize];
-        ["Offset of field: pthread_rwlockattr_t::__size"]
-            [::core::mem::offset_of!(pthread_rwlockattr_t, __size) - 0usize];
-        ["Offset of field: pthread_rwlockattr_t::__align"]
-            [::core::mem::offset_of!(pthread_rwlockattr_t, __align) - 0usize];
-    };
-    pub type pthread_spinlock_t = ::core::ffi::c_int;
-    #[repr(C)]
-    #[derive(Copy, Clone)]
-    pub union pthread_barrier_t {
-        pub __size: [::core::ffi::c_char; 32usize],
-        pub __align: ::core::ffi::c_long,
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of pthread_barrier_t"][::core::mem::size_of::<pthread_barrier_t>() - 32usize];
-        ["Alignment of pthread_barrier_t"][::core::mem::align_of::<pthread_barrier_t>() - 8usize];
-        ["Offset of field: pthread_barrier_t::__size"]
-            [::core::mem::offset_of!(pthread_barrier_t, __size) - 0usize];
-        ["Offset of field: pthread_barrier_t::__align"]
-            [::core::mem::offset_of!(pthread_barrier_t, __align) - 0usize];
-    };
-    #[repr(C)]
-    #[derive(Copy, Clone)]
-    pub union pthread_barrierattr_t {
-        pub __size: [::core::ffi::c_char; 4usize],
-        pub __align: ::core::ffi::c_int,
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of pthread_barrierattr_t"][::core::mem::size_of::<pthread_barrierattr_t>() - 4usize];
-        ["Alignment of pthread_barrierattr_t"]
-            [::core::mem::align_of::<pthread_barrierattr_t>() - 4usize];
-        ["Offset of field: pthread_barrierattr_t::__size"]
-            [::core::mem::offset_of!(pthread_barrierattr_t, __size) - 0usize];
-        ["Offset of field: pthread_barrierattr_t::__align"]
-            [::core::mem::offset_of!(pthread_barrierattr_t, __align) - 0usize];
-    };
     pub type __jmp_buf = [::core::ffi::c_long; 8usize];
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct __sigset_t {
-        pub __val: [::core::ffi::c_ulong; 16usize],
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of __sigset_t"][::core::mem::size_of::<__sigset_t>() - 128usize];
-        ["Alignment of __sigset_t"][::core::mem::align_of::<__sigset_t>() - 8usize];
-        ["Offset of field: __sigset_t::__val"][::core::mem::offset_of!(__sigset_t, __val) - 0usize];
-    };
     #[repr(C)]
     #[derive(Debug, Copy, Clone)]
     pub struct __jmp_buf_tag {
@@ -9710,45 +10111,42 @@ pub mod root {
         ["Offset of field: __jmp_buf_tag::__saved_mask"]
             [::core::mem::offset_of!(__jmp_buf_tag, __saved_mask) - 72usize];
     };
-    unsafe extern "C" {
-        pub fn __sysconf(__name: ::core::ffi::c_int) -> ::core::ffi::c_long;
-    }
-    pub const PTHREAD_CREATE_JOINABLE: root::_bindgen_ty_36 = 0;
-    pub const PTHREAD_CREATE_DETACHED: root::_bindgen_ty_36 = 1;
+    pub const PTHREAD_CREATE_JOINABLE: root::_bindgen_ty_31 = 0;
+    pub const PTHREAD_CREATE_DETACHED: root::_bindgen_ty_31 = 1;
+    pub type _bindgen_ty_31 = ::core::ffi::c_uint;
+    pub const PTHREAD_MUTEX_TIMED_NP: root::_bindgen_ty_32 = 0;
+    pub const PTHREAD_MUTEX_RECURSIVE_NP: root::_bindgen_ty_32 = 1;
+    pub const PTHREAD_MUTEX_ERRORCHECK_NP: root::_bindgen_ty_32 = 2;
+    pub const PTHREAD_MUTEX_ADAPTIVE_NP: root::_bindgen_ty_32 = 3;
+    pub const PTHREAD_MUTEX_NORMAL: root::_bindgen_ty_32 = 0;
+    pub const PTHREAD_MUTEX_RECURSIVE: root::_bindgen_ty_32 = 1;
+    pub const PTHREAD_MUTEX_ERRORCHECK: root::_bindgen_ty_32 = 2;
+    pub const PTHREAD_MUTEX_DEFAULT: root::_bindgen_ty_32 = 0;
+    pub const PTHREAD_MUTEX_FAST_NP: root::_bindgen_ty_32 = 0;
+    pub type _bindgen_ty_32 = ::core::ffi::c_uint;
+    pub const PTHREAD_MUTEX_STALLED: root::_bindgen_ty_33 = 0;
+    pub const PTHREAD_MUTEX_STALLED_NP: root::_bindgen_ty_33 = 0;
+    pub const PTHREAD_MUTEX_ROBUST: root::_bindgen_ty_33 = 1;
+    pub const PTHREAD_MUTEX_ROBUST_NP: root::_bindgen_ty_33 = 1;
+    pub type _bindgen_ty_33 = ::core::ffi::c_uint;
+    pub const PTHREAD_PRIO_NONE: root::_bindgen_ty_34 = 0;
+    pub const PTHREAD_PRIO_INHERIT: root::_bindgen_ty_34 = 1;
+    pub const PTHREAD_PRIO_PROTECT: root::_bindgen_ty_34 = 2;
+    pub type _bindgen_ty_34 = ::core::ffi::c_uint;
+    pub const PTHREAD_RWLOCK_PREFER_READER_NP: root::_bindgen_ty_35 = 0;
+    pub const PTHREAD_RWLOCK_PREFER_WRITER_NP: root::_bindgen_ty_35 = 1;
+    pub const PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP: root::_bindgen_ty_35 = 2;
+    pub const PTHREAD_RWLOCK_DEFAULT_NP: root::_bindgen_ty_35 = 0;
+    pub type _bindgen_ty_35 = ::core::ffi::c_uint;
+    pub const PTHREAD_INHERIT_SCHED: root::_bindgen_ty_36 = 0;
+    pub const PTHREAD_EXPLICIT_SCHED: root::_bindgen_ty_36 = 1;
     pub type _bindgen_ty_36 = ::core::ffi::c_uint;
-    pub const PTHREAD_MUTEX_TIMED_NP: root::_bindgen_ty_37 = 0;
-    pub const PTHREAD_MUTEX_RECURSIVE_NP: root::_bindgen_ty_37 = 1;
-    pub const PTHREAD_MUTEX_ERRORCHECK_NP: root::_bindgen_ty_37 = 2;
-    pub const PTHREAD_MUTEX_ADAPTIVE_NP: root::_bindgen_ty_37 = 3;
-    pub const PTHREAD_MUTEX_NORMAL: root::_bindgen_ty_37 = 0;
-    pub const PTHREAD_MUTEX_RECURSIVE: root::_bindgen_ty_37 = 1;
-    pub const PTHREAD_MUTEX_ERRORCHECK: root::_bindgen_ty_37 = 2;
-    pub const PTHREAD_MUTEX_DEFAULT: root::_bindgen_ty_37 = 0;
-    pub const PTHREAD_MUTEX_FAST_NP: root::_bindgen_ty_37 = 0;
+    pub const PTHREAD_SCOPE_SYSTEM: root::_bindgen_ty_37 = 0;
+    pub const PTHREAD_SCOPE_PROCESS: root::_bindgen_ty_37 = 1;
     pub type _bindgen_ty_37 = ::core::ffi::c_uint;
-    pub const PTHREAD_MUTEX_STALLED: root::_bindgen_ty_38 = 0;
-    pub const PTHREAD_MUTEX_STALLED_NP: root::_bindgen_ty_38 = 0;
-    pub const PTHREAD_MUTEX_ROBUST: root::_bindgen_ty_38 = 1;
-    pub const PTHREAD_MUTEX_ROBUST_NP: root::_bindgen_ty_38 = 1;
+    pub const PTHREAD_PROCESS_PRIVATE: root::_bindgen_ty_38 = 0;
+    pub const PTHREAD_PROCESS_SHARED: root::_bindgen_ty_38 = 1;
     pub type _bindgen_ty_38 = ::core::ffi::c_uint;
-    pub const PTHREAD_PRIO_NONE: root::_bindgen_ty_39 = 0;
-    pub const PTHREAD_PRIO_INHERIT: root::_bindgen_ty_39 = 1;
-    pub const PTHREAD_PRIO_PROTECT: root::_bindgen_ty_39 = 2;
-    pub type _bindgen_ty_39 = ::core::ffi::c_uint;
-    pub const PTHREAD_RWLOCK_PREFER_READER_NP: root::_bindgen_ty_40 = 0;
-    pub const PTHREAD_RWLOCK_PREFER_WRITER_NP: root::_bindgen_ty_40 = 1;
-    pub const PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP: root::_bindgen_ty_40 = 2;
-    pub const PTHREAD_RWLOCK_DEFAULT_NP: root::_bindgen_ty_40 = 0;
-    pub type _bindgen_ty_40 = ::core::ffi::c_uint;
-    pub const PTHREAD_INHERIT_SCHED: root::_bindgen_ty_41 = 0;
-    pub const PTHREAD_EXPLICIT_SCHED: root::_bindgen_ty_41 = 1;
-    pub type _bindgen_ty_41 = ::core::ffi::c_uint;
-    pub const PTHREAD_SCOPE_SYSTEM: root::_bindgen_ty_42 = 0;
-    pub const PTHREAD_SCOPE_PROCESS: root::_bindgen_ty_42 = 1;
-    pub type _bindgen_ty_42 = ::core::ffi::c_uint;
-    pub const PTHREAD_PROCESS_PRIVATE: root::_bindgen_ty_43 = 0;
-    pub const PTHREAD_PROCESS_SHARED: root::_bindgen_ty_43 = 1;
-    pub type _bindgen_ty_43 = ::core::ffi::c_uint;
     #[repr(C)]
     #[derive(Debug, Copy, Clone)]
     pub struct _pthread_cleanup_buffer {
@@ -9772,12 +10170,12 @@ pub mod root {
         ["Offset of field: _pthread_cleanup_buffer::__prev"]
             [::core::mem::offset_of!(_pthread_cleanup_buffer, __prev) - 24usize];
     };
-    pub const PTHREAD_CANCEL_ENABLE: root::_bindgen_ty_44 = 0;
-    pub const PTHREAD_CANCEL_DISABLE: root::_bindgen_ty_44 = 1;
-    pub type _bindgen_ty_44 = ::core::ffi::c_uint;
-    pub const PTHREAD_CANCEL_DEFERRED: root::_bindgen_ty_45 = 0;
-    pub const PTHREAD_CANCEL_ASYNCHRONOUS: root::_bindgen_ty_45 = 1;
-    pub type _bindgen_ty_45 = ::core::ffi::c_uint;
+    pub const PTHREAD_CANCEL_ENABLE: root::_bindgen_ty_39 = 0;
+    pub const PTHREAD_CANCEL_DISABLE: root::_bindgen_ty_39 = 1;
+    pub type _bindgen_ty_39 = ::core::ffi::c_uint;
+    pub const PTHREAD_CANCEL_DEFERRED: root::_bindgen_ty_40 = 0;
+    pub const PTHREAD_CANCEL_ASYNCHRONOUS: root::_bindgen_ty_40 = 1;
+    pub type _bindgen_ty_40 = ::core::ffi::c_uint;
     unsafe extern "C" {
         pub fn pthread_create(
             __newthread: *mut root::pthread_t,
@@ -10123,30 +10521,21 @@ pub mod root {
         ["Offset of field: __pthread_cleanup_frame::__cancel_type"]
             [::core::mem::offset_of!(__pthread_cleanup_frame, __cancel_type) - 20usize];
     };
-    #[repr(C)]
-    #[derive(Debug)]
-    pub struct __pthread_cleanup_class {
-        pub __cancel_routine:
-            ::core::option::Option<unsafe extern "C" fn(arg1: *mut ::core::ffi::c_void)>,
-        pub __cancel_arg: *mut ::core::ffi::c_void,
-        pub __do_it: ::core::ffi::c_int,
-        pub __cancel_type: ::core::ffi::c_int,
+    unsafe extern "C" {
+        pub fn __pthread_register_cancel(__buf: *mut root::__pthread_unwind_buf_t);
     }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of __pthread_cleanup_class"]
-            [::core::mem::size_of::<__pthread_cleanup_class>() - 24usize];
-        ["Alignment of __pthread_cleanup_class"]
-            [::core::mem::align_of::<__pthread_cleanup_class>() - 8usize];
-        ["Offset of field: __pthread_cleanup_class::__cancel_routine"]
-            [::core::mem::offset_of!(__pthread_cleanup_class, __cancel_routine) - 0usize];
-        ["Offset of field: __pthread_cleanup_class::__cancel_arg"]
-            [::core::mem::offset_of!(__pthread_cleanup_class, __cancel_arg) - 8usize];
-        ["Offset of field: __pthread_cleanup_class::__do_it"]
-            [::core::mem::offset_of!(__pthread_cleanup_class, __do_it) - 16usize];
-        ["Offset of field: __pthread_cleanup_class::__cancel_type"]
-            [::core::mem::offset_of!(__pthread_cleanup_class, __cancel_type) - 20usize];
-    };
+    unsafe extern "C" {
+        pub fn __pthread_unregister_cancel(__buf: *mut root::__pthread_unwind_buf_t);
+    }
+    unsafe extern "C" {
+        pub fn __pthread_register_cancel_defer(__buf: *mut root::__pthread_unwind_buf_t);
+    }
+    unsafe extern "C" {
+        pub fn __pthread_unregister_cancel_restore(__buf: *mut root::__pthread_unwind_buf_t);
+    }
+    unsafe extern "C" {
+        pub fn __pthread_unwind_next(__buf: *mut root::__pthread_unwind_buf_t) -> !;
+    }
     unsafe extern "C" {
         pub fn __sigsetjmp(
             __env: *mut root::__jmp_buf_tag,
@@ -10524,116 +10913,23 @@ pub mod root {
     unsafe extern "C" {
         pub static mut __libc_single_threaded: ::core::ffi::c_char;
     }
-    pub mod __pstl {
-        #[allow(unused_imports)]
-        use self::super::super::root;
-        pub mod execution {
-            #[allow(unused_imports)]
-            use self::super::super::super::root;
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct sequenced_policy {
-                pub _address: u8,
-            }
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of sequenced_policy"][::core::mem::size_of::<sequenced_policy>() - 1usize];
-                ["Alignment of sequenced_policy"]
-                    [::core::mem::align_of::<sequenced_policy>() - 1usize];
-            };
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct parallel_policy {
-                pub _address: u8,
-            }
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of parallel_policy"][::core::mem::size_of::<parallel_policy>() - 1usize];
-                ["Alignment of parallel_policy"]
-                    [::core::mem::align_of::<parallel_policy>() - 1usize];
-            };
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct parallel_unsequenced_policy {
-                pub _address: u8,
-            }
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of parallel_unsequenced_policy"]
-                    [::core::mem::size_of::<parallel_unsequenced_policy>() - 1usize];
-                ["Alignment of parallel_unsequenced_policy"]
-                    [::core::mem::align_of::<parallel_unsequenced_policy>() - 1usize];
-            };
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct unsequenced_policy {
-                pub _address: u8,
-            }
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of unsequenced_policy"]
-                    [::core::mem::size_of::<unsequenced_policy>() - 1usize];
-                ["Alignment of unsequenced_policy"]
-                    [::core::mem::align_of::<unsequenced_policy>() - 1usize];
-            };
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZN6__pstl9execution2v13seqE"]
-                pub static seq: root::__pstl::execution::sequenced_policy;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZN6__pstl9execution2v13parE"]
-                pub static par: root::__pstl::execution::parallel_policy;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZN6__pstl9execution2v19par_unseqE"]
-                pub static par_unseq: root::__pstl::execution::parallel_unsequenced_policy;
-            }
-            unsafe extern "C" {
-                #[link_name = "\u{1}_ZN6__pstl9execution2v15unseqE"]
-                pub static unseq: root::__pstl::execution::unsequenced_policy;
-            }
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct is_execution_policy {
-                pub _base: root::std::false_type,
-            }
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of template specialization: is_execution_policy_open0_sequenced_policy_close0"] [:: core :: mem :: size_of :: < root :: __pstl :: execution :: is_execution_policy > () - 1usize] ;
-                ["Align of template specialization: is_execution_policy_open0_sequenced_policy_close0"] [:: core :: mem :: align_of :: < root :: __pstl :: execution :: is_execution_policy > () - 1usize] ;
-            };
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of template specialization: is_execution_policy_open0_parallel_policy_close0"] [:: core :: mem :: size_of :: < root :: __pstl :: execution :: is_execution_policy > () - 1usize] ;
-                ["Align of template specialization: is_execution_policy_open0_parallel_policy_close0"] [:: core :: mem :: align_of :: < root :: __pstl :: execution :: is_execution_policy > () - 1usize] ;
-            };
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of template specialization: is_execution_policy_open0_parallel_unsequenced_policy_close0"] [:: core :: mem :: size_of :: < root :: __pstl :: execution :: is_execution_policy > () - 1usize] ;
-                ["Align of template specialization: is_execution_policy_open0_parallel_unsequenced_policy_close0"] [:: core :: mem :: align_of :: < root :: __pstl :: execution :: is_execution_policy > () - 1usize] ;
-            };
-            #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-            const _: () = {
-                ["Size of template specialization: is_execution_policy_open0_unsequenced_policy_close0"] [:: core :: mem :: size_of :: < root :: __pstl :: execution :: is_execution_policy > () - 1usize] ;
-                ["Align of template specialization: is_execution_policy_open0_unsequenced_policy_close0"] [:: core :: mem :: align_of :: < root :: __pstl :: execution :: is_execution_policy > () - 1usize] ;
-            };
-        }
-        pub mod __internal {
-            #[allow(unused_imports)]
-            use self::super::super::super::root;
-            pub type __enable_if_execution_policy = u8;
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct __serial_tag {
-                pub _address: u8,
-            }
-            #[repr(C)]
-            #[derive(Debug, Copy, Clone)]
-            pub struct __parallel_tag {
-                pub _address: u8,
-            }
-        }
+    #[repr(C)]
+    #[repr(align(16))]
+    #[derive(Debug, Copy, Clone)]
+    pub struct max_align_t {
+        pub __clang_max_align_nonce1: ::core::ffi::c_longlong,
+        pub __bindgen_padding_0: u64,
+        pub __clang_max_align_nonce2: u128,
     }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of max_align_t"][::core::mem::size_of::<max_align_t>() - 32usize];
+        ["Alignment of max_align_t"][::core::mem::align_of::<max_align_t>() - 16usize];
+        ["Offset of field: max_align_t::__clang_max_align_nonce1"]
+            [::core::mem::offset_of!(max_align_t, __clang_max_align_nonce1) - 0usize];
+        ["Offset of field: max_align_t::__clang_max_align_nonce2"]
+            [::core::mem::offset_of!(max_align_t, __clang_max_align_nonce2) - 16usize];
+    };
     #[repr(C)]
     #[derive(Debug, Copy, Clone)]
     pub struct lconv {
@@ -10739,19 +11035,19 @@ pub mod root {
     unsafe extern "C" {
         pub fn uselocale(__dataset: root::locale_t) -> root::locale_t;
     }
-    pub const _ISupper: root::_bindgen_ty_47 = 256;
-    pub const _ISlower: root::_bindgen_ty_47 = 512;
-    pub const _ISalpha: root::_bindgen_ty_47 = 1024;
-    pub const _ISdigit: root::_bindgen_ty_47 = 2048;
-    pub const _ISxdigit: root::_bindgen_ty_47 = 4096;
-    pub const _ISspace: root::_bindgen_ty_47 = 8192;
-    pub const _ISprint: root::_bindgen_ty_47 = 16384;
-    pub const _ISgraph: root::_bindgen_ty_47 = 32768;
-    pub const _ISblank: root::_bindgen_ty_47 = 1;
-    pub const _IScntrl: root::_bindgen_ty_47 = 2;
-    pub const _ISpunct: root::_bindgen_ty_47 = 4;
-    pub const _ISalnum: root::_bindgen_ty_47 = 8;
-    pub type _bindgen_ty_47 = ::core::ffi::c_uint;
+    pub const _ISupper: root::_bindgen_ty_42 = 256;
+    pub const _ISlower: root::_bindgen_ty_42 = 512;
+    pub const _ISalpha: root::_bindgen_ty_42 = 1024;
+    pub const _ISdigit: root::_bindgen_ty_42 = 2048;
+    pub const _ISxdigit: root::_bindgen_ty_42 = 4096;
+    pub const _ISspace: root::_bindgen_ty_42 = 8192;
+    pub const _ISprint: root::_bindgen_ty_42 = 16384;
+    pub const _ISgraph: root::_bindgen_ty_42 = 32768;
+    pub const _ISblank: root::_bindgen_ty_42 = 1;
+    pub const _IScntrl: root::_bindgen_ty_42 = 2;
+    pub const _ISpunct: root::_bindgen_ty_42 = 4;
+    pub const _ISalnum: root::_bindgen_ty_42 = 8;
+    pub type _bindgen_ty_42 = ::core::ffi::c_uint;
     unsafe extern "C" {
         pub fn __ctype_b_loc() -> *mut *const ::core::ffi::c_ushort;
     }
@@ -11236,77 +11532,6 @@ pub mod root {
     unsafe extern "C" {
         pub fn a64l(__s: *const ::core::ffi::c_char) -> ::core::ffi::c_long;
     }
-    pub type u_char = root::__u_char;
-    pub type u_short = root::__u_short;
-    pub type u_int = root::__u_int;
-    pub type u_long = root::__u_long;
-    pub type quad_t = root::__quad_t;
-    pub type u_quad_t = root::__u_quad_t;
-    pub type fsid_t = root::__fsid_t;
-    pub type loff_t = root::__loff_t;
-    pub type ino_t = root::__ino_t;
-    pub type ino64_t = root::__ino64_t;
-    pub type dev_t = root::__dev_t;
-    pub type gid_t = root::__gid_t;
-    pub type mode_t = root::__mode_t;
-    pub type nlink_t = root::__nlink_t;
-    pub type uid_t = root::__uid_t;
-    pub type off_t = root::__off_t;
-    pub type off64_t = root::__off64_t;
-    pub type id_t = root::__id_t;
-    pub type daddr_t = root::__daddr_t;
-    pub type caddr_t = root::__caddr_t;
-    pub type key_t = root::__key_t;
-    pub type useconds_t = root::__useconds_t;
-    pub type suseconds_t = root::__suseconds_t;
-    pub type ulong = ::core::ffi::c_ulong;
-    pub type ushort = ::core::ffi::c_ushort;
-    pub type uint = ::core::ffi::c_uint;
-    pub type u_int8_t = root::__uint8_t;
-    pub type u_int16_t = root::__uint16_t;
-    pub type u_int32_t = root::__uint32_t;
-    pub type u_int64_t = root::__uint64_t;
-    pub type register_t = ::core::ffi::c_long;
-    pub type sigset_t = root::__sigset_t;
-    pub type __fd_mask = ::core::ffi::c_long;
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct fd_set {
-        pub fds_bits: [root::__fd_mask; 16usize],
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of fd_set"][::core::mem::size_of::<fd_set>() - 128usize];
-        ["Alignment of fd_set"][::core::mem::align_of::<fd_set>() - 8usize];
-        ["Offset of field: fd_set::fds_bits"][::core::mem::offset_of!(fd_set, fds_bits) - 0usize];
-    };
-    pub type fd_mask = root::__fd_mask;
-    unsafe extern "C" {
-        pub fn select(
-            __nfds: ::core::ffi::c_int,
-            __readfds: *mut root::fd_set,
-            __writefds: *mut root::fd_set,
-            __exceptfds: *mut root::fd_set,
-            __timeout: *mut root::timeval,
-        ) -> ::core::ffi::c_int;
-    }
-    unsafe extern "C" {
-        pub fn pselect(
-            __nfds: ::core::ffi::c_int,
-            __readfds: *mut root::fd_set,
-            __writefds: *mut root::fd_set,
-            __exceptfds: *mut root::fd_set,
-            __timeout: *const root::timespec,
-            __sigmask: *const root::__sigset_t,
-        ) -> ::core::ffi::c_int;
-    }
-    pub type blksize_t = root::__blksize_t;
-    pub type blkcnt_t = root::__blkcnt_t;
-    pub type fsblkcnt_t = root::__fsblkcnt_t;
-    pub type fsfilcnt_t = root::__fsfilcnt_t;
-    pub type blkcnt64_t = root::__blkcnt64_t;
-    pub type fsblkcnt64_t = root::__fsblkcnt64_t;
-    pub type fsfilcnt64_t = root::__fsfilcnt64_t;
     unsafe extern "C" {
         pub fn random() -> ::core::ffi::c_long;
     }
@@ -12653,66 +12878,13 @@ pub mod root {
     unsafe extern "C" {
         pub fn __overflow(arg1: *mut root::FILE, arg2: ::core::ffi::c_int) -> ::core::ffi::c_int;
     }
-    unsafe extern "C" {
-        pub fn __errno_location() -> *mut ::core::ffi::c_int;
-    }
-    unsafe extern "C" {
-        pub static mut program_invocation_name: *mut ::core::ffi::c_char;
-    }
-    unsafe extern "C" {
-        pub static mut program_invocation_short_name: *mut ::core::ffi::c_char;
-    }
-    pub type error_t = ::core::ffi::c_int;
-    pub type int_least8_t = root::__int_least8_t;
-    pub type int_least16_t = root::__int_least16_t;
-    pub type int_least32_t = root::__int_least32_t;
-    pub type int_least64_t = root::__int_least64_t;
-    pub type uint_least8_t = root::__uint_least8_t;
-    pub type uint_least16_t = root::__uint_least16_t;
-    pub type uint_least32_t = root::__uint_least32_t;
-    pub type uint_least64_t = root::__uint_least64_t;
-    pub type int_fast8_t = ::core::ffi::c_schar;
-    pub type int_fast16_t = ::core::ffi::c_long;
-    pub type int_fast32_t = ::core::ffi::c_long;
-    pub type int_fast64_t = ::core::ffi::c_long;
-    pub type uint_fast8_t = ::core::ffi::c_uchar;
-    pub type uint_fast16_t = ::core::ffi::c_ulong;
-    pub type uint_fast32_t = ::core::ffi::c_ulong;
-    pub type uint_fast64_t = ::core::ffi::c_ulong;
-    pub type intmax_t = root::__intmax_t;
-    pub type uintmax_t = root::__uintmax_t;
     pub mod ke {
         #[allow(unused_imports)]
         use self::super::super::root;
     }
     #[repr(C)]
     #[derive(Debug, Copy, Clone)]
-    pub struct _bindgen_ty_1 {
-        pub _address: u8,
-    }
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct _bindgen_ty_2 {
-        pub _address: u8,
-    }
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct _bindgen_ty_3 {
-        pub _address: u8,
-    }
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct _bindgen_ty_4 {
-        pub _address: u8,
-    }
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct _bindgen_ty_5 {
-        pub _address: u8,
-    }
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct _bindgen_ty_6 {
+    pub struct link_map {
         pub _address: u8,
     }
     #[repr(C)]
@@ -12825,31 +12997,6 @@ pub mod root {
     pub struct _bindgen_ty_28 {
         pub _address: u8,
     }
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct _bindgen_ty_29 {
-        pub _address: u8,
-    }
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct _bindgen_ty_30 {
-        pub _address: u8,
-    }
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct _bindgen_ty_31 {
-        pub _address: u8,
-    }
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct _bindgen_ty_32 {
-        pub _address: u8,
-    }
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct _bindgen_ty_33 {
-        pub _address: u8,
-    }
     #[allow(clippy::unnecessary_operation, clippy::identity_op)]
     const _: () = {
         ["Size of template specialization: hash_open0_long_double_close0"]
@@ -12859,7 +13006,12 @@ pub mod root {
     };
     #[repr(C)]
     #[derive(Debug, Copy, Clone)]
-    pub struct _bindgen_ty_34 {
+    pub struct _bindgen_ty_29 {
+        pub _address: u8,
+    }
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct _bindgen_ty_30 {
         pub _address: u8,
     }
     #[allow(clippy::unnecessary_operation, clippy::identity_op)]
@@ -12883,40 +13035,6 @@ pub mod root {
             [::core::mem::size_of::<root::std::allocator>() - 1usize];
         ["Align of template specialization: allocator_open0_void_close0"]
             [::core::mem::align_of::<root::std::allocator>() - 1usize];
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: pair_open0_bool__size_t_close0"]
-            [::core::mem::size_of::<root::std::pair<bool, usize>>() - 16usize];
-        ["Align of template specialization: pair_open0_bool__size_t_close0"]
-            [::core::mem::align_of::<root::std::pair<bool, usize>>() - 8usize];
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: pair_open0_bool__size_t_close0"]
-            [::core::mem::size_of::<root::std::pair<bool, usize>>() - 16usize];
-        ["Align of template specialization: pair_open0_bool__size_t_close0"]
-            [::core::mem::align_of::<root::std::pair<bool, usize>>() - 8usize];
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: iterator_open0_random_access_iterator_tag_bool__long_ptr_bool_ref_bool_close0"] [:: core :: mem :: size_of :: < root :: std :: iterator > () - 1usize] ;
-        ["Align of template specialization: iterator_open0_random_access_iterator_tag_bool__long_ptr_bool_ref_bool_close0"] [:: core :: mem :: align_of :: < root :: std :: iterator > () - 1usize] ;
-    };
-    pub type iterator = root::std::_Bit_iterator;
-    pub type size_type = usize;
-    pub type iterator = root::std::_Bit_iterator;
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct _bindgen_ty_35 {
-        pub _address: u8,
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: equal_to_open0_void_close0"]
-            [::core::mem::size_of::<root::std::equal_to>() - 1usize];
-        ["Align of template specialization: equal_to_open0_void_close0"]
-            [::core::mem::align_of::<root::std::equal_to>() - 1usize];
     };
     #[allow(clippy::unnecessary_operation, clippy::identity_op)]
     const _: () = {
@@ -13266,173 +13384,9 @@ pub mod root {
     };
     #[repr(C)]
     #[derive(Debug, Copy, Clone)]
-    pub struct _bindgen_ty_46 {
+    pub struct _bindgen_ty_41 {
         pub _address: u8,
     }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: basic_string_view_open0_char_char_traits_open1_char_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: basic_string_view < :: core :: ffi :: c_char > > () - 16usize] ;
-        ["Align of template specialization: basic_string_view_open0_char_char_traits_open1_char_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: basic_string_view < :: core :: ffi :: c_char > > () - 8usize] ;
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: char_traits_open0_char_close0"]
-            [::core::mem::size_of::<root::std::char_traits>() - 1usize];
-        ["Align of template specialization: char_traits_open0_char_close0"]
-            [::core::mem::align_of::<root::std::char_traits>() - 1usize];
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: basic_string_view_open0_wchar_t_char_traits_open1_wchar_t_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: basic_string_view < u32 > > () - 16usize] ;
-        ["Align of template specialization: basic_string_view_open0_wchar_t_char_traits_open1_wchar_t_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: basic_string_view < u32 > > () - 8usize] ;
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: char_traits_open0_wchar_t_close0"]
-            [::core::mem::size_of::<root::std::char_traits>() - 1usize];
-        ["Align of template specialization: char_traits_open0_wchar_t_close0"]
-            [::core::mem::align_of::<root::std::char_traits>() - 1usize];
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: basic_string_view_open0_char16_t_char_traits_open1_char16_t_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: basic_string_view < u16 > > () - 16usize] ;
-        ["Align of template specialization: basic_string_view_open0_char16_t_char_traits_open1_char16_t_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: basic_string_view < u16 > > () - 8usize] ;
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: char_traits_open0_char16_t_close0"]
-            [::core::mem::size_of::<root::std::char_traits>() - 1usize];
-        ["Align of template specialization: char_traits_open0_char16_t_close0"]
-            [::core::mem::align_of::<root::std::char_traits>() - 1usize];
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: basic_string_view_open0_char32_t_char_traits_open1_char32_t_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: basic_string_view < u32 > > () - 16usize] ;
-        ["Align of template specialization: basic_string_view_open0_char32_t_char_traits_open1_char32_t_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: basic_string_view < u32 > > () - 8usize] ;
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: char_traits_open0_char32_t_close0"]
-            [::core::mem::size_of::<root::std::char_traits>() - 1usize];
-        ["Align of template specialization: char_traits_open0_char32_t_close0"]
-            [::core::mem::align_of::<root::std::char_traits>() - 1usize];
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: basic_string_view_open0_char_char_traits_open1_char_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: basic_string_view < :: core :: ffi :: c_char > > () - 16usize] ;
-        ["Align of template specialization: basic_string_view_open0_char_char_traits_open1_char_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: basic_string_view < :: core :: ffi :: c_char > > () - 8usize] ;
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: char_traits_open0_char_close0"]
-            [::core::mem::size_of::<root::std::char_traits>() - 1usize];
-        ["Align of template specialization: char_traits_open0_char_close0"]
-            [::core::mem::align_of::<root::std::char_traits>() - 1usize];
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: hash_open0_basic_string_view_open1_char_char_traits_open2_char_close2_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: hash > () - 1usize] ;
-        ["Align of template specialization: hash_open0_basic_string_view_open1_char_char_traits_open2_char_close2_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: hash > () - 1usize] ;
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: basic_string_view_open0_char_char_traits_open1_char_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: basic_string_view < :: core :: ffi :: c_char > > () - 16usize] ;
-        ["Align of template specialization: basic_string_view_open0_char_char_traits_open1_char_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: basic_string_view < :: core :: ffi :: c_char > > () - 8usize] ;
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: char_traits_open0_char_close0"]
-            [::core::mem::size_of::<root::std::char_traits>() - 1usize];
-        ["Align of template specialization: char_traits_open0_char_close0"]
-            [::core::mem::align_of::<root::std::char_traits>() - 1usize];
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: basic_string_view_open0_wchar_t_char_traits_open1_wchar_t_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: basic_string_view < u32 > > () - 16usize] ;
-        ["Align of template specialization: basic_string_view_open0_wchar_t_char_traits_open1_wchar_t_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: basic_string_view < u32 > > () - 8usize] ;
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: char_traits_open0_wchar_t_close0"]
-            [::core::mem::size_of::<root::std::char_traits>() - 1usize];
-        ["Align of template specialization: char_traits_open0_wchar_t_close0"]
-            [::core::mem::align_of::<root::std::char_traits>() - 1usize];
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: hash_open0_basic_string_view_open1_wchar_t_char_traits_open2_wchar_t_close2_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: hash > () - 1usize] ;
-        ["Align of template specialization: hash_open0_basic_string_view_open1_wchar_t_char_traits_open2_wchar_t_close2_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: hash > () - 1usize] ;
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: basic_string_view_open0_wchar_t_char_traits_open1_wchar_t_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: basic_string_view < u32 > > () - 16usize] ;
-        ["Align of template specialization: basic_string_view_open0_wchar_t_char_traits_open1_wchar_t_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: basic_string_view < u32 > > () - 8usize] ;
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: char_traits_open0_wchar_t_close0"]
-            [::core::mem::size_of::<root::std::char_traits>() - 1usize];
-        ["Align of template specialization: char_traits_open0_wchar_t_close0"]
-            [::core::mem::align_of::<root::std::char_traits>() - 1usize];
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: basic_string_view_open0_char16_t_char_traits_open1_char16_t_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: basic_string_view < u16 > > () - 16usize] ;
-        ["Align of template specialization: basic_string_view_open0_char16_t_char_traits_open1_char16_t_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: basic_string_view < u16 > > () - 8usize] ;
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: char_traits_open0_char16_t_close0"]
-            [::core::mem::size_of::<root::std::char_traits>() - 1usize];
-        ["Align of template specialization: char_traits_open0_char16_t_close0"]
-            [::core::mem::align_of::<root::std::char_traits>() - 1usize];
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: hash_open0_basic_string_view_open1_char16_t_char_traits_open2_char16_t_close2_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: hash > () - 1usize] ;
-        ["Align of template specialization: hash_open0_basic_string_view_open1_char16_t_char_traits_open2_char16_t_close2_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: hash > () - 1usize] ;
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: basic_string_view_open0_char16_t_char_traits_open1_char16_t_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: basic_string_view < u16 > > () - 16usize] ;
-        ["Align of template specialization: basic_string_view_open0_char16_t_char_traits_open1_char16_t_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: basic_string_view < u16 > > () - 8usize] ;
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: char_traits_open0_char16_t_close0"]
-            [::core::mem::size_of::<root::std::char_traits>() - 1usize];
-        ["Align of template specialization: char_traits_open0_char16_t_close0"]
-            [::core::mem::align_of::<root::std::char_traits>() - 1usize];
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: basic_string_view_open0_char32_t_char_traits_open1_char32_t_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: basic_string_view < u32 > > () - 16usize] ;
-        ["Align of template specialization: basic_string_view_open0_char32_t_char_traits_open1_char32_t_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: basic_string_view < u32 > > () - 8usize] ;
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: char_traits_open0_char32_t_close0"]
-            [::core::mem::size_of::<root::std::char_traits>() - 1usize];
-        ["Align of template specialization: char_traits_open0_char32_t_close0"]
-            [::core::mem::align_of::<root::std::char_traits>() - 1usize];
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: hash_open0_basic_string_view_open1_char32_t_char_traits_open2_char32_t_close2_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: hash > () - 1usize] ;
-        ["Align of template specialization: hash_open0_basic_string_view_open1_char32_t_char_traits_open2_char32_t_close2_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: hash > () - 1usize] ;
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: basic_string_view_open0_char32_t_char_traits_open1_char32_t_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: basic_string_view < u32 > > () - 16usize] ;
-        ["Align of template specialization: basic_string_view_open0_char32_t_char_traits_open1_char32_t_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: basic_string_view < u32 > > () - 8usize] ;
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: char_traits_open0_char32_t_close0"]
-            [::core::mem::size_of::<root::std::char_traits>() - 1usize];
-        ["Align of template specialization: char_traits_open0_char32_t_close0"]
-            [::core::mem::align_of::<root::std::char_traits>() - 1usize];
-    };
     #[allow(clippy::unnecessary_operation, clippy::identity_op)]
     const _: () = {
         ["Size of template specialization: char_traits_open0_char_close0"]
@@ -13577,34 +13531,6 @@ pub mod root {
     };
     #[allow(clippy::unnecessary_operation, clippy::identity_op)]
     const _: () = {
-        ["Size of template specialization: char_traits_open0_char_close0"]
-            [::core::mem::size_of::<root::std::char_traits>() - 1usize];
-        ["Align of template specialization: char_traits_open0_char_close0"]
-            [::core::mem::align_of::<root::std::char_traits>() - 1usize];
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: char_traits_open0_char16_t_close0"]
-            [::core::mem::size_of::<root::std::char_traits>() - 1usize];
-        ["Align of template specialization: char_traits_open0_char16_t_close0"]
-            [::core::mem::align_of::<root::std::char_traits>() - 1usize];
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: char_traits_open0_char32_t_close0"]
-            [::core::mem::size_of::<root::std::char_traits>() - 1usize];
-        ["Align of template specialization: char_traits_open0_char32_t_close0"]
-            [::core::mem::align_of::<root::std::char_traits>() - 1usize];
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: char_traits_open0_wchar_t_close0"]
-            [::core::mem::size_of::<root::std::char_traits>() - 1usize];
-        ["Align of template specialization: char_traits_open0_wchar_t_close0"]
-            [::core::mem::align_of::<root::std::char_traits>() - 1usize];
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
         ["Size of template specialization: unique_ptr_open0_thread__State_default_delete_open1_thread__State_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: unique_ptr > () - 8usize] ;
         ["Align of template specialization: unique_ptr_open0_thread__State_default_delete_open1_thread__State_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: unique_ptr > () - 8usize] ;
     };
@@ -13617,27 +13543,27 @@ pub mod root {
     };
     #[repr(C)]
     #[derive(Debug, Copy, Clone)]
-    pub struct _bindgen_ty_48 {
+    pub struct _bindgen_ty_43 {
         pub _address: u8,
     }
     #[repr(C)]
     #[derive(Debug, Copy, Clone)]
-    pub struct _bindgen_ty_49 {
+    pub struct _bindgen_ty_44 {
         pub _address: u8,
     }
     #[repr(C)]
     #[derive(Debug, Copy, Clone)]
-    pub struct _bindgen_ty_50 {
+    pub struct _bindgen_ty_45 {
         pub _address: u8,
     }
     #[repr(C)]
     #[derive(Debug, Copy, Clone)]
-    pub struct _bindgen_ty_51 {
+    pub struct _bindgen_ty_46 {
         pub _address: u8,
     }
     #[repr(C)]
     #[derive(Debug, Copy, Clone)]
-    pub struct _bindgen_ty_52 {
+    pub struct _bindgen_ty_47 {
         pub _address: u8,
     }
     #[allow(clippy::unnecessary_operation, clippy::identity_op)]
@@ -13687,17 +13613,5 @@ pub mod root {
     const _: () = {
         ["Size of template specialization: time_point_open0_system_clock_system_clock_duration_close0"] [:: core :: mem :: size_of :: < root :: std :: chrono :: time_point < root :: std :: chrono :: system_clock_duration > > () - 8usize] ;
         ["Align of template specialization: time_point_open0_system_clock_system_clock_duration_close0"] [:: core :: mem :: align_of :: < root :: std :: chrono :: time_point < root :: std :: chrono :: system_clock_duration > > () - 8usize] ;
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: time_point_open0___file_clock_duration_open1_long_ratio_open2_close2_close1_close0"] [:: core :: mem :: size_of :: < root :: std :: chrono :: time_point < root :: std :: chrono :: duration < :: core :: ffi :: c_long > > > () - 8usize] ;
-        ["Align of template specialization: time_point_open0___file_clock_duration_open1_long_ratio_open2_close2_close1_close0"] [:: core :: mem :: align_of :: < root :: std :: chrono :: time_point < root :: std :: chrono :: duration < :: core :: ffi :: c_long > > > () - 8usize] ;
-    };
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of template specialization: duration_open0_long_ratio_open1_close1_close0"]
-            [::core::mem::size_of::<root::std::chrono::duration<::core::ffi::c_long>>() - 8usize];
-        ["Align of template specialization: duration_open0_long_ratio_open1_close1_close0"]
-            [::core::mem::align_of::<root::std::chrono::duration<::core::ffi::c_long>>() - 8usize];
     };
 }

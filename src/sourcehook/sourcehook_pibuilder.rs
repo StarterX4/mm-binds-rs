@@ -106,7 +106,7 @@ pub mod root {
     pub const __USE_DYNAMIC_STACK_SIZE: u32 = 1;
     pub const __USE_GNU: u32 = 1;
     pub const __USE_FORTIFY_LEVEL: u32 = 0;
-    pub const __GLIBC_USE_DEPRECATED_GETS: u32 = 1;
+    pub const __GLIBC_USE_DEPRECATED_GETS: u32 = 0;
     pub const __GLIBC_USE_DEPRECATED_SCANF: u32 = 0;
     pub const __GLIBC_USE_C23_STRTOL: u32 = 1;
     pub const _STDC_PREDEF_H: u32 = 1;
@@ -888,6 +888,25 @@ pub mod root {
     pub const __glibcxx_result_of_sfinae: u32 = 201210;
     pub const __glibcxx_shared_ptr_arrays: u32 = 201611;
     pub const __glibcxx_math_spec_funcs: u32 = 201003;
+    pub const __glibcxx_exchange_function: u32 = 201304;
+    pub const __glibcxx_integer_sequence: u32 = 201304;
+    pub const __glibcxx_integral_constant_callable: u32 = 201304;
+    pub const __glibcxx_is_final: u32 = 201402;
+    pub const __glibcxx_make_reverse_iterator: u32 = 201402;
+    pub const __glibcxx_null_iterators: u32 = 201304;
+    pub const __glibcxx_transformation_trait_aliases: u32 = 201304;
+    pub const __glibcxx_transparent_operators: u32 = 201510;
+    pub const __glibcxx_tuple_element_t: u32 = 201402;
+    pub const __glibcxx_tuples_by_type: u32 = 201304;
+    pub const __glibcxx_robust_nonmodifying_seq_ops: u32 = 201304;
+    pub const __glibcxx_to_chars: u32 = 201611;
+    pub const __glibcxx_chrono_udls: u32 = 201304;
+    pub const __glibcxx_complex_udls: u32 = 201309;
+    pub const __glibcxx_generic_associative_lookup: u32 = 201304;
+    pub const __glibcxx_make_unique: u32 = 201304;
+    pub const __glibcxx_quoted_string_io: u32 = 201304;
+    pub const __glibcxx_shared_timed_mutex: u32 = 201402;
+    pub const __glibcxx_string_udls: u32 = 201304;
     pub const _ASSERT_H: u32 = 1;
     unsafe extern "C" {
         pub fn _dl_mcount_wrapper_check(__selfpc: *mut ::core::ffi::c_void);

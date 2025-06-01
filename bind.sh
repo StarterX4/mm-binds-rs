@@ -1,16 +1,26 @@
 #!/bin/bash
 # Consider adding these lines for more robust script behavior:
-set -euo pipefail
+#set -euo pipefail
 
 BASE_OPTS="--use-core --enable-cxx-namespaces --rust-target 1.86"
 INCLUDES="-include dll_import.h -include metamod_oslink.h -I mmsource/core -I mmsource/core/sourcehook -I mmsource/third_party/amtl -I mmsource/loader -I mmsource/versionlib -I mmsource/core/provider/source -I mmsource/core/provider "
+
+# Borrowed from mmsource/AMBuildScript
+AMBUILD_DEFINES="-D stricmp=strcasecmp -D _stricmp=strcasecmp -D _snprintf=snprintf -D _vsnprintf=vsnprintf -D HAVE_STDINT_H -D GNUC"
+AMBUILD_CXX_FLAGS="-pipe -fno-strict-aliasing -Wall -Wno-uninitialized -Wno-sign-compare -Wno-unused -Wno-switch -Wno-unknown-pragmas -Wno-dangling-else -msse "
+AMBUILD_CXX_FLAGS+="-fvisibility-inlines-hidden -fno-exceptions -fno-rtti -fno-threadsafe-statics -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-register -Wno-delete-non-virtual-dtor "
+AMBUILD_CXX_FLAGS+="-Wno-implicit-exception-spec-mismatch -Wno-inconsistent-missing-override -Wno-deprecated-register "
+AMBUILD_CXX_FLAGS+="-Wno-implicit-int-float-conversion -Wno-tautological-overlap-compare -Wno-ordered-compare-function-pointers"
+
+# Fix flags to let bindgen proceed
+#FIX_CXX_FLAGS="-Wno-typedef-redefinition"
 
 # Define the base path for the SDK public directory
 HL2SDK="/kesz/Budowanie/alliedmodders/hl2sdk-l4d2/public"
 
 # Dynamically add subdirectories (1 and 2 levels deep) from the SDK public path
 INCLUDES+=$(find ${HL2SDK} -type d -printf '-I %p ')
-CLANG_OPTS="-x c++ -std=c++11 -DLINUX=1 -DPOSIX=1 $INCLUDES"
+CLANG_OPTS="-x c++ -std=c++14 $INCLUDES $AMBUILD_DEFINES $AMBUILD_CXX_FLAGS $FIX_CXX_FLAGS "
 
 ### Core ###
 ### SourceHook ###

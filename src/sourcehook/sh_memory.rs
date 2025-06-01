@@ -254,7 +254,7 @@ pub mod root {
     pub const __USE_DYNAMIC_STACK_SIZE: u32 = 1;
     pub const __USE_GNU: u32 = 1;
     pub const __USE_FORTIFY_LEVEL: u32 = 0;
-    pub const __GLIBC_USE_DEPRECATED_GETS: u32 = 1;
+    pub const __GLIBC_USE_DEPRECATED_GETS: u32 = 0;
     pub const __GLIBC_USE_DEPRECATED_SCANF: u32 = 0;
     pub const __GLIBC_USE_C23_STRTOL: u32 = 1;
     pub const _STDC_PREDEF_H: u32 = 1;
@@ -3535,7 +3535,7 @@ pub mod root {
             pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<T>>,
             pub m_This: *mut root::SourceHook::List_ListNode<T>,
         }
-        pub mod _bindgen_mod_id_12086 {
+        pub mod _bindgen_mod_id_12080 {
             #[allow(unused_imports)]
             use self::super::super::super::root;
             unsafe extern "C" {
@@ -4869,9 +4869,6 @@ pub mod root {
             __n: ::core::ffi::c_int,
             __stream: *mut root::FILE,
         ) -> *mut ::core::ffi::c_char;
-    }
-    unsafe extern "C" {
-        pub fn gets(__s: *mut ::core::ffi::c_char) -> *mut ::core::ffi::c_char;
     }
     unsafe extern "C" {
         pub fn fgets_unlocked(

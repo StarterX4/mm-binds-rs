@@ -254,7 +254,7 @@ pub mod root {
     pub const __USE_DYNAMIC_STACK_SIZE: u32 = 1;
     pub const __USE_GNU: u32 = 1;
     pub const __USE_FORTIFY_LEVEL: u32 = 0;
-    pub const __GLIBC_USE_DEPRECATED_GETS: u32 = 1;
+    pub const __GLIBC_USE_DEPRECATED_GETS: u32 = 0;
     pub const __GLIBC_USE_DEPRECATED_SCANF: u32 = 0;
     pub const __GLIBC_USE_C23_STRTOL: u32 = 1;
     pub const _STDC_PREDEF_H: u32 = 1;
@@ -1066,12 +1066,34 @@ pub mod root {
     pub const __glibcxx_result_of_sfinae: u32 = 201210;
     pub const __glibcxx_shared_ptr_arrays: u32 = 201611;
     pub const __glibcxx_math_spec_funcs: u32 = 201003;
+    pub const __glibcxx_exchange_function: u32 = 201304;
+    pub const __glibcxx_integer_sequence: u32 = 201304;
+    pub const __glibcxx_integral_constant_callable: u32 = 201304;
+    pub const __glibcxx_is_final: u32 = 201402;
+    pub const __glibcxx_make_reverse_iterator: u32 = 201402;
+    pub const __glibcxx_null_iterators: u32 = 201304;
+    pub const __glibcxx_transformation_trait_aliases: u32 = 201304;
+    pub const __glibcxx_transparent_operators: u32 = 201510;
+    pub const __glibcxx_tuple_element_t: u32 = 201402;
+    pub const __glibcxx_tuples_by_type: u32 = 201304;
+    pub const __glibcxx_robust_nonmodifying_seq_ops: u32 = 201304;
+    pub const __glibcxx_to_chars: u32 = 201611;
+    pub const __glibcxx_chrono_udls: u32 = 201304;
+    pub const __glibcxx_complex_udls: u32 = 201309;
+    pub const __glibcxx_generic_associative_lookup: u32 = 201304;
+    pub const __glibcxx_make_unique: u32 = 201304;
+    pub const __glibcxx_quoted_string_io: u32 = 201304;
+    pub const __glibcxx_shared_timed_mutex: u32 = 201402;
+    pub const __glibcxx_string_udls: u32 = 201304;
     pub const _EXT_TYPE_TRAITS: u32 = 1;
     pub const _EXT_NUMERIC_TRAITS: u32 = 1;
     pub const _STL_PAIR_H: u32 = 1;
     pub const _GLIBCXX_TYPE_TRAITS: u32 = 1;
     pub const __cpp_lib_is_null_pointer: u32 = 201309;
     pub const __cpp_lib_result_of_sfinae: u32 = 201210;
+    pub const __cpp_lib_integral_constant_callable: u32 = 201304;
+    pub const __cpp_lib_is_final: u32 = 201402;
+    pub const __cpp_lib_transformation_trait_aliases: u32 = 201304;
     pub const _MOVE_H: u32 = 1;
     pub const _GLIBCXX_UTILITY_H: u32 = 1;
     pub const _STL_ITERATOR_BASE_TYPES_H: u32 = 1;
@@ -1082,6 +1104,8 @@ pub mod root {
     pub const _PTR_TRAITS_H: u32 = 1;
     pub const _GLIBCXX_DEBUG_MACRO_SWITCH_H: u32 = 1;
     pub const _GLIBCXX_PREDEFINED_OPS_H: u32 = 1;
+    pub const _GLIBCXX_BIT: u32 = 1;
+    pub const _GLIBCXX_CONCEPTS: u32 = 1;
     pub const _ALLOCATOR_H: u32 = 1;
     pub const _GLIBCXX_CXX_ALLOCATOR_H: u32 = 1;
     pub const _STD_NEW_ALLOCATOR_H: u32 = 1;
@@ -1103,11 +1127,12 @@ pub mod root {
     pub const _STL_UNINITIALIZED_H: u32 = 1;
     pub const _STL_RAW_STORAGE_ITERATOR_H: u32 = 1;
     pub const _GLIBCXX_ALIGN_H: u32 = 1;
-    pub const _GLIBCXX_BIT: u32 = 1;
     pub const _USES_ALLOCATOR_H: u32 = 1;
     pub const _UNIQUE_PTR_H: u32 = 1;
     pub const _GLIBCXX_TUPLE: u32 = 1;
     pub const _GLIBCXX_INVOKE_H: u32 = 1;
+    pub const __cpp_lib_tuple_element_t: u32 = 201402;
+    pub const __cpp_lib_tuples_by_type: u32 = 201304;
     pub const _STL_FUNCTION_H: u32 = 1;
     pub const _BACKWARD_BINDERS_H: u32 = 1;
     pub const _FUNCTIONAL_HASH_H: u32 = 1;
@@ -1282,6 +1307,8 @@ pub mod root {
     pub const _GLIBCXX_ATOMIC_LOCK_FREE_H: u32 = 1;
     pub const _BACKWARD_AUTO_PTR_H: u32 = 1;
     pub const __cpp_lib_shared_ptr_arrays: u32 = 201611;
+    pub const __cpp_lib_transparent_operators: u32 = 201510;
+    pub const __cpp_lib_make_unique: u32 = 201304;
     pub const _GLIBCXX_CSTDDEF: u32 = 1;
     pub const SH_IFACE_VERSION: u32 = 5;
     pub const SH_IMPL_VERSION: u32 = 5;
@@ -4116,6 +4143,15 @@ pub mod root {
                 ["Alignment of _List_node_header"]
                     [::core::mem::align_of::<_List_node_header>() - 8usize];
             };
+            #[repr(C)]
+            #[derive(Debug, Copy, Clone)]
+            pub struct _MakeUniq {
+                pub _address: u8,
+            }
+            pub type _MakeUniq___single_object = root::std::unique_ptr;
+            pub type __unique_ptr_t = root::std::__detail::_MakeUniq;
+            pub type __unique_ptr_array_t = root::std::__detail::_MakeUniq;
+            pub type __invalid_make_unique_t = root::std::__detail::_MakeUniq;
         }
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
@@ -4476,6 +4512,11 @@ pub mod root {
         }
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
+        pub struct is_final {
+            pub _address: u8,
+        }
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
         pub struct is_abstract {
             pub _address: u8,
         }
@@ -4773,6 +4814,12 @@ pub mod root {
             pub _address: u8,
         }
         pub type add_cv_type<_Tp> = _Tp;
+        pub type remove_const_t = root::std::remove_const;
+        pub type remove_volatile_t = root::std::remove_volatile;
+        pub type remove_cv_t = root::std::remove_cv;
+        pub type add_const_t = root::std::add_const;
+        pub type add_volatile_t = root::std::add_volatile;
+        pub type add_cv_t = root::std::add_cv;
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
         pub struct remove_reference {
@@ -4791,6 +4838,9 @@ pub mod root {
             pub _address: u8,
         }
         pub type add_rvalue_reference_type<_Tp> = root::std::__add_rval_ref_t<_Tp>;
+        pub type remove_reference_t = root::std::remove_reference;
+        pub type add_lvalue_reference_t = root::std::add_lvalue_reference;
+        pub type add_rvalue_reference_t = root::std::add_rvalue_reference;
         pub type __match_cv_qualifiers___match = u8;
         pub type __match_cv_qualifiers___type = root::std::__match_cv_qualifiers___match;
         #[repr(C)]
@@ -4960,6 +5010,8 @@ pub mod root {
             pub _address: u8,
         }
         pub type make_signed_type = u8;
+        pub type make_signed_t = root::std::make_signed;
+        pub type make_unsigned_t = root::std::make_unsigned;
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
         pub struct remove_extent {
@@ -4972,6 +5024,8 @@ pub mod root {
             pub _address: u8,
         }
         pub type remove_all_extents_type<_Tp> = _Tp;
+        pub type remove_extent_t = root::std::remove_extent;
+        pub type remove_all_extents_t = root::std::remove_all_extents;
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
         pub struct remove_pointer {
@@ -4984,6 +5038,8 @@ pub mod root {
             pub _address: u8,
         }
         pub type add_pointer_type<_Tp> = _Tp;
+        pub type remove_pointer_t = root::std::remove_pointer;
+        pub type add_pointer_t = root::std::add_pointer;
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
         pub struct __aligned_storage_max_align_t {
@@ -5270,6 +5326,14 @@ pub mod root {
             pub _address: u8,
         }
         pub type __invoke_result_t = root::std::__invoke_result;
+        pub type aligned_storage_t = u8;
+        pub type aligned_union_t = u8;
+        pub type decay_t = root::std::decay;
+        pub type enable_if_t = u8;
+        pub type conditional_t = u8;
+        pub type common_type_t = root::std::common_type;
+        pub type underlying_type_t = root::std::underlying_type;
+        pub type result_of_t = root::std::result_of;
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
         pub struct __detector {
@@ -5388,8 +5452,14 @@ pub mod root {
         }
         pub type __enable_if_has_tuple_size<_Tp> = _Tp;
         pub type __tuple_element_t = u8;
+        pub type tuple_element_t = u8;
         pub type _Build_index_tuple__IdxTuple = u8;
         pub type _Build_index_tuple___type = u8;
+        pub type integer_sequence_value_type<_Tp> = _Tp;
+        pub type make_integer_sequence = u8;
+        pub type index_sequence = u8;
+        pub type make_index_sequence = root::std::make_integer_sequence;
+        pub type index_sequence_for = root::std::make_index_sequence;
         pub type _Nth_type_type = u8;
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
@@ -5828,6 +5898,11 @@ pub mod root {
         pub type initializer_list_const_iterator<_E> = *const _E;
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
+        pub struct valarray {
+            pub _address: u8,
+        }
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
         pub struct __allocator_traits_base {
             pub _address: u8,
         }
@@ -6259,6 +6334,11 @@ pub mod root {
         pub type binary_function_result_type<_Result> = _Result;
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
+        pub struct __is_transparent {
+            _unused: [u8; 0],
+        }
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
         pub struct plus {
             pub _address: u8,
         }
@@ -6287,6 +6367,48 @@ pub mod root {
         pub struct negate {
             pub _address: u8,
         }
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: plus_open0_void_close0"]
+                [::core::mem::size_of::<root::std::plus>() - 1usize];
+            ["Align of template specialization: plus_open0_void_close0"]
+                [::core::mem::align_of::<root::std::plus>() - 1usize];
+        };
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: minus_open0_void_close0"]
+                [::core::mem::size_of::<root::std::minus>() - 1usize];
+            ["Align of template specialization: minus_open0_void_close0"]
+                [::core::mem::align_of::<root::std::minus>() - 1usize];
+        };
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: multiplies_open0_void_close0"]
+                [::core::mem::size_of::<root::std::multiplies>() - 1usize];
+            ["Align of template specialization: multiplies_open0_void_close0"]
+                [::core::mem::align_of::<root::std::multiplies>() - 1usize];
+        };
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: divides_open0_void_close0"]
+                [::core::mem::size_of::<root::std::divides>() - 1usize];
+            ["Align of template specialization: divides_open0_void_close0"]
+                [::core::mem::align_of::<root::std::divides>() - 1usize];
+        };
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: modulus_open0_void_close0"]
+                [::core::mem::size_of::<root::std::modulus>() - 1usize];
+            ["Align of template specialization: modulus_open0_void_close0"]
+                [::core::mem::align_of::<root::std::modulus>() - 1usize];
+        };
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: negate_open0_void_close0"]
+                [::core::mem::size_of::<root::std::negate>() - 1usize];
+            ["Align of template specialization: negate_open0_void_close0"]
+                [::core::mem::align_of::<root::std::negate>() - 1usize];
+        };
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
         pub struct equal_to {
@@ -6317,6 +6439,48 @@ pub mod root {
         pub struct less_equal {
             pub _address: u8,
         }
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: equal_to_open0_void_close0"]
+                [::core::mem::size_of::<root::std::equal_to>() - 1usize];
+            ["Align of template specialization: equal_to_open0_void_close0"]
+                [::core::mem::align_of::<root::std::equal_to>() - 1usize];
+        };
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: not_equal_to_open0_void_close0"]
+                [::core::mem::size_of::<root::std::not_equal_to>() - 1usize];
+            ["Align of template specialization: not_equal_to_open0_void_close0"]
+                [::core::mem::align_of::<root::std::not_equal_to>() - 1usize];
+        };
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: greater_open0_void_close0"]
+                [::core::mem::size_of::<root::std::greater>() - 1usize];
+            ["Align of template specialization: greater_open0_void_close0"]
+                [::core::mem::align_of::<root::std::greater>() - 1usize];
+        };
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: less_open0_void_close0"]
+                [::core::mem::size_of::<root::std::less>() - 1usize];
+            ["Align of template specialization: less_open0_void_close0"]
+                [::core::mem::align_of::<root::std::less>() - 1usize];
+        };
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: greater_equal_open0_void_close0"]
+                [::core::mem::size_of::<root::std::greater_equal>() - 1usize];
+            ["Align of template specialization: greater_equal_open0_void_close0"]
+                [::core::mem::align_of::<root::std::greater_equal>() - 1usize];
+        };
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: less_equal_open0_void_close0"]
+                [::core::mem::size_of::<root::std::less_equal>() - 1usize];
+            ["Align of template specialization: less_equal_open0_void_close0"]
+                [::core::mem::align_of::<root::std::less_equal>() - 1usize];
+        };
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
         pub struct logical_and {
@@ -6332,6 +6496,27 @@ pub mod root {
         pub struct logical_not {
             pub _address: u8,
         }
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: logical_and_open0_void_close0"]
+                [::core::mem::size_of::<root::std::logical_and>() - 1usize];
+            ["Align of template specialization: logical_and_open0_void_close0"]
+                [::core::mem::align_of::<root::std::logical_and>() - 1usize];
+        };
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: logical_or_open0_void_close0"]
+                [::core::mem::size_of::<root::std::logical_or>() - 1usize];
+            ["Align of template specialization: logical_or_open0_void_close0"]
+                [::core::mem::align_of::<root::std::logical_or>() - 1usize];
+        };
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: logical_not_open0_void_close0"]
+                [::core::mem::size_of::<root::std::logical_not>() - 1usize];
+            ["Align of template specialization: logical_not_open0_void_close0"]
+                [::core::mem::align_of::<root::std::logical_not>() - 1usize];
+        };
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
         pub struct bit_and {
@@ -6352,6 +6537,34 @@ pub mod root {
         pub struct bit_not {
             pub _address: u8,
         }
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: bit_and_open0_void_close0"]
+                [::core::mem::size_of::<root::std::bit_and>() - 1usize];
+            ["Align of template specialization: bit_and_open0_void_close0"]
+                [::core::mem::align_of::<root::std::bit_and>() - 1usize];
+        };
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: bit_or_open0_void_close0"]
+                [::core::mem::size_of::<root::std::bit_or>() - 1usize];
+            ["Align of template specialization: bit_or_open0_void_close0"]
+                [::core::mem::align_of::<root::std::bit_or>() - 1usize];
+        };
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: bit_xor_open0_void_close0"]
+                [::core::mem::size_of::<root::std::bit_xor>() - 1usize];
+            ["Align of template specialization: bit_xor_open0_void_close0"]
+                [::core::mem::align_of::<root::std::bit_xor>() - 1usize];
+        };
+        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+        const _: () = {
+            ["Size of template specialization: bit_not_open0_void_close0"]
+                [::core::mem::size_of::<root::std::bit_not>() - 1usize];
+            ["Align of template specialization: bit_not_open0_void_close0"]
+                [::core::mem::align_of::<root::std::bit_not>() - 1usize];
+        };
         #[repr(C)]
         #[derive(Debug, Copy, Clone)]
         pub struct unary_negate<_Predicate> {
@@ -6447,6 +6660,12 @@ pub mod root {
             pub _phantom_1: ::core::marker::PhantomData<::core::cell::UnsafeCell<_Arg>>,
             pub _M_f: ::core::option::Option<unsafe extern "C" fn(arg1: _Arg) -> _Ret>,
         }
+        #[repr(C)]
+        #[derive(Debug, Copy, Clone)]
+        pub struct __has_is_transparent {
+            pub _address: u8,
+        }
+        pub type __has_is_transparent_t = root::std::__has_is_transparent;
         #[repr(C)]
         pub struct binder1st<_Operation> {
             pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<_Operation>>,
@@ -9526,30 +9745,21 @@ pub mod root {
         ["Offset of field: __pthread_cleanup_frame::__cancel_type"]
             [::core::mem::offset_of!(__pthread_cleanup_frame, __cancel_type) - 20usize];
     };
-    #[repr(C)]
-    #[derive(Debug)]
-    pub struct __pthread_cleanup_class {
-        pub __cancel_routine:
-            ::core::option::Option<unsafe extern "C" fn(arg1: *mut ::core::ffi::c_void)>,
-        pub __cancel_arg: *mut ::core::ffi::c_void,
-        pub __do_it: ::core::ffi::c_int,
-        pub __cancel_type: ::core::ffi::c_int,
+    unsafe extern "C" {
+        pub fn __pthread_register_cancel(__buf: *mut root::__pthread_unwind_buf_t);
     }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of __pthread_cleanup_class"]
-            [::core::mem::size_of::<__pthread_cleanup_class>() - 24usize];
-        ["Alignment of __pthread_cleanup_class"]
-            [::core::mem::align_of::<__pthread_cleanup_class>() - 8usize];
-        ["Offset of field: __pthread_cleanup_class::__cancel_routine"]
-            [::core::mem::offset_of!(__pthread_cleanup_class, __cancel_routine) - 0usize];
-        ["Offset of field: __pthread_cleanup_class::__cancel_arg"]
-            [::core::mem::offset_of!(__pthread_cleanup_class, __cancel_arg) - 8usize];
-        ["Offset of field: __pthread_cleanup_class::__do_it"]
-            [::core::mem::offset_of!(__pthread_cleanup_class, __do_it) - 16usize];
-        ["Offset of field: __pthread_cleanup_class::__cancel_type"]
-            [::core::mem::offset_of!(__pthread_cleanup_class, __cancel_type) - 20usize];
-    };
+    unsafe extern "C" {
+        pub fn __pthread_unregister_cancel(__buf: *mut root::__pthread_unwind_buf_t);
+    }
+    unsafe extern "C" {
+        pub fn __pthread_register_cancel_defer(__buf: *mut root::__pthread_unwind_buf_t);
+    }
+    unsafe extern "C" {
+        pub fn __pthread_unregister_cancel_restore(__buf: *mut root::__pthread_unwind_buf_t);
+    }
+    unsafe extern "C" {
+        pub fn __pthread_unwind_next(__buf: *mut root::__pthread_unwind_buf_t) -> !;
+    }
     unsafe extern "C" {
         pub fn __sigsetjmp(
             __env: *mut root::__jmp_buf_tag,
@@ -10574,7 +10784,7 @@ pub mod root {
             pub _phantom_0: ::core::marker::PhantomData<::core::cell::UnsafeCell<T>>,
             pub m_This: *mut root::SourceHook::List_ListNode<T>,
         }
-        pub mod _bindgen_mod_id_28893 {
+        pub mod _bindgen_mod_id_30240 {
             #[allow(unused_imports)]
             use self::super::super::super::root;
             unsafe extern "C" {
@@ -12870,9 +13080,6 @@ pub mod root {
             __n: ::core::ffi::c_int,
             __stream: *mut root::FILE,
         ) -> *mut ::core::ffi::c_char;
-    }
-    unsafe extern "C" {
-        pub fn gets(__s: *mut ::core::ffi::c_char) -> *mut ::core::ffi::c_char;
     }
     unsafe extern "C" {
         pub fn fgets_unlocked(

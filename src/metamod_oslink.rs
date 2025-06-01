@@ -377,7 +377,6 @@ pub mod root {
     pub const _GLIBCXX_MAY_HAVE___CXA_THREAD_ATEXIT_IMPL: u32 = 1;
     pub const _GLIBCXX_GTHREAD_USE_WEAK: u32 = 0;
     pub const _GLIBCXX_CPU_DEFINES: u32 = 1;
-    pub const _GLIBCXX_USE_STD_SPEC_FUNCS: u32 = 1;
     pub const _GLIBCXX_FAST_MATH: u32 = 0;
     pub const _GLIBCXX_USE_FLOAT128: u32 = 1;
     pub const _GLIBCXX_FLOAT_IS_IEEE_BINARY32: u32 = 1;
@@ -385,12 +384,6 @@ pub mod root {
     pub const _GLIBCXX_HAVE_BUILTIN_HAS_UNIQ_OBJ_REP: u32 = 1;
     pub const _GLIBCXX_HAVE_BUILTIN_IS_AGGREGATE: u32 = 1;
     pub const _GLIBCXX_HAVE_BUILTIN_LAUNDER: u32 = 1;
-    pub const _PSTL_VERSION: u32 = 17000;
-    pub const _PSTL_VERSION_MAJOR: u32 = 17;
-    pub const _PSTL_VERSION_MINOR: u32 = 0;
-    pub const _PSTL_VERSION_PATCH: u32 = 0;
-    pub const _PSTL_USAGE_WARNINGS: u32 = 0;
-    pub const _PSTL_PRAGMA_LOCATION: &[u8; 26] = b" [Parallel STL message]: \0";
     pub const _GLIBCXX_HAVE_ACOSF: u32 = 1;
     pub const _GLIBCXX_HAVE_ACOSL: u32 = 1;
     pub const _GLIBCXX_HAVE_ALIGNED_ALLOC: u32 = 1;

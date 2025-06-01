@@ -51,16 +51,6 @@ pub mod root {
     pub const LINUX: u32 = 1;
     pub const _LINUX: u32 = 1;
     pub const COMPILER_GCC: u32 = 1;
-    pub const SH_SYS_WIN32: u32 = 1;
-    pub const SH_SYS_LINUX: u32 = 2;
-    pub const SH_SYS_APPLE: u32 = 3;
-    pub const SH_XP_POSIX: u32 = 10;
-    pub const SH_XP_WINAPI: u32 = 20;
-    pub const SH_COMP_GCC: u32 = 1;
-    pub const SH_COMP_MSVC: u32 = 2;
-    pub const SH_SYS: u32 = 2;
-    pub const SH_XP: u32 = 10;
-    pub const SH_COMP: u32 = 1;
     pub const _DLFCN_H: u32 = 1;
     pub const _FEATURES_H: u32 = 1;
     pub const _ISOC95_SOURCE: u32 = 1;
@@ -134,161 +124,6 @@ pub mod root {
     pub const DLFO_STRUCT_HAS_EH_COUNT: u32 = 0;
     pub const LM_ID_BASE: u32 = 0;
     pub const LM_ID_NEWLM: i32 = -1;
-    pub const _DIRENT_H: u32 = 1;
-    pub const _BITS_TYPES_H: u32 = 1;
-    pub const _BITS_TYPESIZES_H: u32 = 1;
-    pub const __OFF_T_MATCHES_OFF64_T: u32 = 1;
-    pub const __INO_T_MATCHES_INO64_T: u32 = 1;
-    pub const __RLIM_T_MATCHES_RLIM64_T: u32 = 1;
-    pub const __STATFS_MATCHES_STATFS64: u32 = 1;
-    pub const __KERNEL_OLD_TIMEVAL_MATCHES_TIMEVAL64: u32 = 1;
-    pub const __FD_SETSIZE: u32 = 1024;
-    pub const _BITS_TIME64_H: u32 = 1;
-    pub const _DIRENT_MATCHES_DIRENT64: u32 = 1;
-    pub const _BITS_POSIX1_LIM_H: u32 = 1;
-    pub const _POSIX_AIO_LISTIO_MAX: u32 = 2;
-    pub const _POSIX_AIO_MAX: u32 = 1;
-    pub const _POSIX_ARG_MAX: u32 = 4096;
-    pub const _POSIX_CHILD_MAX: u32 = 25;
-    pub const _POSIX_DELAYTIMER_MAX: u32 = 32;
-    pub const _POSIX_HOST_NAME_MAX: u32 = 255;
-    pub const _POSIX_LINK_MAX: u32 = 8;
-    pub const _POSIX_LOGIN_NAME_MAX: u32 = 9;
-    pub const _POSIX_MAX_CANON: u32 = 255;
-    pub const _POSIX_MAX_INPUT: u32 = 255;
-    pub const _POSIX_MQ_OPEN_MAX: u32 = 8;
-    pub const _POSIX_MQ_PRIO_MAX: u32 = 32;
-    pub const _POSIX_NAME_MAX: u32 = 14;
-    pub const _POSIX_NGROUPS_MAX: u32 = 8;
-    pub const _POSIX_OPEN_MAX: u32 = 20;
-    pub const _POSIX_FD_SETSIZE: u32 = 20;
-    pub const _POSIX_PATH_MAX: u32 = 256;
-    pub const _POSIX_PIPE_BUF: u32 = 512;
-    pub const _POSIX_RE_DUP_MAX: u32 = 255;
-    pub const _POSIX_RTSIG_MAX: u32 = 8;
-    pub const _POSIX_SEM_NSEMS_MAX: u32 = 256;
-    pub const _POSIX_SEM_VALUE_MAX: u32 = 32767;
-    pub const _POSIX_SIGQUEUE_MAX: u32 = 32;
-    pub const _POSIX_SSIZE_MAX: u32 = 32767;
-    pub const _POSIX_STREAM_MAX: u32 = 8;
-    pub const _POSIX_SYMLINK_MAX: u32 = 255;
-    pub const _POSIX_SYMLOOP_MAX: u32 = 8;
-    pub const _POSIX_TIMER_MAX: u32 = 32;
-    pub const _POSIX_TTY_NAME_MAX: u32 = 9;
-    pub const _POSIX_TZNAME_MAX: u32 = 6;
-    pub const _POSIX_QLIMIT: u32 = 1;
-    pub const _POSIX_HIWAT: u32 = 512;
-    pub const _POSIX_UIO_MAXIOV: u32 = 16;
-    pub const _POSIX_CLOCKRES_MIN: u32 = 20000000;
-    pub const NR_OPEN: u32 = 1024;
-    pub const NGROUPS_MAX: u32 = 65536;
-    pub const ARG_MAX: u32 = 131072;
-    pub const LINK_MAX: u32 = 127;
-    pub const MAX_CANON: u32 = 255;
-    pub const MAX_INPUT: u32 = 255;
-    pub const NAME_MAX: u32 = 255;
-    pub const PATH_MAX: u32 = 4096;
-    pub const PIPE_BUF: u32 = 4096;
-    pub const XATTR_NAME_MAX: u32 = 255;
-    pub const XATTR_SIZE_MAX: u32 = 65536;
-    pub const XATTR_LIST_MAX: u32 = 65536;
-    pub const RTSIG_MAX: u32 = 32;
-    pub const _POSIX_THREAD_KEYS_MAX: u32 = 128;
-    pub const PTHREAD_KEYS_MAX: u32 = 1024;
-    pub const _POSIX_THREAD_DESTRUCTOR_ITERATIONS: u32 = 4;
-    pub const PTHREAD_DESTRUCTOR_ITERATIONS: u32 = 4;
-    pub const _POSIX_THREAD_THREADS_MAX: u32 = 64;
-    pub const AIO_PRIO_DELTA_MAX: u32 = 20;
-    pub const __SC_THREAD_STACK_MIN_VALUE: u32 = 75;
-    pub const DELAYTIMER_MAX: u32 = 2147483647;
-    pub const TTY_NAME_MAX: u32 = 32;
-    pub const LOGIN_NAME_MAX: u32 = 256;
-    pub const HOST_NAME_MAX: u32 = 64;
-    pub const MQ_PRIO_MAX: u32 = 32768;
-    pub const SEM_VALUE_MAX: u32 = 2147483647;
-    pub const MAXNAMLEN: u32 = 255;
-    pub const _STDINT_H: u32 = 1;
-    pub const __GLIBC_USE_LIB_EXT2: u32 = 1;
-    pub const __GLIBC_USE_IEC_60559_BFP_EXT: u32 = 1;
-    pub const __GLIBC_USE_IEC_60559_BFP_EXT_C23: u32 = 1;
-    pub const __GLIBC_USE_IEC_60559_EXT: u32 = 1;
-    pub const __GLIBC_USE_IEC_60559_FUNCS_EXT: u32 = 1;
-    pub const __GLIBC_USE_IEC_60559_FUNCS_EXT_C23: u32 = 1;
-    pub const __GLIBC_USE_IEC_60559_TYPES_EXT: u32 = 1;
-    pub const _BITS_WCHAR_H: u32 = 1;
-    pub const _BITS_STDINT_INTN_H: u32 = 1;
-    pub const _BITS_STDINT_UINTN_H: u32 = 1;
-    pub const _BITS_STDINT_LEAST_H: u32 = 1;
-    pub const INT8_MIN: i32 = -128;
-    pub const INT16_MIN: i32 = -32768;
-    pub const INT32_MIN: i32 = -2147483648;
-    pub const INT8_MAX: u32 = 127;
-    pub const INT16_MAX: u32 = 32767;
-    pub const INT32_MAX: u32 = 2147483647;
-    pub const UINT8_MAX: u32 = 255;
-    pub const UINT16_MAX: u32 = 65535;
-    pub const UINT32_MAX: u32 = 4294967295;
-    pub const INT_LEAST8_MIN: i32 = -128;
-    pub const INT_LEAST16_MIN: i32 = -32768;
-    pub const INT_LEAST32_MIN: i32 = -2147483648;
-    pub const INT_LEAST8_MAX: u32 = 127;
-    pub const INT_LEAST16_MAX: u32 = 32767;
-    pub const INT_LEAST32_MAX: u32 = 2147483647;
-    pub const UINT_LEAST8_MAX: u32 = 255;
-    pub const UINT_LEAST16_MAX: u32 = 65535;
-    pub const UINT_LEAST32_MAX: u32 = 4294967295;
-    pub const INT_FAST8_MIN: i32 = -128;
-    pub const INT_FAST16_MIN: i64 = -9223372036854775808;
-    pub const INT_FAST32_MIN: i64 = -9223372036854775808;
-    pub const INT_FAST8_MAX: u32 = 127;
-    pub const INT_FAST16_MAX: u64 = 9223372036854775807;
-    pub const INT_FAST32_MAX: u64 = 9223372036854775807;
-    pub const UINT_FAST8_MAX: u32 = 255;
-    pub const UINT_FAST16_MAX: i32 = -1;
-    pub const UINT_FAST32_MAX: i32 = -1;
-    pub const INTPTR_MIN: i64 = -9223372036854775808;
-    pub const INTPTR_MAX: u64 = 9223372036854775807;
-    pub const UINTPTR_MAX: i32 = -1;
-    pub const PTRDIFF_MIN: i64 = -9223372036854775808;
-    pub const PTRDIFF_MAX: u64 = 9223372036854775807;
-    pub const SIG_ATOMIC_MIN: i32 = -2147483648;
-    pub const SIG_ATOMIC_MAX: u32 = 2147483647;
-    pub const SIZE_MAX: i32 = -1;
-    pub const WINT_MIN: u32 = 0;
-    pub const WINT_MAX: u32 = 4294967295;
-    pub const INT8_WIDTH: u32 = 8;
-    pub const UINT8_WIDTH: u32 = 8;
-    pub const INT16_WIDTH: u32 = 16;
-    pub const UINT16_WIDTH: u32 = 16;
-    pub const INT32_WIDTH: u32 = 32;
-    pub const UINT32_WIDTH: u32 = 32;
-    pub const INT64_WIDTH: u32 = 64;
-    pub const UINT64_WIDTH: u32 = 64;
-    pub const INT_LEAST8_WIDTH: u32 = 8;
-    pub const UINT_LEAST8_WIDTH: u32 = 8;
-    pub const INT_LEAST16_WIDTH: u32 = 16;
-    pub const UINT_LEAST16_WIDTH: u32 = 16;
-    pub const INT_LEAST32_WIDTH: u32 = 32;
-    pub const UINT_LEAST32_WIDTH: u32 = 32;
-    pub const INT_LEAST64_WIDTH: u32 = 64;
-    pub const UINT_LEAST64_WIDTH: u32 = 64;
-    pub const INT_FAST8_WIDTH: u32 = 8;
-    pub const UINT_FAST8_WIDTH: u32 = 8;
-    pub const INT_FAST16_WIDTH: u32 = 64;
-    pub const UINT_FAST16_WIDTH: u32 = 64;
-    pub const INT_FAST32_WIDTH: u32 = 64;
-    pub const UINT_FAST32_WIDTH: u32 = 64;
-    pub const INT_FAST64_WIDTH: u32 = 64;
-    pub const UINT_FAST64_WIDTH: u32 = 64;
-    pub const INTPTR_WIDTH: u32 = 64;
-    pub const UINTPTR_WIDTH: u32 = 64;
-    pub const INTMAX_WIDTH: u32 = 64;
-    pub const UINTMAX_WIDTH: u32 = 64;
-    pub const PTRDIFF_WIDTH: u32 = 64;
-    pub const SIG_ATOMIC_WIDTH: u32 = 32;
-    pub const SIZE_WIDTH: u32 = 64;
-    pub const WCHAR_WIDTH: u32 = 32;
-    pub const WINT_WIDTH: u32 = 32;
     pub const _UNISTD_H: u32 = 1;
     pub const _POSIX_VERSION: u32 = 200809;
     pub const __POSIX2_THIS_VERSION: u32 = 200809;
@@ -384,6 +219,15 @@ pub mod root {
     pub const STDIN_FILENO: u32 = 0;
     pub const STDOUT_FILENO: u32 = 1;
     pub const STDERR_FILENO: u32 = 2;
+    pub const _BITS_TYPES_H: u32 = 1;
+    pub const _BITS_TYPESIZES_H: u32 = 1;
+    pub const __OFF_T_MATCHES_OFF64_T: u32 = 1;
+    pub const __INO_T_MATCHES_INO64_T: u32 = 1;
+    pub const __RLIM_T_MATCHES_RLIM64_T: u32 = 1;
+    pub const __STATFS_MATCHES_STATFS64: u32 = 1;
+    pub const __KERNEL_OLD_TIMEVAL_MATCHES_TIMEVAL64: u32 = 1;
+    pub const __FD_SETSIZE: u32 = 1024;
+    pub const _BITS_TIME64_H: u32 = 1;
     pub const R_OK: u32 = 4;
     pub const W_OK: u32 = 2;
     pub const X_OK: u32 = 1;
@@ -404,11 +248,116 @@ pub mod root {
     pub const F_TEST: u32 = 3;
     pub const CLOSE_RANGE_UNSHARE: u32 = 2;
     pub const CLOSE_RANGE_CLOEXEC: u32 = 4;
-    pub const PLATFORM_MAX_PATH: u32 = 4096;
+    pub const _SYS_TYPES_H: u32 = 1;
+    pub const __clock_t_defined: u32 = 1;
+    pub const __clockid_t_defined: u32 = 1;
+    pub const __time_t_defined: u32 = 1;
+    pub const __timer_t_defined: u32 = 1;
+    pub const _BITS_STDINT_INTN_H: u32 = 1;
+    pub const __BIT_TYPES_DEFINED__: u32 = 1;
+    pub const _ENDIAN_H: u32 = 1;
+    pub const _BITS_ENDIAN_H: u32 = 1;
+    pub const __LITTLE_ENDIAN: u32 = 1234;
+    pub const __BIG_ENDIAN: u32 = 4321;
+    pub const __PDP_ENDIAN: u32 = 3412;
+    pub const _BITS_ENDIANNESS_H: u32 = 1;
+    pub const __BYTE_ORDER: u32 = 1234;
+    pub const __FLOAT_WORD_ORDER: u32 = 1234;
+    pub const LITTLE_ENDIAN: u32 = 1234;
+    pub const BIG_ENDIAN: u32 = 4321;
+    pub const PDP_ENDIAN: u32 = 3412;
+    pub const BYTE_ORDER: u32 = 1234;
+    pub const _BITS_BYTESWAP_H: u32 = 1;
+    pub const _BITS_UINTN_IDENTITY_H: u32 = 1;
+    pub const _SYS_SELECT_H: u32 = 1;
+    pub const __sigset_t_defined: u32 = 1;
+    pub const __timeval_defined: u32 = 1;
+    pub const _STRUCT_TIMESPEC: u32 = 1;
+    pub const FD_SETSIZE: u32 = 1024;
+    pub const _BITS_PTHREADTYPES_COMMON_H: u32 = 1;
+    pub const _THREAD_SHARED_TYPES_H: u32 = 1;
+    pub const _BITS_PTHREADTYPES_ARCH_H: u32 = 1;
+    pub const __SIZEOF_PTHREAD_MUTEX_T: u32 = 40;
+    pub const __SIZEOF_PTHREAD_ATTR_T: u32 = 56;
+    pub const __SIZEOF_PTHREAD_RWLOCK_T: u32 = 56;
+    pub const __SIZEOF_PTHREAD_BARRIER_T: u32 = 32;
+    pub const __SIZEOF_PTHREAD_MUTEXATTR_T: u32 = 4;
+    pub const __SIZEOF_PTHREAD_COND_T: u32 = 48;
+    pub const __SIZEOF_PTHREAD_CONDATTR_T: u32 = 4;
+    pub const __SIZEOF_PTHREAD_RWLOCKATTR_T: u32 = 8;
+    pub const __SIZEOF_PTHREAD_BARRIERATTR_T: u32 = 4;
+    pub const _THREAD_MUTEX_INTERNAL_H: u32 = 1;
+    pub const __PTHREAD_MUTEX_HAVE_PREV: u32 = 1;
+    pub const __have_pthread_attr_t: u32 = 1;
+    pub const _DIRENT_H: u32 = 1;
+    pub const _DIRENT_MATCHES_DIRENT64: u32 = 1;
+    pub const _BITS_POSIX1_LIM_H: u32 = 1;
+    pub const _POSIX_AIO_LISTIO_MAX: u32 = 2;
+    pub const _POSIX_AIO_MAX: u32 = 1;
+    pub const _POSIX_ARG_MAX: u32 = 4096;
+    pub const _POSIX_CHILD_MAX: u32 = 25;
+    pub const _POSIX_DELAYTIMER_MAX: u32 = 32;
+    pub const _POSIX_HOST_NAME_MAX: u32 = 255;
+    pub const _POSIX_LINK_MAX: u32 = 8;
+    pub const _POSIX_LOGIN_NAME_MAX: u32 = 9;
+    pub const _POSIX_MAX_CANON: u32 = 255;
+    pub const _POSIX_MAX_INPUT: u32 = 255;
+    pub const _POSIX_MQ_OPEN_MAX: u32 = 8;
+    pub const _POSIX_MQ_PRIO_MAX: u32 = 32;
+    pub const _POSIX_NAME_MAX: u32 = 14;
+    pub const _POSIX_NGROUPS_MAX: u32 = 8;
+    pub const _POSIX_OPEN_MAX: u32 = 20;
+    pub const _POSIX_FD_SETSIZE: u32 = 20;
+    pub const _POSIX_PATH_MAX: u32 = 256;
+    pub const _POSIX_PIPE_BUF: u32 = 512;
+    pub const _POSIX_RE_DUP_MAX: u32 = 255;
+    pub const _POSIX_RTSIG_MAX: u32 = 8;
+    pub const _POSIX_SEM_NSEMS_MAX: u32 = 256;
+    pub const _POSIX_SEM_VALUE_MAX: u32 = 32767;
+    pub const _POSIX_SIGQUEUE_MAX: u32 = 32;
+    pub const _POSIX_SSIZE_MAX: u32 = 32767;
+    pub const _POSIX_STREAM_MAX: u32 = 8;
+    pub const _POSIX_SYMLINK_MAX: u32 = 255;
+    pub const _POSIX_SYMLOOP_MAX: u32 = 8;
+    pub const _POSIX_TIMER_MAX: u32 = 32;
+    pub const _POSIX_TTY_NAME_MAX: u32 = 9;
+    pub const _POSIX_TZNAME_MAX: u32 = 6;
+    pub const _POSIX_QLIMIT: u32 = 1;
+    pub const _POSIX_HIWAT: u32 = 512;
+    pub const _POSIX_UIO_MAXIOV: u32 = 16;
+    pub const _POSIX_CLOCKRES_MIN: u32 = 20000000;
+    pub const NR_OPEN: u32 = 1024;
+    pub const NGROUPS_MAX: u32 = 65536;
+    pub const ARG_MAX: u32 = 131072;
+    pub const LINK_MAX: u32 = 127;
+    pub const MAX_CANON: u32 = 255;
+    pub const MAX_INPUT: u32 = 255;
+    pub const NAME_MAX: u32 = 255;
+    pub const PATH_MAX: u32 = 4096;
+    pub const PIPE_BUF: u32 = 4096;
+    pub const XATTR_NAME_MAX: u32 = 255;
+    pub const XATTR_SIZE_MAX: u32 = 65536;
+    pub const XATTR_LIST_MAX: u32 = 65536;
+    pub const RTSIG_MAX: u32 = 32;
+    pub const _POSIX_THREAD_KEYS_MAX: u32 = 128;
+    pub const PTHREAD_KEYS_MAX: u32 = 1024;
+    pub const _POSIX_THREAD_DESTRUCTOR_ITERATIONS: u32 = 4;
+    pub const PTHREAD_DESTRUCTOR_ITERATIONS: u32 = 4;
+    pub const _POSIX_THREAD_THREADS_MAX: u32 = 64;
+    pub const AIO_PRIO_DELTA_MAX: u32 = 20;
+    pub const __SC_THREAD_STACK_MIN_VALUE: u32 = 75;
+    pub const DELAYTIMER_MAX: u32 = 2147483647;
+    pub const TTY_NAME_MAX: u32 = 32;
+    pub const LOGIN_NAME_MAX: u32 = 256;
+    pub const HOST_NAME_MAX: u32 = 64;
+    pub const MQ_PRIO_MAX: u32 = 32768;
+    pub const SEM_VALUE_MAX: u32 = 2147483647;
+    pub const MAXNAMLEN: u32 = 255;
     pub const PATH_SEP_STR: &[u8; 2] = b"/\0";
     pub const PATH_SEP_CHAR: u8 = 47u8;
     pub const ALT_SEP_CHAR: u8 = 92u8;
-    pub const _GLIBCXX_CSTDDEF: u32 = 1;
+    pub const PATH_SIZE: u32 = 4096;
+    pub const _GLIBCXX_CERRNO: u32 = 1;
     pub const _GLIBCXX_CXX_CONFIG_H: u32 = 1;
     pub const _GLIBCXX_RELEASE: u32 = 15;
     pub const __GLIBCXX__: u32 = 20250425;
@@ -428,7 +377,6 @@ pub mod root {
     pub const _GLIBCXX_MAY_HAVE___CXA_THREAD_ATEXIT_IMPL: u32 = 1;
     pub const _GLIBCXX_GTHREAD_USE_WEAK: u32 = 0;
     pub const _GLIBCXX_CPU_DEFINES: u32 = 1;
-    pub const _GLIBCXX_USE_STD_SPEC_FUNCS: u32 = 1;
     pub const _GLIBCXX_FAST_MATH: u32 = 0;
     pub const _GLIBCXX_USE_FLOAT128: u32 = 1;
     pub const _GLIBCXX_FLOAT_IS_IEEE_BINARY32: u32 = 1;
@@ -436,12 +384,6 @@ pub mod root {
     pub const _GLIBCXX_HAVE_BUILTIN_HAS_UNIQ_OBJ_REP: u32 = 1;
     pub const _GLIBCXX_HAVE_BUILTIN_IS_AGGREGATE: u32 = 1;
     pub const _GLIBCXX_HAVE_BUILTIN_LAUNDER: u32 = 1;
-    pub const _PSTL_VERSION: u32 = 17000;
-    pub const _PSTL_VERSION_MAJOR: u32 = 17;
-    pub const _PSTL_VERSION_MINOR: u32 = 0;
-    pub const _PSTL_VERSION_PATCH: u32 = 0;
-    pub const _PSTL_USAGE_WARNINGS: u32 = 0;
-    pub const _PSTL_PRAGMA_LOCATION: &[u8; 26] = b" [Parallel STL message]: \0";
     pub const _GLIBCXX_HAVE_ACOSF: u32 = 1;
     pub const _GLIBCXX_HAVE_ACOSL: u32 = 1;
     pub const _GLIBCXX_HAVE_ALIGNED_ALLOC: u32 = 1;
@@ -690,15 +632,242 @@ pub mod root {
     pub const _GLIBCXX_X86_RDSEED: u32 = 1;
     pub const _GLIBCXX_ZONEINFO_DIR: &[u8; 20] = b"/usr/share/zoneinfo\0";
     pub const _GTHREAD_USE_MUTEX_TIMEDLOCK: u32 = 1;
+    pub const _ERRNO_H: u32 = 1;
+    pub const _BITS_ERRNO_H: u32 = 1;
+    pub const EPERM: u32 = 1;
+    pub const ENOENT: u32 = 2;
+    pub const ESRCH: u32 = 3;
+    pub const EINTR: u32 = 4;
+    pub const EIO: u32 = 5;
+    pub const ENXIO: u32 = 6;
+    pub const E2BIG: u32 = 7;
+    pub const ENOEXEC: u32 = 8;
+    pub const EBADF: u32 = 9;
+    pub const ECHILD: u32 = 10;
+    pub const EAGAIN: u32 = 11;
+    pub const ENOMEM: u32 = 12;
+    pub const EACCES: u32 = 13;
+    pub const EFAULT: u32 = 14;
+    pub const ENOTBLK: u32 = 15;
+    pub const EBUSY: u32 = 16;
+    pub const EEXIST: u32 = 17;
+    pub const EXDEV: u32 = 18;
+    pub const ENODEV: u32 = 19;
+    pub const ENOTDIR: u32 = 20;
+    pub const EISDIR: u32 = 21;
+    pub const EINVAL: u32 = 22;
+    pub const ENFILE: u32 = 23;
+    pub const EMFILE: u32 = 24;
+    pub const ENOTTY: u32 = 25;
+    pub const ETXTBSY: u32 = 26;
+    pub const EFBIG: u32 = 27;
+    pub const ENOSPC: u32 = 28;
+    pub const ESPIPE: u32 = 29;
+    pub const EROFS: u32 = 30;
+    pub const EMLINK: u32 = 31;
+    pub const EPIPE: u32 = 32;
+    pub const EDOM: u32 = 33;
+    pub const ERANGE: u32 = 34;
+    pub const EDEADLK: u32 = 35;
+    pub const ENAMETOOLONG: u32 = 36;
+    pub const ENOLCK: u32 = 37;
+    pub const ENOSYS: u32 = 38;
+    pub const ENOTEMPTY: u32 = 39;
+    pub const ELOOP: u32 = 40;
+    pub const EWOULDBLOCK: u32 = 11;
+    pub const ENOMSG: u32 = 42;
+    pub const EIDRM: u32 = 43;
+    pub const ECHRNG: u32 = 44;
+    pub const EL2NSYNC: u32 = 45;
+    pub const EL3HLT: u32 = 46;
+    pub const EL3RST: u32 = 47;
+    pub const ELNRNG: u32 = 48;
+    pub const EUNATCH: u32 = 49;
+    pub const ENOCSI: u32 = 50;
+    pub const EL2HLT: u32 = 51;
+    pub const EBADE: u32 = 52;
+    pub const EBADR: u32 = 53;
+    pub const EXFULL: u32 = 54;
+    pub const ENOANO: u32 = 55;
+    pub const EBADRQC: u32 = 56;
+    pub const EBADSLT: u32 = 57;
+    pub const EDEADLOCK: u32 = 35;
+    pub const EBFONT: u32 = 59;
+    pub const ENOSTR: u32 = 60;
+    pub const ENODATA: u32 = 61;
+    pub const ETIME: u32 = 62;
+    pub const ENOSR: u32 = 63;
+    pub const ENONET: u32 = 64;
+    pub const ENOPKG: u32 = 65;
+    pub const EREMOTE: u32 = 66;
+    pub const ENOLINK: u32 = 67;
+    pub const EADV: u32 = 68;
+    pub const ESRMNT: u32 = 69;
+    pub const ECOMM: u32 = 70;
+    pub const EPROTO: u32 = 71;
+    pub const EMULTIHOP: u32 = 72;
+    pub const EDOTDOT: u32 = 73;
+    pub const EBADMSG: u32 = 74;
+    pub const EOVERFLOW: u32 = 75;
+    pub const ENOTUNIQ: u32 = 76;
+    pub const EBADFD: u32 = 77;
+    pub const EREMCHG: u32 = 78;
+    pub const ELIBACC: u32 = 79;
+    pub const ELIBBAD: u32 = 80;
+    pub const ELIBSCN: u32 = 81;
+    pub const ELIBMAX: u32 = 82;
+    pub const ELIBEXEC: u32 = 83;
+    pub const EILSEQ: u32 = 84;
+    pub const ERESTART: u32 = 85;
+    pub const ESTRPIPE: u32 = 86;
+    pub const EUSERS: u32 = 87;
+    pub const ENOTSOCK: u32 = 88;
+    pub const EDESTADDRREQ: u32 = 89;
+    pub const EMSGSIZE: u32 = 90;
+    pub const EPROTOTYPE: u32 = 91;
+    pub const ENOPROTOOPT: u32 = 92;
+    pub const EPROTONOSUPPORT: u32 = 93;
+    pub const ESOCKTNOSUPPORT: u32 = 94;
+    pub const EOPNOTSUPP: u32 = 95;
+    pub const EPFNOSUPPORT: u32 = 96;
+    pub const EAFNOSUPPORT: u32 = 97;
+    pub const EADDRINUSE: u32 = 98;
+    pub const EADDRNOTAVAIL: u32 = 99;
+    pub const ENETDOWN: u32 = 100;
+    pub const ENETUNREACH: u32 = 101;
+    pub const ENETRESET: u32 = 102;
+    pub const ECONNABORTED: u32 = 103;
+    pub const ECONNRESET: u32 = 104;
+    pub const ENOBUFS: u32 = 105;
+    pub const EISCONN: u32 = 106;
+    pub const ENOTCONN: u32 = 107;
+    pub const ESHUTDOWN: u32 = 108;
+    pub const ETOOMANYREFS: u32 = 109;
+    pub const ETIMEDOUT: u32 = 110;
+    pub const ECONNREFUSED: u32 = 111;
+    pub const EHOSTDOWN: u32 = 112;
+    pub const EHOSTUNREACH: u32 = 113;
+    pub const EALREADY: u32 = 114;
+    pub const EINPROGRESS: u32 = 115;
+    pub const ESTALE: u32 = 116;
+    pub const EUCLEAN: u32 = 117;
+    pub const ENOTNAM: u32 = 118;
+    pub const ENAVAIL: u32 = 119;
+    pub const EISNAM: u32 = 120;
+    pub const EREMOTEIO: u32 = 121;
+    pub const EDQUOT: u32 = 122;
+    pub const ENOMEDIUM: u32 = 123;
+    pub const EMEDIUMTYPE: u32 = 124;
+    pub const ECANCELED: u32 = 125;
+    pub const ENOKEY: u32 = 126;
+    pub const EKEYEXPIRED: u32 = 127;
+    pub const EKEYREVOKED: u32 = 128;
+    pub const EKEYREJECTED: u32 = 129;
+    pub const EOWNERDEAD: u32 = 130;
+    pub const ENOTRECOVERABLE: u32 = 131;
+    pub const ERFKILL: u32 = 132;
+    pub const EHWPOISON: u32 = 133;
+    pub const ENOTSUP: u32 = 95;
+    pub const __error_t_defined: u32 = 1;
+    pub const _GLIBCXX_CSTDINT: u32 = 1;
+    pub const _STDINT_H: u32 = 1;
+    pub const __GLIBC_USE_LIB_EXT2: u32 = 1;
+    pub const __GLIBC_USE_IEC_60559_BFP_EXT: u32 = 1;
+    pub const __GLIBC_USE_IEC_60559_BFP_EXT_C23: u32 = 1;
+    pub const __GLIBC_USE_IEC_60559_EXT: u32 = 1;
+    pub const __GLIBC_USE_IEC_60559_FUNCS_EXT: u32 = 1;
+    pub const __GLIBC_USE_IEC_60559_FUNCS_EXT_C23: u32 = 1;
+    pub const __GLIBC_USE_IEC_60559_TYPES_EXT: u32 = 1;
+    pub const _BITS_WCHAR_H: u32 = 1;
+    pub const _BITS_STDINT_UINTN_H: u32 = 1;
+    pub const _BITS_STDINT_LEAST_H: u32 = 1;
+    pub const INT8_MIN: i32 = -128;
+    pub const INT16_MIN: i32 = -32768;
+    pub const INT32_MIN: i32 = -2147483648;
+    pub const INT8_MAX: u32 = 127;
+    pub const INT16_MAX: u32 = 32767;
+    pub const INT32_MAX: u32 = 2147483647;
+    pub const UINT8_MAX: u32 = 255;
+    pub const UINT16_MAX: u32 = 65535;
+    pub const UINT32_MAX: u32 = 4294967295;
+    pub const INT_LEAST8_MIN: i32 = -128;
+    pub const INT_LEAST16_MIN: i32 = -32768;
+    pub const INT_LEAST32_MIN: i32 = -2147483648;
+    pub const INT_LEAST8_MAX: u32 = 127;
+    pub const INT_LEAST16_MAX: u32 = 32767;
+    pub const INT_LEAST32_MAX: u32 = 2147483647;
+    pub const UINT_LEAST8_MAX: u32 = 255;
+    pub const UINT_LEAST16_MAX: u32 = 65535;
+    pub const UINT_LEAST32_MAX: u32 = 4294967295;
+    pub const INT_FAST8_MIN: i32 = -128;
+    pub const INT_FAST16_MIN: i64 = -9223372036854775808;
+    pub const INT_FAST32_MIN: i64 = -9223372036854775808;
+    pub const INT_FAST8_MAX: u32 = 127;
+    pub const INT_FAST16_MAX: u64 = 9223372036854775807;
+    pub const INT_FAST32_MAX: u64 = 9223372036854775807;
+    pub const UINT_FAST8_MAX: u32 = 255;
+    pub const UINT_FAST16_MAX: i32 = -1;
+    pub const UINT_FAST32_MAX: i32 = -1;
+    pub const INTPTR_MIN: i64 = -9223372036854775808;
+    pub const INTPTR_MAX: u64 = 9223372036854775807;
+    pub const UINTPTR_MAX: i32 = -1;
+    pub const PTRDIFF_MIN: i64 = -9223372036854775808;
+    pub const PTRDIFF_MAX: u64 = 9223372036854775807;
+    pub const SIG_ATOMIC_MIN: i32 = -2147483648;
+    pub const SIG_ATOMIC_MAX: u32 = 2147483647;
+    pub const SIZE_MAX: i32 = -1;
+    pub const WINT_MIN: u32 = 0;
+    pub const WINT_MAX: u32 = 4294967295;
+    pub const INT8_WIDTH: u32 = 8;
+    pub const UINT8_WIDTH: u32 = 8;
+    pub const INT16_WIDTH: u32 = 16;
+    pub const UINT16_WIDTH: u32 = 16;
+    pub const INT32_WIDTH: u32 = 32;
+    pub const UINT32_WIDTH: u32 = 32;
+    pub const INT64_WIDTH: u32 = 64;
+    pub const UINT64_WIDTH: u32 = 64;
+    pub const INT_LEAST8_WIDTH: u32 = 8;
+    pub const UINT_LEAST8_WIDTH: u32 = 8;
+    pub const INT_LEAST16_WIDTH: u32 = 16;
+    pub const UINT_LEAST16_WIDTH: u32 = 16;
+    pub const INT_LEAST32_WIDTH: u32 = 32;
+    pub const UINT_LEAST32_WIDTH: u32 = 32;
+    pub const INT_LEAST64_WIDTH: u32 = 64;
+    pub const UINT_LEAST64_WIDTH: u32 = 64;
+    pub const INT_FAST8_WIDTH: u32 = 8;
+    pub const UINT_FAST8_WIDTH: u32 = 8;
+    pub const INT_FAST16_WIDTH: u32 = 64;
+    pub const UINT_FAST16_WIDTH: u32 = 64;
+    pub const INT_FAST32_WIDTH: u32 = 64;
+    pub const UINT_FAST32_WIDTH: u32 = 64;
+    pub const INT_FAST64_WIDTH: u32 = 64;
+    pub const UINT_FAST64_WIDTH: u32 = 64;
+    pub const INTPTR_WIDTH: u32 = 64;
+    pub const UINTPTR_WIDTH: u32 = 64;
+    pub const INTMAX_WIDTH: u32 = 64;
+    pub const UINTMAX_WIDTH: u32 = 64;
+    pub const PTRDIFF_WIDTH: u32 = 64;
+    pub const SIG_ATOMIC_WIDTH: u32 = 32;
+    pub const SIZE_WIDTH: u32 = 64;
+    pub const WCHAR_WIDTH: u32 = 32;
+    pub const WINT_WIDTH: u32 = 32;
+    pub const SH_SYS_WIN32: u32 = 1;
+    pub const SH_SYS_LINUX: u32 = 2;
+    pub const SH_SYS_APPLE: u32 = 3;
+    pub const SH_XP_POSIX: u32 = 10;
+    pub const SH_XP_WINAPI: u32 = 20;
+    pub const SH_COMP_GCC: u32 = 1;
+    pub const SH_COMP_MSVC: u32 = 2;
+    pub const SH_SYS: u32 = 2;
+    pub const SH_XP: u32 = 10;
+    pub const SH_COMP: u32 = 1;
+    pub const PLATFORM_MAX_PATH: u32 = 4096;
+    pub const _GLIBCXX_CSTDDEF: u32 = 1;
     pub const __glibcxx_incomplete_container_elements: u32 = 201505;
-    pub const __glibcxx_uncaught_exceptions: u32 = 201411;
     pub const __glibcxx_allocator_traits_is_always_equal: u32 = 201411;
     pub const __glibcxx_is_null_pointer: u32 = 201309;
     pub const __glibcxx_result_of_sfinae: u32 = 201210;
     pub const __glibcxx_shared_ptr_arrays: u32 = 201611;
-    pub const __glibcxx_is_swappable: u32 = 201603;
-    pub const __glibcxx_void_t: u32 = 201411;
-    pub const __glibcxx_enable_shared_from_this: u32 = 201603;
     pub const __glibcxx_math_spec_funcs: u32 = 201003;
     pub const __glibcxx_exchange_function: u32 = 201304;
     pub const __glibcxx_integer_sequence: u32 = 201304;
@@ -719,51 +888,6 @@ pub mod root {
     pub const __glibcxx_quoted_string_io: u32 = 201304;
     pub const __glibcxx_shared_timed_mutex: u32 = 201402;
     pub const __glibcxx_string_udls: u32 = 201304;
-    pub const __glibcxx_addressof_constexpr: u32 = 201603;
-    pub const __glibcxx_any: u32 = 201606;
-    pub const __glibcxx_apply: u32 = 201603;
-    pub const __glibcxx_as_const: u32 = 201510;
-    pub const __glibcxx_atomic_is_always_lock_free: u32 = 201603;
-    pub const __glibcxx_bool_constant: u32 = 201505;
-    pub const __glibcxx_byte: u32 = 201603;
-    pub const __cpp_lib_byte: u32 = 201603;
-    pub const __glibcxx_has_unique_object_representations: u32 = 201606;
-    pub const __glibcxx_hardware_interference_size: u32 = 201703;
-    pub const __glibcxx_invoke: u32 = 201411;
-    pub const __glibcxx_is_aggregate: u32 = 201703;
-    pub const __glibcxx_is_invocable: u32 = 201703;
-    pub const __glibcxx_launder: u32 = 201606;
-    pub const __glibcxx_logical_traits: u32 = 201510;
-    pub const __glibcxx_make_from_tuple: u32 = 201606;
-    pub const __glibcxx_not_fn: u32 = 201603;
-    pub const __glibcxx_type_trait_variable_templates: u32 = 201510;
-    pub const __glibcxx_variant: u32 = 202102;
-    pub const __glibcxx_lcm: u32 = 201606;
-    pub const __glibcxx_gcd: u32 = 201606;
-    pub const __glibcxx_gcd_lcm: u32 = 201606;
-    pub const __glibcxx_raw_memory_algorithms: u32 = 201606;
-    pub const __glibcxx_array_constexpr: u32 = 201803;
-    pub const __glibcxx_nonmember_container_access: u32 = 201411;
-    pub const __glibcxx_clamp: u32 = 201603;
-    pub const __glibcxx_sample: u32 = 201603;
-    pub const __glibcxx_boyer_moore_searcher: u32 = 201603;
-    pub const __glibcxx_chrono: u32 = 201611;
-    pub const __glibcxx_execution: u32 = 201902;
-    pub const __glibcxx_filesystem: u32 = 201703;
-    pub const __glibcxx_hypot: u32 = 201603;
-    pub const __glibcxx_map_try_emplace: u32 = 201411;
-    pub const __glibcxx_math_special_functions: u32 = 201603;
-    pub const __glibcxx_memory_resource: u32 = 201603;
-    pub const __glibcxx_node_extract: u32 = 201606;
-    pub const __glibcxx_parallel_algorithm: u32 = 201603;
-    pub const __glibcxx_scoped_lock: u32 = 201703;
-    pub const __glibcxx_shared_mutex: u32 = 201505;
-    pub const __glibcxx_shared_ptr_weak_type: u32 = 201606;
-    pub const __glibcxx_string_view: u32 = 201803;
-    pub const __glibcxx_unordered_map_try_emplace: u32 = 201411;
-    pub const __glibcxx_optional: u32 = 201606;
-    pub const __glibcxx_constexpr_char_traits: u32 = 201611;
-    pub const __glibcxx_constexpr_string: u32 = 201611;
     unsafe extern "C" {
         pub fn _dl_mcount_wrapper_check(__selfpc: *mut ::core::ffi::c_void);
     }
@@ -1011,234 +1135,6 @@ pub mod root {
     pub type __intptr_t = ::core::ffi::c_long;
     pub type __socklen_t = ::core::ffi::c_uint;
     pub type __sig_atomic_t = ::core::ffi::c_int;
-    pub type ino_t = root::__ino_t;
-    pub type ino64_t = root::__ino64_t;
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct dirent {
-        pub d_ino: root::__ino_t,
-        pub d_off: root::__off_t,
-        pub d_reclen: ::core::ffi::c_ushort,
-        pub d_type: ::core::ffi::c_uchar,
-        pub d_name: [::core::ffi::c_char; 256usize],
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of dirent"][::core::mem::size_of::<dirent>() - 280usize];
-        ["Alignment of dirent"][::core::mem::align_of::<dirent>() - 8usize];
-        ["Offset of field: dirent::d_ino"][::core::mem::offset_of!(dirent, d_ino) - 0usize];
-        ["Offset of field: dirent::d_off"][::core::mem::offset_of!(dirent, d_off) - 8usize];
-        ["Offset of field: dirent::d_reclen"][::core::mem::offset_of!(dirent, d_reclen) - 16usize];
-        ["Offset of field: dirent::d_type"][::core::mem::offset_of!(dirent, d_type) - 18usize];
-        ["Offset of field: dirent::d_name"][::core::mem::offset_of!(dirent, d_name) - 19usize];
-    };
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct dirent64 {
-        pub d_ino: root::__ino64_t,
-        pub d_off: root::__off64_t,
-        pub d_reclen: ::core::ffi::c_ushort,
-        pub d_type: ::core::ffi::c_uchar,
-        pub d_name: [::core::ffi::c_char; 256usize],
-    }
-    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-    const _: () = {
-        ["Size of dirent64"][::core::mem::size_of::<dirent64>() - 280usize];
-        ["Alignment of dirent64"][::core::mem::align_of::<dirent64>() - 8usize];
-        ["Offset of field: dirent64::d_ino"][::core::mem::offset_of!(dirent64, d_ino) - 0usize];
-        ["Offset of field: dirent64::d_off"][::core::mem::offset_of!(dirent64, d_off) - 8usize];
-        ["Offset of field: dirent64::d_reclen"]
-            [::core::mem::offset_of!(dirent64, d_reclen) - 16usize];
-        ["Offset of field: dirent64::d_type"][::core::mem::offset_of!(dirent64, d_type) - 18usize];
-        ["Offset of field: dirent64::d_name"][::core::mem::offset_of!(dirent64, d_name) - 19usize];
-    };
-    pub const DT_UNKNOWN: root::_bindgen_ty_3 = 0;
-    pub const DT_FIFO: root::_bindgen_ty_3 = 1;
-    pub const DT_CHR: root::_bindgen_ty_3 = 2;
-    pub const DT_DIR: root::_bindgen_ty_3 = 4;
-    pub const DT_BLK: root::_bindgen_ty_3 = 6;
-    pub const DT_REG: root::_bindgen_ty_3 = 8;
-    pub const DT_LNK: root::_bindgen_ty_3 = 10;
-    pub const DT_SOCK: root::_bindgen_ty_3 = 12;
-    pub const DT_WHT: root::_bindgen_ty_3 = 14;
-    pub type _bindgen_ty_3 = ::core::ffi::c_uint;
-    #[repr(C)]
-    #[derive(Debug, Copy, Clone)]
-    pub struct __dirstream {
-        _unused: [u8; 0],
-    }
-    pub type DIR = root::__dirstream;
-    unsafe extern "C" {
-        pub fn closedir(__dirp: *mut root::DIR) -> ::core::ffi::c_int;
-    }
-    unsafe extern "C" {
-        pub fn opendir(__name: *const ::core::ffi::c_char) -> *mut root::DIR;
-    }
-    unsafe extern "C" {
-        pub fn fdopendir(__fd: ::core::ffi::c_int) -> *mut root::DIR;
-    }
-    unsafe extern "C" {
-        pub fn readdir(__dirp: *mut root::DIR) -> *mut root::dirent;
-    }
-    unsafe extern "C" {
-        pub fn readdir64(__dirp: *mut root::DIR) -> *mut root::dirent64;
-    }
-    unsafe extern "C" {
-        pub fn readdir_r(
-            __dirp: *mut root::DIR,
-            __entry: *mut root::dirent,
-            __result: *mut *mut root::dirent,
-        ) -> ::core::ffi::c_int;
-    }
-    unsafe extern "C" {
-        pub fn readdir64_r(
-            __dirp: *mut root::DIR,
-            __entry: *mut root::dirent64,
-            __result: *mut *mut root::dirent64,
-        ) -> ::core::ffi::c_int;
-    }
-    unsafe extern "C" {
-        pub fn rewinddir(__dirp: *mut root::DIR);
-    }
-    unsafe extern "C" {
-        pub fn seekdir(__dirp: *mut root::DIR, __pos: ::core::ffi::c_long);
-    }
-    unsafe extern "C" {
-        pub fn telldir(__dirp: *mut root::DIR) -> ::core::ffi::c_long;
-    }
-    unsafe extern "C" {
-        pub fn dirfd(__dirp: *mut root::DIR) -> ::core::ffi::c_int;
-    }
-    unsafe extern "C" {
-        pub fn __sysconf(__name: ::core::ffi::c_int) -> ::core::ffi::c_long;
-    }
-    unsafe extern "C" {
-        pub fn scandir(
-            __dir: *const ::core::ffi::c_char,
-            __namelist: *mut *mut *mut root::dirent,
-            __selector: ::core::option::Option<
-                unsafe extern "C" fn(arg1: *const root::dirent) -> ::core::ffi::c_int,
-            >,
-            __cmp: ::core::option::Option<
-                unsafe extern "C" fn(
-                    arg1: *mut *const root::dirent,
-                    arg2: *mut *const root::dirent,
-                ) -> ::core::ffi::c_int,
-            >,
-        ) -> ::core::ffi::c_int;
-    }
-    unsafe extern "C" {
-        pub fn scandir64(
-            __dir: *const ::core::ffi::c_char,
-            __namelist: *mut *mut *mut root::dirent64,
-            __selector: ::core::option::Option<
-                unsafe extern "C" fn(arg1: *const root::dirent64) -> ::core::ffi::c_int,
-            >,
-            __cmp: ::core::option::Option<
-                unsafe extern "C" fn(
-                    arg1: *mut *const root::dirent64,
-                    arg2: *mut *const root::dirent64,
-                ) -> ::core::ffi::c_int,
-            >,
-        ) -> ::core::ffi::c_int;
-    }
-    unsafe extern "C" {
-        pub fn scandirat(
-            __dfd: ::core::ffi::c_int,
-            __dir: *const ::core::ffi::c_char,
-            __namelist: *mut *mut *mut root::dirent,
-            __selector: ::core::option::Option<
-                unsafe extern "C" fn(arg1: *const root::dirent) -> ::core::ffi::c_int,
-            >,
-            __cmp: ::core::option::Option<
-                unsafe extern "C" fn(
-                    arg1: *mut *const root::dirent,
-                    arg2: *mut *const root::dirent,
-                ) -> ::core::ffi::c_int,
-            >,
-        ) -> ::core::ffi::c_int;
-    }
-    unsafe extern "C" {
-        pub fn scandirat64(
-            __dfd: ::core::ffi::c_int,
-            __dir: *const ::core::ffi::c_char,
-            __namelist: *mut *mut *mut root::dirent64,
-            __selector: ::core::option::Option<
-                unsafe extern "C" fn(arg1: *const root::dirent64) -> ::core::ffi::c_int,
-            >,
-            __cmp: ::core::option::Option<
-                unsafe extern "C" fn(
-                    arg1: *mut *const root::dirent64,
-                    arg2: *mut *const root::dirent64,
-                ) -> ::core::ffi::c_int,
-            >,
-        ) -> ::core::ffi::c_int;
-    }
-    unsafe extern "C" {
-        pub fn alphasort(
-            __e1: *mut *const root::dirent,
-            __e2: *mut *const root::dirent,
-        ) -> ::core::ffi::c_int;
-    }
-    unsafe extern "C" {
-        pub fn alphasort64(
-            __e1: *mut *const root::dirent64,
-            __e2: *mut *const root::dirent64,
-        ) -> ::core::ffi::c_int;
-    }
-    unsafe extern "C" {
-        pub fn getdirentries(
-            __fd: ::core::ffi::c_int,
-            __buf: *mut ::core::ffi::c_char,
-            __nbytes: usize,
-            __basep: *mut root::__off_t,
-        ) -> root::__ssize_t;
-    }
-    unsafe extern "C" {
-        pub fn getdirentries64(
-            __fd: ::core::ffi::c_int,
-            __buf: *mut ::core::ffi::c_char,
-            __nbytes: usize,
-            __basep: *mut root::__off64_t,
-        ) -> root::__ssize_t;
-    }
-    unsafe extern "C" {
-        pub fn versionsort(
-            __e1: *mut *const root::dirent,
-            __e2: *mut *const root::dirent,
-        ) -> ::core::ffi::c_int;
-    }
-    unsafe extern "C" {
-        pub fn versionsort64(
-            __e1: *mut *const root::dirent64,
-            __e2: *mut *const root::dirent64,
-        ) -> ::core::ffi::c_int;
-    }
-    unsafe extern "C" {
-        pub fn getdents64(
-            __fd: ::core::ffi::c_int,
-            __buffer: *mut ::core::ffi::c_void,
-            __length: usize,
-        ) -> root::__ssize_t;
-    }
-    pub type int_least8_t = root::__int_least8_t;
-    pub type int_least16_t = root::__int_least16_t;
-    pub type int_least32_t = root::__int_least32_t;
-    pub type int_least64_t = root::__int_least64_t;
-    pub type uint_least8_t = root::__uint_least8_t;
-    pub type uint_least16_t = root::__uint_least16_t;
-    pub type uint_least32_t = root::__uint_least32_t;
-    pub type uint_least64_t = root::__uint_least64_t;
-    pub type int_fast8_t = ::core::ffi::c_schar;
-    pub type int_fast16_t = ::core::ffi::c_long;
-    pub type int_fast32_t = ::core::ffi::c_long;
-    pub type int_fast64_t = ::core::ffi::c_long;
-    pub type uint_fast8_t = ::core::ffi::c_uchar;
-    pub type uint_fast16_t = ::core::ffi::c_ulong;
-    pub type uint_fast32_t = ::core::ffi::c_ulong;
-    pub type uint_fast64_t = ::core::ffi::c_ulong;
-    pub type intmax_t = root::__intmax_t;
-    pub type uintmax_t = root::__uintmax_t;
     pub type gid_t = root::__gid_t;
     pub type uid_t = root::__uid_t;
     pub type off_t = root::__off_t;
@@ -1498,311 +1394,311 @@ pub mod root {
     unsafe extern "C" {
         pub fn _exit(__status: ::core::ffi::c_int) -> !;
     }
-    pub const _PC_LINK_MAX: root::_bindgen_ty_4 = 0;
-    pub const _PC_MAX_CANON: root::_bindgen_ty_4 = 1;
-    pub const _PC_MAX_INPUT: root::_bindgen_ty_4 = 2;
-    pub const _PC_NAME_MAX: root::_bindgen_ty_4 = 3;
-    pub const _PC_PATH_MAX: root::_bindgen_ty_4 = 4;
-    pub const _PC_PIPE_BUF: root::_bindgen_ty_4 = 5;
-    pub const _PC_CHOWN_RESTRICTED: root::_bindgen_ty_4 = 6;
-    pub const _PC_NO_TRUNC: root::_bindgen_ty_4 = 7;
-    pub const _PC_VDISABLE: root::_bindgen_ty_4 = 8;
-    pub const _PC_SYNC_IO: root::_bindgen_ty_4 = 9;
-    pub const _PC_ASYNC_IO: root::_bindgen_ty_4 = 10;
-    pub const _PC_PRIO_IO: root::_bindgen_ty_4 = 11;
-    pub const _PC_SOCK_MAXBUF: root::_bindgen_ty_4 = 12;
-    pub const _PC_FILESIZEBITS: root::_bindgen_ty_4 = 13;
-    pub const _PC_REC_INCR_XFER_SIZE: root::_bindgen_ty_4 = 14;
-    pub const _PC_REC_MAX_XFER_SIZE: root::_bindgen_ty_4 = 15;
-    pub const _PC_REC_MIN_XFER_SIZE: root::_bindgen_ty_4 = 16;
-    pub const _PC_REC_XFER_ALIGN: root::_bindgen_ty_4 = 17;
-    pub const _PC_ALLOC_SIZE_MIN: root::_bindgen_ty_4 = 18;
-    pub const _PC_SYMLINK_MAX: root::_bindgen_ty_4 = 19;
-    pub const _PC_2_SYMLINKS: root::_bindgen_ty_4 = 20;
+    pub const _PC_LINK_MAX: root::_bindgen_ty_3 = 0;
+    pub const _PC_MAX_CANON: root::_bindgen_ty_3 = 1;
+    pub const _PC_MAX_INPUT: root::_bindgen_ty_3 = 2;
+    pub const _PC_NAME_MAX: root::_bindgen_ty_3 = 3;
+    pub const _PC_PATH_MAX: root::_bindgen_ty_3 = 4;
+    pub const _PC_PIPE_BUF: root::_bindgen_ty_3 = 5;
+    pub const _PC_CHOWN_RESTRICTED: root::_bindgen_ty_3 = 6;
+    pub const _PC_NO_TRUNC: root::_bindgen_ty_3 = 7;
+    pub const _PC_VDISABLE: root::_bindgen_ty_3 = 8;
+    pub const _PC_SYNC_IO: root::_bindgen_ty_3 = 9;
+    pub const _PC_ASYNC_IO: root::_bindgen_ty_3 = 10;
+    pub const _PC_PRIO_IO: root::_bindgen_ty_3 = 11;
+    pub const _PC_SOCK_MAXBUF: root::_bindgen_ty_3 = 12;
+    pub const _PC_FILESIZEBITS: root::_bindgen_ty_3 = 13;
+    pub const _PC_REC_INCR_XFER_SIZE: root::_bindgen_ty_3 = 14;
+    pub const _PC_REC_MAX_XFER_SIZE: root::_bindgen_ty_3 = 15;
+    pub const _PC_REC_MIN_XFER_SIZE: root::_bindgen_ty_3 = 16;
+    pub const _PC_REC_XFER_ALIGN: root::_bindgen_ty_3 = 17;
+    pub const _PC_ALLOC_SIZE_MIN: root::_bindgen_ty_3 = 18;
+    pub const _PC_SYMLINK_MAX: root::_bindgen_ty_3 = 19;
+    pub const _PC_2_SYMLINKS: root::_bindgen_ty_3 = 20;
+    pub type _bindgen_ty_3 = ::core::ffi::c_uint;
+    pub const _SC_ARG_MAX: root::_bindgen_ty_4 = 0;
+    pub const _SC_CHILD_MAX: root::_bindgen_ty_4 = 1;
+    pub const _SC_CLK_TCK: root::_bindgen_ty_4 = 2;
+    pub const _SC_NGROUPS_MAX: root::_bindgen_ty_4 = 3;
+    pub const _SC_OPEN_MAX: root::_bindgen_ty_4 = 4;
+    pub const _SC_STREAM_MAX: root::_bindgen_ty_4 = 5;
+    pub const _SC_TZNAME_MAX: root::_bindgen_ty_4 = 6;
+    pub const _SC_JOB_CONTROL: root::_bindgen_ty_4 = 7;
+    pub const _SC_SAVED_IDS: root::_bindgen_ty_4 = 8;
+    pub const _SC_REALTIME_SIGNALS: root::_bindgen_ty_4 = 9;
+    pub const _SC_PRIORITY_SCHEDULING: root::_bindgen_ty_4 = 10;
+    pub const _SC_TIMERS: root::_bindgen_ty_4 = 11;
+    pub const _SC_ASYNCHRONOUS_IO: root::_bindgen_ty_4 = 12;
+    pub const _SC_PRIORITIZED_IO: root::_bindgen_ty_4 = 13;
+    pub const _SC_SYNCHRONIZED_IO: root::_bindgen_ty_4 = 14;
+    pub const _SC_FSYNC: root::_bindgen_ty_4 = 15;
+    pub const _SC_MAPPED_FILES: root::_bindgen_ty_4 = 16;
+    pub const _SC_MEMLOCK: root::_bindgen_ty_4 = 17;
+    pub const _SC_MEMLOCK_RANGE: root::_bindgen_ty_4 = 18;
+    pub const _SC_MEMORY_PROTECTION: root::_bindgen_ty_4 = 19;
+    pub const _SC_MESSAGE_PASSING: root::_bindgen_ty_4 = 20;
+    pub const _SC_SEMAPHORES: root::_bindgen_ty_4 = 21;
+    pub const _SC_SHARED_MEMORY_OBJECTS: root::_bindgen_ty_4 = 22;
+    pub const _SC_AIO_LISTIO_MAX: root::_bindgen_ty_4 = 23;
+    pub const _SC_AIO_MAX: root::_bindgen_ty_4 = 24;
+    pub const _SC_AIO_PRIO_DELTA_MAX: root::_bindgen_ty_4 = 25;
+    pub const _SC_DELAYTIMER_MAX: root::_bindgen_ty_4 = 26;
+    pub const _SC_MQ_OPEN_MAX: root::_bindgen_ty_4 = 27;
+    pub const _SC_MQ_PRIO_MAX: root::_bindgen_ty_4 = 28;
+    pub const _SC_VERSION: root::_bindgen_ty_4 = 29;
+    pub const _SC_PAGESIZE: root::_bindgen_ty_4 = 30;
+    pub const _SC_RTSIG_MAX: root::_bindgen_ty_4 = 31;
+    pub const _SC_SEM_NSEMS_MAX: root::_bindgen_ty_4 = 32;
+    pub const _SC_SEM_VALUE_MAX: root::_bindgen_ty_4 = 33;
+    pub const _SC_SIGQUEUE_MAX: root::_bindgen_ty_4 = 34;
+    pub const _SC_TIMER_MAX: root::_bindgen_ty_4 = 35;
+    pub const _SC_BC_BASE_MAX: root::_bindgen_ty_4 = 36;
+    pub const _SC_BC_DIM_MAX: root::_bindgen_ty_4 = 37;
+    pub const _SC_BC_SCALE_MAX: root::_bindgen_ty_4 = 38;
+    pub const _SC_BC_STRING_MAX: root::_bindgen_ty_4 = 39;
+    pub const _SC_COLL_WEIGHTS_MAX: root::_bindgen_ty_4 = 40;
+    pub const _SC_EQUIV_CLASS_MAX: root::_bindgen_ty_4 = 41;
+    pub const _SC_EXPR_NEST_MAX: root::_bindgen_ty_4 = 42;
+    pub const _SC_LINE_MAX: root::_bindgen_ty_4 = 43;
+    pub const _SC_RE_DUP_MAX: root::_bindgen_ty_4 = 44;
+    pub const _SC_CHARCLASS_NAME_MAX: root::_bindgen_ty_4 = 45;
+    pub const _SC_2_VERSION: root::_bindgen_ty_4 = 46;
+    pub const _SC_2_C_BIND: root::_bindgen_ty_4 = 47;
+    pub const _SC_2_C_DEV: root::_bindgen_ty_4 = 48;
+    pub const _SC_2_FORT_DEV: root::_bindgen_ty_4 = 49;
+    pub const _SC_2_FORT_RUN: root::_bindgen_ty_4 = 50;
+    pub const _SC_2_SW_DEV: root::_bindgen_ty_4 = 51;
+    pub const _SC_2_LOCALEDEF: root::_bindgen_ty_4 = 52;
+    pub const _SC_PII: root::_bindgen_ty_4 = 53;
+    pub const _SC_PII_XTI: root::_bindgen_ty_4 = 54;
+    pub const _SC_PII_SOCKET: root::_bindgen_ty_4 = 55;
+    pub const _SC_PII_INTERNET: root::_bindgen_ty_4 = 56;
+    pub const _SC_PII_OSI: root::_bindgen_ty_4 = 57;
+    pub const _SC_POLL: root::_bindgen_ty_4 = 58;
+    pub const _SC_SELECT: root::_bindgen_ty_4 = 59;
+    pub const _SC_UIO_MAXIOV: root::_bindgen_ty_4 = 60;
+    pub const _SC_IOV_MAX: root::_bindgen_ty_4 = 60;
+    pub const _SC_PII_INTERNET_STREAM: root::_bindgen_ty_4 = 61;
+    pub const _SC_PII_INTERNET_DGRAM: root::_bindgen_ty_4 = 62;
+    pub const _SC_PII_OSI_COTS: root::_bindgen_ty_4 = 63;
+    pub const _SC_PII_OSI_CLTS: root::_bindgen_ty_4 = 64;
+    pub const _SC_PII_OSI_M: root::_bindgen_ty_4 = 65;
+    pub const _SC_T_IOV_MAX: root::_bindgen_ty_4 = 66;
+    pub const _SC_THREADS: root::_bindgen_ty_4 = 67;
+    pub const _SC_THREAD_SAFE_FUNCTIONS: root::_bindgen_ty_4 = 68;
+    pub const _SC_GETGR_R_SIZE_MAX: root::_bindgen_ty_4 = 69;
+    pub const _SC_GETPW_R_SIZE_MAX: root::_bindgen_ty_4 = 70;
+    pub const _SC_LOGIN_NAME_MAX: root::_bindgen_ty_4 = 71;
+    pub const _SC_TTY_NAME_MAX: root::_bindgen_ty_4 = 72;
+    pub const _SC_THREAD_DESTRUCTOR_ITERATIONS: root::_bindgen_ty_4 = 73;
+    pub const _SC_THREAD_KEYS_MAX: root::_bindgen_ty_4 = 74;
+    pub const _SC_THREAD_STACK_MIN: root::_bindgen_ty_4 = 75;
+    pub const _SC_THREAD_THREADS_MAX: root::_bindgen_ty_4 = 76;
+    pub const _SC_THREAD_ATTR_STACKADDR: root::_bindgen_ty_4 = 77;
+    pub const _SC_THREAD_ATTR_STACKSIZE: root::_bindgen_ty_4 = 78;
+    pub const _SC_THREAD_PRIORITY_SCHEDULING: root::_bindgen_ty_4 = 79;
+    pub const _SC_THREAD_PRIO_INHERIT: root::_bindgen_ty_4 = 80;
+    pub const _SC_THREAD_PRIO_PROTECT: root::_bindgen_ty_4 = 81;
+    pub const _SC_THREAD_PROCESS_SHARED: root::_bindgen_ty_4 = 82;
+    pub const _SC_NPROCESSORS_CONF: root::_bindgen_ty_4 = 83;
+    pub const _SC_NPROCESSORS_ONLN: root::_bindgen_ty_4 = 84;
+    pub const _SC_PHYS_PAGES: root::_bindgen_ty_4 = 85;
+    pub const _SC_AVPHYS_PAGES: root::_bindgen_ty_4 = 86;
+    pub const _SC_ATEXIT_MAX: root::_bindgen_ty_4 = 87;
+    pub const _SC_PASS_MAX: root::_bindgen_ty_4 = 88;
+    pub const _SC_XOPEN_VERSION: root::_bindgen_ty_4 = 89;
+    pub const _SC_XOPEN_XCU_VERSION: root::_bindgen_ty_4 = 90;
+    pub const _SC_XOPEN_UNIX: root::_bindgen_ty_4 = 91;
+    pub const _SC_XOPEN_CRYPT: root::_bindgen_ty_4 = 92;
+    pub const _SC_XOPEN_ENH_I18N: root::_bindgen_ty_4 = 93;
+    pub const _SC_XOPEN_SHM: root::_bindgen_ty_4 = 94;
+    pub const _SC_2_CHAR_TERM: root::_bindgen_ty_4 = 95;
+    pub const _SC_2_C_VERSION: root::_bindgen_ty_4 = 96;
+    pub const _SC_2_UPE: root::_bindgen_ty_4 = 97;
+    pub const _SC_XOPEN_XPG2: root::_bindgen_ty_4 = 98;
+    pub const _SC_XOPEN_XPG3: root::_bindgen_ty_4 = 99;
+    pub const _SC_XOPEN_XPG4: root::_bindgen_ty_4 = 100;
+    pub const _SC_CHAR_BIT: root::_bindgen_ty_4 = 101;
+    pub const _SC_CHAR_MAX: root::_bindgen_ty_4 = 102;
+    pub const _SC_CHAR_MIN: root::_bindgen_ty_4 = 103;
+    pub const _SC_INT_MAX: root::_bindgen_ty_4 = 104;
+    pub const _SC_INT_MIN: root::_bindgen_ty_4 = 105;
+    pub const _SC_LONG_BIT: root::_bindgen_ty_4 = 106;
+    pub const _SC_WORD_BIT: root::_bindgen_ty_4 = 107;
+    pub const _SC_MB_LEN_MAX: root::_bindgen_ty_4 = 108;
+    pub const _SC_NZERO: root::_bindgen_ty_4 = 109;
+    pub const _SC_SSIZE_MAX: root::_bindgen_ty_4 = 110;
+    pub const _SC_SCHAR_MAX: root::_bindgen_ty_4 = 111;
+    pub const _SC_SCHAR_MIN: root::_bindgen_ty_4 = 112;
+    pub const _SC_SHRT_MAX: root::_bindgen_ty_4 = 113;
+    pub const _SC_SHRT_MIN: root::_bindgen_ty_4 = 114;
+    pub const _SC_UCHAR_MAX: root::_bindgen_ty_4 = 115;
+    pub const _SC_UINT_MAX: root::_bindgen_ty_4 = 116;
+    pub const _SC_ULONG_MAX: root::_bindgen_ty_4 = 117;
+    pub const _SC_USHRT_MAX: root::_bindgen_ty_4 = 118;
+    pub const _SC_NL_ARGMAX: root::_bindgen_ty_4 = 119;
+    pub const _SC_NL_LANGMAX: root::_bindgen_ty_4 = 120;
+    pub const _SC_NL_MSGMAX: root::_bindgen_ty_4 = 121;
+    pub const _SC_NL_NMAX: root::_bindgen_ty_4 = 122;
+    pub const _SC_NL_SETMAX: root::_bindgen_ty_4 = 123;
+    pub const _SC_NL_TEXTMAX: root::_bindgen_ty_4 = 124;
+    pub const _SC_XBS5_ILP32_OFF32: root::_bindgen_ty_4 = 125;
+    pub const _SC_XBS5_ILP32_OFFBIG: root::_bindgen_ty_4 = 126;
+    pub const _SC_XBS5_LP64_OFF64: root::_bindgen_ty_4 = 127;
+    pub const _SC_XBS5_LPBIG_OFFBIG: root::_bindgen_ty_4 = 128;
+    pub const _SC_XOPEN_LEGACY: root::_bindgen_ty_4 = 129;
+    pub const _SC_XOPEN_REALTIME: root::_bindgen_ty_4 = 130;
+    pub const _SC_XOPEN_REALTIME_THREADS: root::_bindgen_ty_4 = 131;
+    pub const _SC_ADVISORY_INFO: root::_bindgen_ty_4 = 132;
+    pub const _SC_BARRIERS: root::_bindgen_ty_4 = 133;
+    pub const _SC_BASE: root::_bindgen_ty_4 = 134;
+    pub const _SC_C_LANG_SUPPORT: root::_bindgen_ty_4 = 135;
+    pub const _SC_C_LANG_SUPPORT_R: root::_bindgen_ty_4 = 136;
+    pub const _SC_CLOCK_SELECTION: root::_bindgen_ty_4 = 137;
+    pub const _SC_CPUTIME: root::_bindgen_ty_4 = 138;
+    pub const _SC_THREAD_CPUTIME: root::_bindgen_ty_4 = 139;
+    pub const _SC_DEVICE_IO: root::_bindgen_ty_4 = 140;
+    pub const _SC_DEVICE_SPECIFIC: root::_bindgen_ty_4 = 141;
+    pub const _SC_DEVICE_SPECIFIC_R: root::_bindgen_ty_4 = 142;
+    pub const _SC_FD_MGMT: root::_bindgen_ty_4 = 143;
+    pub const _SC_FIFO: root::_bindgen_ty_4 = 144;
+    pub const _SC_PIPE: root::_bindgen_ty_4 = 145;
+    pub const _SC_FILE_ATTRIBUTES: root::_bindgen_ty_4 = 146;
+    pub const _SC_FILE_LOCKING: root::_bindgen_ty_4 = 147;
+    pub const _SC_FILE_SYSTEM: root::_bindgen_ty_4 = 148;
+    pub const _SC_MONOTONIC_CLOCK: root::_bindgen_ty_4 = 149;
+    pub const _SC_MULTI_PROCESS: root::_bindgen_ty_4 = 150;
+    pub const _SC_SINGLE_PROCESS: root::_bindgen_ty_4 = 151;
+    pub const _SC_NETWORKING: root::_bindgen_ty_4 = 152;
+    pub const _SC_READER_WRITER_LOCKS: root::_bindgen_ty_4 = 153;
+    pub const _SC_SPIN_LOCKS: root::_bindgen_ty_4 = 154;
+    pub const _SC_REGEXP: root::_bindgen_ty_4 = 155;
+    pub const _SC_REGEX_VERSION: root::_bindgen_ty_4 = 156;
+    pub const _SC_SHELL: root::_bindgen_ty_4 = 157;
+    pub const _SC_SIGNALS: root::_bindgen_ty_4 = 158;
+    pub const _SC_SPAWN: root::_bindgen_ty_4 = 159;
+    pub const _SC_SPORADIC_SERVER: root::_bindgen_ty_4 = 160;
+    pub const _SC_THREAD_SPORADIC_SERVER: root::_bindgen_ty_4 = 161;
+    pub const _SC_SYSTEM_DATABASE: root::_bindgen_ty_4 = 162;
+    pub const _SC_SYSTEM_DATABASE_R: root::_bindgen_ty_4 = 163;
+    pub const _SC_TIMEOUTS: root::_bindgen_ty_4 = 164;
+    pub const _SC_TYPED_MEMORY_OBJECTS: root::_bindgen_ty_4 = 165;
+    pub const _SC_USER_GROUPS: root::_bindgen_ty_4 = 166;
+    pub const _SC_USER_GROUPS_R: root::_bindgen_ty_4 = 167;
+    pub const _SC_2_PBS: root::_bindgen_ty_4 = 168;
+    pub const _SC_2_PBS_ACCOUNTING: root::_bindgen_ty_4 = 169;
+    pub const _SC_2_PBS_LOCATE: root::_bindgen_ty_4 = 170;
+    pub const _SC_2_PBS_MESSAGE: root::_bindgen_ty_4 = 171;
+    pub const _SC_2_PBS_TRACK: root::_bindgen_ty_4 = 172;
+    pub const _SC_SYMLOOP_MAX: root::_bindgen_ty_4 = 173;
+    pub const _SC_STREAMS: root::_bindgen_ty_4 = 174;
+    pub const _SC_2_PBS_CHECKPOINT: root::_bindgen_ty_4 = 175;
+    pub const _SC_V6_ILP32_OFF32: root::_bindgen_ty_4 = 176;
+    pub const _SC_V6_ILP32_OFFBIG: root::_bindgen_ty_4 = 177;
+    pub const _SC_V6_LP64_OFF64: root::_bindgen_ty_4 = 178;
+    pub const _SC_V6_LPBIG_OFFBIG: root::_bindgen_ty_4 = 179;
+    pub const _SC_HOST_NAME_MAX: root::_bindgen_ty_4 = 180;
+    pub const _SC_TRACE: root::_bindgen_ty_4 = 181;
+    pub const _SC_TRACE_EVENT_FILTER: root::_bindgen_ty_4 = 182;
+    pub const _SC_TRACE_INHERIT: root::_bindgen_ty_4 = 183;
+    pub const _SC_TRACE_LOG: root::_bindgen_ty_4 = 184;
+    pub const _SC_LEVEL1_ICACHE_SIZE: root::_bindgen_ty_4 = 185;
+    pub const _SC_LEVEL1_ICACHE_ASSOC: root::_bindgen_ty_4 = 186;
+    pub const _SC_LEVEL1_ICACHE_LINESIZE: root::_bindgen_ty_4 = 187;
+    pub const _SC_LEVEL1_DCACHE_SIZE: root::_bindgen_ty_4 = 188;
+    pub const _SC_LEVEL1_DCACHE_ASSOC: root::_bindgen_ty_4 = 189;
+    pub const _SC_LEVEL1_DCACHE_LINESIZE: root::_bindgen_ty_4 = 190;
+    pub const _SC_LEVEL2_CACHE_SIZE: root::_bindgen_ty_4 = 191;
+    pub const _SC_LEVEL2_CACHE_ASSOC: root::_bindgen_ty_4 = 192;
+    pub const _SC_LEVEL2_CACHE_LINESIZE: root::_bindgen_ty_4 = 193;
+    pub const _SC_LEVEL3_CACHE_SIZE: root::_bindgen_ty_4 = 194;
+    pub const _SC_LEVEL3_CACHE_ASSOC: root::_bindgen_ty_4 = 195;
+    pub const _SC_LEVEL3_CACHE_LINESIZE: root::_bindgen_ty_4 = 196;
+    pub const _SC_LEVEL4_CACHE_SIZE: root::_bindgen_ty_4 = 197;
+    pub const _SC_LEVEL4_CACHE_ASSOC: root::_bindgen_ty_4 = 198;
+    pub const _SC_LEVEL4_CACHE_LINESIZE: root::_bindgen_ty_4 = 199;
+    pub const _SC_IPV6: root::_bindgen_ty_4 = 235;
+    pub const _SC_RAW_SOCKETS: root::_bindgen_ty_4 = 236;
+    pub const _SC_V7_ILP32_OFF32: root::_bindgen_ty_4 = 237;
+    pub const _SC_V7_ILP32_OFFBIG: root::_bindgen_ty_4 = 238;
+    pub const _SC_V7_LP64_OFF64: root::_bindgen_ty_4 = 239;
+    pub const _SC_V7_LPBIG_OFFBIG: root::_bindgen_ty_4 = 240;
+    pub const _SC_SS_REPL_MAX: root::_bindgen_ty_4 = 241;
+    pub const _SC_TRACE_EVENT_NAME_MAX: root::_bindgen_ty_4 = 242;
+    pub const _SC_TRACE_NAME_MAX: root::_bindgen_ty_4 = 243;
+    pub const _SC_TRACE_SYS_MAX: root::_bindgen_ty_4 = 244;
+    pub const _SC_TRACE_USER_EVENT_MAX: root::_bindgen_ty_4 = 245;
+    pub const _SC_XOPEN_STREAMS: root::_bindgen_ty_4 = 246;
+    pub const _SC_THREAD_ROBUST_PRIO_INHERIT: root::_bindgen_ty_4 = 247;
+    pub const _SC_THREAD_ROBUST_PRIO_PROTECT: root::_bindgen_ty_4 = 248;
+    pub const _SC_MINSIGSTKSZ: root::_bindgen_ty_4 = 249;
+    pub const _SC_SIGSTKSZ: root::_bindgen_ty_4 = 250;
     pub type _bindgen_ty_4 = ::core::ffi::c_uint;
-    pub const _SC_ARG_MAX: root::_bindgen_ty_5 = 0;
-    pub const _SC_CHILD_MAX: root::_bindgen_ty_5 = 1;
-    pub const _SC_CLK_TCK: root::_bindgen_ty_5 = 2;
-    pub const _SC_NGROUPS_MAX: root::_bindgen_ty_5 = 3;
-    pub const _SC_OPEN_MAX: root::_bindgen_ty_5 = 4;
-    pub const _SC_STREAM_MAX: root::_bindgen_ty_5 = 5;
-    pub const _SC_TZNAME_MAX: root::_bindgen_ty_5 = 6;
-    pub const _SC_JOB_CONTROL: root::_bindgen_ty_5 = 7;
-    pub const _SC_SAVED_IDS: root::_bindgen_ty_5 = 8;
-    pub const _SC_REALTIME_SIGNALS: root::_bindgen_ty_5 = 9;
-    pub const _SC_PRIORITY_SCHEDULING: root::_bindgen_ty_5 = 10;
-    pub const _SC_TIMERS: root::_bindgen_ty_5 = 11;
-    pub const _SC_ASYNCHRONOUS_IO: root::_bindgen_ty_5 = 12;
-    pub const _SC_PRIORITIZED_IO: root::_bindgen_ty_5 = 13;
-    pub const _SC_SYNCHRONIZED_IO: root::_bindgen_ty_5 = 14;
-    pub const _SC_FSYNC: root::_bindgen_ty_5 = 15;
-    pub const _SC_MAPPED_FILES: root::_bindgen_ty_5 = 16;
-    pub const _SC_MEMLOCK: root::_bindgen_ty_5 = 17;
-    pub const _SC_MEMLOCK_RANGE: root::_bindgen_ty_5 = 18;
-    pub const _SC_MEMORY_PROTECTION: root::_bindgen_ty_5 = 19;
-    pub const _SC_MESSAGE_PASSING: root::_bindgen_ty_5 = 20;
-    pub const _SC_SEMAPHORES: root::_bindgen_ty_5 = 21;
-    pub const _SC_SHARED_MEMORY_OBJECTS: root::_bindgen_ty_5 = 22;
-    pub const _SC_AIO_LISTIO_MAX: root::_bindgen_ty_5 = 23;
-    pub const _SC_AIO_MAX: root::_bindgen_ty_5 = 24;
-    pub const _SC_AIO_PRIO_DELTA_MAX: root::_bindgen_ty_5 = 25;
-    pub const _SC_DELAYTIMER_MAX: root::_bindgen_ty_5 = 26;
-    pub const _SC_MQ_OPEN_MAX: root::_bindgen_ty_5 = 27;
-    pub const _SC_MQ_PRIO_MAX: root::_bindgen_ty_5 = 28;
-    pub const _SC_VERSION: root::_bindgen_ty_5 = 29;
-    pub const _SC_PAGESIZE: root::_bindgen_ty_5 = 30;
-    pub const _SC_RTSIG_MAX: root::_bindgen_ty_5 = 31;
-    pub const _SC_SEM_NSEMS_MAX: root::_bindgen_ty_5 = 32;
-    pub const _SC_SEM_VALUE_MAX: root::_bindgen_ty_5 = 33;
-    pub const _SC_SIGQUEUE_MAX: root::_bindgen_ty_5 = 34;
-    pub const _SC_TIMER_MAX: root::_bindgen_ty_5 = 35;
-    pub const _SC_BC_BASE_MAX: root::_bindgen_ty_5 = 36;
-    pub const _SC_BC_DIM_MAX: root::_bindgen_ty_5 = 37;
-    pub const _SC_BC_SCALE_MAX: root::_bindgen_ty_5 = 38;
-    pub const _SC_BC_STRING_MAX: root::_bindgen_ty_5 = 39;
-    pub const _SC_COLL_WEIGHTS_MAX: root::_bindgen_ty_5 = 40;
-    pub const _SC_EQUIV_CLASS_MAX: root::_bindgen_ty_5 = 41;
-    pub const _SC_EXPR_NEST_MAX: root::_bindgen_ty_5 = 42;
-    pub const _SC_LINE_MAX: root::_bindgen_ty_5 = 43;
-    pub const _SC_RE_DUP_MAX: root::_bindgen_ty_5 = 44;
-    pub const _SC_CHARCLASS_NAME_MAX: root::_bindgen_ty_5 = 45;
-    pub const _SC_2_VERSION: root::_bindgen_ty_5 = 46;
-    pub const _SC_2_C_BIND: root::_bindgen_ty_5 = 47;
-    pub const _SC_2_C_DEV: root::_bindgen_ty_5 = 48;
-    pub const _SC_2_FORT_DEV: root::_bindgen_ty_5 = 49;
-    pub const _SC_2_FORT_RUN: root::_bindgen_ty_5 = 50;
-    pub const _SC_2_SW_DEV: root::_bindgen_ty_5 = 51;
-    pub const _SC_2_LOCALEDEF: root::_bindgen_ty_5 = 52;
-    pub const _SC_PII: root::_bindgen_ty_5 = 53;
-    pub const _SC_PII_XTI: root::_bindgen_ty_5 = 54;
-    pub const _SC_PII_SOCKET: root::_bindgen_ty_5 = 55;
-    pub const _SC_PII_INTERNET: root::_bindgen_ty_5 = 56;
-    pub const _SC_PII_OSI: root::_bindgen_ty_5 = 57;
-    pub const _SC_POLL: root::_bindgen_ty_5 = 58;
-    pub const _SC_SELECT: root::_bindgen_ty_5 = 59;
-    pub const _SC_UIO_MAXIOV: root::_bindgen_ty_5 = 60;
-    pub const _SC_IOV_MAX: root::_bindgen_ty_5 = 60;
-    pub const _SC_PII_INTERNET_STREAM: root::_bindgen_ty_5 = 61;
-    pub const _SC_PII_INTERNET_DGRAM: root::_bindgen_ty_5 = 62;
-    pub const _SC_PII_OSI_COTS: root::_bindgen_ty_5 = 63;
-    pub const _SC_PII_OSI_CLTS: root::_bindgen_ty_5 = 64;
-    pub const _SC_PII_OSI_M: root::_bindgen_ty_5 = 65;
-    pub const _SC_T_IOV_MAX: root::_bindgen_ty_5 = 66;
-    pub const _SC_THREADS: root::_bindgen_ty_5 = 67;
-    pub const _SC_THREAD_SAFE_FUNCTIONS: root::_bindgen_ty_5 = 68;
-    pub const _SC_GETGR_R_SIZE_MAX: root::_bindgen_ty_5 = 69;
-    pub const _SC_GETPW_R_SIZE_MAX: root::_bindgen_ty_5 = 70;
-    pub const _SC_LOGIN_NAME_MAX: root::_bindgen_ty_5 = 71;
-    pub const _SC_TTY_NAME_MAX: root::_bindgen_ty_5 = 72;
-    pub const _SC_THREAD_DESTRUCTOR_ITERATIONS: root::_bindgen_ty_5 = 73;
-    pub const _SC_THREAD_KEYS_MAX: root::_bindgen_ty_5 = 74;
-    pub const _SC_THREAD_STACK_MIN: root::_bindgen_ty_5 = 75;
-    pub const _SC_THREAD_THREADS_MAX: root::_bindgen_ty_5 = 76;
-    pub const _SC_THREAD_ATTR_STACKADDR: root::_bindgen_ty_5 = 77;
-    pub const _SC_THREAD_ATTR_STACKSIZE: root::_bindgen_ty_5 = 78;
-    pub const _SC_THREAD_PRIORITY_SCHEDULING: root::_bindgen_ty_5 = 79;
-    pub const _SC_THREAD_PRIO_INHERIT: root::_bindgen_ty_5 = 80;
-    pub const _SC_THREAD_PRIO_PROTECT: root::_bindgen_ty_5 = 81;
-    pub const _SC_THREAD_PROCESS_SHARED: root::_bindgen_ty_5 = 82;
-    pub const _SC_NPROCESSORS_CONF: root::_bindgen_ty_5 = 83;
-    pub const _SC_NPROCESSORS_ONLN: root::_bindgen_ty_5 = 84;
-    pub const _SC_PHYS_PAGES: root::_bindgen_ty_5 = 85;
-    pub const _SC_AVPHYS_PAGES: root::_bindgen_ty_5 = 86;
-    pub const _SC_ATEXIT_MAX: root::_bindgen_ty_5 = 87;
-    pub const _SC_PASS_MAX: root::_bindgen_ty_5 = 88;
-    pub const _SC_XOPEN_VERSION: root::_bindgen_ty_5 = 89;
-    pub const _SC_XOPEN_XCU_VERSION: root::_bindgen_ty_5 = 90;
-    pub const _SC_XOPEN_UNIX: root::_bindgen_ty_5 = 91;
-    pub const _SC_XOPEN_CRYPT: root::_bindgen_ty_5 = 92;
-    pub const _SC_XOPEN_ENH_I18N: root::_bindgen_ty_5 = 93;
-    pub const _SC_XOPEN_SHM: root::_bindgen_ty_5 = 94;
-    pub const _SC_2_CHAR_TERM: root::_bindgen_ty_5 = 95;
-    pub const _SC_2_C_VERSION: root::_bindgen_ty_5 = 96;
-    pub const _SC_2_UPE: root::_bindgen_ty_5 = 97;
-    pub const _SC_XOPEN_XPG2: root::_bindgen_ty_5 = 98;
-    pub const _SC_XOPEN_XPG3: root::_bindgen_ty_5 = 99;
-    pub const _SC_XOPEN_XPG4: root::_bindgen_ty_5 = 100;
-    pub const _SC_CHAR_BIT: root::_bindgen_ty_5 = 101;
-    pub const _SC_CHAR_MAX: root::_bindgen_ty_5 = 102;
-    pub const _SC_CHAR_MIN: root::_bindgen_ty_5 = 103;
-    pub const _SC_INT_MAX: root::_bindgen_ty_5 = 104;
-    pub const _SC_INT_MIN: root::_bindgen_ty_5 = 105;
-    pub const _SC_LONG_BIT: root::_bindgen_ty_5 = 106;
-    pub const _SC_WORD_BIT: root::_bindgen_ty_5 = 107;
-    pub const _SC_MB_LEN_MAX: root::_bindgen_ty_5 = 108;
-    pub const _SC_NZERO: root::_bindgen_ty_5 = 109;
-    pub const _SC_SSIZE_MAX: root::_bindgen_ty_5 = 110;
-    pub const _SC_SCHAR_MAX: root::_bindgen_ty_5 = 111;
-    pub const _SC_SCHAR_MIN: root::_bindgen_ty_5 = 112;
-    pub const _SC_SHRT_MAX: root::_bindgen_ty_5 = 113;
-    pub const _SC_SHRT_MIN: root::_bindgen_ty_5 = 114;
-    pub const _SC_UCHAR_MAX: root::_bindgen_ty_5 = 115;
-    pub const _SC_UINT_MAX: root::_bindgen_ty_5 = 116;
-    pub const _SC_ULONG_MAX: root::_bindgen_ty_5 = 117;
-    pub const _SC_USHRT_MAX: root::_bindgen_ty_5 = 118;
-    pub const _SC_NL_ARGMAX: root::_bindgen_ty_5 = 119;
-    pub const _SC_NL_LANGMAX: root::_bindgen_ty_5 = 120;
-    pub const _SC_NL_MSGMAX: root::_bindgen_ty_5 = 121;
-    pub const _SC_NL_NMAX: root::_bindgen_ty_5 = 122;
-    pub const _SC_NL_SETMAX: root::_bindgen_ty_5 = 123;
-    pub const _SC_NL_TEXTMAX: root::_bindgen_ty_5 = 124;
-    pub const _SC_XBS5_ILP32_OFF32: root::_bindgen_ty_5 = 125;
-    pub const _SC_XBS5_ILP32_OFFBIG: root::_bindgen_ty_5 = 126;
-    pub const _SC_XBS5_LP64_OFF64: root::_bindgen_ty_5 = 127;
-    pub const _SC_XBS5_LPBIG_OFFBIG: root::_bindgen_ty_5 = 128;
-    pub const _SC_XOPEN_LEGACY: root::_bindgen_ty_5 = 129;
-    pub const _SC_XOPEN_REALTIME: root::_bindgen_ty_5 = 130;
-    pub const _SC_XOPEN_REALTIME_THREADS: root::_bindgen_ty_5 = 131;
-    pub const _SC_ADVISORY_INFO: root::_bindgen_ty_5 = 132;
-    pub const _SC_BARRIERS: root::_bindgen_ty_5 = 133;
-    pub const _SC_BASE: root::_bindgen_ty_5 = 134;
-    pub const _SC_C_LANG_SUPPORT: root::_bindgen_ty_5 = 135;
-    pub const _SC_C_LANG_SUPPORT_R: root::_bindgen_ty_5 = 136;
-    pub const _SC_CLOCK_SELECTION: root::_bindgen_ty_5 = 137;
-    pub const _SC_CPUTIME: root::_bindgen_ty_5 = 138;
-    pub const _SC_THREAD_CPUTIME: root::_bindgen_ty_5 = 139;
-    pub const _SC_DEVICE_IO: root::_bindgen_ty_5 = 140;
-    pub const _SC_DEVICE_SPECIFIC: root::_bindgen_ty_5 = 141;
-    pub const _SC_DEVICE_SPECIFIC_R: root::_bindgen_ty_5 = 142;
-    pub const _SC_FD_MGMT: root::_bindgen_ty_5 = 143;
-    pub const _SC_FIFO: root::_bindgen_ty_5 = 144;
-    pub const _SC_PIPE: root::_bindgen_ty_5 = 145;
-    pub const _SC_FILE_ATTRIBUTES: root::_bindgen_ty_5 = 146;
-    pub const _SC_FILE_LOCKING: root::_bindgen_ty_5 = 147;
-    pub const _SC_FILE_SYSTEM: root::_bindgen_ty_5 = 148;
-    pub const _SC_MONOTONIC_CLOCK: root::_bindgen_ty_5 = 149;
-    pub const _SC_MULTI_PROCESS: root::_bindgen_ty_5 = 150;
-    pub const _SC_SINGLE_PROCESS: root::_bindgen_ty_5 = 151;
-    pub const _SC_NETWORKING: root::_bindgen_ty_5 = 152;
-    pub const _SC_READER_WRITER_LOCKS: root::_bindgen_ty_5 = 153;
-    pub const _SC_SPIN_LOCKS: root::_bindgen_ty_5 = 154;
-    pub const _SC_REGEXP: root::_bindgen_ty_5 = 155;
-    pub const _SC_REGEX_VERSION: root::_bindgen_ty_5 = 156;
-    pub const _SC_SHELL: root::_bindgen_ty_5 = 157;
-    pub const _SC_SIGNALS: root::_bindgen_ty_5 = 158;
-    pub const _SC_SPAWN: root::_bindgen_ty_5 = 159;
-    pub const _SC_SPORADIC_SERVER: root::_bindgen_ty_5 = 160;
-    pub const _SC_THREAD_SPORADIC_SERVER: root::_bindgen_ty_5 = 161;
-    pub const _SC_SYSTEM_DATABASE: root::_bindgen_ty_5 = 162;
-    pub const _SC_SYSTEM_DATABASE_R: root::_bindgen_ty_5 = 163;
-    pub const _SC_TIMEOUTS: root::_bindgen_ty_5 = 164;
-    pub const _SC_TYPED_MEMORY_OBJECTS: root::_bindgen_ty_5 = 165;
-    pub const _SC_USER_GROUPS: root::_bindgen_ty_5 = 166;
-    pub const _SC_USER_GROUPS_R: root::_bindgen_ty_5 = 167;
-    pub const _SC_2_PBS: root::_bindgen_ty_5 = 168;
-    pub const _SC_2_PBS_ACCOUNTING: root::_bindgen_ty_5 = 169;
-    pub const _SC_2_PBS_LOCATE: root::_bindgen_ty_5 = 170;
-    pub const _SC_2_PBS_MESSAGE: root::_bindgen_ty_5 = 171;
-    pub const _SC_2_PBS_TRACK: root::_bindgen_ty_5 = 172;
-    pub const _SC_SYMLOOP_MAX: root::_bindgen_ty_5 = 173;
-    pub const _SC_STREAMS: root::_bindgen_ty_5 = 174;
-    pub const _SC_2_PBS_CHECKPOINT: root::_bindgen_ty_5 = 175;
-    pub const _SC_V6_ILP32_OFF32: root::_bindgen_ty_5 = 176;
-    pub const _SC_V6_ILP32_OFFBIG: root::_bindgen_ty_5 = 177;
-    pub const _SC_V6_LP64_OFF64: root::_bindgen_ty_5 = 178;
-    pub const _SC_V6_LPBIG_OFFBIG: root::_bindgen_ty_5 = 179;
-    pub const _SC_HOST_NAME_MAX: root::_bindgen_ty_5 = 180;
-    pub const _SC_TRACE: root::_bindgen_ty_5 = 181;
-    pub const _SC_TRACE_EVENT_FILTER: root::_bindgen_ty_5 = 182;
-    pub const _SC_TRACE_INHERIT: root::_bindgen_ty_5 = 183;
-    pub const _SC_TRACE_LOG: root::_bindgen_ty_5 = 184;
-    pub const _SC_LEVEL1_ICACHE_SIZE: root::_bindgen_ty_5 = 185;
-    pub const _SC_LEVEL1_ICACHE_ASSOC: root::_bindgen_ty_5 = 186;
-    pub const _SC_LEVEL1_ICACHE_LINESIZE: root::_bindgen_ty_5 = 187;
-    pub const _SC_LEVEL1_DCACHE_SIZE: root::_bindgen_ty_5 = 188;
-    pub const _SC_LEVEL1_DCACHE_ASSOC: root::_bindgen_ty_5 = 189;
-    pub const _SC_LEVEL1_DCACHE_LINESIZE: root::_bindgen_ty_5 = 190;
-    pub const _SC_LEVEL2_CACHE_SIZE: root::_bindgen_ty_5 = 191;
-    pub const _SC_LEVEL2_CACHE_ASSOC: root::_bindgen_ty_5 = 192;
-    pub const _SC_LEVEL2_CACHE_LINESIZE: root::_bindgen_ty_5 = 193;
-    pub const _SC_LEVEL3_CACHE_SIZE: root::_bindgen_ty_5 = 194;
-    pub const _SC_LEVEL3_CACHE_ASSOC: root::_bindgen_ty_5 = 195;
-    pub const _SC_LEVEL3_CACHE_LINESIZE: root::_bindgen_ty_5 = 196;
-    pub const _SC_LEVEL4_CACHE_SIZE: root::_bindgen_ty_5 = 197;
-    pub const _SC_LEVEL4_CACHE_ASSOC: root::_bindgen_ty_5 = 198;
-    pub const _SC_LEVEL4_CACHE_LINESIZE: root::_bindgen_ty_5 = 199;
-    pub const _SC_IPV6: root::_bindgen_ty_5 = 235;
-    pub const _SC_RAW_SOCKETS: root::_bindgen_ty_5 = 236;
-    pub const _SC_V7_ILP32_OFF32: root::_bindgen_ty_5 = 237;
-    pub const _SC_V7_ILP32_OFFBIG: root::_bindgen_ty_5 = 238;
-    pub const _SC_V7_LP64_OFF64: root::_bindgen_ty_5 = 239;
-    pub const _SC_V7_LPBIG_OFFBIG: root::_bindgen_ty_5 = 240;
-    pub const _SC_SS_REPL_MAX: root::_bindgen_ty_5 = 241;
-    pub const _SC_TRACE_EVENT_NAME_MAX: root::_bindgen_ty_5 = 242;
-    pub const _SC_TRACE_NAME_MAX: root::_bindgen_ty_5 = 243;
-    pub const _SC_TRACE_SYS_MAX: root::_bindgen_ty_5 = 244;
-    pub const _SC_TRACE_USER_EVENT_MAX: root::_bindgen_ty_5 = 245;
-    pub const _SC_XOPEN_STREAMS: root::_bindgen_ty_5 = 246;
-    pub const _SC_THREAD_ROBUST_PRIO_INHERIT: root::_bindgen_ty_5 = 247;
-    pub const _SC_THREAD_ROBUST_PRIO_PROTECT: root::_bindgen_ty_5 = 248;
-    pub const _SC_MINSIGSTKSZ: root::_bindgen_ty_5 = 249;
-    pub const _SC_SIGSTKSZ: root::_bindgen_ty_5 = 250;
+    pub const _CS_PATH: root::_bindgen_ty_5 = 0;
+    pub const _CS_V6_WIDTH_RESTRICTED_ENVS: root::_bindgen_ty_5 = 1;
+    pub const _CS_GNU_LIBC_VERSION: root::_bindgen_ty_5 = 2;
+    pub const _CS_GNU_LIBPTHREAD_VERSION: root::_bindgen_ty_5 = 3;
+    pub const _CS_V5_WIDTH_RESTRICTED_ENVS: root::_bindgen_ty_5 = 4;
+    pub const _CS_V7_WIDTH_RESTRICTED_ENVS: root::_bindgen_ty_5 = 5;
+    pub const _CS_LFS_CFLAGS: root::_bindgen_ty_5 = 1000;
+    pub const _CS_LFS_LDFLAGS: root::_bindgen_ty_5 = 1001;
+    pub const _CS_LFS_LIBS: root::_bindgen_ty_5 = 1002;
+    pub const _CS_LFS_LINTFLAGS: root::_bindgen_ty_5 = 1003;
+    pub const _CS_LFS64_CFLAGS: root::_bindgen_ty_5 = 1004;
+    pub const _CS_LFS64_LDFLAGS: root::_bindgen_ty_5 = 1005;
+    pub const _CS_LFS64_LIBS: root::_bindgen_ty_5 = 1006;
+    pub const _CS_LFS64_LINTFLAGS: root::_bindgen_ty_5 = 1007;
+    pub const _CS_XBS5_ILP32_OFF32_CFLAGS: root::_bindgen_ty_5 = 1100;
+    pub const _CS_XBS5_ILP32_OFF32_LDFLAGS: root::_bindgen_ty_5 = 1101;
+    pub const _CS_XBS5_ILP32_OFF32_LIBS: root::_bindgen_ty_5 = 1102;
+    pub const _CS_XBS5_ILP32_OFF32_LINTFLAGS: root::_bindgen_ty_5 = 1103;
+    pub const _CS_XBS5_ILP32_OFFBIG_CFLAGS: root::_bindgen_ty_5 = 1104;
+    pub const _CS_XBS5_ILP32_OFFBIG_LDFLAGS: root::_bindgen_ty_5 = 1105;
+    pub const _CS_XBS5_ILP32_OFFBIG_LIBS: root::_bindgen_ty_5 = 1106;
+    pub const _CS_XBS5_ILP32_OFFBIG_LINTFLAGS: root::_bindgen_ty_5 = 1107;
+    pub const _CS_XBS5_LP64_OFF64_CFLAGS: root::_bindgen_ty_5 = 1108;
+    pub const _CS_XBS5_LP64_OFF64_LDFLAGS: root::_bindgen_ty_5 = 1109;
+    pub const _CS_XBS5_LP64_OFF64_LIBS: root::_bindgen_ty_5 = 1110;
+    pub const _CS_XBS5_LP64_OFF64_LINTFLAGS: root::_bindgen_ty_5 = 1111;
+    pub const _CS_XBS5_LPBIG_OFFBIG_CFLAGS: root::_bindgen_ty_5 = 1112;
+    pub const _CS_XBS5_LPBIG_OFFBIG_LDFLAGS: root::_bindgen_ty_5 = 1113;
+    pub const _CS_XBS5_LPBIG_OFFBIG_LIBS: root::_bindgen_ty_5 = 1114;
+    pub const _CS_XBS5_LPBIG_OFFBIG_LINTFLAGS: root::_bindgen_ty_5 = 1115;
+    pub const _CS_POSIX_V6_ILP32_OFF32_CFLAGS: root::_bindgen_ty_5 = 1116;
+    pub const _CS_POSIX_V6_ILP32_OFF32_LDFLAGS: root::_bindgen_ty_5 = 1117;
+    pub const _CS_POSIX_V6_ILP32_OFF32_LIBS: root::_bindgen_ty_5 = 1118;
+    pub const _CS_POSIX_V6_ILP32_OFF32_LINTFLAGS: root::_bindgen_ty_5 = 1119;
+    pub const _CS_POSIX_V6_ILP32_OFFBIG_CFLAGS: root::_bindgen_ty_5 = 1120;
+    pub const _CS_POSIX_V6_ILP32_OFFBIG_LDFLAGS: root::_bindgen_ty_5 = 1121;
+    pub const _CS_POSIX_V6_ILP32_OFFBIG_LIBS: root::_bindgen_ty_5 = 1122;
+    pub const _CS_POSIX_V6_ILP32_OFFBIG_LINTFLAGS: root::_bindgen_ty_5 = 1123;
+    pub const _CS_POSIX_V6_LP64_OFF64_CFLAGS: root::_bindgen_ty_5 = 1124;
+    pub const _CS_POSIX_V6_LP64_OFF64_LDFLAGS: root::_bindgen_ty_5 = 1125;
+    pub const _CS_POSIX_V6_LP64_OFF64_LIBS: root::_bindgen_ty_5 = 1126;
+    pub const _CS_POSIX_V6_LP64_OFF64_LINTFLAGS: root::_bindgen_ty_5 = 1127;
+    pub const _CS_POSIX_V6_LPBIG_OFFBIG_CFLAGS: root::_bindgen_ty_5 = 1128;
+    pub const _CS_POSIX_V6_LPBIG_OFFBIG_LDFLAGS: root::_bindgen_ty_5 = 1129;
+    pub const _CS_POSIX_V6_LPBIG_OFFBIG_LIBS: root::_bindgen_ty_5 = 1130;
+    pub const _CS_POSIX_V6_LPBIG_OFFBIG_LINTFLAGS: root::_bindgen_ty_5 = 1131;
+    pub const _CS_POSIX_V7_ILP32_OFF32_CFLAGS: root::_bindgen_ty_5 = 1132;
+    pub const _CS_POSIX_V7_ILP32_OFF32_LDFLAGS: root::_bindgen_ty_5 = 1133;
+    pub const _CS_POSIX_V7_ILP32_OFF32_LIBS: root::_bindgen_ty_5 = 1134;
+    pub const _CS_POSIX_V7_ILP32_OFF32_LINTFLAGS: root::_bindgen_ty_5 = 1135;
+    pub const _CS_POSIX_V7_ILP32_OFFBIG_CFLAGS: root::_bindgen_ty_5 = 1136;
+    pub const _CS_POSIX_V7_ILP32_OFFBIG_LDFLAGS: root::_bindgen_ty_5 = 1137;
+    pub const _CS_POSIX_V7_ILP32_OFFBIG_LIBS: root::_bindgen_ty_5 = 1138;
+    pub const _CS_POSIX_V7_ILP32_OFFBIG_LINTFLAGS: root::_bindgen_ty_5 = 1139;
+    pub const _CS_POSIX_V7_LP64_OFF64_CFLAGS: root::_bindgen_ty_5 = 1140;
+    pub const _CS_POSIX_V7_LP64_OFF64_LDFLAGS: root::_bindgen_ty_5 = 1141;
+    pub const _CS_POSIX_V7_LP64_OFF64_LIBS: root::_bindgen_ty_5 = 1142;
+    pub const _CS_POSIX_V7_LP64_OFF64_LINTFLAGS: root::_bindgen_ty_5 = 1143;
+    pub const _CS_POSIX_V7_LPBIG_OFFBIG_CFLAGS: root::_bindgen_ty_5 = 1144;
+    pub const _CS_POSIX_V7_LPBIG_OFFBIG_LDFLAGS: root::_bindgen_ty_5 = 1145;
+    pub const _CS_POSIX_V7_LPBIG_OFFBIG_LIBS: root::_bindgen_ty_5 = 1146;
+    pub const _CS_POSIX_V7_LPBIG_OFFBIG_LINTFLAGS: root::_bindgen_ty_5 = 1147;
+    pub const _CS_V6_ENV: root::_bindgen_ty_5 = 1148;
+    pub const _CS_V7_ENV: root::_bindgen_ty_5 = 1149;
     pub type _bindgen_ty_5 = ::core::ffi::c_uint;
-    pub const _CS_PATH: root::_bindgen_ty_6 = 0;
-    pub const _CS_V6_WIDTH_RESTRICTED_ENVS: root::_bindgen_ty_6 = 1;
-    pub const _CS_GNU_LIBC_VERSION: root::_bindgen_ty_6 = 2;
-    pub const _CS_GNU_LIBPTHREAD_VERSION: root::_bindgen_ty_6 = 3;
-    pub const _CS_V5_WIDTH_RESTRICTED_ENVS: root::_bindgen_ty_6 = 4;
-    pub const _CS_V7_WIDTH_RESTRICTED_ENVS: root::_bindgen_ty_6 = 5;
-    pub const _CS_LFS_CFLAGS: root::_bindgen_ty_6 = 1000;
-    pub const _CS_LFS_LDFLAGS: root::_bindgen_ty_6 = 1001;
-    pub const _CS_LFS_LIBS: root::_bindgen_ty_6 = 1002;
-    pub const _CS_LFS_LINTFLAGS: root::_bindgen_ty_6 = 1003;
-    pub const _CS_LFS64_CFLAGS: root::_bindgen_ty_6 = 1004;
-    pub const _CS_LFS64_LDFLAGS: root::_bindgen_ty_6 = 1005;
-    pub const _CS_LFS64_LIBS: root::_bindgen_ty_6 = 1006;
-    pub const _CS_LFS64_LINTFLAGS: root::_bindgen_ty_6 = 1007;
-    pub const _CS_XBS5_ILP32_OFF32_CFLAGS: root::_bindgen_ty_6 = 1100;
-    pub const _CS_XBS5_ILP32_OFF32_LDFLAGS: root::_bindgen_ty_6 = 1101;
-    pub const _CS_XBS5_ILP32_OFF32_LIBS: root::_bindgen_ty_6 = 1102;
-    pub const _CS_XBS5_ILP32_OFF32_LINTFLAGS: root::_bindgen_ty_6 = 1103;
-    pub const _CS_XBS5_ILP32_OFFBIG_CFLAGS: root::_bindgen_ty_6 = 1104;
-    pub const _CS_XBS5_ILP32_OFFBIG_LDFLAGS: root::_bindgen_ty_6 = 1105;
-    pub const _CS_XBS5_ILP32_OFFBIG_LIBS: root::_bindgen_ty_6 = 1106;
-    pub const _CS_XBS5_ILP32_OFFBIG_LINTFLAGS: root::_bindgen_ty_6 = 1107;
-    pub const _CS_XBS5_LP64_OFF64_CFLAGS: root::_bindgen_ty_6 = 1108;
-    pub const _CS_XBS5_LP64_OFF64_LDFLAGS: root::_bindgen_ty_6 = 1109;
-    pub const _CS_XBS5_LP64_OFF64_LIBS: root::_bindgen_ty_6 = 1110;
-    pub const _CS_XBS5_LP64_OFF64_LINTFLAGS: root::_bindgen_ty_6 = 1111;
-    pub const _CS_XBS5_LPBIG_OFFBIG_CFLAGS: root::_bindgen_ty_6 = 1112;
-    pub const _CS_XBS5_LPBIG_OFFBIG_LDFLAGS: root::_bindgen_ty_6 = 1113;
-    pub const _CS_XBS5_LPBIG_OFFBIG_LIBS: root::_bindgen_ty_6 = 1114;
-    pub const _CS_XBS5_LPBIG_OFFBIG_LINTFLAGS: root::_bindgen_ty_6 = 1115;
-    pub const _CS_POSIX_V6_ILP32_OFF32_CFLAGS: root::_bindgen_ty_6 = 1116;
-    pub const _CS_POSIX_V6_ILP32_OFF32_LDFLAGS: root::_bindgen_ty_6 = 1117;
-    pub const _CS_POSIX_V6_ILP32_OFF32_LIBS: root::_bindgen_ty_6 = 1118;
-    pub const _CS_POSIX_V6_ILP32_OFF32_LINTFLAGS: root::_bindgen_ty_6 = 1119;
-    pub const _CS_POSIX_V6_ILP32_OFFBIG_CFLAGS: root::_bindgen_ty_6 = 1120;
-    pub const _CS_POSIX_V6_ILP32_OFFBIG_LDFLAGS: root::_bindgen_ty_6 = 1121;
-    pub const _CS_POSIX_V6_ILP32_OFFBIG_LIBS: root::_bindgen_ty_6 = 1122;
-    pub const _CS_POSIX_V6_ILP32_OFFBIG_LINTFLAGS: root::_bindgen_ty_6 = 1123;
-    pub const _CS_POSIX_V6_LP64_OFF64_CFLAGS: root::_bindgen_ty_6 = 1124;
-    pub const _CS_POSIX_V6_LP64_OFF64_LDFLAGS: root::_bindgen_ty_6 = 1125;
-    pub const _CS_POSIX_V6_LP64_OFF64_LIBS: root::_bindgen_ty_6 = 1126;
-    pub const _CS_POSIX_V6_LP64_OFF64_LINTFLAGS: root::_bindgen_ty_6 = 1127;
-    pub const _CS_POSIX_V6_LPBIG_OFFBIG_CFLAGS: root::_bindgen_ty_6 = 1128;
-    pub const _CS_POSIX_V6_LPBIG_OFFBIG_LDFLAGS: root::_bindgen_ty_6 = 1129;
-    pub const _CS_POSIX_V6_LPBIG_OFFBIG_LIBS: root::_bindgen_ty_6 = 1130;
-    pub const _CS_POSIX_V6_LPBIG_OFFBIG_LINTFLAGS: root::_bindgen_ty_6 = 1131;
-    pub const _CS_POSIX_V7_ILP32_OFF32_CFLAGS: root::_bindgen_ty_6 = 1132;
-    pub const _CS_POSIX_V7_ILP32_OFF32_LDFLAGS: root::_bindgen_ty_6 = 1133;
-    pub const _CS_POSIX_V7_ILP32_OFF32_LIBS: root::_bindgen_ty_6 = 1134;
-    pub const _CS_POSIX_V7_ILP32_OFF32_LINTFLAGS: root::_bindgen_ty_6 = 1135;
-    pub const _CS_POSIX_V7_ILP32_OFFBIG_CFLAGS: root::_bindgen_ty_6 = 1136;
-    pub const _CS_POSIX_V7_ILP32_OFFBIG_LDFLAGS: root::_bindgen_ty_6 = 1137;
-    pub const _CS_POSIX_V7_ILP32_OFFBIG_LIBS: root::_bindgen_ty_6 = 1138;
-    pub const _CS_POSIX_V7_ILP32_OFFBIG_LINTFLAGS: root::_bindgen_ty_6 = 1139;
-    pub const _CS_POSIX_V7_LP64_OFF64_CFLAGS: root::_bindgen_ty_6 = 1140;
-    pub const _CS_POSIX_V7_LP64_OFF64_LDFLAGS: root::_bindgen_ty_6 = 1141;
-    pub const _CS_POSIX_V7_LP64_OFF64_LIBS: root::_bindgen_ty_6 = 1142;
-    pub const _CS_POSIX_V7_LP64_OFF64_LINTFLAGS: root::_bindgen_ty_6 = 1143;
-    pub const _CS_POSIX_V7_LPBIG_OFFBIG_CFLAGS: root::_bindgen_ty_6 = 1144;
-    pub const _CS_POSIX_V7_LPBIG_OFFBIG_LDFLAGS: root::_bindgen_ty_6 = 1145;
-    pub const _CS_POSIX_V7_LPBIG_OFFBIG_LIBS: root::_bindgen_ty_6 = 1146;
-    pub const _CS_POSIX_V7_LPBIG_OFFBIG_LINTFLAGS: root::_bindgen_ty_6 = 1147;
-    pub const _CS_V6_ENV: root::_bindgen_ty_6 = 1148;
-    pub const _CS_V7_ENV: root::_bindgen_ty_6 = 1149;
-    pub type _bindgen_ty_6 = ::core::ffi::c_uint;
     unsafe extern "C" {
         pub fn pathconf(
             __path: *const ::core::ffi::c_char,
@@ -2193,7 +2089,666 @@ pub mod root {
     unsafe extern "C" {
         pub fn gettid() -> root::__pid_t;
     }
-    pub type HMODULE = *mut ::core::ffi::c_void;
+    pub type u_char = root::__u_char;
+    pub type u_short = root::__u_short;
+    pub type u_int = root::__u_int;
+    pub type u_long = root::__u_long;
+    pub type quad_t = root::__quad_t;
+    pub type u_quad_t = root::__u_quad_t;
+    pub type fsid_t = root::__fsid_t;
+    pub type loff_t = root::__loff_t;
+    pub type ino_t = root::__ino_t;
+    pub type ino64_t = root::__ino64_t;
+    pub type dev_t = root::__dev_t;
+    pub type mode_t = root::__mode_t;
+    pub type nlink_t = root::__nlink_t;
+    pub type id_t = root::__id_t;
+    pub type daddr_t = root::__daddr_t;
+    pub type caddr_t = root::__caddr_t;
+    pub type key_t = root::__key_t;
+    pub type clock_t = root::__clock_t;
+    pub type clockid_t = root::__clockid_t;
+    pub type time_t = root::__time_t;
+    pub type timer_t = root::__timer_t;
+    pub type suseconds_t = root::__suseconds_t;
+    pub type ulong = ::core::ffi::c_ulong;
+    pub type ushort = ::core::ffi::c_ushort;
+    pub type uint = ::core::ffi::c_uint;
+    pub type u_int8_t = root::__uint8_t;
+    pub type u_int16_t = root::__uint16_t;
+    pub type u_int32_t = root::__uint32_t;
+    pub type u_int64_t = root::__uint64_t;
+    pub type register_t = ::core::ffi::c_long;
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct __sigset_t {
+        pub __val: [::core::ffi::c_ulong; 16usize],
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of __sigset_t"][::core::mem::size_of::<__sigset_t>() - 128usize];
+        ["Alignment of __sigset_t"][::core::mem::align_of::<__sigset_t>() - 8usize];
+        ["Offset of field: __sigset_t::__val"][::core::mem::offset_of!(__sigset_t, __val) - 0usize];
+    };
+    pub type sigset_t = root::__sigset_t;
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct timeval {
+        pub tv_sec: root::__time_t,
+        pub tv_usec: root::__suseconds_t,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of timeval"][::core::mem::size_of::<timeval>() - 16usize];
+        ["Alignment of timeval"][::core::mem::align_of::<timeval>() - 8usize];
+        ["Offset of field: timeval::tv_sec"][::core::mem::offset_of!(timeval, tv_sec) - 0usize];
+        ["Offset of field: timeval::tv_usec"][::core::mem::offset_of!(timeval, tv_usec) - 8usize];
+    };
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct timespec {
+        pub tv_sec: root::__time_t,
+        pub tv_nsec: root::__syscall_slong_t,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of timespec"][::core::mem::size_of::<timespec>() - 16usize];
+        ["Alignment of timespec"][::core::mem::align_of::<timespec>() - 8usize];
+        ["Offset of field: timespec::tv_sec"][::core::mem::offset_of!(timespec, tv_sec) - 0usize];
+        ["Offset of field: timespec::tv_nsec"][::core::mem::offset_of!(timespec, tv_nsec) - 8usize];
+    };
+    pub type __fd_mask = ::core::ffi::c_long;
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct fd_set {
+        pub fds_bits: [root::__fd_mask; 16usize],
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of fd_set"][::core::mem::size_of::<fd_set>() - 128usize];
+        ["Alignment of fd_set"][::core::mem::align_of::<fd_set>() - 8usize];
+        ["Offset of field: fd_set::fds_bits"][::core::mem::offset_of!(fd_set, fds_bits) - 0usize];
+    };
+    pub type fd_mask = root::__fd_mask;
+    unsafe extern "C" {
+        pub fn select(
+            __nfds: ::core::ffi::c_int,
+            __readfds: *mut root::fd_set,
+            __writefds: *mut root::fd_set,
+            __exceptfds: *mut root::fd_set,
+            __timeout: *mut root::timeval,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn pselect(
+            __nfds: ::core::ffi::c_int,
+            __readfds: *mut root::fd_set,
+            __writefds: *mut root::fd_set,
+            __exceptfds: *mut root::fd_set,
+            __timeout: *const root::timespec,
+            __sigmask: *const root::__sigset_t,
+        ) -> ::core::ffi::c_int;
+    }
+    pub type blksize_t = root::__blksize_t;
+    pub type blkcnt_t = root::__blkcnt_t;
+    pub type fsblkcnt_t = root::__fsblkcnt_t;
+    pub type fsfilcnt_t = root::__fsfilcnt_t;
+    pub type blkcnt64_t = root::__blkcnt64_t;
+    pub type fsblkcnt64_t = root::__fsblkcnt64_t;
+    pub type fsfilcnt64_t = root::__fsfilcnt64_t;
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub union __atomic_wide_counter {
+        pub __value64: ::core::ffi::c_ulonglong,
+        pub __value32: root::__atomic_wide_counter__bindgen_ty_1,
+    }
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct __atomic_wide_counter__bindgen_ty_1 {
+        pub __low: ::core::ffi::c_uint,
+        pub __high: ::core::ffi::c_uint,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of __atomic_wide_counter__bindgen_ty_1"]
+            [::core::mem::size_of::<__atomic_wide_counter__bindgen_ty_1>() - 8usize];
+        ["Alignment of __atomic_wide_counter__bindgen_ty_1"]
+            [::core::mem::align_of::<__atomic_wide_counter__bindgen_ty_1>() - 4usize];
+        ["Offset of field: __atomic_wide_counter__bindgen_ty_1::__low"]
+            [::core::mem::offset_of!(__atomic_wide_counter__bindgen_ty_1, __low) - 0usize];
+        ["Offset of field: __atomic_wide_counter__bindgen_ty_1::__high"]
+            [::core::mem::offset_of!(__atomic_wide_counter__bindgen_ty_1, __high) - 4usize];
+    };
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of __atomic_wide_counter"][::core::mem::size_of::<__atomic_wide_counter>() - 8usize];
+        ["Alignment of __atomic_wide_counter"]
+            [::core::mem::align_of::<__atomic_wide_counter>() - 8usize];
+        ["Offset of field: __atomic_wide_counter::__value64"]
+            [::core::mem::offset_of!(__atomic_wide_counter, __value64) - 0usize];
+        ["Offset of field: __atomic_wide_counter::__value32"]
+            [::core::mem::offset_of!(__atomic_wide_counter, __value32) - 0usize];
+    };
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct __pthread_internal_list {
+        pub __prev: *mut root::__pthread_internal_list,
+        pub __next: *mut root::__pthread_internal_list,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of __pthread_internal_list"]
+            [::core::mem::size_of::<__pthread_internal_list>() - 16usize];
+        ["Alignment of __pthread_internal_list"]
+            [::core::mem::align_of::<__pthread_internal_list>() - 8usize];
+        ["Offset of field: __pthread_internal_list::__prev"]
+            [::core::mem::offset_of!(__pthread_internal_list, __prev) - 0usize];
+        ["Offset of field: __pthread_internal_list::__next"]
+            [::core::mem::offset_of!(__pthread_internal_list, __next) - 8usize];
+    };
+    pub type __pthread_list_t = root::__pthread_internal_list;
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct __pthread_internal_slist {
+        pub __next: *mut root::__pthread_internal_slist,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of __pthread_internal_slist"]
+            [::core::mem::size_of::<__pthread_internal_slist>() - 8usize];
+        ["Alignment of __pthread_internal_slist"]
+            [::core::mem::align_of::<__pthread_internal_slist>() - 8usize];
+        ["Offset of field: __pthread_internal_slist::__next"]
+            [::core::mem::offset_of!(__pthread_internal_slist, __next) - 0usize];
+    };
+    pub type __pthread_slist_t = root::__pthread_internal_slist;
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct __pthread_mutex_s {
+        pub __lock: ::core::ffi::c_int,
+        pub __count: ::core::ffi::c_uint,
+        pub __owner: ::core::ffi::c_int,
+        pub __nusers: ::core::ffi::c_uint,
+        pub __kind: ::core::ffi::c_int,
+        pub __spins: ::core::ffi::c_short,
+        pub __elision: ::core::ffi::c_short,
+        pub __list: root::__pthread_list_t,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of __pthread_mutex_s"][::core::mem::size_of::<__pthread_mutex_s>() - 40usize];
+        ["Alignment of __pthread_mutex_s"][::core::mem::align_of::<__pthread_mutex_s>() - 8usize];
+        ["Offset of field: __pthread_mutex_s::__lock"]
+            [::core::mem::offset_of!(__pthread_mutex_s, __lock) - 0usize];
+        ["Offset of field: __pthread_mutex_s::__count"]
+            [::core::mem::offset_of!(__pthread_mutex_s, __count) - 4usize];
+        ["Offset of field: __pthread_mutex_s::__owner"]
+            [::core::mem::offset_of!(__pthread_mutex_s, __owner) - 8usize];
+        ["Offset of field: __pthread_mutex_s::__nusers"]
+            [::core::mem::offset_of!(__pthread_mutex_s, __nusers) - 12usize];
+        ["Offset of field: __pthread_mutex_s::__kind"]
+            [::core::mem::offset_of!(__pthread_mutex_s, __kind) - 16usize];
+        ["Offset of field: __pthread_mutex_s::__spins"]
+            [::core::mem::offset_of!(__pthread_mutex_s, __spins) - 20usize];
+        ["Offset of field: __pthread_mutex_s::__elision"]
+            [::core::mem::offset_of!(__pthread_mutex_s, __elision) - 22usize];
+        ["Offset of field: __pthread_mutex_s::__list"]
+            [::core::mem::offset_of!(__pthread_mutex_s, __list) - 24usize];
+    };
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct __pthread_rwlock_arch_t {
+        pub __readers: ::core::ffi::c_uint,
+        pub __writers: ::core::ffi::c_uint,
+        pub __wrphase_futex: ::core::ffi::c_uint,
+        pub __writers_futex: ::core::ffi::c_uint,
+        pub __pad3: ::core::ffi::c_uint,
+        pub __pad4: ::core::ffi::c_uint,
+        pub __cur_writer: ::core::ffi::c_int,
+        pub __shared: ::core::ffi::c_int,
+        pub __rwelision: ::core::ffi::c_schar,
+        pub __pad1: [::core::ffi::c_uchar; 7usize],
+        pub __pad2: ::core::ffi::c_ulong,
+        pub __flags: ::core::ffi::c_uint,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of __pthread_rwlock_arch_t"]
+            [::core::mem::size_of::<__pthread_rwlock_arch_t>() - 56usize];
+        ["Alignment of __pthread_rwlock_arch_t"]
+            [::core::mem::align_of::<__pthread_rwlock_arch_t>() - 8usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__readers"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __readers) - 0usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__writers"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __writers) - 4usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__wrphase_futex"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __wrphase_futex) - 8usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__writers_futex"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __writers_futex) - 12usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__pad3"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __pad3) - 16usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__pad4"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __pad4) - 20usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__cur_writer"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __cur_writer) - 24usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__shared"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __shared) - 28usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__rwelision"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __rwelision) - 32usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__pad1"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __pad1) - 33usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__pad2"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __pad2) - 40usize];
+        ["Offset of field: __pthread_rwlock_arch_t::__flags"]
+            [::core::mem::offset_of!(__pthread_rwlock_arch_t, __flags) - 48usize];
+    };
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub struct __pthread_cond_s {
+        pub __wseq: root::__atomic_wide_counter,
+        pub __g1_start: root::__atomic_wide_counter,
+        pub __g_size: [::core::ffi::c_uint; 2usize],
+        pub __g1_orig_size: ::core::ffi::c_uint,
+        pub __wrefs: ::core::ffi::c_uint,
+        pub __g_signals: [::core::ffi::c_uint; 2usize],
+        pub __unused_initialized_1: ::core::ffi::c_uint,
+        pub __unused_initialized_2: ::core::ffi::c_uint,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of __pthread_cond_s"][::core::mem::size_of::<__pthread_cond_s>() - 48usize];
+        ["Alignment of __pthread_cond_s"][::core::mem::align_of::<__pthread_cond_s>() - 8usize];
+        ["Offset of field: __pthread_cond_s::__wseq"]
+            [::core::mem::offset_of!(__pthread_cond_s, __wseq) - 0usize];
+        ["Offset of field: __pthread_cond_s::__g1_start"]
+            [::core::mem::offset_of!(__pthread_cond_s, __g1_start) - 8usize];
+        ["Offset of field: __pthread_cond_s::__g_size"]
+            [::core::mem::offset_of!(__pthread_cond_s, __g_size) - 16usize];
+        ["Offset of field: __pthread_cond_s::__g1_orig_size"]
+            [::core::mem::offset_of!(__pthread_cond_s, __g1_orig_size) - 24usize];
+        ["Offset of field: __pthread_cond_s::__wrefs"]
+            [::core::mem::offset_of!(__pthread_cond_s, __wrefs) - 28usize];
+        ["Offset of field: __pthread_cond_s::__g_signals"]
+            [::core::mem::offset_of!(__pthread_cond_s, __g_signals) - 32usize];
+        ["Offset of field: __pthread_cond_s::__unused_initialized_1"]
+            [::core::mem::offset_of!(__pthread_cond_s, __unused_initialized_1) - 40usize];
+        ["Offset of field: __pthread_cond_s::__unused_initialized_2"]
+            [::core::mem::offset_of!(__pthread_cond_s, __unused_initialized_2) - 44usize];
+    };
+    pub type __tss_t = ::core::ffi::c_uint;
+    pub type __thrd_t = ::core::ffi::c_ulong;
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct __once_flag {
+        pub __data: ::core::ffi::c_int,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of __once_flag"][::core::mem::size_of::<__once_flag>() - 4usize];
+        ["Alignment of __once_flag"][::core::mem::align_of::<__once_flag>() - 4usize];
+        ["Offset of field: __once_flag::__data"]
+            [::core::mem::offset_of!(__once_flag, __data) - 0usize];
+    };
+    pub type pthread_t = ::core::ffi::c_ulong;
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub union pthread_mutexattr_t {
+        pub __size: [::core::ffi::c_char; 4usize],
+        pub __align: ::core::ffi::c_int,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of pthread_mutexattr_t"][::core::mem::size_of::<pthread_mutexattr_t>() - 4usize];
+        ["Alignment of pthread_mutexattr_t"]
+            [::core::mem::align_of::<pthread_mutexattr_t>() - 4usize];
+        ["Offset of field: pthread_mutexattr_t::__size"]
+            [::core::mem::offset_of!(pthread_mutexattr_t, __size) - 0usize];
+        ["Offset of field: pthread_mutexattr_t::__align"]
+            [::core::mem::offset_of!(pthread_mutexattr_t, __align) - 0usize];
+    };
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub union pthread_condattr_t {
+        pub __size: [::core::ffi::c_char; 4usize],
+        pub __align: ::core::ffi::c_int,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of pthread_condattr_t"][::core::mem::size_of::<pthread_condattr_t>() - 4usize];
+        ["Alignment of pthread_condattr_t"][::core::mem::align_of::<pthread_condattr_t>() - 4usize];
+        ["Offset of field: pthread_condattr_t::__size"]
+            [::core::mem::offset_of!(pthread_condattr_t, __size) - 0usize];
+        ["Offset of field: pthread_condattr_t::__align"]
+            [::core::mem::offset_of!(pthread_condattr_t, __align) - 0usize];
+    };
+    pub type pthread_key_t = ::core::ffi::c_uint;
+    pub type pthread_once_t = ::core::ffi::c_int;
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub union pthread_attr_t {
+        pub __size: [::core::ffi::c_char; 56usize],
+        pub __align: ::core::ffi::c_long,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of pthread_attr_t"][::core::mem::size_of::<pthread_attr_t>() - 56usize];
+        ["Alignment of pthread_attr_t"][::core::mem::align_of::<pthread_attr_t>() - 8usize];
+        ["Offset of field: pthread_attr_t::__size"]
+            [::core::mem::offset_of!(pthread_attr_t, __size) - 0usize];
+        ["Offset of field: pthread_attr_t::__align"]
+            [::core::mem::offset_of!(pthread_attr_t, __align) - 0usize];
+    };
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub union pthread_mutex_t {
+        pub __data: root::__pthread_mutex_s,
+        pub __size: [::core::ffi::c_char; 40usize],
+        pub __align: ::core::ffi::c_long,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of pthread_mutex_t"][::core::mem::size_of::<pthread_mutex_t>() - 40usize];
+        ["Alignment of pthread_mutex_t"][::core::mem::align_of::<pthread_mutex_t>() - 8usize];
+        ["Offset of field: pthread_mutex_t::__data"]
+            [::core::mem::offset_of!(pthread_mutex_t, __data) - 0usize];
+        ["Offset of field: pthread_mutex_t::__size"]
+            [::core::mem::offset_of!(pthread_mutex_t, __size) - 0usize];
+        ["Offset of field: pthread_mutex_t::__align"]
+            [::core::mem::offset_of!(pthread_mutex_t, __align) - 0usize];
+    };
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub union pthread_cond_t {
+        pub __data: root::__pthread_cond_s,
+        pub __size: [::core::ffi::c_char; 48usize],
+        pub __align: ::core::ffi::c_longlong,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of pthread_cond_t"][::core::mem::size_of::<pthread_cond_t>() - 48usize];
+        ["Alignment of pthread_cond_t"][::core::mem::align_of::<pthread_cond_t>() - 8usize];
+        ["Offset of field: pthread_cond_t::__data"]
+            [::core::mem::offset_of!(pthread_cond_t, __data) - 0usize];
+        ["Offset of field: pthread_cond_t::__size"]
+            [::core::mem::offset_of!(pthread_cond_t, __size) - 0usize];
+        ["Offset of field: pthread_cond_t::__align"]
+            [::core::mem::offset_of!(pthread_cond_t, __align) - 0usize];
+    };
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub union pthread_rwlock_t {
+        pub __data: root::__pthread_rwlock_arch_t,
+        pub __size: [::core::ffi::c_char; 56usize],
+        pub __align: ::core::ffi::c_long,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of pthread_rwlock_t"][::core::mem::size_of::<pthread_rwlock_t>() - 56usize];
+        ["Alignment of pthread_rwlock_t"][::core::mem::align_of::<pthread_rwlock_t>() - 8usize];
+        ["Offset of field: pthread_rwlock_t::__data"]
+            [::core::mem::offset_of!(pthread_rwlock_t, __data) - 0usize];
+        ["Offset of field: pthread_rwlock_t::__size"]
+            [::core::mem::offset_of!(pthread_rwlock_t, __size) - 0usize];
+        ["Offset of field: pthread_rwlock_t::__align"]
+            [::core::mem::offset_of!(pthread_rwlock_t, __align) - 0usize];
+    };
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub union pthread_rwlockattr_t {
+        pub __size: [::core::ffi::c_char; 8usize],
+        pub __align: ::core::ffi::c_long,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of pthread_rwlockattr_t"][::core::mem::size_of::<pthread_rwlockattr_t>() - 8usize];
+        ["Alignment of pthread_rwlockattr_t"]
+            [::core::mem::align_of::<pthread_rwlockattr_t>() - 8usize];
+        ["Offset of field: pthread_rwlockattr_t::__size"]
+            [::core::mem::offset_of!(pthread_rwlockattr_t, __size) - 0usize];
+        ["Offset of field: pthread_rwlockattr_t::__align"]
+            [::core::mem::offset_of!(pthread_rwlockattr_t, __align) - 0usize];
+    };
+    pub type pthread_spinlock_t = ::core::ffi::c_int;
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub union pthread_barrier_t {
+        pub __size: [::core::ffi::c_char; 32usize],
+        pub __align: ::core::ffi::c_long,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of pthread_barrier_t"][::core::mem::size_of::<pthread_barrier_t>() - 32usize];
+        ["Alignment of pthread_barrier_t"][::core::mem::align_of::<pthread_barrier_t>() - 8usize];
+        ["Offset of field: pthread_barrier_t::__size"]
+            [::core::mem::offset_of!(pthread_barrier_t, __size) - 0usize];
+        ["Offset of field: pthread_barrier_t::__align"]
+            [::core::mem::offset_of!(pthread_barrier_t, __align) - 0usize];
+    };
+    #[repr(C)]
+    #[derive(Copy, Clone)]
+    pub union pthread_barrierattr_t {
+        pub __size: [::core::ffi::c_char; 4usize],
+        pub __align: ::core::ffi::c_int,
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of pthread_barrierattr_t"][::core::mem::size_of::<pthread_barrierattr_t>() - 4usize];
+        ["Alignment of pthread_barrierattr_t"]
+            [::core::mem::align_of::<pthread_barrierattr_t>() - 4usize];
+        ["Offset of field: pthread_barrierattr_t::__size"]
+            [::core::mem::offset_of!(pthread_barrierattr_t, __size) - 0usize];
+        ["Offset of field: pthread_barrierattr_t::__align"]
+            [::core::mem::offset_of!(pthread_barrierattr_t, __align) - 0usize];
+    };
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct dirent {
+        pub d_ino: root::__ino_t,
+        pub d_off: root::__off_t,
+        pub d_reclen: ::core::ffi::c_ushort,
+        pub d_type: ::core::ffi::c_uchar,
+        pub d_name: [::core::ffi::c_char; 256usize],
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of dirent"][::core::mem::size_of::<dirent>() - 280usize];
+        ["Alignment of dirent"][::core::mem::align_of::<dirent>() - 8usize];
+        ["Offset of field: dirent::d_ino"][::core::mem::offset_of!(dirent, d_ino) - 0usize];
+        ["Offset of field: dirent::d_off"][::core::mem::offset_of!(dirent, d_off) - 8usize];
+        ["Offset of field: dirent::d_reclen"][::core::mem::offset_of!(dirent, d_reclen) - 16usize];
+        ["Offset of field: dirent::d_type"][::core::mem::offset_of!(dirent, d_type) - 18usize];
+        ["Offset of field: dirent::d_name"][::core::mem::offset_of!(dirent, d_name) - 19usize];
+    };
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct dirent64 {
+        pub d_ino: root::__ino64_t,
+        pub d_off: root::__off64_t,
+        pub d_reclen: ::core::ffi::c_ushort,
+        pub d_type: ::core::ffi::c_uchar,
+        pub d_name: [::core::ffi::c_char; 256usize],
+    }
+    #[allow(clippy::unnecessary_operation, clippy::identity_op)]
+    const _: () = {
+        ["Size of dirent64"][::core::mem::size_of::<dirent64>() - 280usize];
+        ["Alignment of dirent64"][::core::mem::align_of::<dirent64>() - 8usize];
+        ["Offset of field: dirent64::d_ino"][::core::mem::offset_of!(dirent64, d_ino) - 0usize];
+        ["Offset of field: dirent64::d_off"][::core::mem::offset_of!(dirent64, d_off) - 8usize];
+        ["Offset of field: dirent64::d_reclen"]
+            [::core::mem::offset_of!(dirent64, d_reclen) - 16usize];
+        ["Offset of field: dirent64::d_type"][::core::mem::offset_of!(dirent64, d_type) - 18usize];
+        ["Offset of field: dirent64::d_name"][::core::mem::offset_of!(dirent64, d_name) - 19usize];
+    };
+    pub const DT_UNKNOWN: root::_bindgen_ty_6 = 0;
+    pub const DT_FIFO: root::_bindgen_ty_6 = 1;
+    pub const DT_CHR: root::_bindgen_ty_6 = 2;
+    pub const DT_DIR: root::_bindgen_ty_6 = 4;
+    pub const DT_BLK: root::_bindgen_ty_6 = 6;
+    pub const DT_REG: root::_bindgen_ty_6 = 8;
+    pub const DT_LNK: root::_bindgen_ty_6 = 10;
+    pub const DT_SOCK: root::_bindgen_ty_6 = 12;
+    pub const DT_WHT: root::_bindgen_ty_6 = 14;
+    pub type _bindgen_ty_6 = ::core::ffi::c_uint;
+    #[repr(C)]
+    #[derive(Debug, Copy, Clone)]
+    pub struct __dirstream {
+        _unused: [u8; 0],
+    }
+    pub type DIR = root::__dirstream;
+    unsafe extern "C" {
+        pub fn closedir(__dirp: *mut root::DIR) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn opendir(__name: *const ::core::ffi::c_char) -> *mut root::DIR;
+    }
+    unsafe extern "C" {
+        pub fn fdopendir(__fd: ::core::ffi::c_int) -> *mut root::DIR;
+    }
+    unsafe extern "C" {
+        pub fn readdir(__dirp: *mut root::DIR) -> *mut root::dirent;
+    }
+    unsafe extern "C" {
+        pub fn readdir64(__dirp: *mut root::DIR) -> *mut root::dirent64;
+    }
+    unsafe extern "C" {
+        pub fn readdir_r(
+            __dirp: *mut root::DIR,
+            __entry: *mut root::dirent,
+            __result: *mut *mut root::dirent,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn readdir64_r(
+            __dirp: *mut root::DIR,
+            __entry: *mut root::dirent64,
+            __result: *mut *mut root::dirent64,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn rewinddir(__dirp: *mut root::DIR);
+    }
+    unsafe extern "C" {
+        pub fn seekdir(__dirp: *mut root::DIR, __pos: ::core::ffi::c_long);
+    }
+    unsafe extern "C" {
+        pub fn telldir(__dirp: *mut root::DIR) -> ::core::ffi::c_long;
+    }
+    unsafe extern "C" {
+        pub fn dirfd(__dirp: *mut root::DIR) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn __sysconf(__name: ::core::ffi::c_int) -> ::core::ffi::c_long;
+    }
+    unsafe extern "C" {
+        pub fn scandir(
+            __dir: *const ::core::ffi::c_char,
+            __namelist: *mut *mut *mut root::dirent,
+            __selector: ::core::option::Option<
+                unsafe extern "C" fn(arg1: *const root::dirent) -> ::core::ffi::c_int,
+            >,
+            __cmp: ::core::option::Option<
+                unsafe extern "C" fn(
+                    arg1: *mut *const root::dirent,
+                    arg2: *mut *const root::dirent,
+                ) -> ::core::ffi::c_int,
+            >,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn scandir64(
+            __dir: *const ::core::ffi::c_char,
+            __namelist: *mut *mut *mut root::dirent64,
+            __selector: ::core::option::Option<
+                unsafe extern "C" fn(arg1: *const root::dirent64) -> ::core::ffi::c_int,
+            >,
+            __cmp: ::core::option::Option<
+                unsafe extern "C" fn(
+                    arg1: *mut *const root::dirent64,
+                    arg2: *mut *const root::dirent64,
+                ) -> ::core::ffi::c_int,
+            >,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn scandirat(
+            __dfd: ::core::ffi::c_int,
+            __dir: *const ::core::ffi::c_char,
+            __namelist: *mut *mut *mut root::dirent,
+            __selector: ::core::option::Option<
+                unsafe extern "C" fn(arg1: *const root::dirent) -> ::core::ffi::c_int,
+            >,
+            __cmp: ::core::option::Option<
+                unsafe extern "C" fn(
+                    arg1: *mut *const root::dirent,
+                    arg2: *mut *const root::dirent,
+                ) -> ::core::ffi::c_int,
+            >,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn scandirat64(
+            __dfd: ::core::ffi::c_int,
+            __dir: *const ::core::ffi::c_char,
+            __namelist: *mut *mut *mut root::dirent64,
+            __selector: ::core::option::Option<
+                unsafe extern "C" fn(arg1: *const root::dirent64) -> ::core::ffi::c_int,
+            >,
+            __cmp: ::core::option::Option<
+                unsafe extern "C" fn(
+                    arg1: *mut *const root::dirent64,
+                    arg2: *mut *const root::dirent64,
+                ) -> ::core::ffi::c_int,
+            >,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn alphasort(
+            __e1: *mut *const root::dirent,
+            __e2: *mut *const root::dirent,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn alphasort64(
+            __e1: *mut *const root::dirent64,
+            __e2: *mut *const root::dirent64,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn getdirentries(
+            __fd: ::core::ffi::c_int,
+            __buf: *mut ::core::ffi::c_char,
+            __nbytes: usize,
+            __basep: *mut root::__off_t,
+        ) -> root::__ssize_t;
+    }
+    unsafe extern "C" {
+        pub fn getdirentries64(
+            __fd: ::core::ffi::c_int,
+            __buf: *mut ::core::ffi::c_char,
+            __nbytes: usize,
+            __basep: *mut root::__off64_t,
+        ) -> root::__ssize_t;
+    }
+    unsafe extern "C" {
+        pub fn versionsort(
+            __e1: *mut *const root::dirent,
+            __e2: *mut *const root::dirent,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn versionsort64(
+            __e1: *mut *const root::dirent64,
+            __e2: *mut *const root::dirent64,
+        ) -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub fn getdents64(
+            __fd: ::core::ffi::c_int,
+            __buffer: *mut ::core::ffi::c_void,
+            __length: usize,
+        ) -> root::__ssize_t;
+    }
+    pub type HINSTANCE = *mut ::core::ffi::c_void;
     pub mod std {
         #[allow(unused_imports)]
         use self::super::super::root;
@@ -2207,123 +2762,52 @@ pub mod root {
                 __condition: *const ::core::ffi::c_char,
             ) -> !;
         }
-        pub type byte = ::core::ffi::c_uchar;
-        #[repr(C)]
-        #[derive(Debug, Copy, Clone)]
-        pub struct __byte_operand {
-            pub _address: u8,
-        }
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_bool__close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_bool__close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_char_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_char_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_signed_char_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_signed_char_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_unsigned_char_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_unsigned_char_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_wchar_t_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_wchar_t_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_char16_t_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_char16_t_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_char32_t_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_char32_t_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_short_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_short_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_unsigned_short_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_unsigned_short_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_int_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_int_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_unsigned_int_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_unsigned_int_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_long_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_long_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_unsigned_long_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_unsigned_long_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_long_long_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_long_long_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        #[allow(clippy::unnecessary_operation, clippy::identity_op)]
-        const _: () = {
-            ["Size of template specialization: __byte_operand_open0_unsigned_long_long_close0"]
-                [::core::mem::size_of::<root::std::__byte_operand>() - 1usize];
-            ["Align of template specialization: __byte_operand_open0_unsigned_long_long_close0"]
-                [::core::mem::align_of::<root::std::__byte_operand>() - 1usize];
-        };
-        pub type __byte_op_t = root::std::__byte_operand;
     }
     pub mod __gnu_cxx {
         #[allow(unused_imports)]
         use self::super::super::root;
     }
+    unsafe extern "C" {
+        pub fn __errno_location() -> *mut ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        pub static mut program_invocation_name: *mut ::core::ffi::c_char;
+    }
+    unsafe extern "C" {
+        pub static mut program_invocation_short_name: *mut ::core::ffi::c_char;
+    }
+    pub type error_t = ::core::ffi::c_int;
+    unsafe extern "C" {
+        #[link_name = "\u{1}_Z12GetLastErrorv"]
+        pub fn GetLastError() -> ::core::ffi::c_int;
+    }
+    unsafe extern "C" {
+        #[link_name = "\u{1}_Z16GetFileOfAddressPvPcm"]
+        pub fn GetFileOfAddress(
+            pAddr: *mut ::core::ffi::c_void,
+            buffer: *mut ::core::ffi::c_char,
+            maxlength: usize,
+        ) -> bool;
+    }
+    pub type int_least8_t = root::__int_least8_t;
+    pub type int_least16_t = root::__int_least16_t;
+    pub type int_least32_t = root::__int_least32_t;
+    pub type int_least64_t = root::__int_least64_t;
+    pub type uint_least8_t = root::__uint_least8_t;
+    pub type uint_least16_t = root::__uint_least16_t;
+    pub type uint_least32_t = root::__uint_least32_t;
+    pub type uint_least64_t = root::__uint_least64_t;
+    pub type int_fast8_t = ::core::ffi::c_schar;
+    pub type int_fast16_t = ::core::ffi::c_long;
+    pub type int_fast32_t = ::core::ffi::c_long;
+    pub type int_fast64_t = ::core::ffi::c_long;
+    pub type uint_fast8_t = ::core::ffi::c_uchar;
+    pub type uint_fast16_t = ::core::ffi::c_ulong;
+    pub type uint_fast32_t = ::core::ffi::c_ulong;
+    pub type uint_fast64_t = ::core::ffi::c_ulong;
+    pub type intmax_t = root::__intmax_t;
+    pub type uintmax_t = root::__uintmax_t;
+    pub type HMODULE = *mut ::core::ffi::c_void;
     #[repr(C)]
     #[repr(align(16))]
     #[derive(Debug, Copy, Clone)]

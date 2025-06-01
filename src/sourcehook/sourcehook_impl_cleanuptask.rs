@@ -96,7 +96,7 @@ pub mod root {
     pub const __USE_DYNAMIC_STACK_SIZE: u32 = 1;
     pub const __USE_GNU: u32 = 1;
     pub const __USE_FORTIFY_LEVEL: u32 = 0;
-    pub const __GLIBC_USE_DEPRECATED_GETS: u32 = 1;
+    pub const __GLIBC_USE_DEPRECATED_GETS: u32 = 0;
     pub const __GLIBC_USE_DEPRECATED_SCANF: u32 = 0;
     pub const __GLIBC_USE_C23_STRTOL: u32 = 1;
     pub const _STDC_PREDEF_H: u32 = 1;
